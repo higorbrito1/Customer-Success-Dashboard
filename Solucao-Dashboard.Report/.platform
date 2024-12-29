@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Solucao-Dashboard"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "3033c218-28fe-42f2-96c9-d932349deb23"
+  }
+}

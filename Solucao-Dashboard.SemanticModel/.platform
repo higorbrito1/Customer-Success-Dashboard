@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Solucao-Dashboard"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "4de9f3ea-7d5e-49fa-af56-af7d1d388f87"
+  }
+}
