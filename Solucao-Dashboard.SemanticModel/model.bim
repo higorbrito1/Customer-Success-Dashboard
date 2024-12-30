@@ -8117,7 +8117,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Medidas",
-                    "ConceptualProperty": "TME_Ponderado"
+                    "ConceptualProperty": "TME_Chat"
                   }
                 },
                 "State": "Generated",
@@ -30469,20 +30469,6 @@
         "toTable": "LocalDateTable_a384ac4e-028b-4e81-9215-5602139dc11c"
       },
       {
-        "name": "c38941d2-3080-02ce-93e3-2251ed4ee9b0",
-        "fromColumn": "Hora (compartimentos)",
-        "fromTable": "fCallflex_chamadas",
-        "toColumn": "Horas",
-        "toTable": "dHoras"
-      },
-      {
-        "name": "364086d5-8188-2893-9e7a-7fe5e2f19987",
-        "fromColumn": "Hora (compartimentos)",
-        "fromTable": "fChat_relatorio_atendimento",
-        "toColumn": "Horas",
-        "toTable": "dHoras"
-      },
-      {
         "name": "3fabf8dd-b414-4399-87ee-2e9a2b2f95f6",
         "fromColumn": "Date",
         "fromTable": "dCalendario",
@@ -30533,18 +30519,32 @@
         "toTable": "dCalendario"
       },
       {
-        "name": "3316eed4-7ad0-f90f-fd94-c2b1be5e5662",
+        "name": "04069829-46de-d3e3-4aec-d3b758aeda36",
+        "fromColumn": "DATA_DE_LOGIN",
+        "fromTable": "fCallflex_chamadas_agente_detalhado",
+        "toColumn": "Date",
+        "toTable": "dCalendario"
+      },
+      {
+        "name": "f15323cc-4c3b-367b-ffee-9af8c867a649",
         "fromColumn": "Data (ddmmaaaa)",
         "fromTable": "fChat_relatorio_atendimento",
         "toColumn": "Date",
         "toTable": "dCalendario"
       },
       {
-        "name": "04069829-46de-d3e3-4aec-d3b758aeda36",
-        "fromColumn": "DATA_DE_LOGIN",
-        "fromTable": "fCallflex_chamadas_agente_detalhado",
-        "toColumn": "Date",
-        "toTable": "dCalendario"
+        "name": "a15ba565-b803-ea96-af37-c9a518f70d38",
+        "fromColumn": "Hora (compartimentos)",
+        "fromTable": "fChat_relatorio_atendimento",
+        "toColumn": "Horas",
+        "toTable": "dHoras"
+      },
+      {
+        "name": "d9976c78-1d47-956f-40df-25481ba034a9",
+        "fromColumn": "Hora (compartimentos)",
+        "fromTable": "fCallflex_chamadas",
+        "toColumn": "Horas",
+        "toTable": "dHoras"
       }
     ],
     "sourceQueryCulture": "pt-BR",
@@ -32769,7 +32769,7 @@
             "lineageTag": "1234674f-c984-4138-8b65-5274b02ee0d9"
           },
           {
-            "name": "TME_Ponderado",
+            "name": "TME_Chat",
             "expression": [
               "",
               "VAR Total_TME_Relatorio_Seconds =",
@@ -32791,34 +32791,8 @@
               "VAR Media_TME_Seconds_Relatorio = ",
               "    IF(Count_TTE_Relatorio > 0, Total_TME_Relatorio_Seconds / Count_TTE_Relatorio, 0)",
               "",
-              "VAR Total_TME_CallFlex_Seconds = ",
-              "    AVERAGEX(",
-              "        dCallflex_agente_consolidado, ",
-              "        VAR TME_CallFlex = dCallflex_agente_consolidado[TME]",
-              "        -- Verifica se o valor TME_CallFlex está no formato de tempo 'hh:mm:ss' ou não, e converte para segundos",
-              "        VAR TME_Valid = ",
-              "            IF(",
-              "                NOT(ISBLANK(TME_CallFlex)) && LEN(TME_CallFlex) = 8, ",
-              "                VALUE(LEFT(TME_CallFlex, 2)) * 3600 + VALUE(MID(TME_CallFlex, 4, 2)) * 60 + VALUE(RIGHT(TME_CallFlex, 2)),",
-              "                0",
-              "            )",
-              "        RETURN TME_Valid",
-              "    )",
-              "",
-              "VAR Total_Peso_CallFlex = ",
-              "    SUMX(",
-              "        dCallflex_agente_consolidado,",
-              "        VALUE(dCallflex_agente_consolidado[SAINTES_QTDE]) + VALUE(dCallflex_agente_consolidado[ENTRANTES_QTDE])",
-              "    )",
-              "",
-              "VAR Peso_Total = Count_TTE_Relatorio + Total_Peso_CallFlex",
-              "",
-              "VAR TME_Ponderado_Seconds = ",
-              "    IF(Peso_Total > 0,",
-              "        ((Media_TME_Seconds_Relatorio * Count_TTE_Relatorio) + ",
-              "        (Total_TME_CallFlex_Seconds * Total_Peso_CallFlex)) / Peso_Total,",
-              "        0",
-              "    )",
+              "-- Como não há peso de outros datasets, o TME ponderado será a média do relatório",
+              "VAR TME_Ponderado_Seconds = Media_TME_Seconds_Relatorio",
               "",
               "-- Conversão do TME ponderado para o formato hh:mm:ss",
               "VAR Hours = INT(TME_Ponderado_Seconds / 3600)",
@@ -33066,9 +33040,9 @@
             "expression": [
               "",
               "VAR TME_Em_Segundos = ",
-              "    HOUR([TME_Ponderado]) * 3600 + ",
-              "    MINUTE([TME_Ponderado]) * 60 + ",
-              "    SECOND([TME_Ponderado])",
+              "    HOUR([TME_Chat]) * 3600 + ",
+              "    MINUTE([TME_Chat]) * 60 + ",
+              "    SECOND([TME_Chat])",
               "",
               "VAR Doc = MIN(VALUE([% Documentação]), 100)  -- Doc em %",
               "VAR Res1Cont = MIN(VALUE([% Resolução no 1º Contato]), 100)  -- Res1Cont em %",
@@ -33117,7 +33091,7 @@
             "name": "TME_Em_Segundos",
             "expression": [
               "",
-              "HOUR([TME_Ponderado]) * 3600 + MINUTE([TME_Ponderado]) * 60 + SECOND([TME_Ponderado])",
+              "HOUR([TME_Chat]) * 3600 + MINUTE([TME_Chat]) * 60 + SECOND([TME_Chat])",
               ""
             ],
             "formatString": "0",
@@ -34170,6 +34144,67 @@
             ],
             "formatString": "0",
             "lineageTag": "92a64f3e-c6b3-4615-a6f1-d401c28e57b2"
+          },
+          {
+            "name": "TMA_Chat",
+            "expression": [
+              "",
+              "VAR Total_TMA_Relatorio_Seconds =",
+              "    SUMX(",
+              "        fChat_relatorio_atendimento,",
+              "        VAR TTA_Humano = fChat_relatorio_atendimento[TTA (humano)]",
+              "        VAR TTA_Valid = ",
+              "            IF(",
+              "                NOT(ISBLANK(TTA_Humano)) && LEN(TTA_Humano) = 8, ",
+              "                VALUE(LEFT(TTA_Humano, 2)) * 3600 + VALUE(MID(TTA_Humano, 4, 2)) * 60 + VALUE(RIGHT(TTA_Humano, 2)),",
+              "                0",
+              "            )",
+              "        RETURN TTA_Valid",
+              "    )",
+              "",
+              "VAR Count_Protocolo_Relatorio = COUNT(fChat_relatorio_atendimento[Protocolo])",
+              "",
+              "VAR Media_TMA_Seconds_Relatorio = ",
+              "    IF(Count_Protocolo_Relatorio > 0, Total_TMA_Relatorio_Seconds / Count_Protocolo_Relatorio, 0)",
+              "",
+              "-- Conversão do TMA médio para o formato hh:mm:ss",
+              "VAR Hours = INT(Media_TMA_Seconds_Relatorio / 3600)",
+              "VAR Minutes = INT(MOD(Media_TMA_Seconds_Relatorio, 3600) / 60)",
+              "VAR Seconds = INT(MOD(Media_TMA_Seconds_Relatorio, 60))",
+              "",
+              "RETURN ",
+              "    FORMAT(Hours, \"00\") & \":\" & FORMAT(Minutes, \"00\") & \":\" & FORMAT(Seconds, \"00\")",
+              ""
+            ],
+            "lineageTag": "abf7831a-6ba8-41f7-aa4b-e215084a3c73"
+          },
+          {
+            "name": "TMA_Callflex",
+            "expression": [
+              "",
+              "VAR Total_TMA_Seconds =",
+              "    SUMX(",
+              "        dCallflex_agente_consolidado,",
+              "        VAR TMA_CallFlex = dCallflex_agente_consolidado[TMA]",
+              "        VAR TMA_Seconds = ",
+              "            IF(",
+              "                NOT(ISBLANK(TMA_CallFlex)) && LEN(TMA_CallFlex) = 8,",
+              "                VALUE(LEFT(TMA_CallFlex, 2)) * 3600 + VALUE(MID(TMA_CallFlex, 4, 2)) * 60 + VALUE(RIGHT(TMA_CallFlex, 2)),",
+              "                0",
+              "            )",
+              "        RETURN TMA_Seconds",
+              "    )",
+              "",
+              "-- Conversão para hh:mm:ss",
+              "VAR Hours = INT(Total_TMA_Seconds / 3600)",
+              "VAR Minutes = INT(MOD(Total_TMA_Seconds, 3600) / 60)",
+              "VAR Seconds = MOD(Total_TMA_Seconds, 60)",
+              "",
+              "RETURN ",
+              "    FORMAT(Hours, \"00\") & \":\" & FORMAT(Minutes, \"00\") & \":\" & FORMAT(Seconds, \"00\")",
+              ""
+            ],
+            "lineageTag": "b387a99d-a5a0-42df-938c-3c54192bb0df"
           }
         ],
         "partitions": [
@@ -35435,11 +35470,6 @@
                 "value": "Automatic"
               }
             ],
-            "changedProperties": [
-              {
-                "property": "DataType"
-              }
-            ],
             "dataType": "string",
             "lineageTag": "30e19bbe-19b1-49dd-99cb-0547d9046a7d",
             "sourceColumn": "2-PAUSA CAFE-QTDE",
@@ -35464,11 +35494,6 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "DataType"
               }
             ],
             "dataType": "string",
@@ -35681,9 +35706,9 @@
             "source": {
               "expression": [
                 "let",
-                "    Fonte = Csv.Document(Web.Contents(\"https://solucaonet.sharepoint.com/sites/suportecs/Documentos%20Compartilhados/Gest%C3%A3o/Desempenho/Dados/dCallflex_pausas.csv\"),[Delimiter=\";\", Columns=27, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
-                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),",
-                "",
+                "    Fonte = Excel.Workbook(Web.Contents(\"https://solucaonet.sharepoint.com/sites/suportecs/Documentos%20Compartilhados/Gest%C3%A3o/Desempenho/Dados/dCallflex_pausas.xlsx\"), null, true),",
+                "    Export_Sheet = Fonte{[Item=\"Relatorio_pausas_agentes\",Kind=\"Sheet\"]}[Data],",
+                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Export_Sheet, [PromoteAllScalars=true]),",
                 "    #\"ARTUR DO NASCIMENTO ARBOLEIA\" = Table.ReplaceValue(#\"Cabeçalhos Promovidos\",\"Artur Do Nascimento Arboleia\",\"ARTUR DO NASCIMENTO ARBOLEIA\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
                 "    #\"MARIA LUIZA DE SOUZA PEREIRA\" = Table.ReplaceValue(#\"ARTUR DO NASCIMENTO ARBOLEIA\",\"Maria Luiza De Souza Pereira\",\"MARIA LUIZA DE SOUZA PEREIRA\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
                 "    #\"WELLINGTON DIONIZIO SANTOS\" = Table.ReplaceValue(#\"MARIA LUIZA DE SOUZA PEREIRA\",\"Wellington Dionizio Santos\",\"WELLINGTON DIONIZIO SANTOS\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
