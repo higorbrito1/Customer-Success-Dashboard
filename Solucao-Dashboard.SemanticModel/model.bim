@@ -12,7 +12,7 @@
       },
       {
         "name": "PBIDesktopVersion",
-        "value": "2.138.1203.0 (24.11)"
+        "value": "2.138.1452.0 (24.11)"
       },
       {
         "name": "PBI_ProTooling",
@@ -33239,53 +33239,45 @@
           },
           {
             "name": "Chat_Soma_Tempo_Refeicao",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isDateTimeCustom\":true}"
-              }
-            ],
             "expression": [
-              "",
-              "VAR TotalTempo = ",
-              "    SUMX(",
-              "        fChat_relatorio_resumo_usuarios,",
-              "        TIMEVALUE(fChat_relatorio_resumo_usuarios[Tempo em pausa - Pausa refeição])",
-              "    )",
-              "RETURN ",
-              "    IF(",
-              "        TotalTempo = 0,",
-              "        TIME(0, 0, 0),  -- Retorna 00:00:00 se o total for zero",
-              "        TotalTempo       -- Caso contrário, retorna o total do tempo (em segundos ou minutos, dependendo do formato)",
-              "    )",
+              "\"00:00:00\"",
+              "// VAR TotalTempo = ",
+              "//     SUMX(",
+              "//         fChat_relatorio_resumo_usuarios,",
+              "//         TIMEVALUE(fChat_relatorio_resumo_usuarios[Tempo em pausa - Pausa refeição])",
+              "//     )",
+              "// RETURN ",
+              "//     IF(",
+              "//         TotalTempo = 0,",
+              "//         TIME(0, 0, 0),  -- Retorna 00:00:00 se o total for zero",
+              "//         TotalTempo       -- Caso contrário, retorna o total do tempo (em segundos ou minutos, dependendo do formato)",
+              "//     )",
               "    ",
               "",
               "",
               ""
             ],
-            "formatString": "hh:nn:ss",
             "lineageTag": "b743fe43-7930-4f5e-b656-b48c2a9aa699"
           },
           {
             "name": "Chat_Contagem_Pausa_Refeicao",
             "expression": [
-              "",
-              "VAR LinhasComTempoValido = ",
-              "    FILTER(",
-              "        fChat_relatorio_resumo_usuarios,",
-              "        fChat_relatorio_resumo_usuarios[Tempo em pausa - Pausa refeição] <> \"00:00:00\"",
-              "    )",
-              "RETURN ",
-              "    IF(",
-              "        COUNTROWS(LinhasComTempoValido) = 0, ",
-              "        0, ",
-              "        COUNTROWS(LinhasComTempoValido)",
-              "    )",
+              "\"0\"",
+              "// VAR LinhasComTempoValido = ",
+              "//     FILTER(",
+              "//         fChat_relatorio_resumo_usuarios,",
+              "//         fChat_relatorio_resumo_usuarios[Tempo em pausa - Pausa refeição] <> \"00:00:00\"",
+              "//     )",
+              "// RETURN ",
+              "//     IF(",
+              "//         COUNTROWS(LinhasComTempoValido) = 0, ",
+              "//         0, ",
+              "//         COUNTROWS(LinhasComTempoValido)",
+              "//     )",
               "",
               "",
               ""
             ],
-            "formatString": "0",
             "lineageTag": "75b82b48-4f3d-46a1-bf6e-1bf1ae593bd7"
           },
           {
@@ -33301,7 +33293,7 @@
               "VAR TotalTempo = ",
               "    SUMX(",
               "        fChat_relatorio_resumo_usuarios,",
-              "        TIMEVALUE(fChat_relatorio_resumo_usuarios[Tempo em pausa - Pausa pessoal])",
+              "        TIMEVALUE(fChat_relatorio_resumo_usuarios[Tempo em pausa - 3:Pausa pessoal])",
               "    )",
               "RETURN ",
               "    IF(",
@@ -33326,7 +33318,7 @@
               "VAR LinhasComTempoValido = ",
               "    FILTER(",
               "        fChat_relatorio_resumo_usuarios,",
-              "        fChat_relatorio_resumo_usuarios[Tempo em pausa - Pausa pessoal] <> \"00:00:00\"",
+              "        fChat_relatorio_resumo_usuarios[Tempo em pausa - 3:Pausa pessoal] <> \"00:00:00\"",
               "    )",
               "RETURN ",
               "    IF(",
@@ -33356,7 +33348,7 @@
               "VAR TotalTempo = ",
               "    SUMX(",
               "        fChat_relatorio_resumo_usuarios,",
-              "        TIMEVALUE(fChat_relatorio_resumo_usuarios[Tempo em pausa - Pausa Feedback])",
+              "        TIMEVALUE(fChat_relatorio_resumo_usuarios[Tempo em pausa - 4:Pausa Feedback])",
               "    )",
               "RETURN ",
               "    IF(",
@@ -33382,7 +33374,7 @@
               "VAR LinhasComTempoValido = ",
               "    FILTER(",
               "        fChat_relatorio_resumo_usuarios,",
-              "        fChat_relatorio_resumo_usuarios[Tempo em pausa - Pausa Feedback] <> \"00:00:00\"",
+              "        fChat_relatorio_resumo_usuarios[Tempo em pausa - 4:Pausa Feedback] <> \"00:00:00\"",
               "    )",
               "RETURN ",
               "    IF(",
@@ -33413,7 +33405,7 @@
               "VAR TotalTempo = ",
               "    SUMX(",
               "        fChat_relatorio_resumo_usuarios,",
-              "        TIMEVALUE(fChat_relatorio_resumo_usuarios[Tempo em pausa - Pausa manutencao TI])",
+              "        TIMEVALUE(fChat_relatorio_resumo_usuarios[Tempo em pausa - 7:Pausa manutencao TI])",
               "    )",
               "RETURN ",
               "    IF(",
@@ -33440,7 +33432,7 @@
               "VAR LinhasComTempoValido = ",
               "    FILTER(",
               "        fChat_relatorio_resumo_usuarios,",
-              "        fChat_relatorio_resumo_usuarios[Tempo em pausa - Pausa manutencao TI] <> \"00:00:00\"",
+              "        fChat_relatorio_resumo_usuarios[Tempo em pausa - 7:Pausa manutencao TI] <> \"00:00:00\"",
               "    )",
               "RETURN ",
               "    IF(",
@@ -33472,7 +33464,7 @@
               "VAR TotalTempo = ",
               "    SUMX(",
               "        fChat_relatorio_resumo_usuarios,",
-              "        TIMEVALUE(fChat_relatorio_resumo_usuarios[Tempo em pausa - Pausa Atendimento presencial])",
+              "        TIMEVALUE(fChat_relatorio_resumo_usuarios[Tempo em pausa - 8:Pausa Atendimento presencial])",
               "    )",
               "RETURN ",
               "    IF(",
@@ -33500,7 +33492,7 @@
               "VAR LinhasComTempoValido = ",
               "    FILTER(",
               "        fChat_relatorio_resumo_usuarios,",
-              "        fChat_relatorio_resumo_usuarios[Tempo em pausa - Pausa Atendimento presencial] <> \"00:00:00\"",
+              "        fChat_relatorio_resumo_usuarios[Tempo em pausa - 8:Pausa Atendimento presencial] <> \"00:00:00\"",
               "    )",
               "RETURN ",
               "    IF(",
@@ -33533,7 +33525,7 @@
               "VAR TotalTempo = ",
               "    SUMX(",
               "        fChat_relatorio_resumo_usuarios,",
-              "        TIMEVALUE(fChat_relatorio_resumo_usuarios[Tempo em pausa - Pausa Bkoffice])",
+              "        TIMEVALUE(fChat_relatorio_resumo_usuarios[Tempo em pausa - 10:Pausa Bkoffice])",
               "    )",
               "RETURN ",
               "    IF(",
@@ -33562,7 +33554,7 @@
               "VAR LinhasComTempoValido = ",
               "    FILTER(",
               "        fChat_relatorio_resumo_usuarios,",
-              "        fChat_relatorio_resumo_usuarios[Tempo em pausa - Pausa Bkoffice] <> \"00:00:00\"",
+              "        fChat_relatorio_resumo_usuarios[Tempo em pausa - 10:Pausa Bkoffice] <> \"00:00:00\"",
               "    )",
               "RETURN ",
               "    IF(",
@@ -33654,7 +33646,7 @@
               "VAR LinhasComTempoValido = ",
               "    FILTER(",
               "        fChat_relatorio_resumo_usuarios,",
-              "        fChat_relatorio_resumo_usuarios[Tempo em pausa - Pausa atendimento tecnico] <> \"00:00:00\"",
+              "        fChat_relatorio_resumo_usuarios[Tempo em pausa - 13:Pausa atendimento tecnico] <> \"00:00:00\"",
               "    )",
               "RETURN ",
               "    IF(",
@@ -33729,7 +33721,7 @@
               "VAR TotalTempo = ",
               "    SUMX(",
               "        fChat_relatorio_resumo_usuarios,",
-              "        TIMEVALUE(fChat_relatorio_resumo_usuarios[Tempo em pausa - Pausa atendimento tecnico])",
+              "        TIMEVALUE(fChat_relatorio_resumo_usuarios[Tempo em pausa - 13:Pausa atendimento tecnico])",
               "    )",
               "RETURN ",
               "    IF(",
@@ -33839,6 +33831,345 @@
             ],
             "formatString": "0.00%;-0.00%;0.00%",
             "lineageTag": "7c2593f1-3b89-461c-b907-9d929ac47f99"
+          },
+          {
+            "name": "Callflex_Soma_Tempo_Pessoal",
+            "expression": [
+              "",
+              "VAR TotalSegundosChat = ",
+              "    SUMX(",
+              "        dCallflex_pausas,",
+              "        VAR Chat_Tempo = dCallflex_pausas[3-PAUSA PESSOAL-TEMPO]",
+              "        -- Verifica se o valor Chat_Tempo está no formato de tempo 'hh:mm:ss' ou não, e converte para segundos",
+              "        VAR Chat_Valid = ",
+              "            IF(",
+              "                NOT(ISBLANK(Chat_Tempo)) && LEN(Chat_Tempo) = 8, ",
+              "                VALUE(LEFT(Chat_Tempo, 2)) * 3600 + VALUE(MID(Chat_Tempo, 4, 2)) * 60 + VALUE(RIGHT(Chat_Tempo, 2)),",
+              "                0",
+              "            )",
+              "        RETURN Chat_Valid",
+              "    )",
+              "",
+              "VAR TotalSegundos = TotalSegundosChat  // Soma os segundos",
+              "VAR Horas = INT(TotalSegundos / 3600)  // Calcula as horas",
+              "VAR Minutos = INT(MOD(TotalSegundos, 3600) / 60)  // Calcula os minutos restantes",
+              "VAR Segundos = INT(MOD(TotalSegundos, 60))  // Calcula os segundos restantes",
+              "",
+              "-- Retorna o resultado no formato de tempo 'hh:mm:ss'",
+              "RETURN ",
+              "    FORMAT(Horas, \"00\") & \":\" & FORMAT(Minutos, \"00\") & \":\" & FORMAT(Segundos, \"00\")",
+              ""
+            ],
+            "lineageTag": "043d918b-1fa1-4765-9216-91f07390334a"
+          },
+          {
+            "name": "Callflex_Contagem_Pausa_Pessoal",
+            "expression": "SUMX(dCallflex_pausas, VALUE(dCallflex_pausas[3-PAUSA PESSOAL-QTDE]))",
+            "formatString": "0",
+            "lineageTag": "26350929-244d-4a40-8214-f4f2f713ddf6"
+          },
+          {
+            "name": "Callflex_Contagem_Pausa_Cafe",
+            "expression": "SUMX(dCallflex_pausas, VALUE(dCallflex_pausas[2-PAUSA CAFE-QTDE]))",
+            "formatString": "0",
+            "lineageTag": "2789b86a-9cfd-487a-8db0-75af73e5e009"
+          },
+          {
+            "name": "Callflex_Soma_Tempo_Cafe",
+            "expression": [
+              "",
+              "VAR TotalSegundosChat = ",
+              "    SUMX(",
+              "        dCallflex_pausas,",
+              "        VAR Chat_Tempo = dCallflex_pausas[2-PAUSA CAFE-TEMPO]",
+              "        -- Verifica se o valor Chat_Tempo está no formato de tempo 'hh:mm:ss' ou não, e converte para segundos",
+              "        VAR Chat_Valid = ",
+              "            IF(",
+              "                NOT(ISBLANK(Chat_Tempo)) && LEN(Chat_Tempo) = 8, ",
+              "                VALUE(LEFT(Chat_Tempo, 2)) * 3600 + VALUE(MID(Chat_Tempo, 4, 2)) * 60 + VALUE(RIGHT(Chat_Tempo, 2)),",
+              "                0",
+              "            )",
+              "        RETURN Chat_Valid",
+              "    )",
+              "",
+              "VAR TotalSegundos = TotalSegundosChat  // Soma os segundos",
+              "VAR Horas = INT(TotalSegundos / 3600)  // Calcula as horas",
+              "VAR Minutos = INT(MOD(TotalSegundos, 3600) / 60)  // Calcula os minutos restantes",
+              "VAR Segundos = INT(MOD(TotalSegundos, 60))  // Calcula os segundos restantes",
+              "",
+              "-- Retorna o resultado no formato de tempo 'hh:mm:ss'",
+              "RETURN ",
+              "    FORMAT(Horas, \"00\") & \":\" & FORMAT(Minutos, \"00\") & \":\" & FORMAT(Segundos, \"00\")",
+              ""
+            ],
+            "lineageTag": "5dedd2d8-388e-4617-822d-cc272b9e7ad1"
+          },
+          {
+            "name": "Callflex_Soma_Tempo_Indisponivel",
+            "expression": [
+              "",
+              "VAR TotalSegundosChat = ",
+              "    SUMX(",
+              "        dCallflex_pausas,",
+              "        VAR Chat_Tempo = dCallflex_pausas[1-INDISPONIVEL-TEMPO]",
+              "        -- Verifica se o valor Chat_Tempo está no formato de tempo 'hh:mm:ss' ou não, e converte para segundos",
+              "        VAR Chat_Valid = ",
+              "            IF(",
+              "                NOT(ISBLANK(Chat_Tempo)) && LEN(Chat_Tempo) = 8, ",
+              "                VALUE(LEFT(Chat_Tempo, 2)) * 3600 + VALUE(MID(Chat_Tempo, 4, 2)) * 60 + VALUE(RIGHT(Chat_Tempo, 2)),",
+              "                0",
+              "            )",
+              "        RETURN Chat_Valid",
+              "    )",
+              "",
+              "VAR TotalSegundos = TotalSegundosChat  // Soma os segundos",
+              "VAR Horas = INT(TotalSegundos / 3600)  // Calcula as horas",
+              "VAR Minutos = INT(MOD(TotalSegundos, 3600) / 60)  // Calcula os minutos restantes",
+              "VAR Segundos = INT(MOD(TotalSegundos, 60))  // Calcula os segundos restantes",
+              "",
+              "-- Retorna o resultado no formato de tempo 'hh:mm:ss'",
+              "RETURN ",
+              "    FORMAT(Horas, \"00\") & \":\" & FORMAT(Minutos, \"00\") & \":\" & FORMAT(Segundos, \"00\")",
+              ""
+            ],
+            "lineageTag": "4704bda2-bf59-49bd-955f-5fb29c351f25"
+          },
+          {
+            "name": "Callflex_Contagem_Pausa_Indisponivel",
+            "expression": "SUMX(dCallflex_pausas, VALUE(dCallflex_pausas[1-INDISPONIVEL-QTDE]))",
+            "formatString": "0",
+            "lineageTag": "3c4ee790-834c-48ab-8a6f-b4f7284b431f"
+          },
+          {
+            "name": "Callflex_Soma_Tempo_Atendimento_Tecnico",
+            "expression": [
+              "",
+              "VAR TotalSegundosChat = ",
+              "    SUMX(",
+              "        dCallflex_pausas,",
+              "        VAR Chat_Tempo = dCallflex_pausas[13-PAUSA ATENDIMENTO TECNICO-TEMPO]",
+              "        -- Verifica se o valor Chat_Tempo está no formato de tempo 'hh:mm:ss' ou não, e converte para segundos",
+              "        VAR Chat_Valid = ",
+              "            IF(",
+              "                NOT(ISBLANK(Chat_Tempo)) && LEN(Chat_Tempo) = 8, ",
+              "                VALUE(LEFT(Chat_Tempo, 2)) * 3600 + VALUE(MID(Chat_Tempo, 4, 2)) * 60 + VALUE(RIGHT(Chat_Tempo, 2)),",
+              "                0",
+              "            )",
+              "        RETURN Chat_Valid",
+              "    )",
+              "",
+              "VAR TotalSegundos = TotalSegundosChat  // Soma os segundos",
+              "VAR Horas = INT(TotalSegundos / 3600)  // Calcula as horas",
+              "VAR Minutos = INT(MOD(TotalSegundos, 3600) / 60)  // Calcula os minutos restantes",
+              "VAR Segundos = INT(MOD(TotalSegundos, 60))  // Calcula os segundos restantes",
+              "",
+              "-- Retorna o resultado no formato de tempo 'hh:mm:ss'",
+              "RETURN ",
+              "    FORMAT(Horas, \"00\") & \":\" & FORMAT(Minutos, \"00\") & \":\" & FORMAT(Segundos, \"00\")"
+            ],
+            "lineageTag": "421f5261-b4a0-4b00-b3f3-0ba90a4188db"
+          },
+          {
+            "name": "Callflex_Contagem_Pausa_Atendimento_Tecnico",
+            "expression": [
+              "SUMX(dCallflex_pausas, VALUE(dCallflex_pausas[13-PAUSA ATENDIMENTO TECNICO-QTDE]))",
+              ""
+            ],
+            "formatString": "0",
+            "lineageTag": "bebd3ada-37dc-4904-80d1-0a64869a8f37"
+          },
+          {
+            "name": "Callflex_Soma_Tempo_15Minutos",
+            "expression": [
+              "",
+              "VAR TotalSegundosChat = ",
+              "    SUMX(",
+              "        dCallflex_pausas,",
+              "        VAR Chat_Tempo = dCallflex_pausas[12-PAUSA DE 15 MINUTOS-TEMPO]",
+              "        -- Verifica se o valor Chat_Tempo está no formato de tempo 'hh:mm:ss' ou não, e converte para segundos",
+              "        VAR Chat_Valid = ",
+              "            IF(",
+              "                NOT(ISBLANK(Chat_Tempo)) && LEN(Chat_Tempo) = 8, ",
+              "                VALUE(LEFT(Chat_Tempo, 2)) * 3600 + VALUE(MID(Chat_Tempo, 4, 2)) * 60 + VALUE(RIGHT(Chat_Tempo, 2)),",
+              "                0",
+              "            )",
+              "        RETURN Chat_Valid",
+              "    )",
+              "",
+              "VAR TotalSegundos = TotalSegundosChat  // Soma os segundos",
+              "VAR Horas = INT(TotalSegundos / 3600)  // Calcula as horas",
+              "VAR Minutos = INT(MOD(TotalSegundos, 3600) / 60)  // Calcula os minutos restantes",
+              "VAR Segundos = INT(MOD(TotalSegundos, 60))  // Calcula os segundos restantes",
+              "",
+              "-- Retorna o resultado no formato de tempo 'hh:mm:ss'",
+              "RETURN ",
+              "    FORMAT(Horas, \"00\") & \":\" & FORMAT(Minutos, \"00\") & \":\" & FORMAT(Segundos, \"00\")",
+              ""
+            ],
+            "lineageTag": "e5345734-04ab-4814-9204-7e16d0f5028a"
+          },
+          {
+            "name": "Callflex_Contagem_Pausa_15Minutos",
+            "expression": [
+              "SUMX(dCallflex_pausas, VALUE(dCallflex_pausas[12-PAUSA DE 15 MINUTOS-QTDE]))",
+              ""
+            ],
+            "formatString": "0",
+            "lineageTag": "a08d1522-44a7-4d53-9975-b0ff0ed22955"
+          },
+          {
+            "name": "Callflex_Soma_Tempo_Bkoffice",
+            "expression": [
+              "",
+              "VAR TotalSegundosChat = ",
+              "    SUMX(",
+              "        dCallflex_pausas,",
+              "        VAR Chat_Tempo = dCallflex_pausas[10-PAUSA BKOFFICE-TEMPO]",
+              "        -- Verifica se o valor Chat_Tempo está no formato de tempo 'hh:mm:ss' ou não, e converte para segundos",
+              "        VAR Chat_Valid = ",
+              "            IF(",
+              "                NOT(ISBLANK(Chat_Tempo)) && LEN(Chat_Tempo) = 8, ",
+              "                VALUE(LEFT(Chat_Tempo, 2)) * 3600 + VALUE(MID(Chat_Tempo, 4, 2)) * 60 + VALUE(RIGHT(Chat_Tempo, 2)),",
+              "                0",
+              "            )",
+              "        RETURN Chat_Valid",
+              "    )",
+              "",
+              "VAR TotalSegundos = TotalSegundosChat  // Soma os segundos",
+              "VAR Horas = INT(TotalSegundos / 3600)  // Calcula as horas",
+              "VAR Minutos = INT(MOD(TotalSegundos, 3600) / 60)  // Calcula os minutos restantes",
+              "VAR Segundos = INT(MOD(TotalSegundos, 60))  // Calcula os segundos restantes",
+              "",
+              "-- Retorna o resultado no formato de tempo 'hh:mm:ss'",
+              "RETURN ",
+              "    FORMAT(Horas, \"00\") & \":\" & FORMAT(Minutos, \"00\") & \":\" & FORMAT(Segundos, \"00\")",
+              ""
+            ],
+            "lineageTag": "79c9d0d6-fec1-40a3-8d43-a1f70260da48"
+          },
+          {
+            "name": "Callflex_Contagem_Pausa_Bkoffice",
+            "expression": [
+              "SUMX(dCallflex_pausas, VALUE(dCallflex_pausas[10-PAUSA BKOFFICE-QTDE]))",
+              ""
+            ],
+            "formatString": "0",
+            "lineageTag": "78bb42b6-eb6f-4de0-9558-1cfb3466bc64"
+          },
+          {
+            "name": "Callflex_Soma_Tempo_Atendimento_Presencial",
+            "expression": [
+              "",
+              "VAR TotalSegundosChat = ",
+              "    SUMX(",
+              "        dCallflex_pausas,",
+              "        VAR Chat_Tempo = dCallflex_pausas[8-PAUSA ATENDIMENTO PRESENCIAL -TEMPO]",
+              "        -- Verifica se o valor Chat_Tempo está no formato de tempo 'hh:mm:ss' ou não, e converte para segundos",
+              "        VAR Chat_Valid = ",
+              "            IF(",
+              "                NOT(ISBLANK(Chat_Tempo)) && LEN(Chat_Tempo) = 8, ",
+              "                VALUE(LEFT(Chat_Tempo, 2)) * 3600 + VALUE(MID(Chat_Tempo, 4, 2)) * 60 + VALUE(RIGHT(Chat_Tempo, 2)),",
+              "                0",
+              "            )",
+              "        RETURN Chat_Valid",
+              "    )",
+              "",
+              "VAR TotalSegundos = TotalSegundosChat  // Soma os segundos",
+              "VAR Horas = INT(TotalSegundos / 3600)  // Calcula as horas",
+              "VAR Minutos = INT(MOD(TotalSegundos, 3600) / 60)  // Calcula os minutos restantes",
+              "VAR Segundos = INT(MOD(TotalSegundos, 60))  // Calcula os segundos restantes",
+              "",
+              "-- Retorna o resultado no formato de tempo 'hh:mm:ss'",
+              "RETURN ",
+              "    FORMAT(Horas, \"00\") & \":\" & FORMAT(Minutos, \"00\") & \":\" & FORMAT(Segundos, \"00\")"
+            ],
+            "lineageTag": "1bccd038-ae35-4f96-9ab1-f5023a040551"
+          },
+          {
+            "name": "Callflex_Contagem_Pausa_Atendimento_Presencial",
+            "expression": [
+              "SUMX(dCallflex_pausas, VALUE(dCallflex_pausas[8-PAUSA ATENDIMENTO PRESENCIAL -QTDE]))",
+              ""
+            ],
+            "formatString": "0",
+            "lineageTag": "49d3f17a-5dd5-4fa0-a9cc-3f46cbf111bc"
+          },
+          {
+            "name": "Callflex_Soma_Tempo_ManutencaoTI",
+            "expression": [
+              "",
+              "VAR TotalSegundosChat = ",
+              "    SUMX(",
+              "        dCallflex_pausas,",
+              "        VAR Chat_Tempo = dCallflex_pausas[7-PAUSA MANUTENCAO TI-TEMPO]",
+              "        -- Verifica se o valor Chat_Tempo está no formato de tempo 'hh:mm:ss' ou não, e converte para segundos",
+              "        VAR Chat_Valid = ",
+              "            IF(",
+              "                NOT(ISBLANK(Chat_Tempo)) && LEN(Chat_Tempo) = 8, ",
+              "                VALUE(LEFT(Chat_Tempo, 2)) * 3600 + VALUE(MID(Chat_Tempo, 4, 2)) * 60 + VALUE(RIGHT(Chat_Tempo, 2)),",
+              "                0",
+              "            )",
+              "        RETURN Chat_Valid",
+              "    )",
+              "",
+              "VAR TotalSegundos = TotalSegundosChat  // Soma os segundos",
+              "VAR Horas = INT(TotalSegundos / 3600)  // Calcula as horas",
+              "VAR Minutos = INT(MOD(TotalSegundos, 3600) / 60)  // Calcula os minutos restantes",
+              "VAR Segundos = INT(MOD(TotalSegundos, 60))  // Calcula os segundos restantes",
+              "",
+              "-- Retorna o resultado no formato de tempo 'hh:mm:ss'",
+              "RETURN ",
+              "    FORMAT(Horas, \"00\") & \":\" & FORMAT(Minutos, \"00\") & \":\" & FORMAT(Segundos, \"00\")",
+              ""
+            ],
+            "lineageTag": "af0bb435-c0a7-4c5b-b1b7-ce7fa4a1690f"
+          },
+          {
+            "name": "Callflex_Contagem_Pausa_ManutencaoTI",
+            "expression": [
+              "SUMX(dCallflex_pausas, VALUE(dCallflex_pausas[7-PAUSA MANUTENCAO TI-QTDE]))",
+              ""
+            ],
+            "formatString": "0",
+            "lineageTag": "8bb909aa-fb45-4053-8478-baf1516f32b1"
+          },
+          {
+            "name": "Callflex_Soma_Tempo_Feedback",
+            "expression": [
+              "",
+              "VAR TotalSegundosChat = ",
+              "    SUMX(",
+              "        dCallflex_pausas,",
+              "        VAR Chat_Tempo = dCallflex_pausas[4-PAUSA FEEDBACK-TEMPO]",
+              "        -- Verifica se o valor Chat_Tempo está no formato de tempo 'hh:mm:ss' ou não, e converte para segundos",
+              "        VAR Chat_Valid = ",
+              "            IF(",
+              "                NOT(ISBLANK(Chat_Tempo)) && LEN(Chat_Tempo) = 8, ",
+              "                VALUE(LEFT(Chat_Tempo, 2)) * 3600 + VALUE(MID(Chat_Tempo, 4, 2)) * 60 + VALUE(RIGHT(Chat_Tempo, 2)),",
+              "                0",
+              "            )",
+              "        RETURN Chat_Valid",
+              "    )",
+              "",
+              "VAR TotalSegundos = TotalSegundosChat  // Soma os segundos",
+              "VAR Horas = INT(TotalSegundos / 3600)  // Calcula as horas",
+              "VAR Minutos = INT(MOD(TotalSegundos, 3600) / 60)  // Calcula os minutos restantes",
+              "VAR Segundos = INT(MOD(TotalSegundos, 60))  // Calcula os segundos restantes",
+              "",
+              "-- Retorna o resultado no formato de tempo 'hh:mm:ss'",
+              "RETURN ",
+              "    FORMAT(Horas, \"00\") & \":\" & FORMAT(Minutos, \"00\") & \":\" & FORMAT(Segundos, \"00\")"
+            ],
+            "lineageTag": "2edf2f75-6cda-421d-95de-a86f74ea2bf5"
+          },
+          {
+            "name": "Callflex_Contagem_Pausa_Feedback",
+            "expression": [
+              "SUMX(dCallflex_pausas, VALUE(dCallflex_pausas[4-PAUSA FEEDBACK-QTDE]))",
+              ""
+            ],
+            "formatString": "0",
+            "lineageTag": "92a64f3e-c6b3-4615-a6f1-d401c28e57b2"
           }
         ],
         "partitions": [
@@ -35104,6 +35435,11 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "DataType"
+              }
+            ],
             "dataType": "string",
             "lineageTag": "30e19bbe-19b1-49dd-99cb-0547d9046a7d",
             "sourceColumn": "2-PAUSA CAFE-QTDE",
@@ -35128,6 +35464,11 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "DataType"
               }
             ],
             "dataType": "string",
