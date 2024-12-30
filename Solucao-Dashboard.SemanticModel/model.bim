@@ -8067,6 +8067,158 @@
                   }
                 ]
               },
+              "medida.TMA_callflex": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "TMA_Callflex"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "TMA callflex": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "TMA_Callflex": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "medida.TMA_chat": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "TMA_Chat"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "TMA chat": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "TMA_Chat": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "chat": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "tma conversation": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "tma discussion": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "conversation": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "discussion": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "tma one-to-one": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "tma heart-to-heart": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "tma talk": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "tma dialog": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "tma dialogue": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "tma chinwag": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  }
+                ]
+              },
               "medida.TMA_ponderado": {
                 "Definition": {
                   "Binding": {
@@ -8123,15 +8275,121 @@
                 "State": "Generated",
                 "Terms": [
                   {
-                    "TME ponderado": {
+                    "TME chat": {
                       "State": "Generated"
                     }
                   },
                   {
-                    "TME_Ponderado": {
+                    "TME_Chat": {
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.99
+                    }
+                  },
+                  {
+                    "chat": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "tme conversation": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "tme discussion": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "conversation": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "discussion": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "tme one-to-one": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "tme heart-to-heart": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "tme talk": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "tme dialog": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "tme dialogue": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "tme chinwag": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
                     }
                   }
                 ]
@@ -8270,6 +8528,551 @@
                   }
                 ]
               },
+              "medida.callflex_contagem_pausa_15_minutos": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "Callflex_Contagem_Pausa_15Minutos"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "callflex contagem pausa 15 minutos": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Callflex_Contagem_Pausa_15Minutos": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "medida.callflex_contagem_pausa_atendimento_presencial": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "Callflex_Contagem_Pausa_Atendimento_Presencial"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "callflex contagem pausa atendimento presencial": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Callflex_Contagem_Pausa_Atendimento_Presencial": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "medida.callflex_contagem_pausa_atendimento_tecnico": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "Callflex_Contagem_Pausa_Atendimento_Tecnico"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "callflex contagem pausa atendimento tecnico": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Callflex_Contagem_Pausa_Atendimento_Tecnico": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "medida.callflex_contagem_pausa_bkoffice": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "Callflex_Contagem_Pausa_Bkoffice"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "callflex contagem pausa bkoffice": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Callflex_Contagem_Pausa_Bkoffice": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "medida.callflex_contagem_pausa_cafe": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "Callflex_Contagem_Pausa_Cafe"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "callflex contagem pausa cafe": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Callflex_Contagem_Pausa_Cafe": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "callflex contagem pausa teashop": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.514
+                    }
+                  }
+                ]
+              },
+              "medida.callflex_contagem_pausa_feedback": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "Callflex_Contagem_Pausa_Feedback"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "callflex contagem pausa feedback": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Callflex_Contagem_Pausa_Feedback": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "callflex contagem pausa response": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.514
+                    }
+                  },
+                  {
+                    "callflex contagem pausa reaction": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.514
+                    }
+                  },
+                  {
+                    "callflex contagem pausa criticism": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.514
+                    }
+                  },
+                  {
+                    "callflex contagem pausa advice": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.514
+                    }
+                  },
+                  {
+                    "callflex contagem pausa pointer": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.514
+                    }
+                  },
+                  {
+                    "callflex contagem pausa opinion": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.514
+                    }
+                  },
+                  {
+                    "callflex contagem pausa comment": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.499
+                    }
+                  },
+                  {
+                    "callflex contagem pausa view": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.499
+                    }
+                  },
+                  {
+                    "callflex contagem pausa reply": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.499
+                    }
+                  }
+                ]
+              },
+              "medida.callflex_contagem_pausa_indisponivel": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "Callflex_Contagem_Pausa_Indisponivel"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "callflex contagem pausa indisponivel": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Callflex_Contagem_Pausa_Indisponivel": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "medida.callflex_contagem_pausa_manutencao_TI": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "Callflex_Contagem_Pausa_ManutencaoTI"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "callflex contagem pausa manutencao TI": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Callflex_Contagem_Pausa_ManutencaoTI": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "medida.callflex_contagem_pausa_pessoal": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "Callflex_Contagem_Pausa_Pessoal"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "callflex contagem pausa pessoal": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Callflex_Contagem_Pausa_Pessoal": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "medida.callflex_soma_tempo_15_minutos": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "Callflex_Soma_Tempo_15Minutos"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "callflex soma tempo 15 minutos": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Callflex_Soma_Tempo_15Minutos": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "medida.callflex_soma_tempo_atendimento_presencial": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "Callflex_Soma_Tempo_Atendimento_Presencial"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "callflex soma tempo atendimento presencial": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Callflex_Soma_Tempo_Atendimento_Presencial": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "medida.callflex_soma_tempo_atendimento_tecnico": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "Callflex_Soma_Tempo_Atendimento_Tecnico"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "callflex soma tempo atendimento tecnico": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Callflex_Soma_Tempo_Atendimento_Tecnico": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "medida.callflex_soma_tempo_bkoffice": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "Callflex_Soma_Tempo_Bkoffice"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "callflex soma tempo bkoffice": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Callflex_Soma_Tempo_Bkoffice": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "medida.callflex_soma_tempo_cafe": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "Callflex_Soma_Tempo_Cafe"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "callflex soma tempo cafe": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Callflex_Soma_Tempo_Cafe": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "callflex soma tempo teashop": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.514
+                    }
+                  }
+                ]
+              },
+              "medida.callflex_soma_tempo_feedback": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "Callflex_Soma_Tempo_Feedback"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "callflex soma tempo feedback": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Callflex_Soma_Tempo_Feedback": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "callflex soma tempo response": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.514
+                    }
+                  },
+                  {
+                    "callflex soma tempo reaction": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.514
+                    }
+                  },
+                  {
+                    "callflex soma tempo criticism": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.514
+                    }
+                  },
+                  {
+                    "callflex soma tempo advice": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.514
+                    }
+                  },
+                  {
+                    "callflex soma tempo pointer": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.514
+                    }
+                  },
+                  {
+                    "callflex soma tempo opinion": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.514
+                    }
+                  },
+                  {
+                    "callflex soma tempo comment": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.499
+                    }
+                  },
+                  {
+                    "callflex soma tempo view": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.499
+                    }
+                  },
+                  {
+                    "callflex soma tempo reply": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.499
+                    }
+                  }
+                ]
+              },
               "medida.callflex_soma_tempo_final": {
                 "Definition": {
                   "Binding": {
@@ -8286,6 +9089,52 @@
                   },
                   {
                     "Callflex_Tempo_Disponivel": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "medida.callflex_soma_tempo_indisponivel": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "Callflex_Soma_Tempo_Indisponivel"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "callflex soma tempo indisponivel": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Callflex_Soma_Tempo_Indisponivel": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "medida.callflex_soma_tempo_manutencao_TI": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "Callflex_Soma_Tempo_ManutencaoTI"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "callflex soma tempo manutencao TI": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Callflex_Soma_Tempo_ManutencaoTI": {
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.99
@@ -8332,6 +9181,29 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.739
+                    }
+                  }
+                ]
+              },
+              "medida.callflex_soma_tempo_pessoal": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "Callflex_Soma_Tempo_Pessoal"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "callflex soma tempo pessoal": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Callflex_Soma_Tempo_Pessoal": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
                     }
                   }
                 ]
@@ -9084,7 +9956,6 @@
                     "ConceptualProperty": "Chat_Soma_Tempo_Refeicao"
                   }
                 },
-                "SemanticType": "Time",
                 "State": "Generated",
                 "Terms": [
                   {
@@ -9097,12 +9968,6 @@
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.99
-                    }
-                  },
-                  {
-                    "date": {
-                      "State": "Generated",
-                      "Weight": 0.7
                     }
                   }
                 ]
@@ -9525,16 +10390,6 @@
                     }
                   },
                   {
-                    "Total Pausado:": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
-                  },
-                  {
                     "Tempo pausado": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
@@ -9651,16 +10506,6 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.739
-                    }
-                  },
-                  {
-                    "Tempo Disponível:": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
                     }
                   },
                   {
@@ -9807,35 +10652,35 @@
                 "State": "Generated",
                 "Terms": [
                   {
-                    "total atendimentos": {
+                    "total meus atendimentos": {
                       "State": "Generated"
                     }
                   },
                   {
-                    "Total_Atendimentos": {
+                    "Total_Meus_Atendimentos": {
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.99
                     }
                   },
                   {
-                    "aggregate atendimento": {
+                    "aggregate meus atendimento": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.582
+                      "Weight": 0.591
                     }
                   },
                   {
-                    "overall atendimento": {
+                    "overall meus atendimento": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.582
+                      "Weight": 0.591
                     }
                   },
                   {
@@ -15686,6 +16531,198 @@
                   }
                 ]
               },
+              "relatorio_resumo_usuario.tempo_em_pausa_8": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fChat_relatorio_resumo_usuarios",
+                    "ConceptualProperty": "Tempo em Pausa 8"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "tempo em pausa 8": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "relatorio_resumo_usuario.tempo_em_pausa__10pausa_bkoffice": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fChat_relatorio_resumo_usuarios",
+                    "ConceptualProperty": "Tempo em pausa - 10:Pausa Bkoffice"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "tempo em pausa - 10:pausa bkoffice": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "tempo em pausa 10:pausa bkoffice": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  }
+                ]
+              },
+              "relatorio_resumo_usuario.tempo_em_pausa__12pausa_de_15_minuto": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fChat_relatorio_resumo_usuarios",
+                    "ConceptualProperty": "Tempo em pausa - 12:Pausa de 15 minutos"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "tempo em pausa - 12:pausa de 15 minuto": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "tempo em pausa 12:pausa de 15 minuto": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  }
+                ]
+              },
+              "relatorio_resumo_usuario.tempo_em_pausa__13pausa_atendimento_tecnico": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fChat_relatorio_resumo_usuarios",
+                    "ConceptualProperty": "Tempo em pausa - 13:Pausa atendimento tecnico"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "tempo em pausa - 13:pausa atendimento tecnico": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "tempo em pausa 13:pausa atendimento tecnico": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  }
+                ]
+              },
+              "relatorio_resumo_usuario.tempo_em_pausa__2pausa_cafe": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fChat_relatorio_resumo_usuarios",
+                    "ConceptualProperty": "Tempo em pausa - 2:Pausa cafe"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "tempo em pausa - 2:pausa cafe": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "tempo em pausa 2:pausa cafe": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  }
+                ]
+              },
+              "relatorio_resumo_usuario.tempo_em_pausa__3pausa_pessoal": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fChat_relatorio_resumo_usuarios",
+                    "ConceptualProperty": "Tempo em pausa - 3:Pausa pessoal"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "tempo em pausa - 3:pausa pessoal": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "tempo em pausa 3:pausa pessoal": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  }
+                ]
+              },
+              "relatorio_resumo_usuario.tempo_em_pausa__4pausa_feedback": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fChat_relatorio_resumo_usuarios",
+                    "ConceptualProperty": "Tempo em pausa - 4:Pausa Feedback"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "tempo em pausa - 4:pausa feedback": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "tempo em pausa 4:pausa feedback": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  }
+                ]
+              },
+              "relatorio_resumo_usuario.tempo_em_pausa__7pausa_manutencao_TI": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fChat_relatorio_resumo_usuarios",
+                    "ConceptualProperty": "Tempo em pausa - 7:Pausa manutencao TI"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "tempo em pausa - 7:pausa manutencao TI": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "tempo em pausa 7:pausa manutencao TI": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  }
+                ]
+              },
+              "relatorio_resumo_usuario.tempo_em_pausa__8pausa_atendimento_presencial": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fChat_relatorio_resumo_usuarios",
+                    "ConceptualProperty": "Tempo em pausa - 8:Pausa Atendimento presencial"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "tempo em pausa - 8:pausa atendimento presencial": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "tempo em pausa 8:pausa atendimento presencial": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  }
+                ]
+              },
               "relatorio_resumo_usuario.tempo_em_pausa_outro": {
                 "Definition": {
                   "Binding": {
@@ -15783,7 +16820,7 @@
                         "Role": "callflex_chamada.data"
                       }
                     },
-                    "ID": "data_have_hierarquia_de_data",
+                    "ID": "data_have_hierarquia_de_data1",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -15816,7 +16853,7 @@
                         "Role": "callflex_chamada.data.variation.hierarquia_de_data.ano"
                       }
                     },
-                    "ID": "anos_have_trimestres3",
+                    "ID": "anos_have_trimestres7",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -15829,12 +16866,12 @@
                         "Role": "callflex_chamada.data.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_anos3",
+                    "ID": "trimestres_have_anos7",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "trimestres_are_in_anos4",
+                    "ID": "trimestres_are_in_anos",
                     "Preposition": {
                       "Object": {
                         "Role": "callflex_chamada.data.variation.hierarquia_de_data.ano"
@@ -15882,7 +16919,7 @@
                         "Role": "callflex_chamada.data.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_anos3",
+                    "ID": "hierarquia_de_data_have_anos7",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -15915,7 +16952,7 @@
                         "Role": "callflex_chamada.data.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_dias3",
+                    "ID": "hierarquia_de_data_have_dias7",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -15948,7 +16985,7 @@
                         "Role": "callflex_chamada.data.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_mê3",
+                    "ID": "hierarquia_de_data_have_mê7",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -15981,7 +17018,7 @@
                         "Role": "callflex_chamada.data.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_trimestres3",
+                    "ID": "hierarquia_de_data_have_trimestres7",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -16014,7 +17051,7 @@
                         "Role": "callflex_chamada.data.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_dias2",
+                    "ID": "mê_have_dias6",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -16027,12 +17064,12 @@
                         "Role": "callflex_chamada.data.variation.hierarquia_de_data.dia"
                       }
                     },
-                    "ID": "dias_have_mê2",
+                    "ID": "dias_have_mê6",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "dias_are_in_mê4",
+                    "ID": "dias_are_in_mê",
                     "Preposition": {
                       "Object": {
                         "Role": "callflex_chamada.data.variation.hierarquia_de_data.mê"
@@ -16080,7 +17117,7 @@
                         "Role": "callflex_chamada.data.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_mê2",
+                    "ID": "trimestres_have_mê6",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -16093,12 +17130,12 @@
                         "Role": "callflex_chamada.data.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_trimestres2",
+                    "ID": "mê_have_trimestres6",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "mê_are_in_trimestres4",
+                    "ID": "mê_are_in_trimestres",
                     "Preposition": {
                       "Object": {
                         "Role": "callflex_chamada.data.variation.hierarquia_de_data.trimestre"
@@ -16680,7 +17717,7 @@
                         "Role": "callflex_chamada"
                       }
                     },
-                    "ID": "f_callflex_chamadas_have_total_atendimentos",
+                    "ID": "f_callflex_chamadas_have_total_meus_atendimentos",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -16694,6 +17731,39 @@
                   "medida.total_atendimentos": {
                     "Target": {
                       "Entity": "medida.total_atendimentos"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "callflex_chamada_has_medida_total_atendimentos1": {
+                "Binding": {
+                  "ConceptualEntity": "fCallflex_chamadas"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.total_atendimentos1"
+                      },
+                      "Subject": {
+                        "Role": "callflex_chamada"
+                      }
+                    },
+                    "ID": "f_callflex_chamadas_have_total_atendimentos_colaboradores",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "callflex_chamada": {
+                    "Target": {
+                      "Entity": "callflex_chamada"
+                    }
+                  },
+                  "medida.total_atendimentos1": {
+                    "Target": {
+                      "Entity": "medida.total_atendimentos1"
                     }
                   }
                 },
@@ -16944,7 +18014,7 @@
                         "Role": "callflex_chamada.hora.variation.hierarquia_de_data.ano"
                       }
                     },
-                    "ID": "anos_have_trimestres",
+                    "ID": "anos_have_trimestres6",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -16957,12 +18027,12 @@
                         "Role": "callflex_chamada.hora.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_anos",
+                    "ID": "trimestres_have_anos6",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "trimestres_are_in_anos7",
+                    "ID": "trimestres_are_in_anos1",
                     "Preposition": {
                       "Object": {
                         "Role": "callflex_chamada.hora.variation.hierarquia_de_data.ano"
@@ -17010,7 +18080,7 @@
                         "Role": "callflex_chamada.hora.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_anos",
+                    "ID": "hierarquia_de_data_have_anos6",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -17043,7 +18113,7 @@
                         "Role": "callflex_chamada.hora.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_dias",
+                    "ID": "hierarquia_de_data_have_dias6",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -17076,7 +18146,7 @@
                         "Role": "callflex_chamada.hora.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_mê",
+                    "ID": "hierarquia_de_data_have_mê6",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -17109,7 +18179,7 @@
                         "Role": "callflex_chamada.hora.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_trimestres",
+                    "ID": "hierarquia_de_data_have_trimestres6",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -17142,7 +18212,7 @@
                         "Role": "callflex_chamada.hora.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_dias7",
+                    "ID": "mê_have_dias5",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -17155,12 +18225,12 @@
                         "Role": "callflex_chamada.hora.variation.hierarquia_de_data.dia"
                       }
                     },
-                    "ID": "dias_have_mê7",
+                    "ID": "dias_have_mê5",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "dias_are_in_mê7",
+                    "ID": "dias_are_in_mê1",
                     "Preposition": {
                       "Object": {
                         "Role": "callflex_chamada.hora.variation.hierarquia_de_data.mê"
@@ -17208,7 +18278,7 @@
                         "Role": "callflex_chamada.hora.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_mê7",
+                    "ID": "trimestres_have_mê5",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -17221,12 +18291,12 @@
                         "Role": "callflex_chamada.hora.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_trimestres7",
+                    "ID": "mê_have_trimestres5",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "mê_are_in_trimestres7",
+                    "ID": "mê_are_in_trimestres1",
                     "Preposition": {
                       "Object": {
                         "Role": "callflex_chamada.hora.variation.hierarquia_de_data.trimestre"
@@ -18217,6 +19287,303 @@
                 },
                 "State": "Generated"
               },
+              "callflex_pausa_has_medida_callflex_contagem_pausa_15_minutos": {
+                "Binding": {
+                  "ConceptualEntity": "dCallflex_pausas"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.callflex_contagem_pausa_15_minutos"
+                      },
+                      "Subject": {
+                        "Role": "callflex_pausa"
+                      }
+                    },
+                    "ID": "d_callflex_pausas_have_callflex_contagem_pausa_15_minutos",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "callflex_pausa": {
+                    "Target": {
+                      "Entity": "callflex_pausa"
+                    }
+                  },
+                  "medida.callflex_contagem_pausa_15_minutos": {
+                    "Target": {
+                      "Entity": "medida.callflex_contagem_pausa_15_minutos"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "callflex_pausa_has_medida_callflex_contagem_pausa_atendimento_presencial": {
+                "Binding": {
+                  "ConceptualEntity": "dCallflex_pausas"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.callflex_contagem_pausa_atendimento_presencial"
+                      },
+                      "Subject": {
+                        "Role": "callflex_pausa"
+                      }
+                    },
+                    "ID": "d_callflex_pausas_have_callflex_contagem_pausa_atendimento_presencial",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "callflex_pausa": {
+                    "Target": {
+                      "Entity": "callflex_pausa"
+                    }
+                  },
+                  "medida.callflex_contagem_pausa_atendimento_presencial": {
+                    "Target": {
+                      "Entity": "medida.callflex_contagem_pausa_atendimento_presencial"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "callflex_pausa_has_medida_callflex_contagem_pausa_atendimento_tecnico": {
+                "Binding": {
+                  "ConceptualEntity": "dCallflex_pausas"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.callflex_contagem_pausa_atendimento_tecnico"
+                      },
+                      "Subject": {
+                        "Role": "callflex_pausa"
+                      }
+                    },
+                    "ID": "d_callflex_pausas_have_callflex_contagem_pausa_atendimento_tecnico",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "callflex_pausa": {
+                    "Target": {
+                      "Entity": "callflex_pausa"
+                    }
+                  },
+                  "medida.callflex_contagem_pausa_atendimento_tecnico": {
+                    "Target": {
+                      "Entity": "medida.callflex_contagem_pausa_atendimento_tecnico"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "callflex_pausa_has_medida_callflex_contagem_pausa_bkoffice": {
+                "Binding": {
+                  "ConceptualEntity": "dCallflex_pausas"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.callflex_contagem_pausa_bkoffice"
+                      },
+                      "Subject": {
+                        "Role": "callflex_pausa"
+                      }
+                    },
+                    "ID": "d_callflex_pausas_have_callflex_contagem_pausa_bkoffice",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "callflex_pausa": {
+                    "Target": {
+                      "Entity": "callflex_pausa"
+                    }
+                  },
+                  "medida.callflex_contagem_pausa_bkoffice": {
+                    "Target": {
+                      "Entity": "medida.callflex_contagem_pausa_bkoffice"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "callflex_pausa_has_medida_callflex_contagem_pausa_cafe": {
+                "Binding": {
+                  "ConceptualEntity": "dCallflex_pausas"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.callflex_contagem_pausa_cafe"
+                      },
+                      "Subject": {
+                        "Role": "callflex_pausa"
+                      }
+                    },
+                    "ID": "d_callflex_pausas_have_callflex_contagem_pausa_cafe",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "callflex_pausa": {
+                    "Target": {
+                      "Entity": "callflex_pausa"
+                    }
+                  },
+                  "medida.callflex_contagem_pausa_cafe": {
+                    "Target": {
+                      "Entity": "medida.callflex_contagem_pausa_cafe"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "callflex_pausa_has_medida_callflex_contagem_pausa_feedback": {
+                "Binding": {
+                  "ConceptualEntity": "dCallflex_pausas"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.callflex_contagem_pausa_feedback"
+                      },
+                      "Subject": {
+                        "Role": "callflex_pausa"
+                      }
+                    },
+                    "ID": "d_callflex_pausas_have_callflex_contagem_pausa_feedback",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "callflex_pausa": {
+                    "Target": {
+                      "Entity": "callflex_pausa"
+                    }
+                  },
+                  "medida.callflex_contagem_pausa_feedback": {
+                    "Target": {
+                      "Entity": "medida.callflex_contagem_pausa_feedback"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "callflex_pausa_has_medida_callflex_contagem_pausa_indisponivel": {
+                "Binding": {
+                  "ConceptualEntity": "dCallflex_pausas"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.callflex_contagem_pausa_indisponivel"
+                      },
+                      "Subject": {
+                        "Role": "callflex_pausa"
+                      }
+                    },
+                    "ID": "d_callflex_pausas_have_callflex_contagem_pausa_indisponivel",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "callflex_pausa": {
+                    "Target": {
+                      "Entity": "callflex_pausa"
+                    }
+                  },
+                  "medida.callflex_contagem_pausa_indisponivel": {
+                    "Target": {
+                      "Entity": "medida.callflex_contagem_pausa_indisponivel"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "callflex_pausa_has_medida_callflex_contagem_pausa_manutencao_TI": {
+                "Binding": {
+                  "ConceptualEntity": "dCallflex_pausas"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.callflex_contagem_pausa_manutencao_TI"
+                      },
+                      "Subject": {
+                        "Role": "callflex_pausa"
+                      }
+                    },
+                    "ID": "d_callflex_pausas_have_callflex_contagem_pausa_manutencao_TI",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "callflex_pausa": {
+                    "Target": {
+                      "Entity": "callflex_pausa"
+                    }
+                  },
+                  "medida.callflex_contagem_pausa_manutencao_TI": {
+                    "Target": {
+                      "Entity": "medida.callflex_contagem_pausa_manutencao_TI"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "callflex_pausa_has_medida_callflex_contagem_pausa_pessoal": {
+                "Binding": {
+                  "ConceptualEntity": "dCallflex_pausas"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.callflex_contagem_pausa_pessoal"
+                      },
+                      "Subject": {
+                        "Role": "callflex_pausa"
+                      }
+                    },
+                    "ID": "d_callflex_pausas_have_callflex_contagem_pausa_pessoal",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "callflex_pausa": {
+                    "Target": {
+                      "Entity": "callflex_pausa"
+                    }
+                  },
+                  "medida.callflex_contagem_pausa_pessoal": {
+                    "Target": {
+                      "Entity": "medida.callflex_contagem_pausa_pessoal"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "callflex_pausa_has_tempo_logado_medio": {
                 "Binding": {
                   "ConceptualEntity": "dCallflex_pausas"
@@ -19056,7 +20423,7 @@
                         "Role": "d_calendario.date.variation.hierarquia_de_data.ano"
                       }
                     },
-                    "ID": "anos_have_trimestres1",
+                    "ID": "anos_have_trimestres5",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -19069,12 +20436,12 @@
                         "Role": "d_calendario.date.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_anos1",
+                    "ID": "trimestres_have_anos5",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "trimestres_are_in_anos6",
+                    "ID": "trimestres_are_in_anos2",
                     "Preposition": {
                       "Object": {
                         "Role": "d_calendario.date.variation.hierarquia_de_data.ano"
@@ -19122,7 +20489,7 @@
                         "Role": "d_calendario.date.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_anos1",
+                    "ID": "hierarquia_de_data_have_anos5",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -19155,7 +20522,7 @@
                         "Role": "d_calendario.date.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_dias1",
+                    "ID": "hierarquia_de_data_have_dias5",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -19188,7 +20555,7 @@
                         "Role": "d_calendario.date.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_mê1",
+                    "ID": "hierarquia_de_data_have_mê5",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -19221,7 +20588,7 @@
                         "Role": "d_calendario.date.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_trimestres1",
+                    "ID": "hierarquia_de_data_have_trimestres5",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -19254,7 +20621,7 @@
                         "Role": "d_calendario.date.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_dias",
+                    "ID": "mê_have_dias4",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -19267,12 +20634,12 @@
                         "Role": "d_calendario.date.variation.hierarquia_de_data.dia"
                       }
                     },
-                    "ID": "dias_have_mê",
+                    "ID": "dias_have_mê4",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "dias_are_in_mê6",
+                    "ID": "dias_are_in_mê2",
                     "Preposition": {
                       "Object": {
                         "Role": "d_calendario.date.variation.hierarquia_de_data.mê"
@@ -19320,7 +20687,7 @@
                         "Role": "d_calendario.date.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_mê",
+                    "ID": "trimestres_have_mê4",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -19333,12 +20700,12 @@
                         "Role": "d_calendario.date.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_trimestres",
+                    "ID": "mê_have_trimestres4",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "mê_are_in_trimestres6",
+                    "ID": "mê_are_in_trimestres2",
                     "Preposition": {
                       "Object": {
                         "Role": "d_calendario.date.variation.hierarquia_de_data.trimestre"
@@ -22481,7 +23848,7 @@
                         "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.ano"
                       }
                     },
-                    "ID": "anos_have_trimestres2",
+                    "ID": "anos_have_trimestres4",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -22494,12 +23861,12 @@
                         "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_anos2",
+                    "ID": "trimestres_have_anos4",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "trimestres_are_in_anos5",
+                    "ID": "trimestres_are_in_anos3",
                     "Preposition": {
                       "Object": {
                         "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.ano"
@@ -22547,7 +23914,7 @@
                         "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_anos2",
+                    "ID": "hierarquia_de_data_have_anos4",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -22580,7 +23947,7 @@
                         "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_dias2",
+                    "ID": "hierarquia_de_data_have_dias4",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -22613,7 +23980,7 @@
                         "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_mê2",
+                    "ID": "hierarquia_de_data_have_mê4",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -22646,7 +24013,7 @@
                         "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_trimestres2",
+                    "ID": "hierarquia_de_data_have_trimestres4",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -22679,7 +24046,7 @@
                         "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_dias1",
+                    "ID": "mê_have_dias3",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -22692,12 +24059,12 @@
                         "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.dia"
                       }
                     },
-                    "ID": "dias_have_mê1",
+                    "ID": "dias_have_mê3",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "dias_are_in_mê5",
+                    "ID": "dias_are_in_mê3",
                     "Preposition": {
                       "Object": {
                         "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.mê"
@@ -22745,7 +24112,7 @@
                         "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_mê1",
+                    "ID": "trimestres_have_mê3",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -22758,12 +24125,12 @@
                         "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_trimestres1",
+                    "ID": "mê_have_trimestres3",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "mê_are_in_trimestres5",
+                    "ID": "mê_are_in_trimestres3",
                     "Preposition": {
                       "Object": {
                         "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.trimestre"
@@ -23219,6 +24586,72 @@
                 },
                 "State": "Generated"
               },
+              "medida_has_TMA_callflex": {
+                "Binding": {
+                  "ConceptualEntity": "Medidas"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.TMA_callflex"
+                      },
+                      "Subject": {
+                        "Role": "medida"
+                      }
+                    },
+                    "ID": "medidas_have_TMA_callflex",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "medida": {
+                    "Target": {
+                      "Entity": "medida"
+                    }
+                  },
+                  "medida.TMA_callflex": {
+                    "Target": {
+                      "Entity": "medida.TMA_callflex"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "medida_has_TMA_chat": {
+                "Binding": {
+                  "ConceptualEntity": "Medidas"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.TMA_chat"
+                      },
+                      "Subject": {
+                        "Role": "medida"
+                      }
+                    },
+                    "ID": "medidas_have_TMA_chat",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "medida": {
+                    "Target": {
+                      "Entity": "medida"
+                    }
+                  },
+                  "medida.TMA_chat": {
+                    "Target": {
+                      "Entity": "medida.TMA_chat"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "medida_has_TMA_ponderado": {
                 "Binding": {
                   "ConceptualEntity": "Medidas"
@@ -23299,7 +24732,7 @@
                         "Role": "medida"
                       }
                     },
-                    "ID": "medidas_have_TME_ponderado",
+                    "ID": "medidas_have_TME_chat",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -23417,6 +24850,204 @@
                 },
                 "State": "Generated"
               },
+              "medida_has_callflex_soma_tempo_15_minutos": {
+                "Binding": {
+                  "ConceptualEntity": "Medidas"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.callflex_soma_tempo_15_minutos"
+                      },
+                      "Subject": {
+                        "Role": "medida"
+                      }
+                    },
+                    "ID": "medidas_have_callflex_soma_tempo_15_minutos",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "medida": {
+                    "Target": {
+                      "Entity": "medida"
+                    }
+                  },
+                  "medida.callflex_soma_tempo_15_minutos": {
+                    "Target": {
+                      "Entity": "medida.callflex_soma_tempo_15_minutos"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "medida_has_callflex_soma_tempo_atendimento_presencial": {
+                "Binding": {
+                  "ConceptualEntity": "Medidas"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.callflex_soma_tempo_atendimento_presencial"
+                      },
+                      "Subject": {
+                        "Role": "medida"
+                      }
+                    },
+                    "ID": "medidas_have_callflex_soma_tempo_atendimento_presencial",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "medida": {
+                    "Target": {
+                      "Entity": "medida"
+                    }
+                  },
+                  "medida.callflex_soma_tempo_atendimento_presencial": {
+                    "Target": {
+                      "Entity": "medida.callflex_soma_tempo_atendimento_presencial"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "medida_has_callflex_soma_tempo_atendimento_tecnico": {
+                "Binding": {
+                  "ConceptualEntity": "Medidas"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.callflex_soma_tempo_atendimento_tecnico"
+                      },
+                      "Subject": {
+                        "Role": "medida"
+                      }
+                    },
+                    "ID": "medidas_have_callflex_soma_tempo_atendimento_tecnico",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "medida": {
+                    "Target": {
+                      "Entity": "medida"
+                    }
+                  },
+                  "medida.callflex_soma_tempo_atendimento_tecnico": {
+                    "Target": {
+                      "Entity": "medida.callflex_soma_tempo_atendimento_tecnico"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "medida_has_callflex_soma_tempo_bkoffice": {
+                "Binding": {
+                  "ConceptualEntity": "Medidas"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.callflex_soma_tempo_bkoffice"
+                      },
+                      "Subject": {
+                        "Role": "medida"
+                      }
+                    },
+                    "ID": "medidas_have_callflex_soma_tempo_bkoffice",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "medida": {
+                    "Target": {
+                      "Entity": "medida"
+                    }
+                  },
+                  "medida.callflex_soma_tempo_bkoffice": {
+                    "Target": {
+                      "Entity": "medida.callflex_soma_tempo_bkoffice"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "medida_has_callflex_soma_tempo_cafe": {
+                "Binding": {
+                  "ConceptualEntity": "Medidas"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.callflex_soma_tempo_cafe"
+                      },
+                      "Subject": {
+                        "Role": "medida"
+                      }
+                    },
+                    "ID": "medidas_have_callflex_soma_tempo_cafe",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "medida": {
+                    "Target": {
+                      "Entity": "medida"
+                    }
+                  },
+                  "medida.callflex_soma_tempo_cafe": {
+                    "Target": {
+                      "Entity": "medida.callflex_soma_tempo_cafe"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "medida_has_callflex_soma_tempo_feedback": {
+                "Binding": {
+                  "ConceptualEntity": "Medidas"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.callflex_soma_tempo_feedback"
+                      },
+                      "Subject": {
+                        "Role": "medida"
+                      }
+                    },
+                    "ID": "medidas_have_callflex_soma_tempo_feedback",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "medida": {
+                    "Target": {
+                      "Entity": "medida"
+                    }
+                  },
+                  "medida.callflex_soma_tempo_feedback": {
+                    "Target": {
+                      "Entity": "medida.callflex_soma_tempo_feedback"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "medida_has_callflex_soma_tempo_final": {
                 "Binding": {
                   "ConceptualEntity": "Medidas"
@@ -23450,6 +25081,72 @@
                 },
                 "State": "Generated"
               },
+              "medida_has_callflex_soma_tempo_indisponivel": {
+                "Binding": {
+                  "ConceptualEntity": "Medidas"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.callflex_soma_tempo_indisponivel"
+                      },
+                      "Subject": {
+                        "Role": "medida"
+                      }
+                    },
+                    "ID": "medidas_have_callflex_soma_tempo_indisponivel",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "medida": {
+                    "Target": {
+                      "Entity": "medida"
+                    }
+                  },
+                  "medida.callflex_soma_tempo_indisponivel": {
+                    "Target": {
+                      "Entity": "medida.callflex_soma_tempo_indisponivel"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "medida_has_callflex_soma_tempo_manutencao_TI": {
+                "Binding": {
+                  "ConceptualEntity": "Medidas"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.callflex_soma_tempo_manutencao_TI"
+                      },
+                      "Subject": {
+                        "Role": "medida"
+                      }
+                    },
+                    "ID": "medidas_have_callflex_soma_tempo_manutencao_TI",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "medida": {
+                    "Target": {
+                      "Entity": "medida"
+                    }
+                  },
+                  "medida.callflex_soma_tempo_manutencao_TI": {
+                    "Target": {
+                      "Entity": "medida.callflex_soma_tempo_manutencao_TI"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "medida_has_callflex_soma_tempo_pausas_final": {
                 "Binding": {
                   "ConceptualEntity": "Medidas"
@@ -23478,6 +25175,39 @@
                   "medida.callflex_soma_tempo_pausas_final": {
                     "Target": {
                       "Entity": "medida.callflex_soma_tempo_pausas_final"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "medida_has_callflex_soma_tempo_pessoal": {
+                "Binding": {
+                  "ConceptualEntity": "Medidas"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.callflex_soma_tempo_pessoal"
+                      },
+                      "Subject": {
+                        "Role": "medida"
+                      }
+                    },
+                    "ID": "medidas_have_callflex_soma_tempo_pessoal",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "medida": {
+                    "Target": {
+                      "Entity": "medida"
+                    }
+                  },
+                  "medida.callflex_soma_tempo_pessoal": {
+                    "Target": {
+                      "Entity": "medida.callflex_soma_tempo_pessoal"
                     }
                   }
                 },
@@ -24586,7 +26316,7 @@
                         "Role": "reincidencia.data_abertura.variation.hierarquia_de_data.ano"
                       }
                     },
-                    "ID": "anos_have_trimestres4",
+                    "ID": "anos_have_trimestres3",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -24599,12 +26329,12 @@
                         "Role": "reincidencia.data_abertura.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_anos4",
+                    "ID": "trimestres_have_anos3",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "trimestres_are_in_anos3",
+                    "ID": "trimestres_are_in_anos4",
                     "Preposition": {
                       "Object": {
                         "Role": "reincidencia.data_abertura.variation.hierarquia_de_data.ano"
@@ -24652,7 +26382,7 @@
                         "Role": "reincidencia.data_abertura.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_anos4",
+                    "ID": "hierarquia_de_data_have_anos3",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -24685,7 +26415,7 @@
                         "Role": "reincidencia.data_abertura.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_dias4",
+                    "ID": "hierarquia_de_data_have_dias3",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -24718,7 +26448,7 @@
                         "Role": "reincidencia.data_abertura.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_mê4",
+                    "ID": "hierarquia_de_data_have_mê3",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -24751,7 +26481,7 @@
                         "Role": "reincidencia.data_abertura.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_trimestres4",
+                    "ID": "hierarquia_de_data_have_trimestres3",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -24784,7 +26514,7 @@
                         "Role": "reincidencia.data_abertura.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_dias3",
+                    "ID": "mê_have_dias2",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -24797,12 +26527,12 @@
                         "Role": "reincidencia.data_abertura.variation.hierarquia_de_data.dia"
                       }
                     },
-                    "ID": "dias_have_mê3",
+                    "ID": "dias_have_mê2",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "dias_are_in_mê3",
+                    "ID": "dias_are_in_mê4",
                     "Preposition": {
                       "Object": {
                         "Role": "reincidencia.data_abertura.variation.hierarquia_de_data.mê"
@@ -24850,7 +26580,7 @@
                         "Role": "reincidencia.data_abertura.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_mê3",
+                    "ID": "trimestres_have_mê2",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -24863,12 +26593,12 @@
                         "Role": "reincidencia.data_abertura.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_trimestres3",
+                    "ID": "mê_have_trimestres2",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "mê_are_in_trimestres3",
+                    "ID": "mê_are_in_trimestres4",
                     "Preposition": {
                       "Object": {
                         "Role": "reincidencia.data_abertura.variation.hierarquia_de_data.trimestre"
@@ -25338,7 +27068,7 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data.ano"
                       }
                     },
-                    "ID": "anos_have_trimestres7",
+                    "ID": "anos_have_trimestres2",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -25351,12 +27081,12 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_anos7",
+                    "ID": "trimestres_have_anos2",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "trimestres_are_in_anos",
+                    "ID": "trimestres_are_in_anos5",
                     "Preposition": {
                       "Object": {
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data.ano"
@@ -25404,7 +27134,7 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_anos7",
+                    "ID": "hierarquia_de_data_have_anos2",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -25437,7 +27167,7 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_dias7",
+                    "ID": "hierarquia_de_data_have_dias2",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -25470,7 +27200,7 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_mê7",
+                    "ID": "hierarquia_de_data_have_mê2",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -25503,7 +27233,7 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_trimestres7",
+                    "ID": "hierarquia_de_data_have_trimestres2",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -25536,7 +27266,7 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_dias6",
+                    "ID": "mê_have_dias1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -25549,12 +27279,12 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data.dia"
                       }
                     },
-                    "ID": "dias_have_mê6",
+                    "ID": "dias_have_mê1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "dias_are_in_mê",
+                    "ID": "dias_are_in_mê5",
                     "Preposition": {
                       "Object": {
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data.mê"
@@ -25602,7 +27332,7 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_mê6",
+                    "ID": "trimestres_have_mê1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -25615,12 +27345,12 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_trimestres6",
+                    "ID": "mê_have_trimestres1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "mê_are_in_trimestres",
+                    "ID": "mê_are_in_trimestres5",
                     "Preposition": {
                       "Object": {
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data.trimestre"
@@ -26895,12 +28625,12 @@
                         "Role": "relatorio_atendimento"
                       }
                     },
-                    "ID": "f_chat_relatorio_atendimentos_have_ids",
+                    "ID": "f_chat_relatorio_atendimentos_have_ID",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "ids_are_names_IDs_of_f_chat_relatorio_atendimentos",
+                    "ID": "ID_are_names_IDs_of_f_chat_relatorio_atendimentos",
                     "Name": {
                       "Name": {
                         "Role": "relatorio_atendimento.id"
@@ -27205,7 +28935,7 @@
                         "Role": "relatorio_atendimento"
                       }
                     },
-                    "ID": "f_chat_relatorio_atendimentos_have_total_atendimentos",
+                    "ID": "f_chat_relatorio_atendimentos_have_total_meus_atendimentos",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -27214,6 +28944,39 @@
                   "medida.total_atendimentos": {
                     "Target": {
                       "Entity": "medida.total_atendimentos"
+                    }
+                  },
+                  "relatorio_atendimento": {
+                    "Target": {
+                      "Entity": "relatorio_atendimento"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "relatorio_atendimento_has_medida_total_atendimentos1": {
+                "Binding": {
+                  "ConceptualEntity": "fChat_relatorio_atendimento"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.total_atendimentos1"
+                      },
+                      "Subject": {
+                        "Role": "relatorio_atendimento"
+                      }
+                    },
+                    "ID": "f_chat_relatorio_atendimentos_have_total_atendimentos_colaboradores",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "medida.total_atendimentos1": {
+                    "Target": {
+                      "Entity": "medida.total_atendimentos1"
                     }
                   },
                   "relatorio_atendimento": {
@@ -28162,7 +29925,7 @@
                         "Role": "relatorio_np.data"
                       }
                     },
-                    "ID": "data_have_hierarquia_de_data1",
+                    "ID": "data_have_hierarquia_de_data",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -28195,7 +29958,7 @@
                         "Role": "relatorio_np.data.variation.hierarquia_de_data.ano"
                       }
                     },
-                    "ID": "anos_have_trimestres5",
+                    "ID": "anos_have_trimestres1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -28208,12 +29971,12 @@
                         "Role": "relatorio_np.data.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_anos5",
+                    "ID": "trimestres_have_anos1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "trimestres_are_in_anos2",
+                    "ID": "trimestres_are_in_anos6",
                     "Preposition": {
                       "Object": {
                         "Role": "relatorio_np.data.variation.hierarquia_de_data.ano"
@@ -28261,7 +30024,7 @@
                         "Role": "relatorio_np.data.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_anos5",
+                    "ID": "hierarquia_de_data_have_anos1",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -28294,7 +30057,7 @@
                         "Role": "relatorio_np.data.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_dias5",
+                    "ID": "hierarquia_de_data_have_dias1",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -28327,7 +30090,7 @@
                         "Role": "relatorio_np.data.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_mê5",
+                    "ID": "hierarquia_de_data_have_mê1",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -28360,7 +30123,7 @@
                         "Role": "relatorio_np.data.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_trimestres5",
+                    "ID": "hierarquia_de_data_have_trimestres1",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -28393,7 +30156,7 @@
                         "Role": "relatorio_np.data.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_dias4",
+                    "ID": "mê_have_dias",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -28406,12 +30169,12 @@
                         "Role": "relatorio_np.data.variation.hierarquia_de_data.dia"
                       }
                     },
-                    "ID": "dias_have_mê4",
+                    "ID": "dias_have_mê",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "dias_are_in_mê2",
+                    "ID": "dias_are_in_mê6",
                     "Preposition": {
                       "Object": {
                         "Role": "relatorio_np.data.variation.hierarquia_de_data.mê"
@@ -28459,7 +30222,7 @@
                         "Role": "relatorio_np.data.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_mê4",
+                    "ID": "trimestres_have_mê",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -28472,12 +30235,12 @@
                         "Role": "relatorio_np.data.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_trimestres4",
+                    "ID": "mê_have_trimestres",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "mê_are_in_trimestres2",
+                    "ID": "mê_are_in_trimestres6",
                     "Preposition": {
                       "Object": {
                         "Role": "relatorio_np.data.variation.hierarquia_de_data.trimestre"
@@ -28848,12 +30611,12 @@
                         "Role": "relatorio_np"
                       }
                     },
-                    "ID": "f_chat_relatorio_np_have_ids",
+                    "ID": "f_chat_relatorio_np_have_ID",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "ids_are_names_IDs_of_f_chat_relatorio_np",
+                    "ID": "ID_are_names_IDs_of_f_chat_relatorio_np",
                     "Name": {
                       "Name": {
                         "Role": "relatorio_np.id"
@@ -29158,7 +30921,7 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data.ano"
                       }
                     },
-                    "ID": "anos_have_trimestres6",
+                    "ID": "anos_have_trimestres",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -29171,12 +30934,12 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_anos6",
+                    "ID": "trimestres_have_anos",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "trimestres_are_in_anos1",
+                    "ID": "trimestres_are_in_anos7",
                     "Preposition": {
                       "Object": {
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data.ano"
@@ -29224,7 +30987,7 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_anos6",
+                    "ID": "hierarquia_de_data_have_anos",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -29257,7 +31020,7 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_dias6",
+                    "ID": "hierarquia_de_data_have_dias",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -29290,7 +31053,7 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_mê6",
+                    "ID": "hierarquia_de_data_have_mê",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -29323,7 +31086,7 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_trimestres6",
+                    "ID": "hierarquia_de_data_have_trimestres",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -29356,7 +31119,7 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_dias5",
+                    "ID": "mê_have_dias7",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -29369,12 +31132,12 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data.dia"
                       }
                     },
-                    "ID": "dias_have_mê5",
+                    "ID": "dias_have_mê7",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "dias_are_in_mê1",
+                    "ID": "dias_are_in_mê7",
                     "Preposition": {
                       "Object": {
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data.mê"
@@ -29422,7 +31185,7 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_mê5",
+                    "ID": "trimestres_have_mê7",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -29435,12 +31198,12 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_trimestres5",
+                    "ID": "mê_have_trimestres7",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "mê_are_in_trimestres1",
+                    "ID": "mê_are_in_trimestres7",
                     "Preposition": {
                       "Object": {
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data.trimestre"
@@ -29488,7 +31251,7 @@
                         "Role": "relatorio_resumo_usuario"
                       }
                     },
-                    "ID": "f_chat_relatorio_resumo_usuarios_have_ids",
+                    "ID": "f_chat_relatorio_resumo_usuarios_have_ID",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -29863,7 +31626,7 @@
                 },
                 "State": "Generated"
               },
-              "relatorio_resumo_usuario_has_tempo_em_pausa__pausa_atendimento_presencial": {
+              "relatorio_resumo_usuario_has_tempo_em_pausa_8": {
                 "Binding": {
                   "ConceptualEntity": "fChat_relatorio_resumo_usuarios"
                 },
@@ -29871,13 +31634,13 @@
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "relatorio_resumo_usuario.tempo_em_pausa__pausa_atendimento_presencial"
+                        "Role": "relatorio_resumo_usuario.tempo_em_pausa_8"
                       },
                       "Subject": {
                         "Role": "relatorio_resumo_usuario"
                       }
                     },
-                    "ID": "f_chat_relatorio_resumo_usuarios_have_tempo_em_pausa__pausa_atendimento_presencials",
+                    "ID": "f_chat_relatorio_resumo_usuarios_have_tempo_em_pausa_8",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -29888,15 +31651,15 @@
                       "Entity": "relatorio_resumo_usuario"
                     }
                   },
-                  "relatorio_resumo_usuario.tempo_em_pausa__pausa_atendimento_presencial": {
+                  "relatorio_resumo_usuario.tempo_em_pausa_8": {
                     "Target": {
-                      "Entity": "relatorio_resumo_usuario.tempo_em_pausa__pausa_atendimento_presencial"
+                      "Entity": "relatorio_resumo_usuario.tempo_em_pausa_8"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "relatorio_resumo_usuario_has_tempo_em_pausa__pausa_atendimento_tecnico": {
+              "relatorio_resumo_usuario_has_tempo_em_pausa__10pausa_bkoffice": {
                 "Binding": {
                   "ConceptualEntity": "fChat_relatorio_resumo_usuarios"
                 },
@@ -29904,13 +31667,13 @@
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "relatorio_resumo_usuario.tempo_em_pausa__pausa_atendimento_tecnico"
+                        "Role": "relatorio_resumo_usuario.tempo_em_pausa__10pausa_bkoffice"
                       },
                       "Subject": {
                         "Role": "relatorio_resumo_usuario"
                       }
                     },
-                    "ID": "f_chat_relatorio_resumo_usuarios_have_tempo_em_pausa__pausa_atendimento_tecnicos",
+                    "ID": "f_chat_relatorio_resumo_usuarios_have_tempo_em_pausa__10pausa_bkoffices",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -29921,15 +31684,15 @@
                       "Entity": "relatorio_resumo_usuario"
                     }
                   },
-                  "relatorio_resumo_usuario.tempo_em_pausa__pausa_atendimento_tecnico": {
+                  "relatorio_resumo_usuario.tempo_em_pausa__10pausa_bkoffice": {
                     "Target": {
-                      "Entity": "relatorio_resumo_usuario.tempo_em_pausa__pausa_atendimento_tecnico"
+                      "Entity": "relatorio_resumo_usuario.tempo_em_pausa__10pausa_bkoffice"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "relatorio_resumo_usuario_has_tempo_em_pausa__pausa_bkoffice": {
+              "relatorio_resumo_usuario_has_tempo_em_pausa__12pausa_de_15_minuto": {
                 "Binding": {
                   "ConceptualEntity": "fChat_relatorio_resumo_usuarios"
                 },
@@ -29937,13 +31700,13 @@
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "relatorio_resumo_usuario.tempo_em_pausa__pausa_bkoffice"
+                        "Role": "relatorio_resumo_usuario.tempo_em_pausa__12pausa_de_15_minuto"
                       },
                       "Subject": {
                         "Role": "relatorio_resumo_usuario"
                       }
                     },
-                    "ID": "f_chat_relatorio_resumo_usuarios_have_tempo_em_pausa__pausa_bkoffices",
+                    "ID": "f_chat_relatorio_resumo_usuarios_have_tempo_em_pausa__12pausa_de_15_minutos",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -29954,15 +31717,15 @@
                       "Entity": "relatorio_resumo_usuario"
                     }
                   },
-                  "relatorio_resumo_usuario.tempo_em_pausa__pausa_bkoffice": {
+                  "relatorio_resumo_usuario.tempo_em_pausa__12pausa_de_15_minuto": {
                     "Target": {
-                      "Entity": "relatorio_resumo_usuario.tempo_em_pausa__pausa_bkoffice"
+                      "Entity": "relatorio_resumo_usuario.tempo_em_pausa__12pausa_de_15_minuto"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "relatorio_resumo_usuario_has_tempo_em_pausa__pausa_cafe": {
+              "relatorio_resumo_usuario_has_tempo_em_pausa__13pausa_atendimento_tecnico": {
                 "Binding": {
                   "ConceptualEntity": "fChat_relatorio_resumo_usuarios"
                 },
@@ -29970,13 +31733,13 @@
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "relatorio_resumo_usuario.tempo_em_pausa__pausa_cafe"
+                        "Role": "relatorio_resumo_usuario.tempo_em_pausa__13pausa_atendimento_tecnico"
                       },
                       "Subject": {
                         "Role": "relatorio_resumo_usuario"
                       }
                     },
-                    "ID": "f_chat_relatorio_resumo_usuarios_have_tempo_em_pausa__pausa_cafes",
+                    "ID": "f_chat_relatorio_resumo_usuarios_have_tempo_em_pausa__13pausa_atendimento_tecnicos",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -29987,15 +31750,15 @@
                       "Entity": "relatorio_resumo_usuario"
                     }
                   },
-                  "relatorio_resumo_usuario.tempo_em_pausa__pausa_cafe": {
+                  "relatorio_resumo_usuario.tempo_em_pausa__13pausa_atendimento_tecnico": {
                     "Target": {
-                      "Entity": "relatorio_resumo_usuario.tempo_em_pausa__pausa_cafe"
+                      "Entity": "relatorio_resumo_usuario.tempo_em_pausa__13pausa_atendimento_tecnico"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "relatorio_resumo_usuario_has_tempo_em_pausa__pausa_de_15_minuto": {
+              "relatorio_resumo_usuario_has_tempo_em_pausa__2pausa_cafe": {
                 "Binding": {
                   "ConceptualEntity": "fChat_relatorio_resumo_usuarios"
                 },
@@ -30003,13 +31766,13 @@
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "relatorio_resumo_usuario.tempo_em_pausa__pausa_de_15_minuto"
+                        "Role": "relatorio_resumo_usuario.tempo_em_pausa__2pausa_cafe"
                       },
                       "Subject": {
                         "Role": "relatorio_resumo_usuario"
                       }
                     },
-                    "ID": "f_chat_relatorio_resumo_usuarios_have_tempo_em_pausa__pausa_de_15_minutos",
+                    "ID": "f_chat_relatorio_resumo_usuarios_have_tempo_em_pausa__2pausa_cafes",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -30020,15 +31783,15 @@
                       "Entity": "relatorio_resumo_usuario"
                     }
                   },
-                  "relatorio_resumo_usuario.tempo_em_pausa__pausa_de_15_minuto": {
+                  "relatorio_resumo_usuario.tempo_em_pausa__2pausa_cafe": {
                     "Target": {
-                      "Entity": "relatorio_resumo_usuario.tempo_em_pausa__pausa_de_15_minuto"
+                      "Entity": "relatorio_resumo_usuario.tempo_em_pausa__2pausa_cafe"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "relatorio_resumo_usuario_has_tempo_em_pausa__pausa_feedback": {
+              "relatorio_resumo_usuario_has_tempo_em_pausa__3pausa_pessoal": {
                 "Binding": {
                   "ConceptualEntity": "fChat_relatorio_resumo_usuarios"
                 },
@@ -30036,13 +31799,13 @@
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "relatorio_resumo_usuario.tempo_em_pausa__pausa_feedback"
+                        "Role": "relatorio_resumo_usuario.tempo_em_pausa__3pausa_pessoal"
                       },
                       "Subject": {
                         "Role": "relatorio_resumo_usuario"
                       }
                     },
-                    "ID": "f_chat_relatorio_resumo_usuarios_have_tempo_em_pausa__pausa_feedbacks",
+                    "ID": "f_chat_relatorio_resumo_usuarios_have_tempo_em_pausa__3pausa_pessoals",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -30053,15 +31816,15 @@
                       "Entity": "relatorio_resumo_usuario"
                     }
                   },
-                  "relatorio_resumo_usuario.tempo_em_pausa__pausa_feedback": {
+                  "relatorio_resumo_usuario.tempo_em_pausa__3pausa_pessoal": {
                     "Target": {
-                      "Entity": "relatorio_resumo_usuario.tempo_em_pausa__pausa_feedback"
+                      "Entity": "relatorio_resumo_usuario.tempo_em_pausa__3pausa_pessoal"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "relatorio_resumo_usuario_has_tempo_em_pausa__pausa_manutencao_TI": {
+              "relatorio_resumo_usuario_has_tempo_em_pausa__4pausa_feedback": {
                 "Binding": {
                   "ConceptualEntity": "fChat_relatorio_resumo_usuarios"
                 },
@@ -30069,13 +31832,13 @@
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "relatorio_resumo_usuario.tempo_em_pausa__pausa_manutencao_TI"
+                        "Role": "relatorio_resumo_usuario.tempo_em_pausa__4pausa_feedback"
                       },
                       "Subject": {
                         "Role": "relatorio_resumo_usuario"
                       }
                     },
-                    "ID": "f_chat_relatorio_resumo_usuarios_have_tempo_em_pausa__pausa_manutencao_TI",
+                    "ID": "f_chat_relatorio_resumo_usuarios_have_tempo_em_pausa__4pausa_feedbacks",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -30086,15 +31849,15 @@
                       "Entity": "relatorio_resumo_usuario"
                     }
                   },
-                  "relatorio_resumo_usuario.tempo_em_pausa__pausa_manutencao_TI": {
+                  "relatorio_resumo_usuario.tempo_em_pausa__4pausa_feedback": {
                     "Target": {
-                      "Entity": "relatorio_resumo_usuario.tempo_em_pausa__pausa_manutencao_TI"
+                      "Entity": "relatorio_resumo_usuario.tempo_em_pausa__4pausa_feedback"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "relatorio_resumo_usuario_has_tempo_em_pausa__pausa_pessoal": {
+              "relatorio_resumo_usuario_has_tempo_em_pausa__7pausa_manutencao_TI": {
                 "Binding": {
                   "ConceptualEntity": "fChat_relatorio_resumo_usuarios"
                 },
@@ -30102,13 +31865,13 @@
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "relatorio_resumo_usuario.tempo_em_pausa__pausa_pessoal"
+                        "Role": "relatorio_resumo_usuario.tempo_em_pausa__7pausa_manutencao_TI"
                       },
                       "Subject": {
                         "Role": "relatorio_resumo_usuario"
                       }
                     },
-                    "ID": "f_chat_relatorio_resumo_usuarios_have_tempo_em_pausa__pausa_pessoals",
+                    "ID": "f_chat_relatorio_resumo_usuarios_have_tempo_em_pausa__7pausa_manutencao_TI",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -30119,15 +31882,15 @@
                       "Entity": "relatorio_resumo_usuario"
                     }
                   },
-                  "relatorio_resumo_usuario.tempo_em_pausa__pausa_pessoal": {
+                  "relatorio_resumo_usuario.tempo_em_pausa__7pausa_manutencao_TI": {
                     "Target": {
-                      "Entity": "relatorio_resumo_usuario.tempo_em_pausa__pausa_pessoal"
+                      "Entity": "relatorio_resumo_usuario.tempo_em_pausa__7pausa_manutencao_TI"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "relatorio_resumo_usuario_has_tempo_em_pausa__pausa_refeição": {
+              "relatorio_resumo_usuario_has_tempo_em_pausa__8pausa_atendimento_presencial": {
                 "Binding": {
                   "ConceptualEntity": "fChat_relatorio_resumo_usuarios"
                 },
@@ -30135,13 +31898,13 @@
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "relatorio_resumo_usuario.tempo_em_pausa__pausa_refeição"
+                        "Role": "relatorio_resumo_usuario.tempo_em_pausa__8pausa_atendimento_presencial"
                       },
                       "Subject": {
                         "Role": "relatorio_resumo_usuario"
                       }
                     },
-                    "ID": "f_chat_relatorio_resumo_usuarios_have_tempo_em_pausa__pausa_refeiçãos",
+                    "ID": "f_chat_relatorio_resumo_usuarios_have_tempo_em_pausa__8pausa_atendimento_presencials",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -30152,9 +31915,9 @@
                       "Entity": "relatorio_resumo_usuario"
                     }
                   },
-                  "relatorio_resumo_usuario.tempo_em_pausa__pausa_refeição": {
+                  "relatorio_resumo_usuario.tempo_em_pausa__8pausa_atendimento_presencial": {
                     "Target": {
-                      "Entity": "relatorio_resumo_usuario.tempo_em_pausa__pausa_refeição"
+                      "Entity": "relatorio_resumo_usuario.tempo_em_pausa__8pausa_atendimento_presencial"
                     }
                   }
                 },
@@ -32726,7 +34489,7 @@
               "",
               "-- Cálculo do TMA médio em segundos e peso para a tabela CallFlex",
               "VAR Total_TMA_CallFlex_Seconds = ",
-              "    AVERAGEX(",
+              "    SUMX(",
               "        dCallflex_agente_consolidado,",
               "        VAR TMA_CallFlex = dCallflex_agente_consolidado[TMA]",
               "        -- Verifica se o valor TMA_CallFlex está no formato de tempo 'hh:mm:ss' ou não, e converte para segundos",
@@ -34183,9 +35946,9 @@
             "expression": [
               "",
               "VAR Total_TMA_Seconds =",
-              "    SUMX(",
-              "        dCallflex_agente_consolidado,",
-              "        VAR TMA_CallFlex = dCallflex_agente_consolidado[TMA]",
+              "    AVERAGEX(",
+              "        fCallflex_chamadas,",
+              "        VAR TMA_CallFlex = fCallflex_chamadas[TEMPO_DE_CONVERSACAO]",
               "        VAR TMA_Seconds = ",
               "            IF(",
               "                NOT(ISBLANK(TMA_CallFlex)) && LEN(TMA_CallFlex) = 8,",
