@@ -1,0 +1,1268 @@
+{
+  "compatibilityLevel": 1567,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"fAdapter_atendimentos\",\"Medidas\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.138.1452.0 (24.11)"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "pt-BR",
+    "cultures": [
+      {
+        "name": "pt-BR",
+        "linguisticMetadata": {
+          "content": {
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "5b9b2852-96be-4606-9902-f42684aabeed",
+        "fromColumn": "Data Abertura (ddmmaaaa)",
+        "fromTable": "fAdapter_atendimentos",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_6932464e-e9bd-459c-8d0d-438867ebe196"
+      }
+    ],
+    "sourceQueryCulture": "pt-BR",
+    "tables": [
+      {
+        "name": "fAdapter_atendimentos",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "QTD",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "dfbaf9e2-57e0-4480-ad78-140246128c3e",
+            "sourceColumn": "QTD",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Protocolo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "98b56d09-523f-448f-b293-7bfbc6a6fc4a",
+            "sourceColumn": "Protocolo",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Classificação Atendimento",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "242a55f5-a167-4b52-9cd5-fe8f1c52eb2c",
+            "sourceColumn": "Classificação Atendimento",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Data Abertura",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b1fb1743-51c5-4b51-91cf-ffa4b0c8c8c8",
+            "sourceColumn": "Data Abertura",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Data Fechamento",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c66ef44d-c02f-49de-a137-18a3fbb5bd39",
+            "sourceColumn": "Data Fechamento",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "TMA (em horas)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "16acbe27-0f2d-4574-b1a6-91a187c9a1c8",
+            "sourceColumn": "TMA (em horas)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Cliente",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "27649d82-3558-491e-a93a-b61e84e145f6",
+            "sourceColumn": "Cliente",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Data Ativação",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "008f250d-a3cc-493c-a78c-bc644b40f842",
+            "sourceColumn": "Data Ativação",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Tipo Atendimento",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2e0137c1-7452-43c2-9ff8-c1727e1e4cdb",
+            "sourceColumn": "Tipo Atendimento",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Tipo Serviço",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7c09407b-cf67-4c38-9f32-aeb5b9d5a1f5",
+            "sourceColumn": "Tipo Serviço",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Status",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "278327d7-87b3-4299-ac84-714af8815949",
+            "sourceColumn": "Status",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "COLABORADOR",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "87de0d9a-036e-4f76-a6af-a3fc9d9b3235",
+            "sourceColumn": "COLABORADOR",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Tipo Pessoa",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "fbe856b5-fe06-4d8f-bb70-db5c56b8a5bc",
+            "sourceColumn": "Tipo Pessoa",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Plano",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "86d69719-e99d-4e63-bfe2-dbf99a90b7f3",
+            "sourceColumn": "Plano",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Gerou Visita",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f3dcb545-8a7e-4d82-a3a7-d2f5a0a3cfe1",
+            "sourceColumn": "Gerou Visita",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Dt/Hr Agend. Visita",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "50e065ad-e995-4c9c-af7a-5c1e8f65100e",
+            "sourceColumn": "Dt/Hr Agend. Visita",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Dt/Hr. Inicio Visita",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9c3d348a-61db-46a4-952c-b61b025bfa51",
+            "sourceColumn": "Dt/Hr. Inicio Visita",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Dt/Hr. Fim Visita",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "790b82d9-b778-48b1-87b5-0ac13b613a67",
+            "sourceColumn": "Dt/Hr. Fim Visita",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Técnico Visita",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "90c92e2e-d6fd-47ba-85aa-0c8ec28e0204",
+            "sourceColumn": "Técnico Visita",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Vencimento SLA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3f4ec2e6-ca3b-4d95-8a9f-a9bf5d0d0d10",
+            "sourceColumn": "Vencimento SLA",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SLA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c5cda649-93b8-4a86-b9e5-9d22f03dc819",
+            "sourceColumn": "SLA",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Motivo Fechamento",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "555680fd-1827-41a4-a072-9618a549813e",
+            "sourceColumn": "Motivo Fechamento",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Usuário Fechamento",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "628eaae3-7812-4ec9-8919-f7dca1fa5986",
+            "sourceColumn": "Usuário Fechamento",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Reagendado",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8148032b-6ba8-4b50-8a5e-dd1cad926a6e",
+            "sourceColumn": "Reagendado",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Data Reagendamento",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "10b1ae71-b224-456c-a369-48e5c9e7daae",
+            "sourceColumn": "Data Reagendamento",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Justificativa Reagendamento",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f9444dbc-c058-4e48-b1e9-7f4e55df486e",
+            "sourceColumn": "Justificativa Reagendamento",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Sinal Coletado",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "cc4d0afb-2c34-40c8-866b-c3106b1cb4c1",
+            "sourceColumn": "Sinal Coletado",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Cidade",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c325a8df-4b36-4045-96c5-73dfe653e234",
+            "sourceColumn": "Cidade",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Bairro",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6bd97f2c-87ca-4724-94c0-c0aa7cbaecfd",
+            "sourceColumn": "Bairro",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Logradouro",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "37e384a3-977b-43c7-af64-292ae86f02b2",
+            "sourceColumn": "Logradouro",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Setor Atendimento",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "",
+              "SWITCH(",
+              "    TRUE(),",
+              "    'fAdapter_atendimentos'[Tipo Atendimento] IN {\"LINK LOSS\", \"SEM CONEXÃO\", \"SEM CONEXÃO (ONU TRAVADA)\", \"PENDÊNCIAS TÉCNICOS\", \"SUPORTE TELEFONIA\", \"PENDÊNCIAS TELEFONIA\", \"SOLICITAÇÃO DE SUPORTE\", \"LENTIDÃO NA CONEXÃO\", \"SUPORTE VELOCIDADE CONTRATADA\", \"SUPORTE SEGUNDO PONTO\", \"PENDÊNCIAS SUPORTE - TELEFONIA MÓVEL\", \"SOLICITAÇÃO DE SUPORTE\"}, \"Suporte\",",
+              "",
+              "    'fAdapter_atendimentos'[Tipo Atendimento] IN {\"ADIAR VENCIMENTO DE FATURA\", \"PENDÊNCIAS COBRANÇA\", \"NEGOCIAÇÃO DE DÉBITO\", \"ALTERAÇÃO DA FORMA DE COBRANÇA\", \"ENVIO DE FATURA\", \"TROCA DE VENCIMENTO\", \"PENDÊNCIAS FINANCEIRO\", \"RECOLHER EQUIPAMENTO - SUSPENSÃO\", \"RETIRADA DE EQUIPAMENTO - INADIMPLENTE\", \"NEGATIVAÇÃO SERASA\"}, \"Financeiro\",",
+              "    ",
+              "    \"Outro\"",
+              ")",
+              ""
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "e5073b20-b61b-4fc7-ac51-6d5571b7b013",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Data Abertura (ddmmaaaa)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "1c595a3c-356e-4a65-a8fe-c08a7deeb0ec",
+            "sourceColumn": "Data Abertura (ddmmaaaa)",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Hierarquia de datas",
+                  "table": "LocalDateTable_6932464e-e9bd-459c-8d0d-438867ebe196"
+                },
+                "isDefault": true,
+                "relationship": "5b9b2852-96be-4606-9902-f42684aabeed"
+              }
+            ]
+          },
+          {
+            "name": "Categoria Atendimento",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "",
+              "SWITCH(",
+              "    TRUE(),",
+              "    'fAdapter_atendimentos'[Tipo Atendimento] IN {\"LINK LOSS\", \"SEM CONEXÃO\", \"SEM CONEXÃO (ONU TRAVADA)\", \"PENDÊNCIAS TÉCNICOS\"}, \"Sem Conexão\",",
+              "",
+              "    'fAdapter_atendimentos'[Tipo Atendimento] IN {\"SUPORTE TELEFONIA\", \"PENDÊNCIAS TELEFONIA\"}, \"Suporte Telefonia Fixa\",",
+              "",
+              "    'fAdapter_atendimentos'[Tipo Atendimento] IN {\"SOLICITAÇÃO DE SUPORTE\", \"LENTIDÃO NA CONEXÃO\", \"SUPORTE VELOCIDADE CONTRATADA\", \"SUPORTE SEGUNDO PONTO\", \"SINAL ÓPTICO FORA DO PADRÃO (FIBRA ALTA)\"}, \"Suporte Conexão\",",
+              "",
+              "    'fAdapter_atendimentos'[Tipo Atendimento] IN {\"PENDÊNCIAS SUPORTE - TELEFONIA MÓVEL\", \"SOLICITAÇÃO DE SUPORTE\"}, \"Suporte Telefonia Móvel\",",
+              "",
+              "    'fAdapter_atendimentos'[Tipo Atendimento] IN {\"ADIAR VENCIMENTO DE FATURA\", \"PENDÊNCIAS COBRANÇA\", \"NEGOCIAÇÃO DE DÉBITO\", \"ALTERAÇÃO DA FORMA DE COBRANÇA\", \"ENVIO DE FATURA\", \"TROCA DE VENCIMENTO\", \"PENDÊNCIAS FINANCEIRO\", \"RECOLHER EQUIPAMENTO - SUSPENSÃO\", \"RETIRADA DE EQUIPAMENTO - INADIMPLENTE\", \"NEGATIVAÇÃO SERASA\"}, \"Financeiro\",",
+              "    ",
+              "    \"Outro\"",
+              ")",
+              ""
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "f5e99d00-d0a6-48c5-b207-9d0826e46c19",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Reincidencia Tipo Atendimento Coluna",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "expression": [
+              "",
+              "VAR ClienteAtual = 'fAdapter_atendimentos'[Cliente]  -- Valor do Cliente na linha atual",
+              "VAR GrupoAtual = 'fAdapter_atendimentos'[Tipo Atendimento]  -- Valor do Grupo de Atendimento na linha atual",
+              "VAR DataAberturaAtual = 'fAdapter_atendimentos'[Data Abertura]  -- Data de Abertura da linha atual",
+              "",
+              "-- Encontrar a quantidade de atendimentos do cliente no grupo de atendimento",
+              "VAR QtdAtendimentos =",
+              "    CALCULATE (",
+              "        COUNTROWS('fAdapter_atendimentos'),  -- Conta o número de atendimentos",
+              "        FILTER (",
+              "            'fAdapter_atendimentos',  -- Filtra a tabela completa",
+              "            'fAdapter_atendimentos'[Cliente] = ClienteAtual &&  -- Filtro para o cliente atual",
+              "            'fAdapter_atendimentos'[Tipo Atendimento] = GrupoAtual  -- Filtro para o grupo de atendimento atual",
+              "        )",
+              "    )",
+              "",
+              "-- Encontrar a menor data de abertura para o cliente no grupo de atendimento",
+              "VAR MenorDataAbertura =",
+              "    CALCULATE (",
+              "        MIN('fAdapter_atendimentos'[Data Abertura]),  -- Obtém a menor data de abertura",
+              "        FILTER (",
+              "            'fAdapter_atendimentos',  -- Filtra a tabela completa",
+              "            'fAdapter_atendimentos'[Cliente] = ClienteAtual &&  -- Filtro para o cliente atual",
+              "            'fAdapter_atendimentos'[Tipo Atendimento] = GrupoAtual  -- Filtro para o grupo de atendimento atual",
+              "        )",
+              "    )",
+              "",
+              "-- Determinar se o atendimento atual é reincidente",
+              "VAR Reincidente =",
+              "    IF (",
+              "        QtdAtendimentos > 1 && DataAberturaAtual > MenorDataAbertura,  -- Verifica se há mais de 1 atendimento e se a data é posterior à menor data",
+              "        1,  -- Marca como reincidente",
+              "        0   -- Caso contrário, não é reincidente",
+              "    )",
+              "",
+              "RETURN ",
+              "    Reincidente",
+              ""
+            ],
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "lineageTag": "765c13a4-6ed8-4be7-8085-2ce54221676d",
+            "summarizeBy": "sum",
+            "type": "calculated"
+          }
+        ],
+        "lineageTag": "e3974429-c307-4b6c-92a5-5b04c5072543",
+        "partitions": [
+          {
+            "name": "fAdapter_atendimentos",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Excel.Workbook(Web.Contents(\"https://solucaonet.sharepoint.com/sites/suportecs/Documentos%20Compartilhados/Gest%C3%A3o/Desempenho/Dados/fAdapter_atendimentos.xlsx\"), null, true),",
+                "    Export_Sheet = Fonte{[Item=\"Export\",Kind=\"Sheet\"]}[Data],",
+                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Export_Sheet, [PromoteAllScalars=true]),",
+                "    #\"Data Inserida\" = Table.AddColumn(#\"Cabeçalhos Promovidos\", \"Data Abertura (ddmmaaaa)\", each DateTime.Date([Data Abertura]), type date),",
+                "    #\"ARTUR DO NASCIMENTO ARBOLEIA\" = Table.ReplaceValue(#\"Data Inserida\",\"ARTUR DO NASCIMENTO ARBOLEIA\",\"ARTUR DO NASCIMENTO ARBOLEIA\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
+                "    #\"MARIA LUIZA DE SOUZA PEREIRA\" = Table.ReplaceValue(#\"ARTUR DO NASCIMENTO ARBOLEIA\",\"MARIA LUIZA DE SOUZA PEREIRA\",\"MARIA LUIZA DE SOUZA PEREIRA\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
+                "    #\"WELLINGTON DIONIZIO SANTOS\" = Table.ReplaceValue(#\"MARIA LUIZA DE SOUZA PEREIRA\",\"WELLINGTON DIONIZIO SANTOS\",\"WELLINGTON DIONIZIO SANTOS\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
+                "    #\"GIOVANNI QUINTINO DA SILVA\" = Table.ReplaceValue(#\"WELLINGTON DIONIZIO SANTOS\",\"GIOVANNI QUINTINO DA SILVA\",\"GIOVANNI QUINTINO DA SILVA\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
+                "    #\"FERNANDO ALVES BARBOSA\" = Table.ReplaceValue(#\"GIOVANNI QUINTINO DA SILVA\",\"FERNANDO ALVES BARBOSA\",\"FERNANDO ALVES BARBOSA\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
+                "    #\"CLEISON RODRIGUES DA SILVA\" = Table.ReplaceValue(#\"FERNANDO ALVES BARBOSA\",\"CLEISON RODRIGUES DA SILVA\",\"CLEISON RODRIGUES DA SILVA\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
+                "    #\"HIGOR VINICIUS RODRIGUES BRITO\" = Table.ReplaceValue(#\"CLEISON RODRIGUES DA SILVA\",\"HIGOR VINICIUS RODRIGUES BRITO\",\"HIGOR VINICIUS RODRIGUES BRITO\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
+                "    #\"JOAO VITOR DA SILVA PIMENTEL\" = Table.ReplaceValue(#\"HIGOR VINICIUS RODRIGUES BRITO\",\"JOÃO VITOR DA SILVA PIMENTEL\",\"JOAO VITOR DA SILVA PIMENTEL\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
+                "    #\"RENAN LUIZ\" = Table.ReplaceValue(#\"JOAO VITOR DA SILVA PIMENTEL\",\"RENAN LUIZ GONDO DA SILVA\",\"RENAN LUIZ\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
+                "    #\"MATHEUS ANDRADE DE ARAUJO\" = Table.ReplaceValue(#\"RENAN LUIZ\",\"MATHEUS ANDRADE DE ARAUJO\",\"MATHEUS ANDRADE DE ARAUJO\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
+                "    #\"MURILO CARLOS NEPONUCENA NOGUEIRA\" = Table.ReplaceValue(#\"MATHEUS ANDRADE DE ARAUJO\",\"MURILO CARLOS NEPONUCENA NOGUEIRA\",\"MURILO CARLOS NEPONUCENA NOGUEIRA\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
+                "    #\"ADREAN FELIPPE MATTOS DE MOURA\" = Table.ReplaceValue(#\"MURILO CARLOS NEPONUCENA NOGUEIRA\",\"ADREAN FELIPPE MATTOS DE MOURA\",\"ADREAN FELIPPE MATTOS DE MOURA\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
+                "    #\"SABRINA PADIAL\" = Table.ReplaceValue(#\"ADREAN FELIPPE MATTOS DE MOURA\",\"SABRINA PADIAL\",\"SABRINA PADIAL\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
+                "    #\"VINICIUS NUNES RODRIGUES\" = Table.ReplaceValue(#\"SABRINA PADIAL\",\"VINICIUS NUNES RODRIGUES\",\"VINICIUS NUNES RODRIGUES\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
+                "    #\"ESTEBAN GABRIEL GARDIM DIAZ\" = Table.ReplaceValue(#\"VINICIUS NUNES RODRIGUES\",\"ESTEBAN GABRIEL GARDIM DIAZ\",\"ESTEBAN GABRIEL GARDIM DIAZ\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
+                "    #\"RIAN DOS SANTOS ESTEVO\" = Table.ReplaceValue(#\"ESTEBAN GABRIEL GARDIM DIAZ\",\"RIAN DOS SANTOS ESTEVO\",\"RIAN DOS SANTOS ESTEVO\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
+                "    #\"RENAN DUARTE MARQUES DE LIMA\" = Table.ReplaceValue(#\"RIAN DOS SANTOS ESTEVO\",\"RENAN DUARTE MARQUES DE LIMA\",\"RENAN DUARTE MARQUES DE LIMA\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
+                "    #\"DOUGLAS LISBOA SILVANO\" = Table.ReplaceValue(#\"RENAN DUARTE MARQUES DE LIMA\",\"DOUGLAS LISBOA SILVANO\",\"DOUGLAS LISBOA SILVANO\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
+                "    #\"ANA LUIZA SBAIS COSTA\" = Table.ReplaceValue(#\"DOUGLAS LISBOA SILVANO\",\"ANA LUIZA SBAIS COSTA\",\"ANA LUIZA SBAIS COSTA\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
+                "    #\"BIANCA NUNES COSTA\" = Table.ReplaceValue(#\"ANA LUIZA SBAIS COSTA\",\"BIANCA NUNES COSTA\",\"BIANCA NUNES COSTA\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
+                "    #\"DANIELLE DA SILVA FIALHO\" = Table.ReplaceValue(#\"BIANCA NUNES COSTA\",\"DANIELLE DA SILVA FIALHO\",\"DANIELLE DA SILVA FIALHO\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
+                "    #\"Colunas Renomeadas\" = Table.RenameColumns(#\"DANIELLE DA SILVA FIALHO\",{{\"Usuário Abertura\", \"COLABORADOR\"}})",
+                "in",
+                "    #\"Colunas Renomeadas\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Medidas",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          }
+        ],
+        "lineageTag": "faf08992-edef-487f-aee6-c4cb96b248be",
+        "measures": [
+          {
+            "name": "Reincidencia Setor",
+            "expression": [
+              "",
+              "VAR ClienteAtual = MAX('fAdapter_atendimentos'[Cliente])  -- Valor do Cliente no contexto atual",
+              "VAR GrupoAtual = MAX('fAdapter_atendimentos'[Setor Atendimento])  -- Valor do Grupo de Atendimento no contexto atual",
+              "",
+              "-- Encontrar a quantidade de atendimentos do cliente no grupo de atendimento",
+              "VAR QtdAtendimentos =",
+              "    CALCULATE (",
+              "        COUNTROWS('fAdapter_atendimentos'),  -- Conta o número de atendimentos",
+              "        FILTER (",
+              "            ALLSELECTED('fAdapter_atendimentos'),  -- Considera os filtros aplicados no contexto (exceto o filtro de 'Data Abertura')",
+              "            'fAdapter_atendimentos'[Cliente] = ClienteAtual &&  -- Filtro para o cliente atual",
+              "            'fAdapter_atendimentos'[Setor Atendimento] = GrupoAtual  -- Filtro para o grupo de atendimento atual",
+              "        )",
+              "    )",
+              "",
+              "-- Caso o cliente tenha apenas um atendimento no grupo, ele não será reincidente",
+              "VAR Reincidente = ",
+              "    IF (",
+              "        QtdAtendimentos > 1,  -- Se houver mais de 1 atendimento",
+              "        IF (",
+              "            MIN('fAdapter_atendimentos'[Data Abertura]) = ",
+              "                CALCULATE (",
+              "                    MIN('fAdapter_atendimentos'[Data Abertura]),  -- Obtém a menor data de abertura",
+              "                    FILTER (",
+              "                        ALLSELECTED('fAdapter_atendimentos'),  -- Considera os filtros aplicados",
+              "                        'fAdapter_atendimentos'[Cliente] = ClienteAtual &&  -- Filtro para o cliente atual",
+              "                        'fAdapter_atendimentos'[Setor Atendimento] = GrupoAtual  -- Filtro para o grupo de atendimento atual",
+              "                    )",
+              "                ), ",
+              "            1,  -- Marca como reincidente",
+              "            0   -- Caso contrário, não é reincidente",
+              "        ),",
+              "        0   -- Se houver apenas 1 atendimento, marca como não reincidente",
+              "    )",
+              "",
+              "RETURN ",
+              "    Reincidente",
+              ""
+            ],
+            "formatString": "0",
+            "lineageTag": "c066324c-654a-4550-ab30-6bb98d9f38e2"
+          },
+          {
+            "name": "Reincidencia Categoria",
+            "expression": [
+              "",
+              "VAR ClienteAtual = MAX('fAdapter_atendimentos'[Cliente])  -- Valor do Cliente no contexto atual",
+              "VAR GrupoAtual = MAX('fAdapter_atendimentos'[Categoria Atendimento])  -- Valor do Grupo de Atendimento no contexto atual",
+              "",
+              "-- Encontrar a quantidade de atendimentos do cliente no grupo de atendimento",
+              "VAR QtdAtendimentos =",
+              "    CALCULATE (",
+              "        COUNTROWS('fAdapter_atendimentos'),  -- Conta o número de atendimentos",
+              "        FILTER (",
+              "            ALLSELECTED('fAdapter_atendimentos'),  -- Considera os filtros aplicados no contexto (exceto o filtro de 'Data Abertura')",
+              "            'fAdapter_atendimentos'[Cliente] = ClienteAtual &&  -- Filtro para o cliente atual",
+              "            'fAdapter_atendimentos'[Categoria Atendimento] = GrupoAtual  -- Filtro para o grupo de atendimento atual",
+              "        )",
+              "    )",
+              "",
+              "-- Caso o cliente tenha apenas um atendimento no grupo, ele não será reincidente",
+              "VAR Reincidente = ",
+              "    IF (",
+              "        QtdAtendimentos > 1,  -- Se houver mais de 1 atendimento",
+              "        IF (",
+              "            MIN('fAdapter_atendimentos'[Data Abertura]) = ",
+              "                CALCULATE (",
+              "                    MIN('fAdapter_atendimentos'[Data Abertura]),  -- Obtém a menor data de abertura",
+              "                    FILTER (",
+              "                        ALLSELECTED('fAdapter_atendimentos'),  -- Considera os filtros aplicados",
+              "                        'fAdapter_atendimentos'[Cliente] = ClienteAtual &&  -- Filtro para o cliente atual",
+              "                        'fAdapter_atendimentos'[Categoria Atendimento] = GrupoAtual  -- Filtro para o grupo de atendimento atual",
+              "                    )",
+              "                ), ",
+              "            1,  -- Marca como reincidente",
+              "            0   -- Caso contrário, não é reincidente",
+              "        ),",
+              "        0   -- Se houver apenas 1 atendimento, marca como não reincidente",
+              "    )",
+              "",
+              "RETURN ",
+              "    Reincidente",
+              ""
+            ],
+            "formatString": "0",
+            "lineageTag": "14d3115d-37b9-4d29-8bb8-61de7a4a564e"
+          },
+          {
+            "name": "Reincidencia Tipo Atendimento",
+            "expression": [
+              "",
+              "VAR ClienteAtual = MAX('fAdapter_atendimentos'[Cliente])  -- Valor do Cliente no contexto atual",
+              "VAR GrupoAtual = MAX('fAdapter_atendimentos'[Tipo Atendimento])  -- Valor do Grupo de Atendimento no contexto atual",
+              "",
+              "-- Encontrar a quantidade de atendimentos do cliente no grupo de atendimento",
+              "VAR QtdAtendimentos =",
+              "    CALCULATE (",
+              "        COUNTROWS('fAdapter_atendimentos'),  -- Conta o número de atendimentos",
+              "        FILTER (",
+              "            ALLSELECTED('fAdapter_atendimentos'),  -- Considera os filtros aplicados no contexto (exceto o filtro de 'Data Abertura')",
+              "            'fAdapter_atendimentos'[Cliente] = ClienteAtual &&  -- Filtro para o cliente atual",
+              "            'fAdapter_atendimentos'[Tipo Atendimento] = GrupoAtual  -- Filtro para o grupo de atendimento atual",
+              "        )",
+              "    )",
+              "",
+              "-- Caso o cliente tenha apenas um atendimento no grupo, ele não será reincidente",
+              "VAR Reincidente = ",
+              "    IF (",
+              "        QtdAtendimentos > 1,  -- Se houver mais de 1 atendimento",
+              "        IF (",
+              "            MIN('fAdapter_atendimentos'[Data Abertura]) = ",
+              "                CALCULATE (",
+              "                    MIN('fAdapter_atendimentos'[Data Abertura]),  -- Obtém a menor data de abertura",
+              "                    FILTER (",
+              "                        ALLSELECTED('fAdapter_atendimentos'),  -- Considera os filtros aplicados",
+              "                        'fAdapter_atendimentos'[Cliente] = ClienteAtual &&  -- Filtro para o cliente atual",
+              "                        'fAdapter_atendimentos'[Tipo Atendimento] = GrupoAtual  -- Filtro para o grupo de atendimento atual",
+              "                    )",
+              "                ), ",
+              "            1,  -- Marca como reincidente",
+              "            0   -- Caso contrário, não é reincidente",
+              "        ),",
+              "        0   -- Se houver apenas 1 atendimento, marca como não reincidente",
+              "    )",
+              "",
+              "RETURN ",
+              "    Reincidente",
+              ""
+            ],
+            "formatString": "0",
+            "lineageTag": "86d91170-5355-4c92-8207-e6cd3c861210"
+          },
+          {
+            "name": "Reincidencia Geral",
+            "expression": [
+              "",
+              "VAR ClienteAtual = MAX('fAdapter_atendimentos'[Cliente])  -- Valor do Cliente no contexto atual",
+              "",
+              "-- Encontrar a quantidade de atendimentos do cliente no grupo de atendimento",
+              "VAR QtdAtendimentos =",
+              "    CALCULATE (",
+              "        COUNTROWS('fAdapter_atendimentos'),  -- Conta o número de atendimentos",
+              "        FILTER (",
+              "            ALLSELECTED('fAdapter_atendimentos'),  -- Considera os filtros aplicados no contexto (exceto o filtro de 'Data Abertura')",
+              "            'fAdapter_atendimentos'[Cliente] = ClienteAtual  -- Filtro para o cliente atual",
+              "        )",
+              "    )",
+              "",
+              "-- Caso o cliente tenha apenas um atendimento no grupo, ele não será reincidente",
+              "VAR Reincidente = ",
+              "    IF (",
+              "        QtdAtendimentos > 1,  -- Se houver mais de 1 atendimento",
+              "        IF (",
+              "            MIN('fAdapter_atendimentos'[Data Abertura]) = ",
+              "                CALCULATE (",
+              "                    MIN('fAdapter_atendimentos'[Data Abertura]),  -- Obtém a menor data de abertura",
+              "                    FILTER (",
+              "                        ALLSELECTED('fAdapter_atendimentos'),  -- Considera os filtros aplicados",
+              "                        'fAdapter_atendimentos'[Cliente] = ClienteAtual  -- Filtro para o cliente atual",
+              "                    )",
+              "                ), ",
+              "            1,  -- Marca como reincidente",
+              "            0   -- Caso contrário, não é reincidente",
+              "        ),",
+              "        0   -- Se houver apenas 1 atendimento, marca como não reincidente",
+              "    )",
+              "",
+              "RETURN ",
+              "    Reincidente",
+              ""
+            ],
+            "formatString": "0",
+            "lineageTag": "84ba1608-595a-4378-b5e0-7b8169f6ccb5"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Medidas",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i44FAA==\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#\"Coluna 1\" = _t]),",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(Fonte,{{\"Coluna 1\", type text}}),",
+                "    #\"Colunas Removidas\" = Table.RemoveColumns(#\"Tipo Alterado\",{\"Coluna 1\"})",
+                "in",
+                "    #\"Colunas Removidas\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DateTableTemplate_454fe02b-e7a2-4481-9db6-2b94c467e18d",
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "5e8a983c-f0f4-4d3f-b692-765469b96635",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Ano",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "e50c8d92-ebba-4eac-8876-42317cb087fb",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "9ff19092-a9be-422b-85d2-00132f0bff84",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Mês",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "d971dbfd-9381-421f-a1c9-194d2f6ef03e",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "9ac8f2a0-18bf-486b-9fac-08fd3a068a1c",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Trimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "421039e1-7880-49aa-b311-40b2257a66d9",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Dia",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "b4783368-77cf-4d24-bc0a-ba81381ebe8f",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Hierarquia de datas",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Ano",
+                "column": "Ano",
+                "lineageTag": "cf82d3ce-6832-4718-bbf0-e0cadc09097e",
+                "ordinal": 0
+              },
+              {
+                "name": "Trimestre",
+                "column": "Trimestre",
+                "lineageTag": "47b4eaf0-a750-436d-a904-a159a3509c80",
+                "ordinal": 1
+              },
+              {
+                "name": "Mês",
+                "column": "Mês",
+                "lineageTag": "ef393d81-109d-4bd1-95ea-4ebfd1b845ab",
+                "ordinal": 2
+              },
+              {
+                "name": "Dia",
+                "column": "Dia",
+                "lineageTag": "50256121-f8ed-47bd-b6bf-a02e3b372f66",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "e90eeca8-1de5-4728-a808-68ee18b89cc9"
+          }
+        ],
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "22aa53aa-3823-4120-8757-b184f0a462b5",
+        "partitions": [
+          {
+            "name": "DateTableTemplate_454fe02b-e7a2-4481-9db6-2b94c467e18d",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_6932464e-e9bd-459c-8d0d-438867ebe196",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "075cd51d-8238-4962-82c6-d4cda68d8338",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Ano",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "5c7476b0-018f-4522-bc00-4f63c213888c",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "029459de-94eb-47a9-b942-0ee539e5c18a",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Mês",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "05dd0759-cd88-4b8c-bd57-e2c23ee46f01",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "133d6462-e020-4392-8046-81ef54d9e82b",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Trimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "acf5b9ab-bccd-4fdd-a017-a228c52c62d9",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Dia",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "3982d27b-0502-43ea-8254-13b06405b7a8",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Hierarquia de datas",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Ano",
+                "column": "Ano",
+                "lineageTag": "194d9721-9ca7-4790-bf8d-15197ff19476",
+                "ordinal": 0
+              },
+              {
+                "name": "Trimestre",
+                "column": "Trimestre",
+                "lineageTag": "6603d2f6-244c-47d4-a168-5d329b671e55",
+                "ordinal": 1
+              },
+              {
+                "name": "Mês",
+                "column": "Mês",
+                "lineageTag": "01ac1fff-4896-401b-a651-0c50d62cc05b",
+                "ordinal": 2
+              },
+              {
+                "name": "Dia",
+                "column": "Dia",
+                "lineageTag": "fa376da8-8b95-465d-91f9-caf28383895c",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "dfc0d46d-f3a4-4bc6-bce9-9e9dfbdb013b"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "b5e68953-1007-4404-aba5-8a11dccf2ead",
+        "partitions": [
+          {
+            "name": "LocalDateTable_6932464e-e9bd-459c-8d0d-438867ebe196",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('fAdapter_atendimentos'[Data Abertura (ddmmaaaa)])), 1, 1), Date(Year(MAX('fAdapter_atendimentos'[Data Abertura (ddmmaaaa)])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      }
+    ]
+  }
+}

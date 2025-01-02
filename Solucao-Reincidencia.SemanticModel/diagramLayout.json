@@ -1,0 +1,47 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 959.56882906712474,
+            "y": 430.56420247572976
+          },
+          "nodeIndex": "Medidas",
+          "nodeLineageTag": "faf08992-edef-487f-aee6-c4cb96b248be",
+          "size": {
+            "height": 278.72588328915458,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 565.57529021451285,
+            "y": 133.60285652188571
+          },
+          "nodeIndex": "fAdapter_atendimentos",
+          "size": {
+            "height": 297.18133370552221,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas as tabelas",
+      "zoomValue": 79.553182037699756,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas as tabelas",
+  "defaultDiagram": "Todas as tabelas"
+}

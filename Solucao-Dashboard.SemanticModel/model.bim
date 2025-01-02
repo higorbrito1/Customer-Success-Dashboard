@@ -4,7 +4,7 @@
     "annotations": [
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"Medidas Instalação\",\"Medidas Onboarding\",\"Medidas\",\"dColaboradores\",\"dCallflex_agente_consolidado\",\"fCallflex_chamadas\",\"dCallflex_pausas\",\"fCallflex_chamadas_agente_detalhado\",\"fCallflex_pausas_detalhado\",\"fChat_relatorio_atendimento\",\"fChat_relatorio_resumo_usuarios\",\"fChat_relatorio_nps\",\"fAdapter_reincidencias\",\"fAdapter_atendimentos\",\"dHoras\"]"
+        "value": "[\"Medidas Instalação\",\"Medidas Onboarding\",\"Medidas\",\"dColaboradores\",\"dCallflex_agente_consolidado\",\"fCallflex_chamadas\",\"dCallflex_pausas\",\"fCallflex_chamadas_agente_detalhado\",\"fCallflex_pausas_detalhado\",\"fChat_relatorio_atendimento\",\"fChat_relatorio_resumo_usuarios\",\"fChat_relatorio_nps\",\"fAdapter_reincidencias\",\"fAdapter_atendimentos\",\"dHoras\",\"Medidas Reincidencia\"]"
       },
       {
         "name": "__PBI_TimeIntelligenceEnabled",
@@ -4462,29 +4462,6 @@
                     "TMA": {
                       "State": "Generated",
                       "Weight": 0.75
-                    }
-                  }
-                ]
-              },
-              "f_adapter_atendimento.atendimento_grupo": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "fAdapter_atendimentos",
-                    "ConceptualProperty": "AtendimentoGrupo"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "atendimento grupo": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "AtendimentoGrupo": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
                     }
                   }
                 ]
@@ -10312,22 +10289,6 @@
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.99
-                    }
-                  }
-                ]
-              },
-              "medida.reincidencia": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Medidas",
-                    "ConceptualProperty": "Reincidencia"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "reincidencia": {
-                      "State": "Generated"
                     }
                   }
                 ]
@@ -34235,51 +34196,6 @@
         "lineageTag": "faf08992-edef-487f-aee6-c4cb96b248be",
         "measures": [
           {
-            "name": "Reincidencia",
-            "expression": [
-              "",
-              "VAR ClienteAtual = MAX('fAdapter_atendimentos'[Cliente])  -- Valor do Cliente no contexto atual",
-              "VAR GrupoAtual = MAX('fAdapter_atendimentos'[AtendimentoGrupo])  -- Valor do Grupo de Atendimento no contexto atual",
-              "",
-              "-- Encontrar a quantidade de atendimentos do cliente no grupo de atendimento",
-              "VAR QtdAtendimentos =",
-              "    CALCULATE (",
-              "        COUNTROWS('fAdapter_atendimentos'),  -- Conta o número de atendimentos",
-              "        FILTER (",
-              "            ALLSELECTED('fAdapter_atendimentos'),  -- Considera os filtros aplicados no contexto (exceto o filtro de 'Data Abertura')",
-              "            'fAdapter_atendimentos'[Cliente] = ClienteAtual &&  -- Filtro para o cliente atual",
-              "            'fAdapter_atendimentos'[AtendimentoGrupo] = GrupoAtual  -- Filtro para o grupo de atendimento atual",
-              "        )",
-              "    )",
-              "",
-              "-- Caso o cliente tenha apenas um atendimento no grupo, ele não será reincidente",
-              "VAR Reincidente = ",
-              "    IF (",
-              "        QtdAtendimentos > 1,  -- Se houver mais de 1 atendimento",
-              "        IF (",
-              "            MIN('fAdapter_atendimentos'[Data Abertura]) = ",
-              "                CALCULATE (",
-              "                    MIN('fAdapter_atendimentos'[Data Abertura]),  -- Obtém a menor data de abertura",
-              "                    FILTER (",
-              "                        ALLSELECTED('fAdapter_atendimentos'),  -- Considera os filtros aplicados",
-              "                        'fAdapter_atendimentos'[Cliente] = ClienteAtual &&  -- Filtro para o cliente atual",
-              "                        'fAdapter_atendimentos'[AtendimentoGrupo] = GrupoAtual  -- Filtro para o grupo de atendimento atual",
-              "                    )",
-              "                ), ",
-              "            1,  -- Marca como reincidente",
-              "            0   -- Caso contrário, não é reincidente",
-              "        ),",
-              "        0   -- Se houver apenas 1 atendimento, marca como não reincidente",
-              "    )",
-              "",
-              "RETURN ",
-              "    Reincidente",
-              ""
-            ],
-            "formatString": "0",
-            "lineageTag": "c066324c-654a-4550-ab30-6bb98d9f38e2"
-          },
-          {
             "name": "Total_Atendimentos",
             "expression": [
               "",
@@ -34580,8 +34496,7 @@
               "        {\"Sem Conexão\", \"Suporte Conexão\", \"Suporte Telefonia Fixa\", \"Suporte Telefonia Móvel\"}",
               ")",
               "RETURN ",
-              "IF(Contagem = 0, 0, Contagem)",
-              ""
+              "IF(Contagem = 0, 0, Contagem)"
             ],
             "formatString": "0",
             "lineageTag": "4def38a8-6ace-40bf-9fd7-c5c21233ef71"
@@ -39582,7 +39497,7 @@
             "summarizeBy": "none"
           },
           {
-            "name": "AtendimentoGrupo",
+            "name": "Categoria Atendimento",
             "annotations": [
               {
                 "name": "SummarizationSetBy",
@@ -39609,8 +39524,45 @@
               ""
             ],
             "isDataTypeInferred": true,
-            "lineageTag": "6c6cd942-a35d-4162-99f4-3e007bf9ffe8",
+            "lineageTag": "93a7fb00-0b4b-44bc-ab5e-a1466c806029",
             "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Reincidencia Tipo Atendimento Coluna",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "expression": [
+              "",
+              "VAR ClienteAtual = 'fAdapter_atendimentos'[Cliente]",
+              "VAR GrupoAtual = 'fAdapter_atendimentos'[Categoria Atendimento]",
+              "VAR DataAberturaAtual = 'fAdapter_atendimentos'[Data Abertura]",
+              "",
+              "-- Contar quantos atendimentos ocorreram antes da data atual para o cliente e tipo de atendimento",
+              "VAR AtendimentosAnteriores =",
+              "    COUNTROWS (",
+              "        FILTER (",
+              "            'fAdapter_atendimentos',",
+              "            'fAdapter_atendimentos'[Cliente] = ClienteAtual &&",
+              "            'fAdapter_atendimentos'[Categoria Atendimento] = GrupoAtual &&",
+              "            'fAdapter_atendimentos'[Data Abertura] < DataAberturaAtual",
+              "        )",
+              "    )",
+              "",
+              "-- Retornar se é reincidente ou não",
+              "RETURN",
+              "    IF(AtendimentosAnteriores > 0, 1, 0)",
+              ""
+            ],
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "lineageTag": "377a0aac-18e1-466f-802a-44bf1c8f3407",
+            "summarizeBy": "sum",
             "type": "calculated"
           }
         ],
@@ -40513,6 +40465,80 @@
           }
         ],
         "showAsVariationsOnly": true
+      },
+      {
+        "name": "Medidas Reincidencia",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "lineageTag": "e003f24b-c8db-4023-84a9-00e05487d8fc",
+        "measures": [
+          {
+            "name": "Reincidencia Categoria",
+            "expression": [
+              "",
+              "VAR ClienteAtual = MAX('fAdapter_atendimentos'[Cliente])  -- Valor do Cliente no contexto atual",
+              "VAR GrupoAtual = MAX('fAdapter_atendimentos'[Categoria Atendimento])  -- Valor do Grupo de Atendimento no contexto atual",
+              "",
+              "-- Encontrar a quantidade de atendimentos do cliente no grupo de atendimento",
+              "VAR QtdAtendimentos =",
+              "    CALCULATE (",
+              "        COUNTROWS('fAdapter_atendimentos'),  -- Conta o número de atendimentos",
+              "        FILTER (",
+              "            ALLSELECTED('fAdapter_atendimentos'),  -- Considera os filtros aplicados no contexto (exceto o filtro de 'Data Abertura')",
+              "            'fAdapter_atendimentos'[Cliente] = ClienteAtual &&  -- Filtro para o cliente atual",
+              "            'fAdapter_atendimentos'[Categoria Atendimento] = GrupoAtual  -- Filtro para o grupo de atendimento atual",
+              "        )",
+              "    )",
+              "",
+              "-- Caso o cliente tenha apenas um atendimento no grupo, ele não será reincidente",
+              "VAR Reincidente = ",
+              "    IF (",
+              "        QtdAtendimentos > 1,  -- Se houver mais de 1 atendimento",
+              "        IF (",
+              "            MIN('fAdapter_atendimentos'[Data Abertura]) = ",
+              "                CALCULATE (",
+              "                    MIN('fAdapter_atendimentos'[Data Abertura]),  -- Obtém a menor data de abertura",
+              "                    FILTER (",
+              "                        ALLSELECTED('fAdapter_atendimentos'),  -- Considera os filtros aplicados",
+              "                        'fAdapter_atendimentos'[Cliente] = ClienteAtual &&  -- Filtro para o cliente atual",
+              "                        'fAdapter_atendimentos'[Categoria Atendimento] = GrupoAtual  -- Filtro para o grupo de atendimento atual",
+              "                    )",
+              "                ), ",
+              "            1,  -- Marca como reincidente",
+              "            0   -- Caso contrário, não é reincidente",
+              "        ),",
+              "        0   -- Se houver apenas 1 atendimento, marca como não reincidente",
+              "    )",
+              "",
+              "RETURN ",
+              "    Reincidente",
+              ""
+            ],
+            "formatString": "0",
+            "lineageTag": "56f04fa9-94b5-4585-8da1-0c8e5f26ce49"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Medidas Reincidencia",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i44FAA==\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#\"Coluna 1\" = _t]),",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(Fonte,{{\"Coluna 1\", type text}}),",
+                "    #\"Colunas Removidas\" = Table.RemoveColumns(#\"Tipo Alterado\",{\"Coluna 1\"})",
+                "in",
+                "    #\"Colunas Removidas\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
       }
     ]
   }

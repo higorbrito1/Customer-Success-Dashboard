@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Solucao-Reincidencia"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "ae49f65f-6196-491b-a055-eec7a9bf9bdf"
+  }
+}
