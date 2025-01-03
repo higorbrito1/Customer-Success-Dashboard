@@ -8608,6 +8608,16 @@
                       "Type": "Noun",
                       "Weight": 0.99
                     }
+                  },
+                  {
+                    "Realizado": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
                   }
                 ]
               },
@@ -8656,12 +8666,6 @@
                     }
                   },
                   {
-                    "chat": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
                     "tma conversation": {
                       "Source": {
                         "Agent": "Thesaurus"
@@ -8679,26 +8683,6 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.5
-                    }
-                  },
-                  {
-                    "conversation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "discussion": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
                     }
                   },
                   {
@@ -8760,6 +8744,26 @@
                       "Type": "Noun",
                       "Weight": 0.485
                     }
+                  },
+                  {
+                    "tma natter": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "tma exchange": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
                   }
                 ]
               },
@@ -8782,6 +8786,16 @@
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.99
+                    }
+                  },
+                  {
+                    "TMA Geral": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
                     }
                   },
                   {
@@ -8841,12 +8855,6 @@
                     }
                   },
                   {
-                    "chat": {
-                      "State": "Generated",
-                      "Weight": 0.97
-                    }
-                  },
-                  {
                     "tme conversation": {
                       "Source": {
                         "Agent": "Thesaurus"
@@ -8864,26 +8872,6 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.5
-                    }
-                  },
-                  {
-                    "conversation": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
-                    }
-                  },
-                  {
-                    "discussion": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.491
                     }
                   },
                   {
@@ -8945,6 +8933,26 @@
                       "Type": "Noun",
                       "Weight": 0.485
                     }
+                  },
+                  {
+                    "tme natter": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "tme exchange": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
                   }
                 ]
               },
@@ -8968,6 +8976,16 @@
                       "Type": "Noun",
                       "Weight": 0.99
                     }
+                  },
+                  {
+                    "Ativos": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
                   }
                 ]
               },
@@ -8990,6 +9008,16 @@
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.99
+                    }
+                  },
+                  {
+                    "Receptivos": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
                     }
                   }
                 ]
@@ -10546,6 +10574,16 @@
                       "Type": "Noun",
                       "Weight": 0.99
                     }
+                  },
+                  {
+                    "Quantidade": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
                   }
                 ]
               },
@@ -10572,6 +10610,16 @@
                   },
                   {
                     "Documentado": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Quantidade": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -10612,6 +10660,16 @@
                       "State": "Suggested",
                       "Weight": 0.9
                     }
+                  },
+                  {
+                    "Quantidade": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
                   }
                 ]
               },
@@ -10634,6 +10692,16 @@
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.99
+                    }
+                  },
+                  {
+                    "Com Visita": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
                     }
                   }
                 ]
@@ -10671,6 +10739,16 @@
                       "Type": "Noun",
                       "Weight": 0.599
                     }
+                  },
+                  {
+                    "% Conversão": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
                   }
                 ]
               },
@@ -10706,6 +10784,16 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.605
+                    }
+                  },
+                  {
+                    "% Documentado": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
                     }
                   }
                 ]
@@ -10848,6 +10936,29 @@
                   }
                 ]
               },
+              "medida.média_atendimentos": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "Média_Atendimentos"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "média atendimentos": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Média_Atendimentos": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
               "medida.nome_do_agente": {
                 "Definition": {
                   "Binding": {
@@ -10890,22 +11001,32 @@
               "medida.rencidencias_atendimentos": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Medidas",
-                    "ConceptualProperty": "Rencidencias_Atendimentos"
+                    "ConceptualEntity": "Medidas Reincidencia",
+                    "ConceptualProperty": "Reincidencias_Atendimentos"
                   }
                 },
                 "State": "Generated",
                 "Terms": [
                   {
-                    "rencidencias atendimentos": {
+                    "reincidencias atendimentos": {
                       "State": "Generated"
                     }
                   },
                   {
-                    "Rencidencias_Atendimentos": {
+                    "Reincidencias_Atendimentos": {
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.99
+                    }
+                  },
+                  {
+                    "Sem Visita": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
                     }
                   }
                 ]
@@ -10922,6 +11043,16 @@
                   {
                     "% resolução no 1º contato": {
                       "State": "Generated"
+                    }
+                  },
+                  {
+                    "% Resolução": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
                     }
                   }
                 ]
@@ -10968,7 +11099,7 @@
                     }
                   },
                   {
-                    "Tempo pausado": {
+                    "Tempo Pausado": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -11087,7 +11218,7 @@
                     }
                   },
                   {
-                    "Tempo disponível": {
+                    "Tempo Disponível": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -11219,6 +11350,16 @@
                     }
                   },
                   {
+                    "TMR Chat": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
                     "TMR_Chat": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
@@ -11290,6 +11431,16 @@
                       "State": "Suggested",
                       "Weight": 0.9
                     }
+                  },
+                  {
+                    "Total": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
                   }
                 ]
               },
@@ -11336,6 +11487,16 @@
                   },
                   {
                     "Atendimentos Callflex": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Callflex": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -11469,6 +11630,16 @@
                   },
                   {
                     "Atendimentos Chat": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Chat": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -11956,22 +12127,6 @@
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.78
-                    }
-                  }
-                ]
-              },
-              "medidas_reincidencia.reincidencia_categoria": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "Medidas Reincidencia",
-                    "ConceptualProperty": "Reincidencia Categoria"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "reincidencia categoria": {
-                      "State": "Generated"
                     }
                   }
                 ]
@@ -16927,7 +17082,7 @@
                         "Role": "callflex_chamada.data.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_mê6",
+                    "ID": "trimestres_have_mê7",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -16940,7 +17095,7 @@
                         "Role": "callflex_chamada.data.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_trimestres6",
+                    "ID": "mê_have_trimestres7",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -17513,6 +17668,39 @@
                 },
                 "State": "Generated"
               },
+              "callflex_chamada_has_medida_média_atendimentos": {
+                "Binding": {
+                  "ConceptualEntity": "fCallflex_chamadas"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.média_atendimentos"
+                      },
+                      "Subject": {
+                        "Role": "callflex_chamada"
+                      }
+                    },
+                    "ID": "f_callflex_chamadas_have_média_atendimentos",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "callflex_chamada": {
+                    "Target": {
+                      "Entity": "callflex_chamada"
+                    }
+                  },
+                  "medida.média_atendimentos": {
+                    "Target": {
+                      "Entity": "medida.média_atendimentos"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "callflex_chamada_has_medida_total_atendimentos": {
                 "Binding": {
                   "ConceptualEntity": "fCallflex_chamadas"
@@ -18055,7 +18243,7 @@
                         "Role": "callflex_chamada.hora.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_mê5",
+                    "ID": "trimestres_have_mê6",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -18068,7 +18256,7 @@
                         "Role": "callflex_chamada.hora.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_trimestres5",
+                    "ID": "mê_have_trimestres6",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -20464,7 +20652,7 @@
                         "Role": "d_calendario.date.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_mê4",
+                    "ID": "trimestres_have_mê5",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -20477,7 +20665,7 @@
                         "Role": "d_calendario.date.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_trimestres4",
+                    "ID": "mê_have_trimestres5",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -20912,6 +21100,39 @@
                 },
                 "State": "Generated"
               },
+              "d_colaboradore_has_medida_média_atendimentos": {
+                "Binding": {
+                  "ConceptualEntity": "dColaboradores"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.média_atendimentos"
+                      },
+                      "Subject": {
+                        "Role": "d_colaboradore"
+                      }
+                    },
+                    "ID": "d_colaboradores_have_média_atendimentos",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "d_colaboradore": {
+                    "Target": {
+                      "Entity": "d_colaboradore"
+                    }
+                  },
+                  "medida.média_atendimentos": {
+                    "Target": {
+                      "Entity": "medida.média_atendimentos"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "d_hora_has_hora": {
                 "Binding": {
                   "ConceptualEntity": "dHoras"
@@ -21256,7 +21477,7 @@
                         "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_mê7",
+                    "ID": "trimestres_have_mê",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -21269,7 +21490,7 @@
                         "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_trimestres7",
+                    "ID": "mê_have_trimestres",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -24417,7 +24638,7 @@
                         "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_mê3",
+                    "ID": "trimestres_have_mê4",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -24430,7 +24651,7 @@
                         "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_trimestres3",
+                    "ID": "mê_have_trimestres4",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -26244,39 +26465,6 @@
                 },
                 "State": "Generated"
               },
-              "medida_has_rencidencias_atendimentos": {
-                "Binding": {
-                  "ConceptualEntity": "Medidas"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "medida.rencidencias_atendimentos"
-                      },
-                      "Subject": {
-                        "Role": "medida"
-                      }
-                    },
-                    "ID": "medidas_have_rencidencias_atendimentos",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "medida": {
-                    "Target": {
-                      "Entity": "medida"
-                    }
-                  },
-                  "medida.rencidencias_atendimentos": {
-                    "Target": {
-                      "Entity": "medida.rencidencias_atendimentos"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
               "medida_has_resolução_no_1º_contato": {
                 "Binding": {
                   "ConceptualEntity": "Medidas"
@@ -26574,7 +26762,7 @@
                 },
                 "State": "Generated"
               },
-              "medidas_reincidencia_has_reincidencia_categoria": {
+              "medidas_reincidencia_has_medida_rencidencias_atendimentos": {
                 "Binding": {
                   "ConceptualEntity": "Medidas Reincidencia"
                 },
@@ -26582,26 +26770,26 @@
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "medidas_reincidencia.reincidencia_categoria"
+                        "Role": "medida.rencidencias_atendimentos"
                       },
                       "Subject": {
                         "Role": "medidas_reincidencia"
                       }
                     },
-                    "ID": "medidas_reincidencias_have_reincidencia_categoria",
+                    "ID": "medidas_reincidencias_have_reincidencias_atendimentos",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
+                  "medida.rencidencias_atendimentos": {
+                    "Target": {
+                      "Entity": "medida.rencidencias_atendimentos"
+                    }
+                  },
                   "medidas_reincidencia": {
                     "Target": {
                       "Entity": "medidas_reincidencia"
-                    }
-                  },
-                  "medidas_reincidencia.reincidencia_categoria": {
-                    "Target": {
-                      "Entity": "medidas_reincidencia.reincidencia_categoria"
                     }
                   }
                 },
@@ -26918,7 +27106,7 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_mê2",
+                    "ID": "trimestres_have_mê3",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -26931,7 +27119,7 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_trimestres2",
+                    "ID": "mê_have_trimestres3",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -28507,6 +28695,39 @@
                 },
                 "State": "Generated"
               },
+              "relatorio_atendimento_has_medida_média_atendimentos": {
+                "Binding": {
+                  "ConceptualEntity": "fChat_relatorio_atendimento"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medida.média_atendimentos"
+                      },
+                      "Subject": {
+                        "Role": "relatorio_atendimento"
+                      }
+                    },
+                    "ID": "f_chat_relatorio_atendimentos_have_média_atendimentos",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "medida.média_atendimentos": {
+                    "Target": {
+                      "Entity": "medida.média_atendimentos"
+                    }
+                  },
+                  "relatorio_atendimento": {
+                    "Target": {
+                      "Entity": "relatorio_atendimento"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "relatorio_atendimento_has_medida_total_atendimentos": {
                 "Binding": {
                   "ConceptualEntity": "fChat_relatorio_atendimento"
@@ -29775,7 +29996,7 @@
                         "Role": "relatorio_np.data.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_mê1",
+                    "ID": "trimestres_have_mê2",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -29788,7 +30009,7 @@
                         "Role": "relatorio_np.data.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_trimestres1",
+                    "ID": "mê_have_trimestres2",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -30738,7 +30959,7 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_mê",
+                    "ID": "trimestres_have_mê1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -30751,7 +30972,7 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_trimestres",
+                    "ID": "mê_have_trimestres1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -34226,7 +34447,7 @@
             "name": "% Resolução no 1º Contato",
             "expression": [
               "",
-              "([Total_Atendimentos] - ([Rencidencias_Visitas_Tecnicas] + [Rencidencias_Atendimentos])) / [Total_Atendimentos]",
+              "([Total_Atendimentos] - ([Rencidencias_Visitas_Tecnicas] + [Reincidencias_Atendimentos])) / [Total_Atendimentos]",
               ""
             ],
             "formatString": "0.00%;-0.00%;0.00%",
@@ -35447,22 +35668,15 @@
             "lineageTag": "b387a99d-a5a0-42df-938c-3c54192bb0df"
           },
           {
-            "name": "Rencidencias_Atendimentos",
-            "expression": [
-              "",
-              "VAR Contagem = CALCULATE(",
-              "    COUNTROWS(fAdapter_atendimentos),",
-              "    fAdapter_atendimentos[Reincidencia Setor Atendimento] = 1,",
-              "    fAdapter_atendimentos[Gerou Visita] IN ",
-              "        {\"Não\"},",
-              "    fAdapter_atendimentos[Setor Atendimento] IN ",
-              "        {\"Suporte\"}",
-              ")",
-              "RETURN ",
-              "IF(Contagem = 0, 0, Contagem)"
+            "name": "Média_Atendimentos",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
             ],
-            "formatString": "0",
-            "lineageTag": "90f6a38e-d86b-4f26-b5e0-7a5311f13eb3"
+            "expression": "DIVIDE([Total_Atendimentos], COUNT(dColaboradores[Colaborador]))",
+            "lineageTag": "8312ee34-34f4-4e30-871e-830e749ac12d"
           }
         ],
         "partitions": [
@@ -39799,51 +40013,6 @@
         "lineageTag": "e003f24b-c8db-4023-84a9-00e05487d8fc",
         "measures": [
           {
-            "name": "Reincidencia Categoria",
-            "expression": [
-              "",
-              "VAR ClienteAtual = MAX('fAdapter_atendimentos'[Cliente])  -- Valor do Cliente no contexto atual",
-              "VAR GrupoAtual = MAX('fAdapter_atendimentos'[Categoria Atendimento])  -- Valor do Grupo de Atendimento no contexto atual",
-              "",
-              "-- Encontrar a quantidade de atendimentos do cliente no grupo de atendimento",
-              "VAR QtdAtendimentos =",
-              "    CALCULATE (",
-              "        COUNTROWS('fAdapter_atendimentos'),  -- Conta o número de atendimentos",
-              "        FILTER (",
-              "            ALLSELECTED('fAdapter_atendimentos'),  -- Considera os filtros aplicados no contexto (exceto o filtro de 'Data Abertura')",
-              "            'fAdapter_atendimentos'[Cliente] = ClienteAtual &&  -- Filtro para o cliente atual",
-              "            'fAdapter_atendimentos'[Categoria Atendimento] = GrupoAtual  -- Filtro para o grupo de atendimento atual",
-              "        )",
-              "    )",
-              "",
-              "-- Caso o cliente tenha apenas um atendimento no grupo, ele não será reincidente",
-              "VAR Reincidente = ",
-              "    IF (",
-              "        QtdAtendimentos > 1,  -- Se houver mais de 1 atendimento",
-              "        IF (",
-              "            MIN('fAdapter_atendimentos'[Data Abertura]) = ",
-              "                CALCULATE (",
-              "                    MIN('fAdapter_atendimentos'[Data Abertura]),  -- Obtém a menor data de abertura",
-              "                    FILTER (",
-              "                        ALLSELECTED('fAdapter_atendimentos'),  -- Considera os filtros aplicados",
-              "                        'fAdapter_atendimentos'[Cliente] = ClienteAtual &&  -- Filtro para o cliente atual",
-              "                        'fAdapter_atendimentos'[Categoria Atendimento] = GrupoAtual  -- Filtro para o grupo de atendimento atual",
-              "                    )",
-              "                ), ",
-              "            1,  -- Marca como reincidente",
-              "            0   -- Caso contrário, não é reincidente",
-              "        ),",
-              "        0   -- Se houver apenas 1 atendimento, marca como não reincidente",
-              "    )",
-              "",
-              "RETURN ",
-              "    Reincidente",
-              ""
-            ],
-            "formatString": "0",
-            "lineageTag": "56f04fa9-94b5-4585-8da1-0c8e5f26ce49"
-          },
-          {
             "name": "Rencidencias_Visitas_Tecnicas",
             "expression": [
               "",
@@ -39860,6 +40029,24 @@
             ],
             "formatString": "0",
             "lineageTag": "4def38a8-6ace-40bf-9fd7-c5c21233ef71"
+          },
+          {
+            "name": "Reincidencias_Atendimentos",
+            "expression": [
+              "",
+              "VAR Contagem = CALCULATE(",
+              "    COUNTROWS(fAdapter_atendimentos),",
+              "    fAdapter_atendimentos[Reincidencia Setor Atendimento] = 1,",
+              "    fAdapter_atendimentos[Gerou Visita] IN ",
+              "        {\"Não\"},",
+              "    fAdapter_atendimentos[Setor Atendimento] IN ",
+              "        {\"Suporte\"}",
+              ")",
+              "RETURN ",
+              "IF(Contagem = 0, 0, Contagem)"
+            ],
+            "formatString": "0",
+            "lineageTag": "90f6a38e-d86b-4f26-b5e0-7a5311f13eb3"
           }
         ],
         "partitions": [
