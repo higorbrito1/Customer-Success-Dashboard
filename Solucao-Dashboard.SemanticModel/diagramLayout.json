@@ -153,19 +153,6 @@
         },
         {
           "location": {
-            "x": 1401.5747390821855,
-            "y": 653.70693889566849
-          },
-          "nodeIndex": "fAdapter_reincidencias",
-          "nodeLineageTag": "a39c04ad-eebc-4223-93e8-7e6d7a2c2362",
-          "size": {
-            "height": 287.11430695640649,
-            "width": 234
-          },
-          "zIndex": 8
-        },
-        {
-          "location": {
             "x": 2481.2342152305373,
             "y": 662.01346306420771
           },

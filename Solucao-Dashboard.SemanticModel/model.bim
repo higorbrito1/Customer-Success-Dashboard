@@ -4,7 +4,7 @@
     "annotations": [
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"Medidas Instalação\",\"Medidas Onboarding\",\"Medidas\",\"dColaboradores\",\"dCallflex_agente_consolidado\",\"fCallflex_chamadas\",\"dCallflex_pausas\",\"fCallflex_chamadas_agente_detalhado\",\"fCallflex_pausas_detalhado\",\"fChat_relatorio_atendimento\",\"fChat_relatorio_resumo_usuarios\",\"fChat_relatorio_nps\",\"fAdapter_reincidencias\",\"fAdapter_atendimentos\",\"dHoras\",\"Medidas Reincidencia\"]"
+        "value": "[\"Medidas Instalação\",\"Medidas Onboarding\",\"Medidas\",\"dColaboradores\",\"dCallflex_agente_consolidado\",\"fCallflex_chamadas\",\"dCallflex_pausas\",\"fCallflex_chamadas_agente_detalhado\",\"fCallflex_pausas_detalhado\",\"fChat_relatorio_atendimento\",\"fChat_relatorio_resumo_usuarios\",\"fChat_relatorio_nps\",\"fAdapter_atendimentos\",\"dHoras\",\"Medidas Reincidencia\"]"
       },
       {
         "name": "__PBI_TimeIntelligenceEnabled",
@@ -4482,6 +4482,22 @@
                   }
                 ]
               },
+              "f_adapter_atendimento.categoria_atendimento": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fAdapter_atendimentos",
+                    "ConceptualProperty": "Categoria Atendimento"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "categoria atendimento": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
               "f_adapter_atendimento.cidade": {
                 "Definition": {
                   "Binding": {
@@ -4556,11 +4572,18 @@
                     "ConceptualProperty": "Data Abertura"
                   }
                 },
+                "SemanticType": "Time",
                 "State": "Generated",
                 "Terms": [
                   {
                     "data abertura": {
                       "State": "Generated"
+                    }
+                  },
+                  {
+                    "date": {
+                      "State": "Generated",
+                      "Weight": 0.7
                     }
                   },
                   {
@@ -4631,6 +4654,470 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.582
+                    }
+                  }
+                ]
+              },
+              "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fAdapter_atendimentos",
+                    "Hierarchy": "Hierarquia de datas",
+                    "VariationSet": "Variation",
+                    "VariationSource": "Data Abertura"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "hierarquia de data": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "hierarquia de information": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  },
+                  {
+                    "hierarquia de fact": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  },
+                  {
+                    "hierarquia de info": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  },
+                  {
+                    "hierarquia de statistic": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  },
+                  {
+                    "hierarquia de document": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.739
+                    }
+                  },
+                  {
+                    "hierarquia de figure": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.739
+                    }
+                  },
+                  {
+                    "hierarquia de record": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.739
+                    }
+                  }
+                ]
+              },
+              "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.ano": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fAdapter_atendimentos",
+                    "Hierarchy": "Hierarquia de datas",
+                    "HierarchyLevel": "Ano",
+                    "VariationSet": "Variation",
+                    "VariationSource": "Data Abertura"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "ano": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "data abertura ano": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "information abertura ano": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "fact abertura ano": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "info abertura ano": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "statistic abertura ano": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "document abertura ano": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "figure abertura ano": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "record abertura ano": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  }
+                ]
+              },
+              "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.dia": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fAdapter_atendimentos",
+                    "Hierarchy": "Hierarquia de datas",
+                    "HierarchyLevel": "Dia",
+                    "VariationSet": "Variation",
+                    "VariationSource": "Data Abertura"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "dia": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "data abertura dia": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "information abertura dia": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "fact abertura dia": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "info abertura dia": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "statistic abertura dia": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "document abertura dia": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "figure abertura dia": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "record abertura dia": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  }
+                ]
+              },
+              "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.mê": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fAdapter_atendimentos",
+                    "Hierarchy": "Hierarquia de datas",
+                    "HierarchyLevel": "Mês",
+                    "VariationSet": "Variation",
+                    "VariationSource": "Data Abertura"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "mê": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "data abertura mê": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "information abertura mê": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "fact abertura mê": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "info abertura mê": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "statistic abertura mê": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "document abertura mê": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "figure abertura mê": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "record abertura mê": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  }
+                ]
+              },
+              "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.trimestre": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fAdapter_atendimentos",
+                    "Hierarchy": "Hierarquia de datas",
+                    "HierarchyLevel": "Trimestre",
+                    "VariationSet": "Variation",
+                    "VariationSource": "Data Abertura"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "trimestre": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "data abertura trimestre": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "information abertura trimestre": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "fact abertura trimestre": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "info abertura trimestre": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "statistic abertura trimestre": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.609
+                    }
+                  },
+                  {
+                    "document abertura trimestre": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "figure abertura trimestre": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
+                    }
+                  },
+                  {
+                    "record abertura trimestre": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.591
                     }
                   }
                 ]
@@ -5217,6 +5704,86 @@
                 "Terms": [
                   {
                     "reagendado": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "f_adapter_atendimento.reincidencia_categoria_atendimento": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fAdapter_atendimentos",
+                    "ConceptualProperty": "Reincidencia Categoria Atendimento"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "reincidencia categoria atendimento": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "f_adapter_atendimento.reincidencia_geral": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fAdapter_atendimentos",
+                    "ConceptualProperty": "Reincidencia Geral"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "reincidencia geral": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "f_adapter_atendimento.reincidencia_setor_atendimento": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fAdapter_atendimentos",
+                    "ConceptualProperty": "Reincidencia Setor Atendimento"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "reincidencia setor atendimento": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "f_adapter_atendimento.reincidencia_tipo_atendimento": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fAdapter_atendimentos",
+                    "ConceptualProperty": "Reincidencia Tipo Atendimento"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "reincidencia tipo atendimento": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "f_adapter_atendimento.setor_atendimento": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fAdapter_atendimentos",
+                    "ConceptualProperty": "Setor Atendimento"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "setor atendimento": {
                       "State": "Generated"
                     }
                   }
@@ -8216,6 +8783,16 @@
                       "Type": "Noun",
                       "Weight": 0.99
                     }
+                  },
+                  {
+                    "TMA CHAT + URA": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
                   }
                 ]
               },
@@ -10041,15 +10618,22 @@
               "medida.contagem_reincidencia_1": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "Medidas",
+                    "ConceptualEntity": "Medidas Reincidencia",
                     "ConceptualProperty": "Rencidencias_Visitas_Tecnicas"
                   }
                 },
                 "State": "Generated",
                 "Terms": [
                   {
-                    "contagem reincidencia 1": {
+                    "rencidencias visitas tecnicas": {
                       "State": "Generated"
+                    }
+                  },
+                  {
+                    "Rencidencias_Visitas_Tecnicas": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
                     }
                   }
                 ]
@@ -10251,6 +10835,16 @@
                       "Type": "Noun",
                       "Weight": 0.499
                     }
+                  },
+                  {
+                    "Média NPS": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
                   }
                 ]
               },
@@ -10286,6 +10880,29 @@
                   },
                   {
                     "PercentualFaltante": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "medida.rencidencias_atendimentos": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "Rencidencias_Atendimentos"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "rencidencias atendimentos": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Rencidencias_Atendimentos": {
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.99
@@ -10600,6 +11217,16 @@
                     "tmr": {
                       "State": "Generated"
                     }
+                  },
+                  {
+                    "TMR_Chat": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
                   }
                 ]
               },
@@ -10613,35 +11240,35 @@
                 "State": "Generated",
                 "Terms": [
                   {
-                    "total meus atendimentos": {
+                    "total atendimentos": {
                       "State": "Generated"
                     }
                   },
                   {
-                    "Total_Meus_Atendimentos": {
+                    "Total_Atendimentos": {
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.99
                     }
                   },
                   {
-                    "aggregate meus atendimento": {
+                    "aggregate atendimento": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.591
+                      "Weight": 0.582
                     }
                   },
                   {
-                    "overall meus atendimento": {
+                    "overall atendimento": {
                       "Source": {
                         "Agent": "Thesaurus"
                       },
                       "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.591
+                      "Weight": 0.582
                     }
                   },
                   {
@@ -11311,821 +11938,43 @@
                   }
                 ]
               },
-              "reincidencia": {
+              "medidas_reincidencia": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "fAdapter_reincidencias"
+                    "ConceptualEntity": "Medidas Reincidencia"
                   }
                 },
                 "State": "Generated",
                 "Terms": [
                   {
-                    "f adapter reincidencia": {
+                    "medidas reincidencia": {
                       "State": "Generated"
                     }
                   },
                   {
-                    "fAdapter_reincidencias": {
+                    "medida reincidencia": {
                       "State": "Generated",
                       "Type": "Noun",
-                      "Weight": 0.99
+                      "Weight": 0.78
                     }
                   }
                 ]
               },
-              "reincidencia.atendimento_grupo": {
+              "medidas_reincidencia.reincidencia_categoria": {
                 "Definition": {
                   "Binding": {
-                    "ConceptualEntity": "fAdapter_reincidencias",
-                    "ConceptualProperty": "AtendimentoGrupo"
+                    "ConceptualEntity": "Medidas Reincidencia",
+                    "ConceptualProperty": "Reincidencia Categoria"
                   }
                 },
                 "State": "Generated",
                 "Terms": [
                   {
-                    "atendimento grupo": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "AtendimentoGrupo": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  }
-                ]
-              },
-              "reincidencia.cliente": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "fAdapter_reincidencias",
-                    "ConceptualProperty": "Cliente"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "cliente": {
+                    "reincidencia categoria": {
                       "State": "Generated"
                     }
                   }
                 ]
-              },
-              "reincidencia.data_abertura": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "fAdapter_reincidencias",
-                    "ConceptualProperty": "Data Abertura"
-                  }
-                },
-                "SemanticType": "Time",
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "data abertura": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "date": {
-                      "State": "Generated",
-                      "Weight": 0.7
-                    }
-                  },
-                  {
-                    "information abertura": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.6
-                    }
-                  },
-                  {
-                    "fact abertura": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.6
-                    }
-                  },
-                  {
-                    "info abertura": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.6
-                    }
-                  },
-                  {
-                    "statistic abertura": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.6
-                    }
-                  },
-                  {
-                    "document abertura": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.582
-                    }
-                  },
-                  {
-                    "figure abertura": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.582
-                    }
-                  },
-                  {
-                    "record abertura": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.582
-                    }
-                  }
-                ]
-              },
-              "reincidencia.data_abertura.variation.hierarquia_de_data": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "fAdapter_reincidencias",
-                    "Hierarchy": "Hierarquia de datas",
-                    "VariationSet": "Variation",
-                    "VariationSource": "Data Abertura"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "hierarquia de data": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "hierarquia de information": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.762
-                    }
-                  },
-                  {
-                    "hierarquia de fact": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.762
-                    }
-                  },
-                  {
-                    "hierarquia de info": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.762
-                    }
-                  },
-                  {
-                    "hierarquia de statistic": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.762
-                    }
-                  },
-                  {
-                    "hierarquia de document": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.739
-                    }
-                  },
-                  {
-                    "hierarquia de figure": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.739
-                    }
-                  },
-                  {
-                    "hierarquia de record": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.739
-                    }
-                  }
-                ]
-              },
-              "reincidencia.data_abertura.variation.hierarquia_de_data.ano": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "fAdapter_reincidencias",
-                    "Hierarchy": "Hierarquia de datas",
-                    "HierarchyLevel": "Ano",
-                    "VariationSet": "Variation",
-                    "VariationSource": "Data Abertura"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "ano": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "data abertura ano": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "information abertura ano": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.609
-                    }
-                  },
-                  {
-                    "fact abertura ano": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.609
-                    }
-                  },
-                  {
-                    "info abertura ano": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.609
-                    }
-                  },
-                  {
-                    "statistic abertura ano": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.609
-                    }
-                  },
-                  {
-                    "document abertura ano": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.591
-                    }
-                  },
-                  {
-                    "figure abertura ano": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.591
-                    }
-                  },
-                  {
-                    "record abertura ano": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.591
-                    }
-                  }
-                ]
-              },
-              "reincidencia.data_abertura.variation.hierarquia_de_data.dia": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "fAdapter_reincidencias",
-                    "Hierarchy": "Hierarquia de datas",
-                    "HierarchyLevel": "Dia",
-                    "VariationSet": "Variation",
-                    "VariationSource": "Data Abertura"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "dia": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "data abertura dia": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "information abertura dia": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.609
-                    }
-                  },
-                  {
-                    "fact abertura dia": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.609
-                    }
-                  },
-                  {
-                    "info abertura dia": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.609
-                    }
-                  },
-                  {
-                    "statistic abertura dia": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.609
-                    }
-                  },
-                  {
-                    "document abertura dia": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.591
-                    }
-                  },
-                  {
-                    "figure abertura dia": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.591
-                    }
-                  },
-                  {
-                    "record abertura dia": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.591
-                    }
-                  }
-                ]
-              },
-              "reincidencia.data_abertura.variation.hierarquia_de_data.mê": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "fAdapter_reincidencias",
-                    "Hierarchy": "Hierarquia de datas",
-                    "HierarchyLevel": "Mês",
-                    "VariationSet": "Variation",
-                    "VariationSource": "Data Abertura"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "mê": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "data abertura mê": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "information abertura mê": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.609
-                    }
-                  },
-                  {
-                    "fact abertura mê": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.609
-                    }
-                  },
-                  {
-                    "info abertura mê": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.609
-                    }
-                  },
-                  {
-                    "statistic abertura mê": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.609
-                    }
-                  },
-                  {
-                    "document abertura mê": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.591
-                    }
-                  },
-                  {
-                    "figure abertura mê": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.591
-                    }
-                  },
-                  {
-                    "record abertura mê": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.591
-                    }
-                  }
-                ]
-              },
-              "reincidencia.data_abertura.variation.hierarquia_de_data.trimestre": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "fAdapter_reincidencias",
-                    "Hierarchy": "Hierarquia de datas",
-                    "HierarchyLevel": "Trimestre",
-                    "VariationSet": "Variation",
-                    "VariationSource": "Data Abertura"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "trimestre": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "data abertura trimestre": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "information abertura trimestre": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.609
-                    }
-                  },
-                  {
-                    "fact abertura trimestre": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.609
-                    }
-                  },
-                  {
-                    "info abertura trimestre": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.609
-                    }
-                  },
-                  {
-                    "statistic abertura trimestre": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.609
-                    }
-                  },
-                  {
-                    "document abertura trimestre": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.591
-                    }
-                  },
-                  {
-                    "figure abertura trimestre": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.591
-                    }
-                  },
-                  {
-                    "record abertura trimestre": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.591
-                    }
-                  }
-                ]
-              },
-              "reincidencia.data_abertura_ddmmaaaa": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "fAdapter_reincidencias",
-                    "ConceptualProperty": "Data Abertura (ddmmaaaa)"
-                  }
-                },
-                "SemanticType": "Time",
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "data abertura (ddmmaaaa)": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "date": {
-                      "State": "Generated",
-                      "Weight": 0.7
-                    }
-                  },
-                  {
-                    "data abertura": {
-                      "State": "Generated",
-                      "Weight": 0.75
-                    }
-                  },
-                  {
-                    "information abertura (ddmmaaaa)": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.624
-                    }
-                  },
-                  {
-                    "fact abertura (ddmmaaaa)": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.624
-                    }
-                  },
-                  {
-                    "info abertura (ddmmaaaa)": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.624
-                    }
-                  },
-                  {
-                    "statistic abertura (ddmmaaaa)": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.624
-                    }
-                  },
-                  {
-                    "document abertura (ddmmaaaa)": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.605
-                    }
-                  },
-                  {
-                    "figure abertura (ddmmaaaa)": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.605
-                    }
-                  },
-                  {
-                    "record abertura (ddmmaaaa)": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.605
-                    }
-                  }
-                ]
-              },
-              "reincidencia.gerou_visita": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "fAdapter_reincidencias",
-                    "ConceptualProperty": "Gerou Visita"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "gerou visita": {
-                      "State": "Generated"
-                    }
-                  }
-                ]
-              },
-              "reincidencia.protocolo": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "fAdapter_reincidencias",
-                    "ConceptualProperty": "Protocolo"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "protocolo": {
-                      "State": "Generated"
-                    }
-                  }
-                ]
-              },
-              "reincidencia.reincidencia": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "fAdapter_reincidencias",
-                    "ConceptualProperty": "Reincidencia"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "reincidencia": {
-                      "State": "Generated"
-                    }
-                  }
-                ]
-              },
-              "reincidencia.tipo_atendimento": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "fAdapter_reincidencias",
-                    "ConceptualProperty": "Tipo Atendimento"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "tipo atendimento": {
-                      "State": "Generated"
-                    }
-                  }
-                ]
-              },
-              "reincidencia.tipo_pessoa": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "fAdapter_reincidencias",
-                    "ConceptualProperty": "Tipo Pessoa"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "tipo pessoa": {
-                      "State": "Generated"
-                    }
-                  }
-                ]
-              },
-              "reincidencia.usuário_abertura": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "fAdapter_reincidencias",
-                    "ConceptualProperty": "COLABORADOR"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "colaborador": {
-                      "State": "Generated"
-                    }
-                  }
-                ],
-                "Visibility": {
-                  "Value": "Hidden"
-                }
               },
               "relatorio_atendimento": {
                 "Definition": {
@@ -17678,7 +17527,7 @@
                         "Role": "callflex_chamada"
                       }
                     },
-                    "ID": "f_callflex_chamadas_have_total_meus_atendimentos",
+                    "ID": "f_callflex_chamadas_have_total_atendimentos",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -17692,39 +17541,6 @@
                   "medida.total_atendimentos": {
                     "Target": {
                       "Entity": "medida.total_atendimentos"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "callflex_chamada_has_medida_total_atendimentos1": {
-                "Binding": {
-                  "ConceptualEntity": "fCallflex_chamadas"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "medida.total_atendimentos1"
-                      },
-                      "Subject": {
-                        "Role": "callflex_chamada"
-                      }
-                    },
-                    "ID": "f_callflex_chamadas_have_total_atendimentos_colaboradores",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "callflex_chamada": {
-                    "Target": {
-                      "Entity": "callflex_chamada"
-                    }
-                  },
-                  "medida.total_atendimentos1": {
-                    "Target": {
-                      "Entity": "medida.total_atendimentos1"
                     }
                   }
                 },
@@ -21129,6 +20945,369 @@
                 },
                 "State": "Generated"
               },
+              "f_adapter_atendimento_data_abertura_has_variation_hierarquia_de_data": {
+                "Binding": {
+                  "ConceptualEntity": "fAdapter_atendimentos"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data"
+                      },
+                      "Subject": {
+                        "Role": "f_adapter_atendimento.data_abertura"
+                      }
+                    },
+                    "ID": "data_aberturas_have_hierarquia_de_data",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "f_adapter_atendimento.data_abertura": {
+                    "Target": {
+                      "Entity": "f_adapter_atendimento.data_abertura"
+                    }
+                  },
+                  "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data": {
+                    "Target": {
+                      "Entity": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "f_adapter_atendimento_data_abertura_variation_hierarquia_de_data_ano_has_f_adapter_atendimento_data_abertura_variation_hierarquia_de_data_trimestre": {
+                "Binding": {
+                  "ConceptualEntity": "fAdapter_atendimentos"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.trimestre"
+                      },
+                      "Subject": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.ano"
+                      }
+                    },
+                    "ID": "anos_have_trimestres",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.ano"
+                      },
+                      "Subject": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.trimestre"
+                      }
+                    },
+                    "ID": "trimestres_have_anos",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "trimestres_are_in_anos7",
+                    "Preposition": {
+                      "Object": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.ano"
+                      },
+                      "Prepositions": [
+                        {
+                          "in": {
+                            "State": "Generated"
+                          }
+                        }
+                      ],
+                      "Subject": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.trimestre"
+                      }
+                    },
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.ano": {
+                    "Target": {
+                      "Entity": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.ano"
+                    }
+                  },
+                  "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.trimestre": {
+                    "Target": {
+                      "Entity": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.trimestre"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "f_adapter_atendimento_data_abertura_variation_hierarquia_de_data_has_ano": {
+                "Binding": {
+                  "ConceptualEntity": "fAdapter_atendimentos"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.ano"
+                      },
+                      "Subject": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data"
+                      }
+                    },
+                    "ID": "hierarquia_de_data_have_anos",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data": {
+                    "Target": {
+                      "Entity": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data"
+                    }
+                  },
+                  "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.ano": {
+                    "Target": {
+                      "Entity": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.ano"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "f_adapter_atendimento_data_abertura_variation_hierarquia_de_data_has_dia": {
+                "Binding": {
+                  "ConceptualEntity": "fAdapter_atendimentos"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.dia"
+                      },
+                      "Subject": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data"
+                      }
+                    },
+                    "ID": "hierarquia_de_data_have_dias",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data": {
+                    "Target": {
+                      "Entity": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data"
+                    }
+                  },
+                  "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.dia": {
+                    "Target": {
+                      "Entity": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.dia"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "f_adapter_atendimento_data_abertura_variation_hierarquia_de_data_has_mê": {
+                "Binding": {
+                  "ConceptualEntity": "fAdapter_atendimentos"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.mê"
+                      },
+                      "Subject": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data"
+                      }
+                    },
+                    "ID": "hierarquia_de_data_have_mê",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data": {
+                    "Target": {
+                      "Entity": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data"
+                    }
+                  },
+                  "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.mê": {
+                    "Target": {
+                      "Entity": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.mê"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "f_adapter_atendimento_data_abertura_variation_hierarquia_de_data_has_trimestre": {
+                "Binding": {
+                  "ConceptualEntity": "fAdapter_atendimentos"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.trimestre"
+                      },
+                      "Subject": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data"
+                      }
+                    },
+                    "ID": "hierarquia_de_data_have_trimestres",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data": {
+                    "Target": {
+                      "Entity": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data"
+                    }
+                  },
+                  "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.trimestre": {
+                    "Target": {
+                      "Entity": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.trimestre"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "f_adapter_atendimento_data_abertura_variation_hierarquia_de_data_mê_has_f_adapter_atendimento_data_abertura_variation_hierarquia_de_data_dia": {
+                "Binding": {
+                  "ConceptualEntity": "fAdapter_atendimentos"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.dia"
+                      },
+                      "Subject": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.mê"
+                      }
+                    },
+                    "ID": "mê_have_dias7",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.mê"
+                      },
+                      "Subject": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.dia"
+                      }
+                    },
+                    "ID": "dias_have_mê7",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "dias_are_in_mê7",
+                    "Preposition": {
+                      "Object": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.mê"
+                      },
+                      "Prepositions": [
+                        {
+                          "in": {
+                            "State": "Generated"
+                          }
+                        }
+                      ],
+                      "Subject": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.dia"
+                      }
+                    },
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.dia": {
+                    "Target": {
+                      "Entity": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.dia"
+                    }
+                  },
+                  "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.mê": {
+                    "Target": {
+                      "Entity": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.mê"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "f_adapter_atendimento_data_abertura_variation_hierarquia_de_data_trimestre_has_f_adapter_atendimento_data_abertura_variation_hierarquia_de_data_mê": {
+                "Binding": {
+                  "ConceptualEntity": "fAdapter_atendimentos"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.mê"
+                      },
+                      "Subject": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.trimestre"
+                      }
+                    },
+                    "ID": "trimestres_have_mê7",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.trimestre"
+                      },
+                      "Subject": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.mê"
+                      }
+                    },
+                    "ID": "mê_have_trimestres7",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "mê_are_in_trimestres7",
+                    "Preposition": {
+                      "Object": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.trimestre"
+                      },
+                      "Prepositions": [
+                        {
+                          "in": {
+                            "State": "Generated"
+                          }
+                        }
+                      ],
+                      "Subject": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.mê"
+                      }
+                    },
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.mê": {
+                    "Target": {
+                      "Entity": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.mê"
+                    }
+                  },
+                  "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.trimestre": {
+                    "Target": {
+                      "Entity": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.trimestre"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "f_adapter_atendimento_has_TMA_em_horas": {
                 "Binding": {
                   "ConceptualEntity": "fAdapter_atendimentos"
@@ -21162,39 +21341,6 @@
                 },
                 "State": "Generated"
               },
-              "f_adapter_atendimento_has_atendimento_grupo": {
-                "Binding": {
-                  "ConceptualEntity": "fAdapter_atendimentos"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "f_adapter_atendimento.atendimento_grupo"
-                      },
-                      "Subject": {
-                        "Role": "f_adapter_atendimento"
-                      }
-                    },
-                    "ID": "f_adapter_atendimentos_have_atendimento_grupos",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "f_adapter_atendimento": {
-                    "Target": {
-                      "Entity": "f_adapter_atendimento"
-                    }
-                  },
-                  "f_adapter_atendimento.atendimento_grupo": {
-                    "Target": {
-                      "Entity": "f_adapter_atendimento.atendimento_grupo"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
               "f_adapter_atendimento_has_bairro": {
                 "Binding": {
                   "ConceptualEntity": "fAdapter_atendimentos"
@@ -21223,6 +21369,39 @@
                   "f_adapter_atendimento.bairro": {
                     "Target": {
                       "Entity": "f_adapter_atendimento.bairro"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "f_adapter_atendimento_has_categoria_atendimento": {
+                "Binding": {
+                  "ConceptualEntity": "fAdapter_atendimentos"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "f_adapter_atendimento.categoria_atendimento"
+                      },
+                      "Subject": {
+                        "Role": "f_adapter_atendimento"
+                      }
+                    },
+                    "ID": "f_adapter_atendimentos_have_categoria_atendimentos",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "f_adapter_atendimento": {
+                    "Target": {
+                      "Entity": "f_adapter_atendimento"
+                    }
+                  },
+                  "f_adapter_atendimento.categoria_atendimento": {
+                    "Target": {
+                      "Entity": "f_adapter_atendimento.categoria_atendimento"
                     }
                   }
                 },
@@ -22536,6 +22715,171 @@
                   "f_adapter_atendimento.reagendado": {
                     "Target": {
                       "Entity": "f_adapter_atendimento.reagendado"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "f_adapter_atendimento_has_reincidencia_categoria_atendimento": {
+                "Binding": {
+                  "ConceptualEntity": "fAdapter_atendimentos"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "f_adapter_atendimento.reincidencia_categoria_atendimento"
+                      },
+                      "Subject": {
+                        "Role": "f_adapter_atendimento"
+                      }
+                    },
+                    "ID": "f_adapter_atendimentos_have_reincidencia_categoria_atendimentos",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "f_adapter_atendimento": {
+                    "Target": {
+                      "Entity": "f_adapter_atendimento"
+                    }
+                  },
+                  "f_adapter_atendimento.reincidencia_categoria_atendimento": {
+                    "Target": {
+                      "Entity": "f_adapter_atendimento.reincidencia_categoria_atendimento"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "f_adapter_atendimento_has_reincidencia_geral": {
+                "Binding": {
+                  "ConceptualEntity": "fAdapter_atendimentos"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "f_adapter_atendimento.reincidencia_geral"
+                      },
+                      "Subject": {
+                        "Role": "f_adapter_atendimento"
+                      }
+                    },
+                    "ID": "f_adapter_atendimentos_have_reincidencia_gerals",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "f_adapter_atendimento": {
+                    "Target": {
+                      "Entity": "f_adapter_atendimento"
+                    }
+                  },
+                  "f_adapter_atendimento.reincidencia_geral": {
+                    "Target": {
+                      "Entity": "f_adapter_atendimento.reincidencia_geral"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "f_adapter_atendimento_has_reincidencia_setor_atendimento": {
+                "Binding": {
+                  "ConceptualEntity": "fAdapter_atendimentos"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "f_adapter_atendimento.reincidencia_setor_atendimento"
+                      },
+                      "Subject": {
+                        "Role": "f_adapter_atendimento"
+                      }
+                    },
+                    "ID": "f_adapter_atendimentos_have_reincidencia_setor_atendimentos",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "f_adapter_atendimento": {
+                    "Target": {
+                      "Entity": "f_adapter_atendimento"
+                    }
+                  },
+                  "f_adapter_atendimento.reincidencia_setor_atendimento": {
+                    "Target": {
+                      "Entity": "f_adapter_atendimento.reincidencia_setor_atendimento"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "f_adapter_atendimento_has_reincidencia_tipo_atendimento": {
+                "Binding": {
+                  "ConceptualEntity": "fAdapter_atendimentos"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "f_adapter_atendimento.reincidencia_tipo_atendimento"
+                      },
+                      "Subject": {
+                        "Role": "f_adapter_atendimento"
+                      }
+                    },
+                    "ID": "f_adapter_atendimentos_have_reincidencia_tipo_atendimentos",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "f_adapter_atendimento": {
+                    "Target": {
+                      "Entity": "f_adapter_atendimento"
+                    }
+                  },
+                  "f_adapter_atendimento.reincidencia_tipo_atendimento": {
+                    "Target": {
+                      "Entity": "f_adapter_atendimento.reincidencia_tipo_atendimento"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "f_adapter_atendimento_has_setor_atendimento": {
+                "Binding": {
+                  "ConceptualEntity": "fAdapter_atendimentos"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "f_adapter_atendimento.setor_atendimento"
+                      },
+                      "Subject": {
+                        "Role": "f_adapter_atendimento"
+                      }
+                    },
+                    "ID": "f_adapter_atendimentos_have_setor_atendimentos",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "f_adapter_atendimento": {
+                    "Target": {
+                      "Entity": "f_adapter_atendimento"
+                    }
+                  },
+                  "f_adapter_atendimento.setor_atendimento": {
+                    "Target": {
+                      "Entity": "f_adapter_atendimento.setor_atendimento"
                     }
                   }
                 },
@@ -25801,39 +26145,6 @@
                 },
                 "State": "Generated"
               },
-              "medida_has_contagem_reincidencia_1": {
-                "Binding": {
-                  "ConceptualEntity": "Medidas"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "medida.contagem_reincidencia_1"
-                      },
-                      "Subject": {
-                        "Role": "medida"
-                      }
-                    },
-                    "ID": "medidas_have_contagem_reincidencia_1",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "medida": {
-                    "Target": {
-                      "Entity": "medida"
-                    }
-                  },
-                  "medida.contagem_reincidencia_1": {
-                    "Target": {
-                      "Entity": "medida.contagem_reincidencia_1"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
               "medida_has_em_construção": {
                 "Binding": {
                   "ConceptualEntity": "Medidas"
@@ -25933,7 +26244,7 @@
                 },
                 "State": "Generated"
               },
-              "medida_has_reincidencia": {
+              "medida_has_rencidencias_atendimentos": {
                 "Binding": {
                   "ConceptualEntity": "Medidas"
                 },
@@ -25941,13 +26252,13 @@
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "medida.reincidencia"
+                        "Role": "medida.rencidencias_atendimentos"
                       },
                       "Subject": {
                         "Role": "medida"
                       }
                     },
-                    "ID": "medidas_have_reincidencia",
+                    "ID": "medidas_have_rencidencias_atendimentos",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -25958,9 +26269,9 @@
                       "Entity": "medida"
                     }
                   },
-                  "medida.reincidencia": {
+                  "medida.rencidencias_atendimentos": {
                     "Target": {
-                      "Entity": "medida.reincidencia"
+                      "Entity": "medida.rencidencias_atendimentos"
                     }
                   }
                 },
@@ -26230,753 +26541,67 @@
                 },
                 "State": "Generated"
               },
-              "reincidencia_data_abertura_has_variation_hierarquia_de_data": {
+              "medidas_reincidencia_has_medida_contagem_reincidencia_1": {
                 "Binding": {
-                  "ConceptualEntity": "fAdapter_reincidencias"
+                  "ConceptualEntity": "Medidas Reincidencia"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "reincidencia.data_abertura.variation.hierarquia_de_data"
+                        "Role": "medida.contagem_reincidencia_1"
                       },
                       "Subject": {
-                        "Role": "reincidencia.data_abertura"
+                        "Role": "medidas_reincidencia"
                       }
                     },
-                    "ID": "data_aberturas_have_hierarquia_de_data",
+                    "ID": "medidas_reincidencias_have_rencidencias_visitas_tecnicas",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "reincidencia.data_abertura": {
+                  "medida.contagem_reincidencia_1": {
                     "Target": {
-                      "Entity": "reincidencia.data_abertura"
+                      "Entity": "medida.contagem_reincidencia_1"
                     }
                   },
-                  "reincidencia.data_abertura.variation.hierarquia_de_data": {
+                  "medidas_reincidencia": {
                     "Target": {
-                      "Entity": "reincidencia.data_abertura.variation.hierarquia_de_data"
+                      "Entity": "medidas_reincidencia"
                     }
                   }
                 },
                 "State": "Generated"
               },
-              "reincidencia_data_abertura_variation_hierarquia_de_data_ano_has_reincidencia_data_abertura_variation_hierarquia_de_data_trimestre": {
+              "medidas_reincidencia_has_reincidencia_categoria": {
                 "Binding": {
-                  "ConceptualEntity": "fAdapter_reincidencias"
+                  "ConceptualEntity": "Medidas Reincidencia"
                 },
                 "Phrasings": [
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "reincidencia.data_abertura.variation.hierarquia_de_data.trimestre"
+                        "Role": "medidas_reincidencia.reincidencia_categoria"
                       },
                       "Subject": {
-                        "Role": "reincidencia.data_abertura.variation.hierarquia_de_data.ano"
+                        "Role": "medidas_reincidencia"
                       }
                     },
-                    "ID": "anos_have_trimestres3",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "reincidencia.data_abertura.variation.hierarquia_de_data.ano"
-                      },
-                      "Subject": {
-                        "Role": "reincidencia.data_abertura.variation.hierarquia_de_data.trimestre"
-                      }
-                    },
-                    "ID": "trimestres_have_anos3",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "ID": "trimestres_are_in_anos4",
-                    "Preposition": {
-                      "Object": {
-                        "Role": "reincidencia.data_abertura.variation.hierarquia_de_data.ano"
-                      },
-                      "Prepositions": [
-                        {
-                          "in": {
-                            "State": "Generated"
-                          }
-                        }
-                      ],
-                      "Subject": {
-                        "Role": "reincidencia.data_abertura.variation.hierarquia_de_data.trimestre"
-                      }
-                    },
+                    "ID": "medidas_reincidencias_have_reincidencia_categoria",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "reincidencia.data_abertura.variation.hierarquia_de_data.ano": {
+                  "medidas_reincidencia": {
                     "Target": {
-                      "Entity": "reincidencia.data_abertura.variation.hierarquia_de_data.ano"
+                      "Entity": "medidas_reincidencia"
                     }
                   },
-                  "reincidencia.data_abertura.variation.hierarquia_de_data.trimestre": {
+                  "medidas_reincidencia.reincidencia_categoria": {
                     "Target": {
-                      "Entity": "reincidencia.data_abertura.variation.hierarquia_de_data.trimestre"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "reincidencia_data_abertura_variation_hierarquia_de_data_has_ano": {
-                "Binding": {
-                  "ConceptualEntity": "fAdapter_reincidencias"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "reincidencia.data_abertura.variation.hierarquia_de_data.ano"
-                      },
-                      "Subject": {
-                        "Role": "reincidencia.data_abertura.variation.hierarquia_de_data"
-                      }
-                    },
-                    "ID": "hierarquia_de_data_have_anos3",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "reincidencia.data_abertura.variation.hierarquia_de_data": {
-                    "Target": {
-                      "Entity": "reincidencia.data_abertura.variation.hierarquia_de_data"
-                    }
-                  },
-                  "reincidencia.data_abertura.variation.hierarquia_de_data.ano": {
-                    "Target": {
-                      "Entity": "reincidencia.data_abertura.variation.hierarquia_de_data.ano"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "reincidencia_data_abertura_variation_hierarquia_de_data_has_dia": {
-                "Binding": {
-                  "ConceptualEntity": "fAdapter_reincidencias"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "reincidencia.data_abertura.variation.hierarquia_de_data.dia"
-                      },
-                      "Subject": {
-                        "Role": "reincidencia.data_abertura.variation.hierarquia_de_data"
-                      }
-                    },
-                    "ID": "hierarquia_de_data_have_dias3",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "reincidencia.data_abertura.variation.hierarquia_de_data": {
-                    "Target": {
-                      "Entity": "reincidencia.data_abertura.variation.hierarquia_de_data"
-                    }
-                  },
-                  "reincidencia.data_abertura.variation.hierarquia_de_data.dia": {
-                    "Target": {
-                      "Entity": "reincidencia.data_abertura.variation.hierarquia_de_data.dia"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "reincidencia_data_abertura_variation_hierarquia_de_data_has_mê": {
-                "Binding": {
-                  "ConceptualEntity": "fAdapter_reincidencias"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "reincidencia.data_abertura.variation.hierarquia_de_data.mê"
-                      },
-                      "Subject": {
-                        "Role": "reincidencia.data_abertura.variation.hierarquia_de_data"
-                      }
-                    },
-                    "ID": "hierarquia_de_data_have_mê3",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "reincidencia.data_abertura.variation.hierarquia_de_data": {
-                    "Target": {
-                      "Entity": "reincidencia.data_abertura.variation.hierarquia_de_data"
-                    }
-                  },
-                  "reincidencia.data_abertura.variation.hierarquia_de_data.mê": {
-                    "Target": {
-                      "Entity": "reincidencia.data_abertura.variation.hierarquia_de_data.mê"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "reincidencia_data_abertura_variation_hierarquia_de_data_has_trimestre": {
-                "Binding": {
-                  "ConceptualEntity": "fAdapter_reincidencias"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "reincidencia.data_abertura.variation.hierarquia_de_data.trimestre"
-                      },
-                      "Subject": {
-                        "Role": "reincidencia.data_abertura.variation.hierarquia_de_data"
-                      }
-                    },
-                    "ID": "hierarquia_de_data_have_trimestres3",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "reincidencia.data_abertura.variation.hierarquia_de_data": {
-                    "Target": {
-                      "Entity": "reincidencia.data_abertura.variation.hierarquia_de_data"
-                    }
-                  },
-                  "reincidencia.data_abertura.variation.hierarquia_de_data.trimestre": {
-                    "Target": {
-                      "Entity": "reincidencia.data_abertura.variation.hierarquia_de_data.trimestre"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "reincidencia_data_abertura_variation_hierarquia_de_data_mê_has_reincidencia_data_abertura_variation_hierarquia_de_data_dia": {
-                "Binding": {
-                  "ConceptualEntity": "fAdapter_reincidencias"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "reincidencia.data_abertura.variation.hierarquia_de_data.dia"
-                      },
-                      "Subject": {
-                        "Role": "reincidencia.data_abertura.variation.hierarquia_de_data.mê"
-                      }
-                    },
-                    "ID": "mê_have_dias2",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "reincidencia.data_abertura.variation.hierarquia_de_data.mê"
-                      },
-                      "Subject": {
-                        "Role": "reincidencia.data_abertura.variation.hierarquia_de_data.dia"
-                      }
-                    },
-                    "ID": "dias_have_mê2",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "ID": "dias_are_in_mê4",
-                    "Preposition": {
-                      "Object": {
-                        "Role": "reincidencia.data_abertura.variation.hierarquia_de_data.mê"
-                      },
-                      "Prepositions": [
-                        {
-                          "in": {
-                            "State": "Generated"
-                          }
-                        }
-                      ],
-                      "Subject": {
-                        "Role": "reincidencia.data_abertura.variation.hierarquia_de_data.dia"
-                      }
-                    },
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "reincidencia.data_abertura.variation.hierarquia_de_data.dia": {
-                    "Target": {
-                      "Entity": "reincidencia.data_abertura.variation.hierarquia_de_data.dia"
-                    }
-                  },
-                  "reincidencia.data_abertura.variation.hierarquia_de_data.mê": {
-                    "Target": {
-                      "Entity": "reincidencia.data_abertura.variation.hierarquia_de_data.mê"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "reincidencia_data_abertura_variation_hierarquia_de_data_trimestre_has_reincidencia_data_abertura_variation_hierarquia_de_data_mê": {
-                "Binding": {
-                  "ConceptualEntity": "fAdapter_reincidencias"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "reincidencia.data_abertura.variation.hierarquia_de_data.mê"
-                      },
-                      "Subject": {
-                        "Role": "reincidencia.data_abertura.variation.hierarquia_de_data.trimestre"
-                      }
-                    },
-                    "ID": "trimestres_have_mê2",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "reincidencia.data_abertura.variation.hierarquia_de_data.trimestre"
-                      },
-                      "Subject": {
-                        "Role": "reincidencia.data_abertura.variation.hierarquia_de_data.mê"
-                      }
-                    },
-                    "ID": "mê_have_trimestres2",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "ID": "mê_are_in_trimestres4",
-                    "Preposition": {
-                      "Object": {
-                        "Role": "reincidencia.data_abertura.variation.hierarquia_de_data.trimestre"
-                      },
-                      "Prepositions": [
-                        {
-                          "in": {
-                            "State": "Generated"
-                          }
-                        }
-                      ],
-                      "Subject": {
-                        "Role": "reincidencia.data_abertura.variation.hierarquia_de_data.mê"
-                      }
-                    },
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "reincidencia.data_abertura.variation.hierarquia_de_data.mê": {
-                    "Target": {
-                      "Entity": "reincidencia.data_abertura.variation.hierarquia_de_data.mê"
-                    }
-                  },
-                  "reincidencia.data_abertura.variation.hierarquia_de_data.trimestre": {
-                    "Target": {
-                      "Entity": "reincidencia.data_abertura.variation.hierarquia_de_data.trimestre"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "reincidencia_has_atendimento_grupo": {
-                "Binding": {
-                  "ConceptualEntity": "fAdapter_reincidencias"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "reincidencia.atendimento_grupo"
-                      },
-                      "Subject": {
-                        "Role": "reincidencia"
-                      }
-                    },
-                    "ID": "f_adapter_reincidencias_have_atendimento_grupos",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "reincidencia": {
-                    "Target": {
-                      "Entity": "reincidencia"
-                    }
-                  },
-                  "reincidencia.atendimento_grupo": {
-                    "Target": {
-                      "Entity": "reincidencia.atendimento_grupo"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "reincidencia_has_cliente": {
-                "Binding": {
-                  "ConceptualEntity": "fAdapter_reincidencias"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "reincidencia.cliente"
-                      },
-                      "Subject": {
-                        "Role": "reincidencia"
-                      }
-                    },
-                    "ID": "f_adapter_reincidencias_have_clientes",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "reincidencia": {
-                    "Target": {
-                      "Entity": "reincidencia"
-                    }
-                  },
-                  "reincidencia.cliente": {
-                    "Target": {
-                      "Entity": "reincidencia.cliente"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "reincidencia_has_d_calendario": {
-                "Binding": {
-                  "ConceptualEntity": "fAdapter_reincidencias"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "d_calendario"
-                      },
-                      "Subject": {
-                        "Role": "reincidencia"
-                      }
-                    },
-                    "ID": "f_adapter_reincidencias_have_d_calendarios",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "reincidencia"
-                      },
-                      "Subject": {
-                        "Role": "d_calendario"
-                      }
-                    },
-                    "ID": "d_calendarios_have_f_adapter_reincidencias",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "d_calendario": {
-                    "Target": {
-                      "Entity": "d_calendario"
-                    }
-                  },
-                  "reincidencia": {
-                    "Target": {
-                      "Entity": "reincidencia"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "reincidencia_has_d_colaboradore": {
-                "Binding": {
-                  "ConceptualEntity": "fAdapter_reincidencias"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "d_colaboradore"
-                      },
-                      "Subject": {
-                        "Role": "reincidencia"
-                      }
-                    },
-                    "ID": "f_adapter_reincidencias_have_d_colaboradores",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "reincidencia"
-                      },
-                      "Subject": {
-                        "Role": "d_colaboradore"
-                      }
-                    },
-                    "ID": "d_colaboradores_have_f_adapter_reincidencias",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "d_colaboradore": {
-                    "Target": {
-                      "Entity": "d_colaboradore"
-                    }
-                  },
-                  "reincidencia": {
-                    "Target": {
-                      "Entity": "reincidencia"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "reincidencia_has_data_abertura": {
-                "Binding": {
-                  "ConceptualEntity": "fAdapter_reincidencias"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "reincidencia.data_abertura"
-                      },
-                      "Subject": {
-                        "Role": "reincidencia"
-                      }
-                    },
-                    "ID": "f_adapter_reincidencias_have_data_aberturas",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "reincidencia": {
-                    "Target": {
-                      "Entity": "reincidencia"
-                    }
-                  },
-                  "reincidencia.data_abertura": {
-                    "Target": {
-                      "Entity": "reincidencia.data_abertura"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "reincidencia_has_data_abertura_ddmmaaaa": {
-                "Binding": {
-                  "ConceptualEntity": "fAdapter_reincidencias"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "reincidencia.data_abertura_ddmmaaaa"
-                      },
-                      "Subject": {
-                        "Role": "reincidencia"
-                      }
-                    },
-                    "ID": "f_adapter_reincidencias_have_data_abertura_ddmmaaaa",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "reincidencia": {
-                    "Target": {
-                      "Entity": "reincidencia"
-                    }
-                  },
-                  "reincidencia.data_abertura_ddmmaaaa": {
-                    "Target": {
-                      "Entity": "reincidencia.data_abertura_ddmmaaaa"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "reincidencia_has_gerou_visita": {
-                "Binding": {
-                  "ConceptualEntity": "fAdapter_reincidencias"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "reincidencia.gerou_visita"
-                      },
-                      "Subject": {
-                        "Role": "reincidencia"
-                      }
-                    },
-                    "ID": "f_adapter_reincidencias_have_gerou_visitas",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "reincidencia": {
-                    "Target": {
-                      "Entity": "reincidencia"
-                    }
-                  },
-                  "reincidencia.gerou_visita": {
-                    "Target": {
-                      "Entity": "reincidencia.gerou_visita"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "reincidencia_has_protocolo": {
-                "Binding": {
-                  "ConceptualEntity": "fAdapter_reincidencias"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "reincidencia.protocolo"
-                      },
-                      "Subject": {
-                        "Role": "reincidencia"
-                      }
-                    },
-                    "ID": "f_adapter_reincidencias_have_protocolos",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "reincidencia": {
-                    "Target": {
-                      "Entity": "reincidencia"
-                    }
-                  },
-                  "reincidencia.protocolo": {
-                    "Target": {
-                      "Entity": "reincidencia.protocolo"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "reincidencia_has_reincidencia": {
-                "Binding": {
-                  "ConceptualEntity": "fAdapter_reincidencias"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "reincidencia.reincidencia"
-                      },
-                      "Subject": {
-                        "Role": "reincidencia"
-                      }
-                    },
-                    "ID": "f_adapter_reincidencias_have_reincidencias",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "reincidencia": {
-                    "Target": {
-                      "Entity": "reincidencia"
-                    }
-                  },
-                  "reincidencia.reincidencia": {
-                    "Target": {
-                      "Entity": "reincidencia.reincidencia"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "reincidencia_has_tipo_atendimento": {
-                "Binding": {
-                  "ConceptualEntity": "fAdapter_reincidencias"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "reincidencia.tipo_atendimento"
-                      },
-                      "Subject": {
-                        "Role": "reincidencia"
-                      }
-                    },
-                    "ID": "f_adapter_reincidencias_have_tipo_atendimentos",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "reincidencia": {
-                    "Target": {
-                      "Entity": "reincidencia"
-                    }
-                  },
-                  "reincidencia.tipo_atendimento": {
-                    "Target": {
-                      "Entity": "reincidencia.tipo_atendimento"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "reincidencia_has_tipo_pessoa": {
-                "Binding": {
-                  "ConceptualEntity": "fAdapter_reincidencias"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "reincidencia.tipo_pessoa"
-                      },
-                      "Subject": {
-                        "Role": "reincidencia"
-                      }
-                    },
-                    "ID": "f_adapter_reincidencias_have_tipo_pessoa",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "reincidencia": {
-                    "Target": {
-                      "Entity": "reincidencia"
-                    }
-                  },
-                  "reincidencia.tipo_pessoa": {
-                    "Target": {
-                      "Entity": "reincidencia.tipo_pessoa"
+                      "Entity": "medidas_reincidencia.reincidencia_categoria"
                     }
                   }
                 },
@@ -27029,7 +26654,7 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data.ano"
                       }
                     },
-                    "ID": "anos_have_trimestres2",
+                    "ID": "anos_have_trimestres3",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -27042,12 +26667,12 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_anos2",
+                    "ID": "trimestres_have_anos3",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "trimestres_are_in_anos5",
+                    "ID": "trimestres_are_in_anos4",
                     "Preposition": {
                       "Object": {
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data.ano"
@@ -27095,7 +26720,7 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_anos2",
+                    "ID": "hierarquia_de_data_have_anos3",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -27128,7 +26753,7 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_dias2",
+                    "ID": "hierarquia_de_data_have_dias3",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -27161,7 +26786,7 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_mê2",
+                    "ID": "hierarquia_de_data_have_mê3",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -27194,7 +26819,7 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_trimestres2",
+                    "ID": "hierarquia_de_data_have_trimestres3",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -27227,7 +26852,7 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_dias1",
+                    "ID": "mê_have_dias2",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -27240,12 +26865,12 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data.dia"
                       }
                     },
-                    "ID": "dias_have_mê1",
+                    "ID": "dias_have_mê2",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "dias_are_in_mê5",
+                    "ID": "dias_are_in_mê4",
                     "Preposition": {
                       "Object": {
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data.mê"
@@ -27293,7 +26918,7 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_mê1",
+                    "ID": "trimestres_have_mê2",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -27306,12 +26931,12 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_trimestres1",
+                    "ID": "mê_have_trimestres2",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "mê_are_in_trimestres5",
+                    "ID": "mê_are_in_trimestres4",
                     "Preposition": {
                       "Object": {
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data.trimestre"
@@ -28896,7 +28521,7 @@
                         "Role": "relatorio_atendimento"
                       }
                     },
-                    "ID": "f_chat_relatorio_atendimentos_have_total_meus_atendimentos",
+                    "ID": "f_chat_relatorio_atendimentos_have_total_atendimentos",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -28905,39 +28530,6 @@
                   "medida.total_atendimentos": {
                     "Target": {
                       "Entity": "medida.total_atendimentos"
-                    }
-                  },
-                  "relatorio_atendimento": {
-                    "Target": {
-                      "Entity": "relatorio_atendimento"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "relatorio_atendimento_has_medida_total_atendimentos1": {
-                "Binding": {
-                  "ConceptualEntity": "fChat_relatorio_atendimento"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "medida.total_atendimentos1"
-                      },
-                      "Subject": {
-                        "Role": "relatorio_atendimento"
-                      }
-                    },
-                    "ID": "f_chat_relatorio_atendimentos_have_total_atendimentos_colaboradores",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "medida.total_atendimentos1": {
-                    "Target": {
-                      "Entity": "medida.total_atendimentos1"
                     }
                   },
                   "relatorio_atendimento": {
@@ -29919,7 +29511,7 @@
                         "Role": "relatorio_np.data.variation.hierarquia_de_data.ano"
                       }
                     },
-                    "ID": "anos_have_trimestres1",
+                    "ID": "anos_have_trimestres2",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -29932,12 +29524,12 @@
                         "Role": "relatorio_np.data.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_anos1",
+                    "ID": "trimestres_have_anos2",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "trimestres_are_in_anos6",
+                    "ID": "trimestres_are_in_anos5",
                     "Preposition": {
                       "Object": {
                         "Role": "relatorio_np.data.variation.hierarquia_de_data.ano"
@@ -29985,7 +29577,7 @@
                         "Role": "relatorio_np.data.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_anos1",
+                    "ID": "hierarquia_de_data_have_anos2",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -30018,7 +29610,7 @@
                         "Role": "relatorio_np.data.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_dias1",
+                    "ID": "hierarquia_de_data_have_dias2",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -30051,7 +29643,7 @@
                         "Role": "relatorio_np.data.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_mê1",
+                    "ID": "hierarquia_de_data_have_mê2",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -30084,7 +29676,7 @@
                         "Role": "relatorio_np.data.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_trimestres1",
+                    "ID": "hierarquia_de_data_have_trimestres2",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -30117,7 +29709,7 @@
                         "Role": "relatorio_np.data.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_dias",
+                    "ID": "mê_have_dias1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -30130,12 +29722,12 @@
                         "Role": "relatorio_np.data.variation.hierarquia_de_data.dia"
                       }
                     },
-                    "ID": "dias_have_mê",
+                    "ID": "dias_have_mê1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "dias_are_in_mê6",
+                    "ID": "dias_are_in_mê5",
                     "Preposition": {
                       "Object": {
                         "Role": "relatorio_np.data.variation.hierarquia_de_data.mê"
@@ -30183,7 +29775,7 @@
                         "Role": "relatorio_np.data.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_mê",
+                    "ID": "trimestres_have_mê1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -30196,12 +29788,12 @@
                         "Role": "relatorio_np.data.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_trimestres",
+                    "ID": "mê_have_trimestres1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "mê_are_in_trimestres6",
+                    "ID": "mê_are_in_trimestres5",
                     "Preposition": {
                       "Object": {
                         "Role": "relatorio_np.data.variation.hierarquia_de_data.trimestre"
@@ -30882,7 +30474,7 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data.ano"
                       }
                     },
-                    "ID": "anos_have_trimestres",
+                    "ID": "anos_have_trimestres1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -30895,12 +30487,12 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_anos",
+                    "ID": "trimestres_have_anos1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "trimestres_are_in_anos7",
+                    "ID": "trimestres_are_in_anos6",
                     "Preposition": {
                       "Object": {
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data.ano"
@@ -30948,7 +30540,7 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_anos",
+                    "ID": "hierarquia_de_data_have_anos1",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -30981,7 +30573,7 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_dias",
+                    "ID": "hierarquia_de_data_have_dias1",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -31014,7 +30606,7 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_mê",
+                    "ID": "hierarquia_de_data_have_mê1",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -31047,7 +30639,7 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_trimestres",
+                    "ID": "hierarquia_de_data_have_trimestres1",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -31080,7 +30672,7 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_dias7",
+                    "ID": "mê_have_dias",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -31093,12 +30685,12 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data.dia"
                       }
                     },
-                    "ID": "dias_have_mê7",
+                    "ID": "dias_have_mê",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "dias_are_in_mê7",
+                    "ID": "dias_are_in_mê6",
                     "Preposition": {
                       "Object": {
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data.mê"
@@ -31146,7 +30738,7 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_mê7",
+                    "ID": "trimestres_have_mê",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -31159,12 +30751,12 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_trimestres7",
+                    "ID": "mê_have_trimestres",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "mê_are_in_trimestres7",
+                    "ID": "mê_are_in_trimestres6",
                     "Preposition": {
                       "Object": {
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data.trimestre"
@@ -32087,14 +31679,6 @@
         "toTable": "LocalDateTable_9bb371a8-6fc6-44ab-8fe7-fa1d41f0136f"
       },
       {
-        "name": "5fa2a440-8a87-4883-bb63-402910d393d0",
-        "fromColumn": "Data Abertura",
-        "fromTable": "fAdapter_reincidencias",
-        "joinOnDateBehavior": "datePartOnly",
-        "toColumn": "Date",
-        "toTable": "LocalDateTable_f91ec5c1-d982-4e68-aa2b-141ceaf68c32"
-      },
-      {
         "name": "c6b90986-4b82-d3c4-bb74-2b6f6ce30c14",
         "fromColumn": "COLABORADOR",
         "fromTable": "fAdapter_atendimentos",
@@ -32135,13 +31719,6 @@
         "name": "0be34280-2a2b-1993-d3a5-d0dbfb828d7b",
         "fromColumn": "COLABORADOR",
         "fromTable": "fCallflex_chamadas",
-        "toColumn": "Colaborador",
-        "toTable": "dColaboradores"
-      },
-      {
-        "name": "80421936-8a3d-26d5-8d16-44701d6abc46",
-        "fromColumn": "COLABORADOR",
-        "fromTable": "fAdapter_reincidencias",
         "toColumn": "Colaborador",
         "toTable": "dColaboradores"
       },
@@ -32225,13 +31802,6 @@
         "name": "ad9ef431-2063-31b7-bf28-05c78ad34311",
         "fromColumn": "Data (ddmmaaaa)",
         "fromTable": "fCallflex_chamadas",
-        "toColumn": "Date",
-        "toTable": "dCalendario"
-      },
-      {
-        "name": "84da5310-03b4-6fed-6e3a-fca4f586d51c",
-        "fromColumn": "Data Abertura (ddmmaaaa)",
-        "fromTable": "fAdapter_reincidencias",
         "toColumn": "Date",
         "toTable": "dCalendario"
       },
@@ -34494,24 +34064,6 @@
             "lineageTag": "c2593382-f343-4eb3-9f9d-27cccd9e3af4"
           },
           {
-            "name": "Rencidencias_Visitas_Tecnicas",
-            "expression": [
-              "",
-              "VAR Contagem = CALCULATE(",
-              "    COUNTROWS(fAdapter_atendimentos),",
-              "    fAdapter_atendimentos[Reincidencia Setor Atendimento] = 1,",
-              "    fAdapter_atendimentos[Gerou Visita] IN ",
-              "        {\"Sim\"},",
-              "    fAdapter_atendimentos[Setor Atendimento] IN ",
-              "        {\"Suporte\"}",
-              ")",
-              "RETURN ",
-              "IF(Contagem = 0, 0, Contagem)"
-            ],
-            "formatString": "0",
-            "lineageTag": "4def38a8-6ace-40bf-9fd7-c5c21233ef71"
-          },
-          {
             "name": "Nome do Agente",
             "expression": [
               "",
@@ -36200,212 +35752,6 @@
                 "    #\"Colunas Renomeadas1\" = Table.RenameColumns(#\"Data Inserida\",{{\"Nome do Usuário\", \"COLABORADOR\"}})",
                 "in",
                 "    #\"Colunas Renomeadas1\""
-              ],
-              "type": "m"
-            }
-          }
-        ]
-      },
-      {
-        "name": "fAdapter_reincidencias",
-        "annotations": [
-          {
-            "name": "PBI_ResultType",
-            "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
-          }
-        ],
-        "columns": [
-          {
-            "name": "Protocolo",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "ef33d508-2144-42ad-b66e-6f8a4205c3dc",
-            "sourceColumn": "Protocolo",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Cliente",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "ce02b902-155b-4383-9243-f42e0de1de50",
-            "sourceColumn": "Cliente",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Reincidencia",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "0465cea7-e6e9-4158-8f9c-186d7731ce72",
-            "sourceColumn": "Reincidencia",
-            "summarizeBy": "sum"
-          },
-          {
-            "name": "Data Abertura",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "dateTime",
-            "formatString": "General Date",
-            "lineageTag": "0b6ea1a8-9a56-40a0-87e6-99ff1f70a0d0",
-            "sourceColumn": "Data Abertura",
-            "summarizeBy": "none",
-            "variations": [
-              {
-                "name": "Variation",
-                "defaultHierarchy": {
-                  "hierarchy": "Hierarquia de datas",
-                  "table": "LocalDateTable_f91ec5c1-d982-4e68-aa2b-141ceaf68c32"
-                },
-                "isDefault": true,
-                "relationship": "5fa2a440-8a87-4883-bb63-402910d393d0"
-              }
-            ]
-          },
-          {
-            "name": "COLABORADOR",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "e33c0d73-3d36-47fa-a7be-ee0269e02f32",
-            "sourceColumn": "COLABORADOR",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "AtendimentoGrupo",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "827d309c-b08c-48df-b0e2-2c7ecf9a190a",
-            "sourceColumn": "AtendimentoGrupo",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Tipo Atendimento",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "2cfd73cb-144b-4765-a921-10c507396257",
-            "sourceColumn": "Tipo Atendimento",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Tipo Pessoa",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "a4851ddd-9b9a-4adc-9fc8-bd8b74c19cc4",
-            "sourceColumn": "Tipo Pessoa",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Gerou Visita",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "b150ab30-1166-4723-baf4-eca38a3057d7",
-            "sourceColumn": "Gerou Visita",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Data Abertura (ddmmaaaa)",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              },
-              {
-                "name": "UnderlyingDateTimeDataType",
-                "value": "Date"
-              }
-            ],
-            "dataType": "dateTime",
-            "formatString": "Long Date",
-            "lineageTag": "4fde7fee-7252-4f3e-8a21-cab295a29340",
-            "sourceColumn": "Data Abertura (ddmmaaaa)",
-            "summarizeBy": "none"
-          }
-        ],
-        "lineageTag": "a39c04ad-eebc-4223-93e8-7e6d7a2c2362",
-        "partitions": [
-          {
-            "name": "fAdapter_reincidencias",
-            "mode": "import",
-            "source": {
-              "expression": [
-                "let",
-                "    Fonte = Csv.Document(Web.Contents(\"https://solucaonet.sharepoint.com/sites/suportecs/Documentos%20Compartilhados/Gest%C3%A3o/Desempenho/Dados/fAdapter_reincidencias.csv\"),[Delimiter=\",\", Columns=9, Encoding=65001, QuoteStyle=QuoteStyle.None]),",
-                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),",
-                "",
-                "    #\"ARTUR DO NASCIMENTO ARBOLEIA\" = Table.ReplaceValue(#\"Cabeçalhos Promovidos\",\"ARTUR DO NASCIMENTO ARBOLEIA\",\"ARTUR DO NASCIMENTO ARBOLEIA\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
-                "    #\"MARIA LUIZA DE SOUZA PEREIRA\" = Table.ReplaceValue(#\"ARTUR DO NASCIMENTO ARBOLEIA\",\"MARIA LUIZA DE SOUZA PEREIRA\",\"MARIA LUIZA DE SOUZA PEREIRA\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
-                "    #\"WELLINGTON DIONIZIO SANTOS\" = Table.ReplaceValue(#\"MARIA LUIZA DE SOUZA PEREIRA\",\"WELLINGTON DIONIZIO SANTOS\",\"WELLINGTON DIONIZIO SANTOS\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
-                "    #\"GIOVANNI QUINTINO DA SILVA\" = Table.ReplaceValue(#\"WELLINGTON DIONIZIO SANTOS\",\"GIOVANNI QUINTINO DA SILVA\",\"GIOVANNI QUINTINO DA SILVA\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
-                "    #\"FERNANDO ALVES BARBOSA\" = Table.ReplaceValue(#\"GIOVANNI QUINTINO DA SILVA\",\"FERNANDO ALVES BARBOSA\",\"FERNANDO ALVES BARBOSA\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
-                "    #\"CLEISON RODRIGUES DA SILVA\" = Table.ReplaceValue(#\"FERNANDO ALVES BARBOSA\",\"CLEISON RODRIGUES DA SILVA\",\"CLEISON RODRIGUES DA SILVA\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
-                "    #\"HIGOR VINICIUS RODRIGUES BRITO\" = Table.ReplaceValue(#\"CLEISON RODRIGUES DA SILVA\",\"HIGOR VINICIUS RODRIGUES BRITO\",\"HIGOR VINICIUS RODRIGUES BRITO\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
-                "    #\"JOAO VITOR DA SILVA PIMENTEL\" = Table.ReplaceValue(#\"HIGOR VINICIUS RODRIGUES BRITO\",\"JOÃO VITOR DA SILVA PIMENTEL\",\"JOAO VITOR DA SILVA PIMENTEL\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
-                "    #\"RENAN LUIZ\" = Table.ReplaceValue(#\"JOAO VITOR DA SILVA PIMENTEL\",\"RENAN LUIZ GONDO DA SILVA\",\"RENAN LUIZ\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
-                "    #\"MATHEUS ANDRADE DE ARAUJO\" = Table.ReplaceValue(#\"RENAN LUIZ\",\"MATHEUS ANDRADE DE ARAUJO\",\"MATHEUS ANDRADE DE ARAUJO\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
-                "    #\"MURILO CARLOS NEPONUCENA NOGUEIRA\" = Table.ReplaceValue(#\"MATHEUS ANDRADE DE ARAUJO\",\"MURILO CARLOS NEPONUCENA NOGUEIRA\",\"MURILO CARLOS NEPONUCENA NOGUEIRA\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
-                "    #\"ADREAN FELIPPE MATTOS DE MOURA\" = Table.ReplaceValue(#\"MURILO CARLOS NEPONUCENA NOGUEIRA\",\"ADREAN FELIPPE MATTOS DE MOURA\",\"ADREAN FELIPPE MATTOS DE MOURA\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
-                "    #\"SABRINA PADIAL\" = Table.ReplaceValue(#\"ADREAN FELIPPE MATTOS DE MOURA\",\"SABRINA PADIAL\",\"SABRINA PADIAL\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
-                "    #\"VINICIUS NUNES RODRIGUES\" = Table.ReplaceValue(#\"SABRINA PADIAL\",\"VINICIUS NUNES RODRIGUES\",\"VINICIUS NUNES RODRIGUES\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
-                "    #\"ESTEBAN GABRIEL GARDIM DIAZ\" = Table.ReplaceValue(#\"VINICIUS NUNES RODRIGUES\",\"ESTEBAN GABRIEL GARDIM DIAZ\",\"ESTEBAN GABRIEL GARDIM DIAZ\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
-                "    #\"RIAN DOS SANTOS ESTEVO\" = Table.ReplaceValue(#\"ESTEBAN GABRIEL GARDIM DIAZ\",\"RIAN DOS SANTOS ESTEVO\",\"RIAN DOS SANTOS ESTEVO\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
-                "    #\"RENAN DUARTE MARQUES DE LIMA\" = Table.ReplaceValue(#\"RIAN DOS SANTOS ESTEVO\",\"RENAN DUARTE MARQUES DE LIMA\",\"RENAN DUARTE MARQUES DE LIMA\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
-                "    #\"DOUGLAS LISBOA SILVANO\" = Table.ReplaceValue(#\"RENAN DUARTE MARQUES DE LIMA\",\"DOUGLAS LISBOA SILVANO\",\"DOUGLAS LISBOA SILVANO\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
-                "    #\"ANA LUIZA SBAIS COSTA\" = Table.ReplaceValue(#\"DOUGLAS LISBOA SILVANO\",\"ANA LUIZA SBAIS COSTA\",\"ANA LUIZA SBAIS COSTA\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
-                "    #\"BIANCA NUNES COSTA\" = Table.ReplaceValue(#\"ANA LUIZA SBAIS COSTA\",\"BIANCA NUNES COSTA\",\"BIANCA NUNES COSTA\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
-                "    #\"DANIELLE DA SILVA FIALHO\" = Table.ReplaceValue(#\"BIANCA NUNES COSTA\",\"DANIELLE DA SILVA FIALHO\",\"DANIELLE DA SILVA FIALHO\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
-                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"DANIELLE DA SILVA FIALHO\",{{\"Data Abertura\", type datetime}}),",
-                "    #\"Data Inserida\" = Table.AddColumn(#\"Tipo Alterado\", \"Data Abertura (ddmmaaaa)\", each DateTime.Date([Data Abertura]), type date),",
-                "    #\"Colunas Renomeadas\" = Table.RenameColumns(#\"Data Inserida\",{{\"Usuário Abertura\", \"COLABORADOR\"}}),",
-                "    #\"Tipo Alterado1\" = Table.TransformColumnTypes(#\"Colunas Renomeadas\",{{\"Reincidencia\", Int64.Type}})",
-                "in",
-                "    #\"Tipo Alterado1\""
               ],
               "type": "m"
             }
@@ -38286,7 +37632,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Fonte = Excel.Workbook(File.Contents(\"C:\\Users\\hbrito\\OneDrive - Solução NetWork\\Documentos - Suporte Técnico\\Gestão\\Desempenho\\Dados\\dColaboradores.xlsx\"), null, true),",
+                "    Fonte = Excel.Workbook(Web.Contents(\"https://solucaonet.sharepoint.com/sites/suportecs/Documentos%20Compartilhados/Gest%C3%A3o/Desempenho/Dados/dColaboradores.xlsx\"), null, true),",
                 "    dColaboradores_Sheet = Fonte{[Item=\"dColaboradores\",Kind=\"Sheet\"]}[Data],",
                 "    #\"Tipo Alterado\" = Table.TransformColumnTypes(dColaboradores_Sheet,{{\"Column1\", type text}}),",
                 "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(#\"Tipo Alterado\", [PromoteAllScalars=true]),",
@@ -38896,207 +38242,6 @@
             "mode": "import",
             "source": {
               "expression": "Calendar(Date(Year(MIN('fCallflex_chamadas'[DATA])), 1, 1), Date(Year(MAX('fCallflex_chamadas'[DATA])), 12, 31))",
-              "type": "calculated"
-            }
-          }
-        ],
-        "showAsVariationsOnly": true
-      },
-      {
-        "name": "LocalDateTable_f91ec5c1-d982-4e68-aa2b-141ceaf68c32",
-        "annotations": [
-          {
-            "name": "__PBI_LocalDateTable",
-            "value": "true"
-          }
-        ],
-        "columns": [
-          {
-            "name": "Date",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              }
-            ],
-            "dataCategory": "PaddedDateTableDates",
-            "dataType": "dateTime",
-            "isHidden": true,
-            "isNameInferred": true,
-            "lineageTag": "67ad2205-7cad-486f-8b69-f07e67ce1b25",
-            "sourceColumn": "[Date]",
-            "summarizeBy": "none",
-            "type": "calculatedTableColumn"
-          },
-          {
-            "name": "Ano",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Year"
-              }
-            ],
-            "dataCategory": "Years",
-            "dataType": "int64",
-            "expression": "YEAR([Date])",
-            "isHidden": true,
-            "lineageTag": "4aba8f8a-ccd8-4d4a-b337-5c226d744af4",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "MonthNo",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "MonthNumber"
-              }
-            ],
-            "dataCategory": "MonthOfYear",
-            "dataType": "int64",
-            "expression": "MONTH([Date])",
-            "isHidden": true,
-            "lineageTag": "88ee9eb8-35de-47ee-821d-0a08264c4443",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Mês",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Month"
-              }
-            ],
-            "dataCategory": "Months",
-            "dataType": "string",
-            "expression": "FORMAT([Date], \"MMMM\")",
-            "isHidden": true,
-            "lineageTag": "b1b77c0f-7a98-465e-a646-307ebb0a9cbe",
-            "sortByColumn": "MonthNo",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "QuarterNo",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "QuarterNumber"
-              }
-            ],
-            "dataCategory": "QuarterOfYear",
-            "dataType": "int64",
-            "expression": "INT(([MonthNo] + 2) / 3)",
-            "isHidden": true,
-            "lineageTag": "014d79e8-6f54-4bb1-829e-0e33c2d2e405",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Trimestre",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Quarter"
-              }
-            ],
-            "dataCategory": "Quarters",
-            "dataType": "string",
-            "expression": "\"Qtr \" & [QuarterNo]",
-            "isHidden": true,
-            "lineageTag": "987eaadb-2251-4fa0-a13c-6b1d6b7001ae",
-            "sortByColumn": "QuarterNo",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Dia",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Day"
-              }
-            ],
-            "dataCategory": "DayOfMonth",
-            "dataType": "int64",
-            "expression": "DAY([Date])",
-            "isHidden": true,
-            "lineageTag": "41c95df3-b6c3-45d4-8a9a-f5ca775462c5",
-            "summarizeBy": "none",
-            "type": "calculated"
-          }
-        ],
-        "hierarchies": [
-          {
-            "name": "Hierarquia de datas",
-            "annotations": [
-              {
-                "name": "TemplateId",
-                "value": "DateHierarchy"
-              }
-            ],
-            "levels": [
-              {
-                "name": "Ano",
-                "column": "Ano",
-                "lineageTag": "a753c999-f158-4894-a4c5-3c42b6db6ff0",
-                "ordinal": 0
-              },
-              {
-                "name": "Trimestre",
-                "column": "Trimestre",
-                "lineageTag": "e53b19ec-747e-4635-9670-75046c8f8d2a",
-                "ordinal": 1
-              },
-              {
-                "name": "Mês",
-                "column": "Mês",
-                "lineageTag": "6c52fa91-166c-4df8-be91-ec8731118f72",
-                "ordinal": 2
-              },
-              {
-                "name": "Dia",
-                "column": "Dia",
-                "lineageTag": "13341607-7c90-4adf-b448-dac32c36f725",
-                "ordinal": 3
-              }
-            ],
-            "lineageTag": "f41cd711-bc3a-40cc-8d34-f18c1a7ffe9a"
-          }
-        ],
-        "isHidden": true,
-        "lineageTag": "0cf2a196-4927-4552-9881-f0e945bba352",
-        "partitions": [
-          {
-            "name": "LocalDateTable_f91ec5c1-d982-4e68-aa2b-141ceaf68c32",
-            "mode": "import",
-            "source": {
-              "expression": "Calendar(Date(Year(MIN('fAdapter_reincidencias'[Data Abertura])), 1, 1), Date(Year(MAX('fAdapter_reincidencias'[Data Abertura])), 12, 31))",
               "type": "calculated"
             }
           }
@@ -40697,6 +39842,24 @@
             ],
             "formatString": "0",
             "lineageTag": "56f04fa9-94b5-4585-8da1-0c8e5f26ce49"
+          },
+          {
+            "name": "Rencidencias_Visitas_Tecnicas",
+            "expression": [
+              "",
+              "VAR Contagem = CALCULATE(",
+              "    COUNTROWS(fAdapter_atendimentos),",
+              "    fAdapter_atendimentos[Reincidencia Setor Atendimento] = 1,",
+              "    fAdapter_atendimentos[Gerou Visita] IN ",
+              "        {\"Sim\"},",
+              "    fAdapter_atendimentos[Setor Atendimento] IN ",
+              "        {\"Suporte\"}",
+              ")",
+              "RETURN ",
+              "IF(Contagem = 0, 0, Contagem)"
+            ],
+            "formatString": "0",
+            "lineageTag": "4def38a8-6ace-40bf-9fd7-c5c21233ef71"
           }
         ],
         "partitions": [
