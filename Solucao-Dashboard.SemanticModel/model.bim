@@ -39549,7 +39549,7 @@
             "type": "calculated"
           },
           {
-            "name": "Reincidencia Tipo Atendimento Coluna",
+            "name": "Reincidencia Categoria Atendimento",
             "annotations": [
               {
                 "name": "SummarizationSetBy",
@@ -39582,6 +39582,141 @@
             "formatString": "0",
             "isDataTypeInferred": true,
             "lineageTag": "f777a158-c41a-4981-976d-bbe883ab3ecd",
+            "summarizeBy": "sum",
+            "type": "calculated"
+          },
+          {
+            "name": "Setor Atendimento",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "",
+              "SWITCH(",
+              "    TRUE(),",
+              "    'fAdapter_atendimentos'[Tipo Atendimento] IN {\"LINK LOSS\", \"SEM CONEXÃO\", \"SEM CONEXÃO (ONU TRAVADA)\", \"PENDÊNCIAS TÉCNICOS\", \"SUPORTE TELEFONIA\", \"PENDÊNCIAS TELEFONIA\", \"SOLICITAÇÃO DE SUPORTE\", \"LENTIDÃO NA CONEXÃO\", \"SUPORTE VELOCIDADE CONTRATADA\", \"SUPORTE SEGUNDO PONTO\", \"PENDÊNCIAS SUPORTE - TELEFONIA MÓVEL\", \"SOLICITAÇÃO DE SUPORTE\"}, \"Suporte\",",
+              "",
+              "    'fAdapter_atendimentos'[Tipo Atendimento] IN {\"ADIAR VENCIMENTO DE FATURA\", \"PENDÊNCIAS COBRANÇA\", \"NEGOCIAÇÃO DE DÉBITO\", \"ALTERAÇÃO DA FORMA DE COBRANÇA\", \"ENVIO DE FATURA\", \"TROCA DE VENCIMENTO\", \"PENDÊNCIAS FINANCEIRO\", \"RECOLHER EQUIPAMENTO - SUSPENSÃO\", \"RETIRADA DE EQUIPAMENTO - INADIMPLENTE\", \"NEGATIVAÇÃO SERASA\"}, \"Financeiro\",",
+              "    ",
+              "    \"Outro\"",
+              ")",
+              ""
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "d3b1e961-b9a2-456b-b424-48e399bafcbc",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Reincidencia Setor Atendimento",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "expression": [
+              "",
+              "VAR ClienteAtual = 'fAdapter_atendimentos'[Cliente]",
+              "VAR GrupoAtual = 'fAdapter_atendimentos'[Setor Atendimento]",
+              "VAR DataAberturaAtual = 'fAdapter_atendimentos'[Data Abertura]",
+              "",
+              "-- Contar quantos atendimentos ocorreram antes da data atual para o cliente e tipo de atendimento",
+              "VAR AtendimentosAnteriores =",
+              "    COUNTROWS (",
+              "        FILTER (",
+              "            'fAdapter_atendimentos',",
+              "            'fAdapter_atendimentos'[Cliente] = ClienteAtual &&",
+              "            'fAdapter_atendimentos'[Setor Atendimento] = GrupoAtual &&",
+              "            'fAdapter_atendimentos'[Data Abertura] < DataAberturaAtual",
+              "        )",
+              "    )",
+              "",
+              "-- Retornar se é reincidente ou não",
+              "RETURN",
+              "    IF(AtendimentosAnteriores > 0, 1, 0)",
+              ""
+            ],
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "lineageTag": "c29496ef-eee0-4096-9cea-58a22ea5932c",
+            "summarizeBy": "sum",
+            "type": "calculated"
+          },
+          {
+            "name": "Reincidencia Tipo Atendimento",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "expression": [
+              "",
+              "VAR ClienteAtual = 'fAdapter_atendimentos'[Cliente]",
+              "VAR GrupoAtual = 'fAdapter_atendimentos'[Tipo Atendimento]",
+              "VAR DataAberturaAtual = 'fAdapter_atendimentos'[Data Abertura]",
+              "",
+              "-- Contar quantos atendimentos ocorreram antes da data atual para o cliente e tipo de atendimento",
+              "VAR AtendimentosAnteriores =",
+              "    COUNTROWS (",
+              "        FILTER (",
+              "            'fAdapter_atendimentos',",
+              "            'fAdapter_atendimentos'[Cliente] = ClienteAtual &&",
+              "            'fAdapter_atendimentos'[Tipo Atendimento] = GrupoAtual &&",
+              "            'fAdapter_atendimentos'[Data Abertura] < DataAberturaAtual",
+              "        )",
+              "    )",
+              "",
+              "-- Retornar se é reincidente ou não",
+              "RETURN",
+              "    IF(AtendimentosAnteriores > 0, 1, 0)",
+              ""
+            ],
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "lineageTag": "83240ed1-bea7-4e5e-b687-36c3c3e35ecb",
+            "summarizeBy": "sum",
+            "type": "calculated"
+          },
+          {
+            "name": "Reincidencia Geral",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "expression": [
+              "",
+              "VAR ClienteAtual = 'fAdapter_atendimentos'[Cliente]",
+              "VAR DataAberturaAtual = 'fAdapter_atendimentos'[Data Abertura]",
+              "",
+              "-- Contar quantos atendimentos ocorreram antes da data atual para o cliente e tipo de atendimento",
+              "VAR AtendimentosAnteriores =",
+              "    COUNTROWS (",
+              "        FILTER (",
+              "            'fAdapter_atendimentos',",
+              "            'fAdapter_atendimentos'[Cliente] = ClienteAtual &&",
+              "            'fAdapter_atendimentos'[Data Abertura] < DataAberturaAtual",
+              "        )",
+              "    )",
+              "",
+              "-- Retornar se é reincidente ou não",
+              "RETURN",
+              "    IF(AtendimentosAnteriores > 0, 1, 0)",
+              ""
+            ],
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "lineageTag": "6232b077-9b67-4eaa-babf-5099a1aa1971",
             "summarizeBy": "sum",
             "type": "calculated"
           }
