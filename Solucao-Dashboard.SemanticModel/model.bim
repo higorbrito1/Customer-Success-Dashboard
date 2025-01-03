@@ -8592,7 +8592,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Medidas",
-                    "ConceptualProperty": "Pós_Atendimento"
+                    "ConceptualProperty": "% Pos_Atendimento_Realizado"
                   }
                 },
                 "State": "Generated",
@@ -11035,7 +11035,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Medidas",
-                    "ConceptualProperty": "% Resolução no 1º Contato"
+                    "ConceptualProperty": "Resolução no 1º Contato"
                   }
                 },
                 "State": "Generated",
@@ -34051,7 +34051,7 @@
               "RETURN",
               "    IF(",
               "        ISBLANK(MediaCalculada),",
-              "        10,",
+              "        0,",
               "        MediaCalculada",
               "    )",
               ""
@@ -34444,10 +34444,14 @@
             "lineageTag": "e8dc78b4-a68b-4c5a-9b2d-e6e377809b17"
           },
           {
-            "name": "% Resolução no 1º Contato",
+            "name": "Resolução no 1º Contato",
             "expression": [
               "",
-              "([Total_Atendimentos] - ([Rencidencias_Visitas_Tecnicas] + [Reincidencias_Atendimentos])) / [Total_Atendimentos]",
+              "DIVIDE(",
+              "    [Total_Atendimentos] - ([Rencidencias_Visitas_Tecnicas] + [Reincidencias_Atendimentos]),",
+              "    [Total_Atendimentos],",
+              "    0",
+              ")",
               ""
             ],
             "formatString": "0.00%;-0.00%;0.00%",
@@ -34480,11 +34484,13 @@
             "lineageTag": "320d3a1f-4f60-484d-98cf-b704058275b4"
           },
           {
-            "name": "Pós_Atendimento",
+            "name": "% Pos_Atendimento_Realizado",
             "expression": [
               "",
-              "CALCULATE(",
-              "    DIVIDE([Contagem_Protocolos_Visita] - [Contagem_POS_ATENDIMENTO], [Contagem_Protocolos_Visita], 1)",
+              "DIVIDE(",
+              "    [Contagem_Protocolos_Visita] - [Contagem_POS_ATENDIMENTO],",
+              "    [Contagem_Protocolos_Visita],",
+              "    0",
               ")"
             ],
             "formatString": "0.00%;-0.00%;0.00%",
@@ -34506,9 +34512,9 @@
               "    SECOND([TME_Chat])",
               "",
               "VAR Doc = MIN(VALUE([% Documentação]), 100)  -- Doc em %",
-              "VAR Res1Cont = MIN(VALUE([% Resolução no 1º Contato]), 100)  -- Res1Cont em %",
+              "VAR Res1Cont = MIN(VALUE([Resolução no 1º Contato]), 100)  -- Res1Cont em %",
               "VAR NPS = VALUE([Média NPS Não Zero])  -- NPS em decimal",
-              "VAR PosAt = MIN(VALUE([Pós_Atendimento]), 100)  -- PosAt em %",
+              "VAR PosAt = MIN(VALUE([% Pos_Atendimento_Realizado]), 100)  -- PosAt em %",
               "",
               "-- Valor máximo de TME em segundos (ajustar conforme necessário)",
               "VAR TME_Max_Segundos = 3600  -- Exemplo: 1 hora (3600 segundos)",
@@ -37836,6 +37842,19 @@
             "lineageTag": "e41eb921-bf5f-4109-ba79-a63078666bea",
             "sourceColumn": "Colaborador",
             "summarizeBy": "none"
+          },
+          {
+            "name": "Horario",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "031b36ca-ff48-488a-b025-ad8c0c3558e9",
+            "sourceColumn": "Horario",
+            "summarizeBy": "none"
           }
         ],
         "lineageTag": "adfcd62c-60ad-4c25-aaf1-3d2c6e16d11b",
@@ -37848,9 +37867,8 @@
                 "let",
                 "    Fonte = Excel.Workbook(Web.Contents(\"https://solucaonet.sharepoint.com/sites/suportecs/Documentos%20Compartilhados/Gest%C3%A3o/Desempenho/Dados/dColaboradores.xlsx\"), null, true),",
                 "    dColaboradores_Sheet = Fonte{[Item=\"dColaboradores\",Kind=\"Sheet\"]}[Data],",
-                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(dColaboradores_Sheet,{{\"Column1\", type text}}),",
-                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(#\"Tipo Alterado\", [PromoteAllScalars=true]),",
-                "    #\"Tipo Alterado1\" = Table.TransformColumnTypes(#\"Cabeçalhos Promovidos\",{{\"Colaborador\", type text}})",
+                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(dColaboradores_Sheet, [PromoteAllScalars=true]),",
+                "    #\"Tipo Alterado1\" = Table.TransformColumnTypes(#\"Cabeçalhos Promovidos\",{{\"Colaborador\", type text}, {\"Horario\", type text}})",
                 "in",
                 "    #\"Tipo Alterado1\""
               ],
