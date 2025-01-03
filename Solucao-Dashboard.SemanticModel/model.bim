@@ -32269,6 +32269,14 @@
         "fromTable": "fCallflex_chamadas",
         "toColumn": "Horas",
         "toTable": "dHoras"
+      },
+      {
+        "name": "5307732d-8821-4d32-80e8-7e4dd2fdbff7",
+        "fromColumn": "Data Abertura",
+        "fromTable": "fAdapter_atendimentos",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_6bc8eb7d-071b-4eec-8af6-bdc7027e4e08"
       }
     ],
     "sourceQueryCulture": "pt-BR",
@@ -39135,10 +39143,22 @@
                 "value": "Automatic"
               }
             ],
-            "dataType": "string",
+            "dataType": "dateTime",
+            "formatString": "General Date",
             "lineageTag": "1508fa5a-254c-4f63-a5cb-b8326706cf1f",
             "sourceColumn": "Data Abertura",
-            "summarizeBy": "none"
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Hierarquia de datas",
+                  "table": "LocalDateTable_6bc8eb7d-071b-4eec-8af6-bdc7027e4e08"
+                },
+                "isDefault": true,
+                "relationship": "5307732d-8821-4d32-80e8-7e4dd2fdbff7"
+              }
+            ]
           },
           {
             "name": "Data Fechamento",
@@ -39561,7 +39581,7 @@
             ],
             "formatString": "0",
             "isDataTypeInferred": true,
-            "lineageTag": "377a0aac-18e1-466f-802a-44bf1c8f3407",
+            "lineageTag": "f777a158-c41a-4981-976d-bbe883ab3ecd",
             "summarizeBy": "sum",
             "type": "calculated"
           }
@@ -39599,9 +39619,11 @@
                 "    #\"ANA LUIZA SBAIS COSTA\" = Table.ReplaceValue(#\"DOUGLAS LISBOA SILVANO\",\"ANA LUIZA SBAIS COSTA\",\"ANA LUIZA SBAIS COSTA\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
                 "    #\"BIANCA NUNES COSTA\" = Table.ReplaceValue(#\"ANA LUIZA SBAIS COSTA\",\"BIANCA NUNES COSTA\",\"BIANCA NUNES COSTA\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
                 "    #\"DANIELLE DA SILVA FIALHO\" = Table.ReplaceValue(#\"BIANCA NUNES COSTA\",\"DANIELLE DA SILVA FIALHO\",\"DANIELLE DA SILVA FIALHO\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
-                "    #\"Colunas Renomeadas\" = Table.RenameColumns(#\"DANIELLE DA SILVA FIALHO\",{{\"Usuário Abertura\", \"COLABORADOR\"}})",
+                "    #\"Colunas Renomeadas\" = Table.RenameColumns(#\"DANIELLE DA SILVA FIALHO\",{{\"Usuário Abertura\", \"COLABORADOR\"}}),",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Colunas Renomeadas\",{{\"Data Abertura\", type datetime}}),",
+                "    #\"Linhas Filtradas\" = Table.SelectRows(#\"Tipo Alterado\", each ([QTD] = 1))",
                 "in",
-                "    #\"Colunas Renomeadas\""
+                "    #\"Linhas Filtradas\""
               ],
               "type": "m"
             }
@@ -40539,6 +40561,207 @@
             }
           }
         ]
+      },
+      {
+        "name": "LocalDateTable_6bc8eb7d-071b-4eec-8af6-bdc7027e4e08",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "fdbb7153-e6f1-4640-b645-db80045e9473",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Ano",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "e428b13d-e522-43c4-bbff-5edab6472a9a",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "01d67f55-051c-4476-9215-503040e51dc4",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Mês",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "14a8020c-01e0-408a-929a-2082a1b8b9bc",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "852a5468-a1b0-457a-a44b-95d766fe579c",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Trimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "9955c4ad-ce2f-4165-9470-23a4a51a864d",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Dia",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "8a0df35a-4fd5-4402-9881-64f7e9c8e2a8",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Hierarquia de datas",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Ano",
+                "column": "Ano",
+                "lineageTag": "075431f9-1cec-4d0a-b541-70d4ab75e6a5",
+                "ordinal": 0
+              },
+              {
+                "name": "Trimestre",
+                "column": "Trimestre",
+                "lineageTag": "e9aca0c5-aba8-4677-a351-38cbcc5eef56",
+                "ordinal": 1
+              },
+              {
+                "name": "Mês",
+                "column": "Mês",
+                "lineageTag": "4d580ee9-58e9-4e23-a7ef-bf1386918a56",
+                "ordinal": 2
+              },
+              {
+                "name": "Dia",
+                "column": "Dia",
+                "lineageTag": "bc40c5e1-250f-4b41-ae12-6da301a52e68",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "7f2b7f73-47f4-45f2-9995-13ab845efce8"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "f5778f54-0bbc-4e3d-ac77-96cc45eeb6c6",
+        "partitions": [
+          {
+            "name": "LocalDateTable_6bc8eb7d-071b-4eec-8af6-bdc7027e4e08",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('fAdapter_atendimentos'[Data Abertura])), 1, 1), Date(Year(MAX('fAdapter_atendimentos'[Data Abertura])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
       }
     ]
   }
