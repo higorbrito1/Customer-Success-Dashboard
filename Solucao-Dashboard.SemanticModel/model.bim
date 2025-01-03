@@ -10042,7 +10042,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Medidas",
-                    "ConceptualProperty": "Contagem Reincidencia 1"
+                    "ConceptualProperty": "Rencidencias_Visitas_Tecnicas"
                   }
                 },
                 "State": "Generated",
@@ -34494,14 +34494,16 @@
             "lineageTag": "c2593382-f343-4eb3-9f9d-27cccd9e3af4"
           },
           {
-            "name": "Contagem Reincidencia 1",
+            "name": "Rencidencias_Visitas_Tecnicas",
             "expression": [
               "",
               "VAR Contagem = CALCULATE(",
-              "    COUNTROWS(fAdapter_reincidencias),",
-              "    fAdapter_reincidencias[Reincidencia] = 1,",
-              "    fAdapter_reincidencias[AtendimentoGrupo] IN ",
-              "        {\"Sem Conexão\", \"Suporte Conexão\", \"Suporte Telefonia Fixa\", \"Suporte Telefonia Móvel\"}",
+              "    COUNTROWS(fAdapter_atendimentos),",
+              "    fAdapter_atendimentos[Reincidencia Setor Atendimento] = 1,",
+              "    fAdapter_atendimentos[Gerou Visita] IN ",
+              "        {\"Sim\"},",
+              "    fAdapter_atendimentos[Setor Atendimento] IN ",
+              "        {\"Suporte\"}",
               ")",
               "RETURN ",
               "IF(Contagem = 0, 0, Contagem)"
@@ -34672,7 +34674,7 @@
             "name": "% Resolução no 1º Contato",
             "expression": [
               "",
-              "([Total_Atendimentos] - [Contagem Reincidencia 1]) / [Total_Atendimentos]",
+              "([Total_Atendimentos] - ([Rencidencias_Visitas_Tecnicas] + [Rencidencias_Atendimentos])) / [Total_Atendimentos]",
               ""
             ],
             "formatString": "0.00%;-0.00%;0.00%",
@@ -35891,6 +35893,24 @@
               ""
             ],
             "lineageTag": "b387a99d-a5a0-42df-938c-3c54192bb0df"
+          },
+          {
+            "name": "Rencidencias_Atendimentos",
+            "expression": [
+              "",
+              "VAR Contagem = CALCULATE(",
+              "    COUNTROWS(fAdapter_atendimentos),",
+              "    fAdapter_atendimentos[Reincidencia Setor Atendimento] = 1,",
+              "    fAdapter_atendimentos[Gerou Visita] IN ",
+              "        {\"Não\"},",
+              "    fAdapter_atendimentos[Setor Atendimento] IN ",
+              "        {\"Suporte\"}",
+              ")",
+              "RETURN ",
+              "IF(Contagem = 0, 0, Contagem)"
+            ],
+            "formatString": "0",
+            "lineageTag": "90f6a38e-d86b-4f26-b5e0-7a5311f13eb3"
           }
         ],
         "partitions": [
