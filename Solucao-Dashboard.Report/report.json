@@ -1100,15 +1100,6 @@
           "z": 3000.00
         },
         {
-          "config": "{\"name\":\"a14788ed8d994924d7f4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":220,\"y\":280,\"z\":36001,\"width\":840,\"height\":370,\"tabOrder\":36001}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"dColaboradores.Colaborador\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dColaboradores\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Colaborador\"},\"Name\":\"dColaboradores.Colaborador\",\"NativeReferenceName\":\"Colaborador\"}]},\"drillFilterOtherVisuals\":true}}",
-          "filters": "[]",
-          "height": 370.00,
-          "width": 840.00,
-          "x": 220.00,
-          "y": 280.00,
-          "z": 36001.00
-        },
-        {
           "config": "{\"name\":\"a358e444f277109bd2fc\",\"layouts\":[{\"id\":0,\"position\":{\"x\":25.833333333333336,\"y\":657.5,\"z\":4000,\"width\":221.66666666666669,\"height\":45.833333333333336,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'blank'\"}}}},\"selector\":{\"id\":\"default\"}},{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Recolher Menu'\"}}}}}],\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Bookmark'\"}}},\"bookmark\":{\"expr\":{\"Literal\":{\"Value\":\"'ab648e76660d3b804ea7'\"}}}}}]}},\"parentGroupName\":\"ba35c65da1d0ada3be82\",\"howCreated\":\"InsertVisualButton\"}",
           "filters": "[]",
           "height": 45.83,
