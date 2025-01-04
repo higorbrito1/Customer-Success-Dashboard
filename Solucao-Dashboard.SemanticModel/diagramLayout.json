@@ -4,23 +4,10 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 1079.2022896609035,
-        "y": 1102.1090206337826
+        "x": 0,
+        "y": 0
       },
       "nodes": [
-        {
-          "location": {
-            "x": 1118.5385940774086,
-            "y": 1497.9144442588986
-          },
-          "nodeIndex": "Medidas",
-          "nodeLineageTag": "faf08992-edef-487f-aee6-c4cb96b248be",
-          "size": {
-            "height": 145,
-            "width": 234
-          },
-          "zIndex": 12
-        },
         {
           "location": {
             "x": 835.22479157234466,
@@ -88,19 +75,6 @@
         },
         {
           "location": {
-            "x": 2208.34156635006,
-            "y": 753.80483472212
-          },
-          "nodeIndex": "fCallflex_chamadas_agente_detalhado",
-          "nodeLineageTag": "382c83aa-6854-4df4-a7a5-1af43447cfd1",
-          "size": {
-            "height": 300,
-            "width": 234
-          },
-          "zIndex": 6
-        },
-        {
-          "location": {
             "x": 1667.503329852856,
             "y": 748.90269211603606
           },
@@ -127,19 +101,6 @@
         },
         {
           "location": {
-            "x": 545.09306227461377,
-            "y": 737.458173195809
-          },
-          "nodeIndex": "fChat_relatorio_resumo_usuarios",
-          "nodeLineageTag": "0e9f3d83-7c86-4a28-855b-ab6d692fcc3c",
-          "size": {
-            "height": 294.99721876250788,
-            "width": 234
-          },
-          "zIndex": 13
-        },
-        {
-          "location": {
             "x": 857.5220043712161,
             "y": 751.11138205008115
           },
@@ -150,31 +111,6 @@
             "width": 234
           },
           "zIndex": 14
-        },
-        {
-          "location": {
-            "x": 2481.2342152305373,
-            "y": 757.426101540678
-          },
-          "nodeIndex": "dCallflex_agente_consolidado",
-          "size": {
-            "height": 285.25646099267487,
-            "width": 234
-          },
-          "zIndex": 1
-        },
-        {
-          "location": {
-            "x": 2751.8618663560592,
-            "y": 755.77227103851646
-          },
-          "nodeIndex": "dCallflex_pausas",
-          "nodeLineageTag": "0dc7c274-a5fe-4bd1-975a-7eabd2931072",
-          "size": {
-            "height": 279.52258246707436,
-            "width": 234
-          },
-          "zIndex": 2
         },
         {
           "location": {
@@ -214,16 +150,128 @@
             "width": 234
           },
           "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 545.09306227461377,
+            "y": 737.458173195809
+          },
+          "nodeIndex": "fChat_relatorio_resumo_usuarios(pausas)",
+          "size": {
+            "height": 294.99721876250788,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "Medidas Médias",
+          "nodeLineageTag": "b43dcdbc-b90d-4e8a-ad67-d98ee81db5dd",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "Medidas NPS",
+          "nodeLineageTag": "7fe03026-0c87-4766-bffa-2fbc18d7f960",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "Medidas Adapter",
+          "nodeLineageTag": "379136db-d253-4e76-84ed-a616c5348475",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "Medidas Pos Atendimentos",
+          "nodeLineageTag": "085f5e0c-128f-4182-b08f-f8fd6ad42853",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "Medidas Atendimentos",
+          "nodeLineageTag": "1b823311-376d-4e15-81f8-91f056c420f0",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1118.5385940774086,
+            "y": 1497.9144442588986
+          },
+          "nodeIndex": "Medidas Pausas",
+          "size": {
+            "height": 145,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "Medidas Outros",
+          "nodeLineageTag": "079851fc-6896-479b-9996-3efea225d72e",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "Todas as tabelas",
-      "zoomValue": 82.801897674505113,
+      "zoomValue": 33.1642753793229,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    },
+    {
+      "ordinal": 1,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 93.200000762939453,
+            "y": 90
+          },
+          "nodeIndex": "fAdapter_atendimentos",
+          "nodeLineageTag": "cd6ab9fa-02a6-4eab-8f95-01e26a318d6f",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Layout 1",
+      "zoomValue": 70.955543900968792,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,
       "tablesLocked": false
     }
   ],
-  "selectedDiagram": "Todas as tabelas",
+  "selectedDiagram": "Layout 1",
   "defaultDiagram": "Todas as tabelas"
 }
