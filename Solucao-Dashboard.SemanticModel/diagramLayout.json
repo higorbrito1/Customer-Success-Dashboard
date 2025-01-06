@@ -4,8 +4,8 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 1118.5385940774086,
-        "y": 66.9778161576296
+        "x": 358.54008143376234,
+        "y": 1693.296393996595
       },
       "nodes": [
         {
@@ -55,8 +55,8 @@
           "nodeIndex": "dColaboradores",
           "nodeLineageTag": "adfcd62c-60ad-4c25-aaf1-3d2c6e16d11b",
           "size": {
-            "height": 219.37607127096157,
-            "width": 234
+            "height": 266.50729681236476,
+            "width": 250.28169609612121
           },
           "zIndex": 4
         },
@@ -140,8 +140,8 @@
         },
         {
           "location": {
-            "x": 1407.0781695401126,
-            "y": 1876.7419493402995
+            "x": 841.87373202865342,
+            "y": 2004.758339033066
           },
           "nodeIndex": "Medidas Reincidencia",
           "nodeLineageTag": "e003f24b-c8db-4023-84a9-00e05487d8fc",
@@ -165,8 +165,8 @@
         },
         {
           "location": {
-            "x": 2573.2711420793585,
-            "y": 984.1356587015074
+            "x": 2576.307354481226,
+            "y": 997.79861450991064
           },
           "nodeIndex": "Medidas Médias",
           "nodeLineageTag": "b43dcdbc-b90d-4e8a-ad67-d98ee81db5dd",
@@ -217,8 +217,8 @@
         },
         {
           "location": {
-            "x": 3709.2711420793585,
-            "y": 984.1356587015074
+            "x": 2868.5442245073896,
+            "y": 814.10776419693229
           },
           "nodeIndex": "Medidas Atendimentos",
           "nodeLineageTag": "1b823311-376d-4e15-81f8-91f056c420f0",
@@ -230,8 +230,8 @@
         },
         {
           "location": {
-            "x": 3993.2711420793585,
-            "y": 984.1356587015074
+            "x": 3434.3043277061493,
+            "y": 821.6982952016009
           },
           "nodeIndex": "Medidas Outros",
           "nodeLineageTag": "079851fc-6896-479b-9996-3efea225d72e",
@@ -255,8 +255,8 @@
         },
         {
           "location": {
-            "x": 4064.2455845545987,
-            "y": 841.016700986802
+            "x": 3150.0421044786003,
+            "y": 822.79942657559752
           },
           "nodeIndex": "Medidas Pausas Chat",
           "nodeLineageTag": "57a127a0-2c77-499b-aafe-24141bfbeea9",
@@ -268,7 +268,7 @@
         }
       ],
       "name": "Todas as tabelas",
-      "zoomValue": 29.580076338193511,
+      "zoomValue": 116.69545904696312,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,

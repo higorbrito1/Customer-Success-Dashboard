@@ -25038,11 +25038,6 @@
             "value": "Navegação"
           }
         ],
-        "changedProperties": [
-          {
-            "property": "Name"
-          }
-        ],
         "lineageTag": "faf08992-edef-487f-aee6-c4cb96b248be",
         "measures": [
           {
@@ -29997,6 +29992,42 @@
             ],
             "formatString": "0",
             "lineageTag": "d1bf6c3e-1a45-48c9-bf4b-f4a2498fcbb5"
+          },
+          {
+            "name": "Média Atendimentos por Hora Dia",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": [
+              "",
+              "DIVIDE(",
+              "    [Total_Atendimentos], 24,",
+              "    0",
+              ")",
+              ""
+            ],
+            "lineageTag": "9ad3f134-4dce-4be2-be09-68a5f9821cf3"
+          },
+          {
+            "name": "Média Atendimentos por Hora Colaborador",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": [
+              "",
+              "DIVIDE(",
+              "    [Total_Atendimentos], 6,",
+              "    0",
+              ")",
+              ""
+            ],
+            "lineageTag": "a7a16da4-b097-462b-8147-53d08ea9eead"
           }
         ],
         "partitions": [
