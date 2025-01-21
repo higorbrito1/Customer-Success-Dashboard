@@ -4,7 +4,7 @@
     "annotations": [
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"Medidas Instalação\",\"Medidas Onboarding\",\"Medidas Reincidencia\",\"Medidas Pausas Callflex\",\"dColaboradores\",\"dHoras\",\"fCallflex_chamadas\",\"fCallflex_pausas_detalhado\",\"fChat_relatorio_atendimento\",\"fChat_relatorio_resumo_usuarios(pausas)\",\"fChat_relatorio_nps\",\"fAdapter_atendimentos\",\"Medidas Médias\",\"Medidas NPS\",\"Medidas Adapter\",\"Medidas Pos Atendimentos\",\"Medidas Atendimentos\",\"Medidas Outros\",\"Medidas Pausas Chat\"]"
+        "value": "[\"Medidas Médias\",\"Medidas NPS\",\"Medidas Adapter\",\"Medidas Pos Atendimentos\",\"Medidas Atendimentos\",\"Medidas Outros\",\"Medidas Pausas Chat\",\"Medidas Instalação\",\"Medidas Onboarding\",\"Medidas Reincidencia\",\"Medidas Pausas Callflex\",\"dColaboradores\",\"dHoras\",\"fCallflex_chamadas\",\"fCallflex_pausas_detalhado\",\"fChat_relatorio_atendimento\",\"fChat_relatorio_resumo_usuarios(pausas)\",\"fChat_relatorio_nps\",\"fAdapter_atendimentos\"]"
       },
       {
         "name": "__PBI_TimeIntelligenceEnabled",
@@ -23292,6 +23292,35 @@
       "returnErrorValuesAsNull": true
     },
     "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "queryGroups": [
+      {
+        "annotations": [
+          {
+            "name": "PBI_QueryGroupOrder",
+            "value": "0"
+          }
+        ],
+        "folder": "Medidas"
+      },
+      {
+        "annotations": [
+          {
+            "name": "PBI_QueryGroupOrder",
+            "value": "1"
+          }
+        ],
+        "folder": "Data Dim"
+      },
+      {
+        "annotations": [
+          {
+            "name": "PBI_QueryGroupOrder",
+            "value": "2"
+          }
+        ],
+        "folder": "Data Fato 11/24"
+      }
+    ],
     "relationships": [
       {
         "name": "f7a93b19-613a-4f24-bee8-ebaa12190b4f",
@@ -23341,6 +23370,37 @@
         "toTable": "LocalDateTable_402833ec-6b08-4a3c-9ab5-3bee6ab4a591"
       },
       {
+        "name": "4c0811fe-7e9e-4273-8c5b-6b73189ee35c",
+        "fromColumn": "Hora",
+        "fromTable": "fCallflex_chamadas",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_a384ac4e-028b-4e81-9215-5602139dc11c"
+      },
+      {
+        "name": "3fabf8dd-b414-4399-87ee-2e9a2b2f95f6",
+        "fromColumn": "Date",
+        "fromTable": "dCalendario",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_e16dbdbd-ac5e-44a7-9335-501005149e3c"
+      },
+      {
+        "name": "d3a97895-c9ee-947e-f38b-9daccc72c55f",
+        "fromColumn": "Data Abertura (ddmmaaaa)",
+        "fromTable": "fAdapter_atendimentos",
+        "toColumn": "Date",
+        "toTable": "dCalendario"
+      },
+      {
+        "name": "5307732d-8821-4d32-80e8-7e4dd2fdbff7",
+        "fromColumn": "Data Abertura",
+        "fromTable": "fAdapter_atendimentos",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_6bc8eb7d-071b-4eec-8af6-bdc7027e4e08"
+      },
+      {
         "name": "812b6e11-74cd-ae9a-6594-81e29db56e4b",
         "fromColumn": "COLABORADOR",
         "fromTable": "fChat_relatorio_resumo_usuarios(pausas)",
@@ -23374,29 +23434,6 @@
         "fromTable": "fChat_relatorio_atendimento",
         "toColumn": "Colaborador",
         "toTable": "dColaboradores"
-      },
-      {
-        "name": "4c0811fe-7e9e-4273-8c5b-6b73189ee35c",
-        "fromColumn": "Hora",
-        "fromTable": "fCallflex_chamadas",
-        "joinOnDateBehavior": "datePartOnly",
-        "toColumn": "Date",
-        "toTable": "LocalDateTable_a384ac4e-028b-4e81-9215-5602139dc11c"
-      },
-      {
-        "name": "3fabf8dd-b414-4399-87ee-2e9a2b2f95f6",
-        "fromColumn": "Date",
-        "fromTable": "dCalendario",
-        "joinOnDateBehavior": "datePartOnly",
-        "toColumn": "Date",
-        "toTable": "LocalDateTable_e16dbdbd-ac5e-44a7-9335-501005149e3c"
-      },
-      {
-        "name": "d3a97895-c9ee-947e-f38b-9daccc72c55f",
-        "fromColumn": "Data Abertura (ddmmaaaa)",
-        "fromTable": "fAdapter_atendimentos",
-        "toColumn": "Date",
-        "toTable": "dCalendario"
       },
       {
         "name": "fabbdef7-d2a4-89b2-62a8-3d94ee35d9d1",
@@ -23446,995 +23483,10 @@
         "fromTable": "fCallflex_chamadas",
         "toColumn": "Horas",
         "toTable": "dHoras"
-      },
-      {
-        "name": "5307732d-8821-4d32-80e8-7e4dd2fdbff7",
-        "fromColumn": "Data Abertura",
-        "fromTable": "fAdapter_atendimentos",
-        "joinOnDateBehavior": "datePartOnly",
-        "toColumn": "Date",
-        "toTable": "LocalDateTable_6bc8eb7d-071b-4eec-8af6-bdc7027e4e08"
       }
     ],
     "sourceQueryCulture": "pt-BR",
     "tables": [
-      {
-        "name": "fChat_relatorio_atendimento",
-        "annotations": [
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
-          },
-          {
-            "name": "PBI_ResultType",
-            "value": "Table"
-          }
-        ],
-        "columns": [
-          {
-            "name": "Id",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "2afde58d-d6df-4d8b-aba5-1cff8c7a2527",
-            "sourceColumn": "Id",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Protocolo",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "6d110aa9-6436-4590-8db4-b180a3958c44",
-            "sourceColumn": "Protocolo",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "ID do visitante",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "a634b1cd-f3ca-4ee2-b05f-5191eed90de4",
-            "sourceColumn": "ID do visitante",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Data de entrada",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "dateTime",
-            "formatString": "General Date",
-            "lineageTag": "0d00374c-c6e1-4952-bb96-c3ab6b8d7e2f",
-            "sourceColumn": "Data de entrada",
-            "summarizeBy": "none",
-            "variations": [
-              {
-                "name": "Variation",
-                "defaultHierarchy": {
-                  "hierarchy": "Hierarquia de datas",
-                  "table": "LocalDateTable_402833ec-6b08-4a3c-9ab5-3bee6ab4a591"
-                },
-                "isDefault": true,
-                "relationship": "f97139b0-e99a-4eb7-a9a5-c54ad5ee7bb6"
-              }
-            ]
-          },
-          {
-            "name": "Data de inicio atendimento robô",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "1ca2698b-dc63-4362-a896-1fe9535e3f8f",
-            "sourceColumn": "Data de inicio atendimento robô",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Data fim de atendimento robô",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "cd7cfb7f-171e-4fae-9ae9-11f72610e36a",
-            "sourceColumn": "Data fim de atendimento robô",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Data de início de atendimento humano",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "90bdc9a7-0d57-4350-becc-6457250664a2",
-            "sourceColumn": "Data de início de atendimento humano",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Data fim de atendimento humano - Data Final",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "dda2f02d-2ea8-4d17-8269-dd9d3f5261d0",
-            "sourceColumn": "Data fim de atendimento humano - Data Final",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "TTE (humano)",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "6648bbc3-e4ca-4ada-9f03-0bcf4112b7d3",
-            "sourceColumn": "TTE (humano)",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "TTA (humano)",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "ca4c5845-9765-41d1-ad15-c2a5dce0e4f6",
-            "sourceColumn": "TTA (humano)",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "TTA (robô)",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "28852eff-31dc-4f46-958f-54bef4d1c11d",
-            "sourceColumn": "TTA (robô)",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "TTA em agendamento",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "dafb2b43-c72a-431d-bbbd-2afa803bff2c",
-            "sourceColumn": "TTA em agendamento",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "TMR de entrada (robô)",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "9556c63a-8715-4fd0-b8fa-6f4e47736d3f",
-            "sourceColumn": "TMR de entrada (robô)",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "TMR de saída (robô)",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "da355812-edfb-457d-a76d-05351e510e49",
-            "sourceColumn": "TMR de saída (robô)",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "TMR de entrada (humano)",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "c226d0fd-3194-4d12-b3fd-5bce1fa1c691",
-            "sourceColumn": "TMR de entrada (humano)",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "TMR de saída (humano)",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "bcf42cb3-288b-48ed-be61-165545e2b6cd",
-            "sourceColumn": "TMR de saída (humano)",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Total de alertas de inatividade",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "faf5ab0b-eaec-4e74-a5ca-45b4c94106ea",
-            "sourceColumn": "Total de alertas de inatividade",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "O alerta teve resultado?",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "0cfa81c6-ac64-493b-9a83-d10514cae0a0",
-            "sourceColumn": "O alerta teve resultado?",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Mensagens recebidas (Atendimento)",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "66e21d30-4ee5-48e4-9fc0-8b4d018508ce",
-            "sourceColumn": "Mensagens recebidas (Atendimento)",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Mensagens enviadas (Atendimento)",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "16d08b99-4124-4171-87e2-32a28831028f",
-            "sourceColumn": "Mensagens enviadas (Atendimento)",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Total de mensagens (Atendimento)",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "68cf9036-6f18-4aa1-92a0-10b815b3bb78",
-            "sourceColumn": "Total de mensagens (Atendimento)",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Status",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "57828659-5062-432f-9d01-1d236bfe47c6",
-            "sourceColumn": "Status",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Canal",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "1c3d191c-ae3b-4f67-a18c-a51848db7586",
-            "sourceColumn": "Canal",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Info",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "cb749030-aed0-4fed-b197-a91c640e1e61",
-            "sourceColumn": "Info",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "COLABORADOR",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "22a3534c-aef2-476a-b8bd-424623f9f567",
-            "sourceColumn": "COLABORADOR",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Usuário que encerrou",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "93b1479a-3d78-4339-a288-95c4c1ee679d",
-            "sourceColumn": "Usuário que encerrou",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Id do contato",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "24ad1ba4-85af-43d0-b59c-283ff91e987e",
-            "sourceColumn": "Id do contato",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Documento",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "8ac88c7f-1122-4838-b391-26f9add5f6e9",
-            "sourceColumn": "Documento",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Nome",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "0eba06e7-a1f4-4073-bf34-11692af9b0b0",
-            "sourceColumn": "Nome",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Contato",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "c4123173-7ee4-480b-be02-1b7c1c106d85",
-            "sourceColumn": "Contato",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Informações adicionais",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "37755ac7-fded-47d5-aa2b-dcb5053d24eb",
-            "sourceColumn": "Informações adicionais",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Origem do atendimento",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "d55fc77a-d563-4f7b-a506-55f66eda720b",
-            "sourceColumn": "Origem do atendimento",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Classificação",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "7f01d41f-a8cf-494d-9a78-e43fcbfbfa2b",
-            "sourceColumn": "Classificação",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Data agendada",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "637b9d03-e838-40ae-a4d5-99c63121fdbe",
-            "sourceColumn": "Data agendada",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Grupo de Ocorrência",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "1ca6427a-65ea-419e-b16e-d330f8c8d0db",
-            "sourceColumn": "Grupo de Ocorrência",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Ocorrência",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "716235e1-8143-4ca3-be8d-a108351326c4",
-            "sourceColumn": "Ocorrência",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Manifestação",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "41a82cb3-c491-4a76-a6e8-e630a2518459",
-            "sourceColumn": "Manifestação",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Valor",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "3156169b-29eb-4adb-a919-816bb5080127",
-            "sourceColumn": "Valor",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Robô",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "58f5a12c-071d-4d04-89ae-c15b75991d15",
-            "sourceColumn": "Robô",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Robô origem",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "9b78cab8-126c-4650-b164-de6c2931ad2e",
-            "sourceColumn": "Robô origem",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Fase",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "94edd9d4-42d3-4435-99e3-4ac0fa5d3c5e",
-            "sourceColumn": "Fase",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "CRM id",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "bcdfb660-5e9a-4a47-b7dd-60fd5f7f93a0",
-            "sourceColumn": "CRM id",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Adicional 1",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "fec80188-80be-4fe3-9b34-6297cd0814b6",
-            "sourceColumn": "Adicional 1",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Adicional 2",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "3f3ea7a2-0e44-46db-a99e-da3b55b6215e",
-            "sourceColumn": "Adicional 2",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Adicional 3",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "30f47b3e-0fa1-4fee-869f-adf94c778008",
-            "sourceColumn": "Adicional 3",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Adicional 4",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "d0989e44-4b22-4813-a504-19b1b0d9027a",
-            "sourceColumn": "Adicional 4",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Adicional 5",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "1ae2eaa6-9ff2-41e6-a5d8-168517e947e2",
-            "sourceColumn": "Adicional 5",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Quantidade de retornos ao robô",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "cde160f5-0305-4cbb-ab0b-df220b58ad26",
-            "sourceColumn": "Quantidade de retornos ao robô",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Tempo limite - SLA",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "5b1e395e-5d7f-45c3-8bb0-fd84a9c0591f",
-            "sourceColumn": "Tempo limite - SLA",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Tempo executado - SLA",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "8304ac80-0ad6-4b74-bd99-608ebe02749b",
-            "sourceColumn": "Tempo executado - SLA",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "SLA",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "7a5df60a-7870-4353-b7b7-a6ff06e213d0",
-            "sourceColumn": "SLA",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Fila de atendimento",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "4476394c-934f-49b7-85d5-82e5696c33cd",
-            "sourceColumn": "Fila de atendimento",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Formulário",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "e2fa6586-660a-483e-a829-48547f5873c8",
-            "sourceColumn": "Formulário",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Dialogo",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "cc386f44-b680-49a9-96f4-488e91b03c21",
-            "sourceColumn": "Dialogo",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Mensagens recebidas (Robô)",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "7fd3403a-3b8e-4832-aa81-25b6ef7da506",
-            "sourceColumn": "Mensagens recebidas (Robô)",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Mensagens enviadas (Robô)",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "c0cd653d-653d-424a-aede-5889198d84b7",
-            "sourceColumn": "Mensagens enviadas (Robô)",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Mensagens recebidas (Humano)",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "ba82c1f1-804d-4bf5-ae88-6ad1054c404c",
-            "sourceColumn": "Mensagens recebidas (Humano)",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Mensagens enviadas (Humano)",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "a4d74fcb-66a2-4b02-b981-5b8f63b59f8e",
-            "sourceColumn": "Mensagens enviadas (Humano)",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Primeira mensagem (Humano)",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "447b2c35-829d-461b-9f9b-dea9a97488dd",
-            "sourceColumn": "Primeira mensagem (Humano)",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Última mensagem (Humano)",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "2c016b60-ac09-46dc-bfb8-402646f81359",
-            "sourceColumn": "Última mensagem (Humano)",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Último Usuário Humano",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "16b8284d-ea3d-49ba-a8c7-3e147a968c3b",
-            "sourceColumn": "Último Usuário Humano",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Última mensagem (Cliente)",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "74c5c941-297b-46f0-8be3-aede8bb96d20",
-            "sourceColumn": "Última mensagem (Cliente)",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Data (ddmmaaaa)",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              },
-              {
-                "name": "UnderlyingDateTimeDataType",
-                "value": "Date"
-              }
-            ],
-            "dataType": "dateTime",
-            "formatString": "Long Date",
-            "lineageTag": "84cc60bd-994d-4708-9bad-77c7635a5805",
-            "sourceColumn": "Data (ddmmaaaa)",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Hora",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              },
-              {
-                "name": "UnderlyingDateTimeDataType",
-                "value": "Time"
-              },
-              {
-                "name": "__PBI_SemanticLinks",
-                "value": "[{\"LinkTarget\":{\"TableName\":\"fChat_relatorio_atendimento\",\"TableItemName\":\"Hora (compartimentos)\",\"ObjectType\":4},\"LinkType\":\"UsedInGroup\"}]"
-              }
-            ],
-            "dataType": "dateTime",
-            "formatString": "Long Time",
-            "lineageTag": "945cb8c2-4bfe-49ac-8e52-fa29bae607fa",
-            "sourceColumn": "Hora",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Hora (compartimentos)",
-            "annotations": [
-              {
-                "name": "GroupingDesignState",
-                "value": "{\"Version\":0,\"Sources\":[{\"Name\":\"f\",\"Entity\":\"fChat_relatorio_atendimento\"}],\"GroupedColumns\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Hora\"}}],\"BinItem\":{\"Expression\":{\"Floor\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Hora\"}},\"Size\":1.0,\"TimeUnit\":7}}}}"
-              },
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              },
-              {
-                "name": "UnderlyingDateTimeDataType",
-                "value": "Time"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "DataType"
-              }
-            ],
-            "dataType": "dateTime",
-            "expression": [
-              "IF(",
-              "\tISBLANK('fChat_relatorio_atendimento'[Hora]),",
-              "\tBLANK(),",
-              "\tINT('fChat_relatorio_atendimento'[Hora] * 24) / 24",
-              ")"
-            ],
-            "extendedProperties": [
-              {
-                "name": "GroupingMetadata",
-                "type": "json",
-                "value": {
-                  "binningMetadata": {
-                    "binSize": {
-                      "unit": 9,
-                      "value": 1.0
-                    }
-                  },
-                  "groupedColumns": [
-                    {
-                      "Column": {
-                        "Expression": {
-                          "SourceRef": {
-                            "Entity": "fChat_relatorio_atendimento"
-                          }
-                        },
-                        "Property": "Hora"
-                      }
-                    }
-                  ],
-                  "version": 0
-                }
-              }
-            ],
-            "formatString": "Long Time",
-            "lineageTag": "47a473cb-bd23-416b-89d8-12017f2a68c1",
-            "summarizeBy": "none",
-            "type": "calculated"
-          }
-        ],
-        "lineageTag": "fbaad861-a9f8-495d-a986-8aa804e1146c",
-        "partitions": [
-          {
-            "name": "fChat_relatorio_atendimento",
-            "mode": "import",
-            "source": {
-              "expression": [
-                "let",
-                "    Fonte = Csv.Document(Web.Contents(\"https://solucaonet.sharepoint.com/sites/suportecs/Documentos%20Compartilhados/Gest%C3%A3o/Desempenho/Dados/fChat_relatorio_atendimento.csv\"),[Delimiter=\";\", Columns=62, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
-                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),",
-                "",
-                "    #\"ARTUR DO NASCIMENTO ARBOLEIA\" = Table.ReplaceValue(#\"Cabeçalhos Promovidos\",\"Artur Do nascimento Arboleia\",\"ARTUR DO NASCIMENTO ARBOLEIA\",Replacer.ReplaceValue,{\"Usuário\"}),",
-                "    #\"MARIA LUIZA DE SOUZA PEREIRA\" = Table.ReplaceValue(#\"ARTUR DO NASCIMENTO ARBOLEIA\",\"Maria Luiza de Souza Pereira\",\"MARIA LUIZA DE SOUZA PEREIRA\",Replacer.ReplaceValue,{\"Usuário\"}),",
-                "    #\"WELLINGTON DIONIZIO SANTOS\" = Table.ReplaceValue(#\"MARIA LUIZA DE SOUZA PEREIRA\",\"Wellington Dionizio Santos\",\"WELLINGTON DIONIZIO SANTOS\",Replacer.ReplaceValue,{\"Usuário\"}),",
-                "    #\"GIOVANNI QUINTINO DA SILVA\" = Table.ReplaceValue(#\"WELLINGTON DIONIZIO SANTOS\",\"Giovanni Quintino Da Silva\",\"GIOVANNI QUINTINO DA SILVA\",Replacer.ReplaceValue,{\"Usuário\"}),",
-                "    #\"FERNANDO ALVES BARBOSA\" = Table.ReplaceValue(#\"GIOVANNI QUINTINO DA SILVA\",\"Fernando Alves Barbosa\",\"FERNANDO ALVES BARBOSA\",Replacer.ReplaceValue,{\"Usuário\"}),",
-                "    #\"CLEISON RODRIGUES DA SILVA\" = Table.ReplaceValue(#\"FERNANDO ALVES BARBOSA\",\"Cleison Rodrigues da Silva\",\"CLEISON RODRIGUES DA SILVA\",Replacer.ReplaceValue,{\"Usuário\"}),",
-                "    #\"HIGOR VINICIUS RODRIGUES BRITO\" = Table.ReplaceValue(#\"CLEISON RODRIGUES DA SILVA\",\"Higor Vinicius Rodrigues Brito\",\"HIGOR VINICIUS RODRIGUES BRITO\",Replacer.ReplaceValue,{\"Usuário\"}),",
-                "    #\"JOAO VITOR DA SILVA PIMENTEL\" = Table.ReplaceValue(#\"HIGOR VINICIUS RODRIGUES BRITO\",\"João Vitor da Silva Pimentel\",\"JOAO VITOR DA SILVA PIMENTEL\",Replacer.ReplaceValue,{\"Usuário\"}),",
-                "    #\"RENAN LUIZ\" = Table.ReplaceValue(#\"JOAO VITOR DA SILVA PIMENTEL\",\"Renan  Luiz\",\"RENAN LUIZ\",Replacer.ReplaceValue,{\"Usuário\"}),",
-                "    #\"MATHEUS ANDRADE DE ARAUJO\" = Table.ReplaceValue(#\"RENAN LUIZ\",\"Matheus Andrade De Araujo\",\"MATHEUS ANDRADE DE ARAUJO\",Replacer.ReplaceValue,{\"Usuário\"}),",
-                "    #\"MURILO CARLOS NEPONUCENA NOGUEIRA\" = Table.ReplaceValue(#\"MATHEUS ANDRADE DE ARAUJO\",\"Murilo Carlos Neponucena Nogueira\",\"MURILO CARLOS NEPONUCENA NOGUEIRA\",Replacer.ReplaceValue,{\"Usuário\"}),",
-                "    #\"ADREAN FELIPPE MATTOS DE MOURA\" = Table.ReplaceValue(#\"MURILO CARLOS NEPONUCENA NOGUEIRA\",\"Adrean Felippe Mattos De Moura\",\"ADREAN FELIPPE MATTOS DE MOURA\",Replacer.ReplaceValue,{\"Usuário\"}),",
-                "    #\"SABRINA PADIAL\" = Table.ReplaceValue(#\"ADREAN FELIPPE MATTOS DE MOURA\",\"Sabrina Padial\",\"SABRINA PADIAL\",Replacer.ReplaceValue,{\"Usuário\"}),",
-                "    #\"VINICIUS NUNES RODRIGUES\" = Table.ReplaceValue(#\"SABRINA PADIAL\",\"Vinicius Nunes Rodrigues\",\"VINICIUS NUNES RODRIGUES\",Replacer.ReplaceValue,{\"Usuário\"}),",
-                "    #\"ESTEBAN GABRIEL GARDIM DIAZ\" = Table.ReplaceValue(#\"VINICIUS NUNES RODRIGUES\",\"Esteban Gabriel Gardim Diaz\",\"ESTEBAN GABRIEL GARDIM DIAZ\",Replacer.ReplaceValue,{\"Usuário\"}),",
-                "    #\"RIAN DOS SANTOS ESTEVO\" = Table.ReplaceValue(#\"ESTEBAN GABRIEL GARDIM DIAZ\",\"Rian\",\"RIAN DOS SANTOS ESTEVO\",Replacer.ReplaceValue,{\"Usuário\"}),",
-                "    #\"RENAN DUARTE MARQUES DE LIMA\" = Table.ReplaceValue(#\"RIAN DOS SANTOS ESTEVO\",\"Renan Duarte Marques de Lima\",\"RENAN DUARTE MARQUES DE LIMA\",Replacer.ReplaceValue,{\"Usuário\"}),",
-                "    #\"DOUGLAS LISBOA SILVANO\" = Table.ReplaceValue(#\"RENAN DUARTE MARQUES DE LIMA\",\"Douglas Lisboa Silvano\",\"DOUGLAS LISBOA SILVANO\",Replacer.ReplaceValue,{\"Usuário\"}),",
-                "    #\"ANA LUIZA SBAIS COSTA\" = Table.ReplaceValue(#\"DOUGLAS LISBOA SILVANO\",\"Ana Luiza Sbais Costa\",\"ANA LUIZA SBAIS COSTA\",Replacer.ReplaceValue,{\"Usuário\"}),",
-                "    #\"BIANCA NUNES COSTA\" = Table.ReplaceValue(#\"ANA LUIZA SBAIS COSTA\",\"Bianca Nunes Costa\",\"BIANCA NUNES COSTA\",Replacer.ReplaceValue,{\"Usuário\"}),",
-                "    #\"DANIELLE DA SILVA FIALHO\" = Table.ReplaceValue(#\"BIANCA NUNES COSTA\",\"Danielle da Silva Fialho\",\"DANIELLE DA SILVA FIALHO\",Replacer.ReplaceValue,{\"Usuário\"}),",
-                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"DANIELLE DA SILVA FIALHO\",{{\"Data de entrada\", type datetime}}),",
-                "    #\"Data Inserida\" = Table.AddColumn(#\"Tipo Alterado\", \"Data (ddmmaaaa)\", each DateTime.Date([Data de entrada]), type date),",
-                "    #\"Colunas Renomeadas\" = Table.RenameColumns(#\"Data Inserida\",{{\"Usuário\", \"COLABORADOR\"}}),",
-                "    #\"Hora Inserida\" = Table.AddColumn(#\"Colunas Renomeadas\", \"Hora\", each DateTime.Time([Data de entrada]), type time)",
-                "in",
-                "    #\"Hora Inserida\""
-              ],
-              "type": "m"
-            }
-          }
-        ]
-      },
       {
         "name": "DateTableTemplate_853ae852-e2bd-456d-8f3e-9f85d0784790",
         "annotations": [
@@ -24636,392 +23688,6 @@
             "source": {
               "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
               "type": "calculated"
-            }
-          }
-        ]
-      },
-      {
-        "name": "fChat_relatorio_resumo_usuarios(pausas)",
-        "annotations": [
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
-          },
-          {
-            "name": "PBI_ResultType",
-            "value": "Table"
-          }
-        ],
-        "columns": [
-          {
-            "name": "ID",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "fc7e112c-4115-46c6-8b1c-51a6620e2dc6",
-            "sourceColumn": "ID",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "COLABORADOR",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "4e551b0d-6cd1-464d-8bed-8696b3296429",
-            "sourceColumn": "COLABORADOR",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Usuário",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "bd704816-3ae0-4d6a-87e9-36742c8c00c5",
-            "sourceColumn": "Usuário",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Entrada",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "dateTime",
-            "formatString": "General Date",
-            "lineageTag": "5068ce7a-6224-43a0-8ba7-226cb2854ef9",
-            "sourceColumn": "Entrada",
-            "summarizeBy": "none",
-            "variations": [
-              {
-                "name": "Variation",
-                "defaultHierarchy": {
-                  "hierarchy": "Hierarquia de datas",
-                  "table": "LocalDateTable_7ad32777-930b-4009-b99b-c303ee716e4f"
-                },
-                "isDefault": true,
-                "relationship": "f7a93b19-613a-4f24-bee8-ebaa12190b4f"
-              }
-            ]
-          },
-          {
-            "name": "Saída",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "c5a10071-7d3c-4c55-a175-92ac4d19c6b8",
-            "sourceColumn": "Saída",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Perfil atual",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "663f34f3-18c6-4ae6-8f18-6581cf684d7b",
-            "sourceColumn": "Perfil atual",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Tempo Jornada",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "487fb561-f34c-43fe-8896-db1cbd944c31",
-            "sourceColumn": "Tempo Jornada",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Tempo Pausa",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "41850864-2d6d-4fd6-b894-5431271466c0",
-            "sourceColumn": "Tempo Pausa",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Tempo Disponível",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "d2ab9db1-5c41-47fc-96cb-ea6394239a09",
-            "sourceColumn": "Tempo Disponível",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Tempo Indisponível",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "23e864ad-4913-44c1-a353-2f9991dcfd1e",
-            "sourceColumn": "Tempo Indisponível",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Tempo Deslogado",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "6bab8e16-1901-45a4-b9a7-d34d6941c3c8",
-            "sourceColumn": "Tempo Deslogado",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Tempo em Pausa Outros",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "bd3ad76e-76c0-4ce9-ac61-a6fff1954093",
-            "sourceColumn": "Tempo em Pausa Outros",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Tempo em Pausa 10",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "f27eda4d-4120-4fc1-a629-4b715f06ac6b",
-            "sourceColumn": "Tempo em Pausa 10",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Tag",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "b1129d2a-e480-49fa-8aa6-5f5bc694702d",
-            "sourceColumn": "Tag",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Data (ddmmaaaa)",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              },
-              {
-                "name": "UnderlyingDateTimeDataType",
-                "value": "Date"
-              }
-            ],
-            "dataType": "dateTime",
-            "formatString": "Long Date",
-            "lineageTag": "41a7eb7d-d3e3-48a7-88ba-1f577f5ac349",
-            "sourceColumn": "Data (ddmmaaaa)",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Tempo em pausa - 2:Pausa cafe",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "8606b8cf-156f-456c-a1c2-7489a8222d0c",
-            "sourceColumn": "Tempo em pausa - 2:Pausa cafe",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Tempo em pausa - 10:Pausa Bkoffice",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "9284245d-bd9e-4ef6-b829-1e86d276ce58",
-            "sourceColumn": "Tempo em pausa - 10:Pausa Bkoffice",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Tempo em pausa - 3:Pausa pessoal",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "17ca40f7-c7b0-414c-9f22-adf89272299d",
-            "sourceColumn": "Tempo em pausa - 3:Pausa pessoal",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Tempo em pausa - 12:Pausa de 15 minutos",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "34e35cc0-5f28-46bc-9062-6186f52f89fe",
-            "sourceColumn": "Tempo em pausa - 12:Pausa de 15 minutos",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Tempo em pausa - 4:Pausa Feedback",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "5860b52b-0c81-4333-ae9d-ece563a45f32",
-            "sourceColumn": "Tempo em pausa - 4:Pausa Feedback",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Tempo em pausa - 13:Pausa atendimento tecnico",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "545760e8-9f7b-40c9-81c1-eda99124d0da",
-            "sourceColumn": "Tempo em pausa - 13:Pausa atendimento tecnico",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Tempo em pausa - 7:Pausa manutencao TI",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "0d87a3c2-0f82-40d1-ab96-30ae1df50049",
-            "sourceColumn": "Tempo em pausa - 7:Pausa manutencao TI",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Tempo em Pausa 8",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "4429096c-e26a-4b19-b637-396eec5d7a1c",
-            "sourceColumn": "Tempo em Pausa 8",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Tempo em pausa - 8:Pausa Atendimento presencial",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "d3505ccf-ed7c-4979-b8e6-c266c435d9d8",
-            "sourceColumn": "Tempo em pausa - 8:Pausa Atendimento presencial",
-            "summarizeBy": "none"
-          }
-        ],
-        "lineageTag": "0e9f3d83-7c86-4a28-855b-ab6d692fcc3c",
-        "partitions": [
-          {
-            "name": "fChat_relatorio_resumo_usuarios(pausas)",
-            "mode": "import",
-            "source": {
-              "expression": [
-                "let",
-                "    Fonte = Csv.Document(Web.Contents(\"https://solucaonet.sharepoint.com/sites/suportecs/Documentos%20Compartilhados/Gest%C3%A3o/Desempenho/Dados/fChat_relatorio_resumo_usuarios(pausas).csv\"),[Delimiter=\";\", Columns=23, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
-                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),",
-                "",
-                "    #\"ARTUR DO NASCIMENTO ARBOLEIA\" = Table.ReplaceValue(#\"Cabeçalhos Promovidos\",\"Artur Do nascimento Arboleia\",\"ARTUR DO NASCIMENTO ARBOLEIA\",Replacer.ReplaceValue,{\"Nome\"}),",
-                "    #\"MARIA LUIZA DE SOUZA PEREIRA\" = Table.ReplaceValue(#\"ARTUR DO NASCIMENTO ARBOLEIA\",\"Maria Luiza de Souza Pereira\",\"MARIA LUIZA DE SOUZA PEREIRA\",Replacer.ReplaceValue,{\"Nome\"}),",
-                "    #\"WELLINGTON DIONIZIO SANTOS\" = Table.ReplaceValue(#\"MARIA LUIZA DE SOUZA PEREIRA\",\"Wellington Dionizio Santos\",\"WELLINGTON DIONIZIO SANTOS\",Replacer.ReplaceValue,{\"Nome\"}),",
-                "    #\"GIOVANNI QUINTINO DA SILVA\" = Table.ReplaceValue(#\"WELLINGTON DIONIZIO SANTOS\",\"Giovanni Quintino Da Silva\",\"GIOVANNI QUINTINO DA SILVA\",Replacer.ReplaceValue,{\"Nome\"}),",
-                "    #\"FERNANDO ALVES BARBOSA\" = Table.ReplaceValue(#\"GIOVANNI QUINTINO DA SILVA\",\"Fernando Alves Barbosa\",\"FERNANDO ALVES BARBOSA\",Replacer.ReplaceValue,{\"Nome\"}),",
-                "    #\"CLEISON RODRIGUES DA SILVA\" = Table.ReplaceValue(#\"FERNANDO ALVES BARBOSA\",\"Cleison Rodrigues da Silva\",\"CLEISON RODRIGUES DA SILVA\",Replacer.ReplaceValue,{\"Nome\"}),",
-                "    #\"HIGOR VINICIUS RODRIGUES BRITO\" = Table.ReplaceValue(#\"CLEISON RODRIGUES DA SILVA\",\"Higor Vinicius Rodrigues Brito\",\"HIGOR VINICIUS RODRIGUES BRITO\",Replacer.ReplaceValue,{\"Nome\"}),",
-                "    #\"JOAO VITOR DA SILVA PIMENTEL\" = Table.ReplaceValue(#\"HIGOR VINICIUS RODRIGUES BRITO\",\"João Vitor da Silva Pimentel\",\"JOAO VITOR DA SILVA PIMENTEL\",Replacer.ReplaceValue,{\"Nome\"}),",
-                "    #\"RENAN LUIZ\" = Table.ReplaceValue(#\"JOAO VITOR DA SILVA PIMENTEL\",\"Renan  Luiz\",\"RENAN LUIZ\",Replacer.ReplaceValue,{\"Nome\"}),",
-                "    #\"MATHEUS ANDRADE DE ARAUJO\" = Table.ReplaceValue(#\"RENAN LUIZ\",\"Matheus Andrade De Araujo\",\"MATHEUS ANDRADE DE ARAUJO\",Replacer.ReplaceValue,{\"Nome\"}),",
-                "    #\"MURILO CARLOS NEPONUCENA NOGUEIRA\" = Table.ReplaceValue(#\"MATHEUS ANDRADE DE ARAUJO\",\"Murilo Carlos Neponucena Nogueira\",\"MURILO CARLOS NEPONUCENA NOGUEIRA\",Replacer.ReplaceValue,{\"Nome\"}),",
-                "    #\"ADREAN FELIPPE MATTOS DE MOURA\" = Table.ReplaceValue(#\"MURILO CARLOS NEPONUCENA NOGUEIRA\",\"Adrean Felippe Mattos De Moura\",\"ADREAN FELIPPE MATTOS DE MOURA\",Replacer.ReplaceValue,{\"Nome\"}),",
-                "    #\"SABRINA PADIAL\" = Table.ReplaceValue(#\"ADREAN FELIPPE MATTOS DE MOURA\",\"Sabrina Padial\",\"SABRINA PADIAL\",Replacer.ReplaceValue,{\"Nome\"}),",
-                "    #\"VINICIUS NUNES RODRIGUES\" = Table.ReplaceValue(#\"SABRINA PADIAL\",\"Vinicius Nunes Rodrigues\",\"VINICIUS NUNES RODRIGUES\",Replacer.ReplaceValue,{\"Nome\"}),",
-                "    #\"ESTEBAN GABRIEL GARDIM DIAZ\" = Table.ReplaceValue(#\"VINICIUS NUNES RODRIGUES\",\"Esteban Gabriel Gardim Diaz\",\"ESTEBAN GABRIEL GARDIM DIAZ\",Replacer.ReplaceValue,{\"Nome\"}),",
-                "    #\"RIAN DOS SANTOS ESTEVO\" = Table.ReplaceValue(#\"ESTEBAN GABRIEL GARDIM DIAZ\",\"Rian\",\"RIAN DOS SANTOS ESTEVO\",Replacer.ReplaceValue,{\"Nome\"}),",
-                "    #\"RENAN DUARTE MARQUES DE LIMA\" = Table.ReplaceValue(#\"RIAN DOS SANTOS ESTEVO\",\"Renan Duarte Marques de Lima\",\"RENAN DUARTE MARQUES DE LIMA\",Replacer.ReplaceValue,{\"Nome\"}),",
-                "    #\"DOUGLAS LISBOA SILVANO\" = Table.ReplaceValue(#\"RENAN DUARTE MARQUES DE LIMA\",\"Douglas Lisboa Silvano\",\"DOUGLAS LISBOA SILVANO\",Replacer.ReplaceValue,{\"Nome\"}),",
-                "    #\"ANA LUIZA SBAIS COSTA\" = Table.ReplaceValue(#\"DOUGLAS LISBOA SILVANO\",\"Ana Luiza Sbais Costa\",\"ANA LUIZA SBAIS COSTA\",Replacer.ReplaceValue,{\"Nome\"}),",
-                "    #\"BIANCA NUNES COSTA\" = Table.ReplaceValue(#\"ANA LUIZA SBAIS COSTA\",\"Bianca Nunes Costa\",\"BIANCA NUNES COSTA\",Replacer.ReplaceValue,{\"Nome\"}),",
-                "    #\"DANIELLE DA SILVA FIALHO\" = Table.ReplaceValue(#\"BIANCA NUNES COSTA\",\"Danielle da Silva Fialho\",\"DANIELLE DA SILVA FIALHO\",Replacer.ReplaceValue,{\"Nome\"}),",
-                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"DANIELLE DA SILVA FIALHO\",{{\"Entrada\", type datetime}}),",
-                "    #\"Data Inserida\" = Table.AddColumn(#\"Tipo Alterado\", \"Data (ddmmaaaa)\", each DateTime.Date([Entrada]), type date),",
-                "    #\"Colunas Renomeadas\" = Table.RenameColumns(#\"Data Inserida\",{{\"Nome\", \"COLABORADOR\"}})",
-                "in",
-                "    #\"Colunas Renomeadas\""
-              ],
-              "type": "m"
             }
           }
         ]
@@ -25660,6 +24326,7 @@
           {
             "name": "Medidas Pausas Callflex",
             "mode": "import",
+            "queryGroup": "Medidas",
             "source": {
               "expression": [
                 "let",
@@ -25668,281 +24335,6 @@
                 "    #\"Colunas Removidas\" = Table.RemoveColumns(#\"Tipo Alterado\",{\"Coluna 1\"})",
                 "in",
                 "    #\"Colunas Removidas\""
-              ],
-              "type": "m"
-            }
-          }
-        ]
-      },
-      {
-        "name": "fChat_relatorio_nps",
-        "annotations": [
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
-          },
-          {
-            "name": "PBI_ResultType",
-            "value": "Table"
-          }
-        ],
-        "columns": [
-          {
-            "name": "Id",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "3fc1083b-fe4a-41c3-b4a8-73eb673f7a31",
-            "sourceColumn": "Id",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Data",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "dateTime",
-            "formatString": "General Date",
-            "lineageTag": "acc5f5a2-51f1-4442-b325-81e664824a7f",
-            "sourceColumn": "Data",
-            "summarizeBy": "none",
-            "variations": [
-              {
-                "name": "Variation",
-                "defaultHierarchy": {
-                  "hierarchy": "Hierarquia de datas",
-                  "table": "LocalDateTable_4968a8d5-4fba-4e64-8c8e-654f214cf655"
-                },
-                "isDefault": true,
-                "relationship": "9fd0c8a9-8edb-4122-80a6-5d99731166f6"
-              }
-            ]
-          },
-          {
-            "name": "Canal",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "cef19b77-ae1f-4a3e-a481-d00b515dde04",
-            "sourceColumn": "Canal",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Usuário",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "20431df2-3364-4070-973a-bbcc4267823b",
-            "sourceColumn": "Usuário",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "COLABORADOR",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "c993041f-500f-4032-bf3c-6ef642775fd1",
-            "sourceColumn": "COLABORADOR",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Person ID",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "b1069745-f4cc-452f-8ae2-f85b731d2f80",
-            "sourceColumn": "Person ID",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Documento",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "33394e5c-fb82-4fe3-811c-993938f03818",
-            "sourceColumn": "Documento",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Nome",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "9a629351-cdaa-4438-853e-901afb8879d7",
-            "sourceColumn": "Nome",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Fase",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "cdb9dba9-b921-4ccc-afcc-2539476b0a9a",
-            "sourceColumn": "Fase",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Info",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "2d7bf385-b3f6-4d54-bf58-6d481657cb71",
-            "sourceColumn": "Info",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "NPS",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "57b017ca-9a6b-4504-b133-45dcca3e25c2",
-            "sourceColumn": "NPS",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Descrição",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "b9a05c01-d444-46cc-b206-a74411a54dd2",
-            "sourceColumn": "Descrição",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Robô",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "9983d3fb-a5a6-407d-b777-bea7d4882099",
-            "sourceColumn": "Robô",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "NPS Inteiro",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "3e42b329-853a-464d-90de-58f9071ddd6e",
-            "sourceColumn": "NPS Inteiro",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Data (ddmmaaaa)",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              },
-              {
-                "name": "UnderlyingDateTimeDataType",
-                "value": "Date"
-              }
-            ],
-            "dataType": "dateTime",
-            "formatString": "Long Date",
-            "lineageTag": "04e7c09d-213e-48c8-b478-8bc5752d142b",
-            "sourceColumn": "Data (ddmmaaaa)",
-            "summarizeBy": "none"
-          }
-        ],
-        "lineageTag": "af7617c8-eb0e-4ff1-9d4c-4aed55892c94",
-        "partitions": [
-          {
-            "name": "fChat_relatorio_nps",
-            "mode": "import",
-            "source": {
-              "expression": [
-                "let",
-                "    Fonte = Csv.Document(Web.Contents(\"https://solucaonet.sharepoint.com/sites/suportecs/Documentos%20Compartilhados/Gest%C3%A3o/Desempenho/Dados/fChat_relatorio_nps.csv\"),[Delimiter=\";\", Columns=13, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
-                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),",
-                "    #\"Coluna Duplicada\" = Table.DuplicateColumn(#\"Cabeçalhos Promovidos\", \"NPS\", \"NPS - Copiar\"),",
-                "    #\"Colunas Reordenadas\" = Table.ReorderColumns(#\"Coluna Duplicada\",{\"Id\", \"Data\", \"Canal\", \"Usuário\", \"Nome do Usuário\", \"Person ID\", \"Documento\", \"Nome\", \"Fase\", \"Info\", \"NPS\", \"NPS - Copiar\", \"Descrição\", \"Robô\"}),",
-                "    #\"Colunas Renomeadas\" = Table.RenameColumns(#\"Colunas Reordenadas\",{{\"NPS - Copiar\", \"NPS Inteiro\"}}),",
-                "    #\"Valor Substituído\" = Table.ReplaceValue(#\"Colunas Renomeadas\",\"-\",\"0\",Replacer.ReplaceText,{\"NPS Inteiro\"}),",
-                "    #\"Tipo Alterado1\" = Table.TransformColumnTypes(#\"Valor Substituído\",{{\"NPS Inteiro\", Int64.Type}}),",
-                "",
-                "    #\"ARTUR DO NASCIMENTO ARBOLEIA\" = Table.ReplaceValue(#\"Tipo Alterado1\",\"Artur Do nascimento Arboleia\",\"ARTUR DO NASCIMENTO ARBOLEIA\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
-                "    #\"MARIA LUIZA DE SOUZA PEREIRA\" = Table.ReplaceValue(#\"ARTUR DO NASCIMENTO ARBOLEIA\",\"Maria Luiza de Souza Pereira\",\"MARIA LUIZA DE SOUZA PEREIRA\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
-                "    #\"WELLINGTON DIONIZIO SANTOS\" = Table.ReplaceValue(#\"MARIA LUIZA DE SOUZA PEREIRA\",\"Wellington Dionizio Santos\",\"WELLINGTON DIONIZIO SANTOS\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
-                "    #\"GIOVANNI QUINTINO DA SILVA\" = Table.ReplaceValue(#\"WELLINGTON DIONIZIO SANTOS\",\"Giovanni Quintino Da Silva\",\"GIOVANNI QUINTINO DA SILVA\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
-                "    #\"FERNANDO ALVES BARBOSA\" = Table.ReplaceValue(#\"GIOVANNI QUINTINO DA SILVA\",\"Fernando Alves Barbosa\",\"FERNANDO ALVES BARBOSA\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
-                "    #\"CLEISON RODRIGUES DA SILVA\" = Table.ReplaceValue(#\"FERNANDO ALVES BARBOSA\",\"Cleison Rodrigues da Silva\",\"CLEISON RODRIGUES DA SILVA\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
-                "    #\"HIGOR VINICIUS RODRIGUES BRITO\" = Table.ReplaceValue(#\"CLEISON RODRIGUES DA SILVA\",\"Higor Vinicius Rodrigues Brito\",\"HIGOR VINICIUS RODRIGUES BRITO\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
-                "    #\"JOAO VITOR DA SILVA PIMENTEL\" = Table.ReplaceValue(#\"HIGOR VINICIUS RODRIGUES BRITO\",\"João Vitor da Silva Pimentel\",\"JOAO VITOR DA SILVA PIMENTEL\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
-                "    #\"RENAN LUIZ\" = Table.ReplaceValue(#\"JOAO VITOR DA SILVA PIMENTEL\",\"Renan  Luiz\",\"RENAN LUIZ\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
-                "    #\"MATHEUS ANDRADE DE ARAUJO\" = Table.ReplaceValue(#\"RENAN LUIZ\",\"Matheus Andrade De Araujo\",\"MATHEUS ANDRADE DE ARAUJO\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
-                "    #\"MURILO CARLOS NEPONUCENA NOGUEIRA\" = Table.ReplaceValue(#\"MATHEUS ANDRADE DE ARAUJO\",\"Murilo Carlos Neponucena Nogueira\",\"MURILO CARLOS NEPONUCENA NOGUEIRA\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
-                "    #\"ADREAN FELIPPE MATTOS DE MOURA\" = Table.ReplaceValue(#\"MURILO CARLOS NEPONUCENA NOGUEIRA\",\"Adrean Felippe Mattos De Moura\",\"ADREAN FELIPPE MATTOS DE MOURA\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
-                "    #\"SABRINA PADIAL\" = Table.ReplaceValue(#\"ADREAN FELIPPE MATTOS DE MOURA\",\"Sabrina Padial\",\"SABRINA PADIAL\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
-                "    #\"VINICIUS NUNES RODRIGUES\" = Table.ReplaceValue(#\"SABRINA PADIAL\",\"Vinicius Nunes Rodrigues\",\"VINICIUS NUNES RODRIGUES\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
-                "    #\"ESTEBAN GABRIEL GARDIM DIAZ\" = Table.ReplaceValue(#\"VINICIUS NUNES RODRIGUES\",\"Esteban Gabriel Gardim Diaz\",\"ESTEBAN GABRIEL GARDIM DIAZ\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
-                "    #\"RIAN DOS SANTOS ESTEVO\" = Table.ReplaceValue(#\"ESTEBAN GABRIEL GARDIM DIAZ\",\"Rian\",\"RIAN DOS SANTOS ESTEVO\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
-                "    #\"RENAN DUARTE MARQUES DE LIMA\" = Table.ReplaceValue(#\"RIAN DOS SANTOS ESTEVO\",\"Renan Duarte Marques de Lima\",\"RENAN DUARTE MARQUES DE LIMA\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
-                "    #\"DOUGLAS LISBOA SILVANO\" = Table.ReplaceValue(#\"RENAN DUARTE MARQUES DE LIMA\",\"Douglas Lisboa Silvano\",\"DOUGLAS LISBOA SILVANO\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
-                "    #\"ANA LUIZA SBAIS COSTA\" = Table.ReplaceValue(#\"DOUGLAS LISBOA SILVANO\",\"Ana Luiza Sbais Costa\",\"ANA LUIZA SBAIS COSTA\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
-                "    #\"BIANCA NUNES COSTA\" = Table.ReplaceValue(#\"ANA LUIZA SBAIS COSTA\",\"Bianca Nunes Costa\",\"BIANCA NUNES COSTA\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
-                "    #\"DANIELLE DA SILVA FIALHO\" = Table.ReplaceValue(#\"BIANCA NUNES COSTA\",\"Danielle da Silva Fialho\",\"DANIELLE DA SILVA FIALHO\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
-                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"DANIELLE DA SILVA FIALHO\",{{\"Data\", type datetime}}),",
-                "    #\"Data Inserida\" = Table.AddColumn(#\"Tipo Alterado\", \"Data (ddmmaaaa)\", each DateTime.Date([Data]), type date),",
-                "    #\"Colunas Renomeadas1\" = Table.RenameColumns(#\"Data Inserida\",{{\"Nome do Usuário\", \"COLABORADOR\"}})",
-                "in",
-                "    #\"Colunas Renomeadas1\""
               ],
               "type": "m"
             }
@@ -26108,6 +24500,7 @@
           {
             "name": "Medidas Instalação",
             "mode": "import",
+            "queryGroup": "Medidas",
             "source": {
               "expression": [
                 "let",
@@ -26240,6 +24633,7 @@
           {
             "name": "Medidas Onboarding",
             "mode": "import",
+            "queryGroup": "Medidas",
             "source": {
               "expression": [
                 "let",
@@ -26248,533 +24642,6 @@
                 "    #\"Colunas Removidas\" = Table.RemoveColumns(#\"Tipo Alterado\",{\"Coluna 1\"})",
                 "in",
                 "    #\"Colunas Removidas\""
-              ],
-              "type": "m"
-            }
-          }
-        ]
-      },
-      {
-        "name": "fCallflex_chamadas",
-        "annotations": [
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
-          },
-          {
-            "name": "PBI_ResultType",
-            "value": "Table"
-          }
-        ],
-        "columns": [
-          {
-            "name": "DATA",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "dateTime",
-            "formatString": "General Date",
-            "lineageTag": "876195ee-c708-4c18-a94b-ecd1130a8237",
-            "sourceColumn": "DATA",
-            "summarizeBy": "none",
-            "variations": [
-              {
-                "name": "Variation",
-                "defaultHierarchy": {
-                  "hierarchy": "Hierarquia de datas",
-                  "table": "LocalDateTable_9bb371a8-6fc6-44ab-8fe7-fa1d41f0136f"
-                },
-                "isDefault": true,
-                "relationship": "d9e3836d-934c-4052-a2a0-bd12855789b7"
-              }
-            ]
-          },
-          {
-            "name": "FILA",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "046e35c7-d289-4d95-a462-7ccc568a692a",
-            "sourceColumn": "FILA",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "COLABORADOR",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "b8685e03-5ffe-4351-9eee-8fa92daa206f",
-            "sourceColumn": "COLABORADOR",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "ORIGEM",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "3537d6bd-5e01-4639-88aa-8ce31b9a9298",
-            "sourceColumn": "ORIGEM",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "DESTINO",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "dfa1c876-43e2-4bd8-a1f4-708e84c74b60",
-            "sourceColumn": "DESTINO",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "TIPO",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "9f270090-a9fe-4263-856f-728bc7c90ffb",
-            "sourceColumn": "TIPO",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "STATUS",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "162733be-daaf-4b24-baa3-5a1b4928be84",
-            "sourceColumn": "STATUS",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "DESLIGADOPOR",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "0771167d-0f10-4647-932f-18854ecdf276",
-            "sourceColumn": "DESLIGADOPOR",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "TEMPO_CONECTADO",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "2395e46b-907a-4751-bf10-ae8822a82549",
-            "sourceColumn": "TEMPO_CONECTADO",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "TEMPO_DE_CONVERSACAO",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "232a5ec4-3b06-410a-8fa9-7adfb3ba77a1",
-            "sourceColumn": "TEMPO_DE_CONVERSACAO",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Column1",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "b75e188e-1a2d-4d03-bc48-2280d9107b8c",
-            "sourceColumn": "Column1",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Data (ddmmaaaa)",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              },
-              {
-                "name": "UnderlyingDateTimeDataType",
-                "value": "Date"
-              }
-            ],
-            "dataType": "dateTime",
-            "formatString": "Long Date",
-            "lineageTag": "3896ce5c-c842-4694-9ab4-97e27b29f3b6",
-            "sourceColumn": "Data (ddmmaaaa)",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Hora",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              },
-              {
-                "name": "__PBI_SemanticLinks",
-                "value": "[{\"LinkTarget\":{\"TableName\":\"fCallflex_chamadas\",\"TableItemName\":\"Hora (compartimentos)\",\"ObjectType\":4},\"LinkType\":\"UsedInGroup\"}]"
-              },
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isDateTimeCustom\":true}"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "DataType"
-              }
-            ],
-            "dataType": "dateTime",
-            "formatString": "hh:nn:ss",
-            "lineageTag": "e0489543-b04d-43e7-8ba5-f2495646a155",
-            "sourceColumn": "Hora",
-            "summarizeBy": "none",
-            "variations": [
-              {
-                "name": "Variation",
-                "defaultHierarchy": {
-                  "hierarchy": "Hierarquia de datas",
-                  "table": "LocalDateTable_a384ac4e-028b-4e81-9215-5602139dc11c"
-                },
-                "isDefault": true,
-                "relationship": "4c0811fe-7e9e-4273-8c5b-6b73189ee35c"
-              }
-            ]
-          },
-          {
-            "name": "Hora (compartimentos)",
-            "annotations": [
-              {
-                "name": "GroupingDesignState",
-                "value": "{\"Version\":0,\"Sources\":[{\"Name\":\"f\",\"Entity\":\"fCallflex_chamadas\"}],\"GroupedColumns\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Hora\"}}],\"BinItem\":{\"Expression\":{\"Floor\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Hora\"}},\"Size\":1.0,\"TimeUnit\":7}}}}"
-              },
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "dateTime",
-            "expression": [
-              "IF(",
-              "\tISBLANK('fCallflex_chamadas'[Hora]),",
-              "\tBLANK(),",
-              "\tINT('fCallflex_chamadas'[Hora] * 24) / 24",
-              ")"
-            ],
-            "extendedProperties": [
-              {
-                "name": "GroupingMetadata",
-                "type": "json",
-                "value": {
-                  "binningMetadata": {
-                    "binSize": {
-                      "unit": 9,
-                      "value": 1.0
-                    }
-                  },
-                  "groupedColumns": [
-                    {
-                      "Column": {
-                        "Expression": {
-                          "SourceRef": {
-                            "Entity": "fCallflex_chamadas"
-                          }
-                        },
-                        "Property": "Hora"
-                      }
-                    }
-                  ],
-                  "version": 0
-                }
-              }
-            ],
-            "formatString": "Short Time",
-            "lineageTag": "13a713b6-05c0-44b8-8160-8e29f7747a1a",
-            "summarizeBy": "none",
-            "type": "calculated"
-          }
-        ],
-        "lineageTag": "5e92d14a-281b-49fc-a36c-19a025d5af07",
-        "partitions": [
-          {
-            "name": "fCallflex_chamadas",
-            "mode": "import",
-            "source": {
-              "expression": [
-                "let",
-                "    Fonte = Csv.Document(Web.Contents(\"https://solucaonet.sharepoint.com/sites/suportecs/Documentos%20Compartilhados/Gest%C3%A3o/Desempenho/Dados/fCallflex_chamadas.csv\"),[Delimiter=\";\", Columns=11, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
-                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),",
-                "   ",
-                "    #\"ARTUR DO NASCIMENTO ARBOLEIA\" = Table.ReplaceValue(#\"Cabeçalhos Promovidos\",\"6006-Artur Do Nascimento Arboleia\",\"ARTUR DO NASCIMENTO ARBOLEIA\",Replacer.ReplaceValue,{\"AGENTE\"}),",
-                "    #\"MARIA LUIZA DE SOUZA PEREIRA\" = Table.ReplaceValue(#\"ARTUR DO NASCIMENTO ARBOLEIA\",\"6007-Maria Luiza De Souza Pereira\",\"MARIA LUIZA DE SOUZA PEREIRA\",Replacer.ReplaceValue,{\"AGENTE\"}),",
-                "    #\"WELLINGTON DIONIZIO SANTOS\" = Table.ReplaceValue(#\"MARIA LUIZA DE SOUZA PEREIRA\",\"6008-Wellington Dionizio Santos\",\"WELLINGTON DIONIZIO SANTOS\",Replacer.ReplaceValue,{\"AGENTE\"}),",
-                "    #\"GIOVANNI QUINTINO DA SILVA\" = Table.ReplaceValue(#\"WELLINGTON DIONIZIO SANTOS\",\"6009-Giovanni Quintino Da Silva\",\"GIOVANNI QUINTINO DA SILVA\",Replacer.ReplaceValue,{\"AGENTE\"}),",
-                "    #\"FERNANDO ALVES BARBOSA\" = Table.ReplaceValue(#\"GIOVANNI QUINTINO DA SILVA\",\"6010-Fernando Alves Barbosa\",\"FERNANDO ALVES BARBOSA\",Replacer.ReplaceValue,{\"AGENTE\"}),",
-                "    #\"CLEISON RODRIGUES DA SILVA\" = Table.ReplaceValue(#\"FERNANDO ALVES BARBOSA\",\"6011-Cleison Rodrigues Da Silva\",\"CLEISON RODRIGUES DA SILVA\",Replacer.ReplaceValue,{\"AGENTE\"}),",
-                "    #\"HIGOR VINICIUS RODRIGUES BRITO\" = Table.ReplaceValue(#\"CLEISON RODRIGUES DA SILVA\",\"6012-Higor Vinicius Rodrigues Brito\",\"HIGOR VINICIUS RODRIGUES BRITO\",Replacer.ReplaceValue,{\"AGENTE\"}),",
-                "    #\"JOAO VITOR DA SILVA PIMENTEL\" = Table.ReplaceValue(#\"HIGOR VINICIUS RODRIGUES BRITO\",\"6013-Joao Vitor Da Silva Pimentel\",\"JOAO VITOR DA SILVA PIMENTEL\",Replacer.ReplaceValue,{\"AGENTE\"}),",
-                "    #\"RENAN LUIZ\" = Table.ReplaceValue(#\"JOAO VITOR DA SILVA PIMENTEL\",\"6014-Renan Luiz\",\"RENAN LUIZ\",Replacer.ReplaceValue,{\"AGENTE\"}),",
-                "    #\"MATHEUS ANDRADE DE ARAUJO\" = Table.ReplaceValue(#\"RENAN LUIZ\",\"6015-Matheus Andrade De Araujo\",\"MATHEUS ANDRADE DE ARAUJO\",Replacer.ReplaceValue,{\"AGENTE\"}),",
-                "    #\"MURILO CARLOS NEPONUCENA NOGUEIRA\" = Table.ReplaceValue(#\"MATHEUS ANDRADE DE ARAUJO\",\"6039-Murilo Carlos Neponucena Nogueira\",\"MURILO CARLOS NEPONUCENA NOGUEIRA\",Replacer.ReplaceValue,{\"AGENTE\"}),",
-                "    #\"ADREAN FELIPPE MATTOS DE MOURA\" = Table.ReplaceValue(#\"MURILO CARLOS NEPONUCENA NOGUEIRA\",\"6040-Adrean Felippe Mattos De Moura\",\"ADREAN FELIPPE MATTOS DE MOURA\",Replacer.ReplaceValue,{\"AGENTE\"}),",
-                "    #\"SABRINA PADIAL\" = Table.ReplaceValue(#\"ADREAN FELIPPE MATTOS DE MOURA\",\"6041-Sabrina Padial\",\"SABRINA PADIAL\",Replacer.ReplaceValue,{\"AGENTE\"}),",
-                "    #\"VINICIUS NUNES RODRIGUES\" = Table.ReplaceValue(#\"SABRINA PADIAL\",\"6042-Vinicius Nunes Rodrigues\",\"VINICIUS NUNES RODRIGUES\",Replacer.ReplaceValue,{\"AGENTE\"}),",
-                "    #\"ESTEBAN GABRIEL GARDIM DIAZ\" = Table.ReplaceValue(#\"VINICIUS NUNES RODRIGUES\",\"6043-Esteban Gabriel Gardim Diaz\",\"ESTEBAN GABRIEL GARDIM DIAZ\",Replacer.ReplaceValue,{\"AGENTE\"}),",
-                "    #\"RIAN DOS SANTOS ESTEVO\" = Table.ReplaceValue(#\"ESTEBAN GABRIEL GARDIM DIAZ\",\"6044-Rian Dos Santos Estevo\",\"RIAN DOS SANTOS ESTEVO\",Replacer.ReplaceValue,{\"AGENTE\"}),",
-                "    #\"RENAN DUARTE MARQUES DE LIMA\" = Table.ReplaceValue(#\"RIAN DOS SANTOS ESTEVO\",\"6045-Renan Duarte Marques De Lima\",\"RENAN DUARTE MARQUES DE LIMA\",Replacer.ReplaceValue,{\"AGENTE\"}),",
-                "    #\"DOUGLAS LISBOA SILVANO\" = Table.ReplaceValue(#\"RENAN DUARTE MARQUES DE LIMA\",\"6046-Douglas Lisboa Silvano\",\"DOUGLAS LISBOA SILVANO\",Replacer.ReplaceValue,{\"AGENTE\"}),",
-                "    #\"ANA LUIZA SBAIS COSTA\" = Table.ReplaceValue(#\"DOUGLAS LISBOA SILVANO\",\"\",\"ANA LUIZA SBAIS COSTA\",Replacer.ReplaceValue,{\"AGENTE\"}),",
-                "    #\"BIANCA NUNES COSTA\" = Table.ReplaceValue(#\"ANA LUIZA SBAIS COSTA\",\"6068-Bianca Nunes Costa\",\"BIANCA NUNES COSTA\",Replacer.ReplaceValue,{\"AGENTE\"}),",
-                "    #\"DANIELLE DA SILVA FIALHO\" = Table.ReplaceValue(#\"BIANCA NUNES COSTA\",\"6069-Danielle Da Silva Fialho\",\"DANIELLE DA SILVA FIALHO\",Replacer.ReplaceValue,{\"AGENTE\"}),",
-                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"DANIELLE DA SILVA FIALHO\",{{\"DATA\", type datetime}}),",
-                "    #\"Data Inserida\" = Table.AddColumn(#\"Tipo Alterado\", \"Data (ddmmaaaa)\", each DateTime.Date([DATA]), type date),",
-                "    #\"Colunas Renomeadas\" = Table.RenameColumns(#\"Data Inserida\",{{\"AGENTE\", \"COLABORADOR\"}}),",
-                "    #\"Hora Inserida\" = Table.AddColumn(#\"Colunas Renomeadas\", \"Hora\", each DateTime.Time([DATA]), type time)",
-                "in",
-                "    #\"Hora Inserida\""
-              ],
-              "type": "m"
-            }
-          }
-        ]
-      },
-      {
-        "name": "fCallflex_pausas_detalhado",
-        "annotations": [
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navegação"
-          },
-          {
-            "name": "PBI_ResultType",
-            "value": "Table"
-          }
-        ],
-        "columns": [
-          {
-            "name": "AGENTE",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "71595cc0-0ac4-4509-84bb-4cc195f8e216",
-            "sourceColumn": "AGENTE",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "COLABORADOR",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "f78e9513-df35-4760-b2a9-c445b0ed9576",
-            "sourceColumn": "COLABORADOR",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "DATA_DE_LOGIN",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "dateTime",
-            "formatString": "General Date",
-            "lineageTag": "64de2bc7-17d8-4cad-92bc-d2d5bc0cca13",
-            "sourceColumn": "DATA_DE_LOGIN",
-            "summarizeBy": "none",
-            "variations": [
-              {
-                "name": "Variation",
-                "defaultHierarchy": {
-                  "hierarchy": "Hierarquia de datas",
-                  "table": "LocalDateTable_d556f314-8bb0-42d9-9a44-f85e0726584a"
-                },
-                "isDefault": true,
-                "relationship": "d72e0bd4-4f32-41d1-b950-40a61ac3f156"
-              }
-            ]
-          },
-          {
-            "name": "LOGOFF",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "b0f72407-d090-4ec3-84e6-471652351c60",
-            "sourceColumn": "LOGOFF",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "TEMPO_TOTAL_LOGADO",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "0c740007-1e1f-4d29-a15a-ff123968f3d9",
-            "sourceColumn": "TEMPO_TOTAL_LOGADO",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "TIPO_DE_PAUSA",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "66bbcff0-13c7-4a0a-a07a-cc2c8445bf77",
-            "sourceColumn": "TIPO_DE_PAUSA",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "TEMPO_PAUSADO",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "b277bb58-0c31-4ba9-b4ee-90830ebfd325",
-            "sourceColumn": "TEMPO_PAUSADO",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "INICIO_DA_PAUSA",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "b0bb92fc-8f53-4570-a703-33a4c987b1a5",
-            "sourceColumn": "INICIO_DA_PAUSA",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "FIM_DA_PAUSA",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "470566d3-5292-4cbf-b15d-fd8a98640027",
-            "sourceColumn": "FIM_DA_PAUSA",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "Data (ddmmaaaa)",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              },
-              {
-                "name": "UnderlyingDateTimeDataType",
-                "value": "Date"
-              }
-            ],
-            "dataType": "dateTime",
-            "formatString": "Long Date",
-            "lineageTag": "059c9903-65d9-4b23-8d1c-12f259863fcb",
-            "sourceColumn": "Data (ddmmaaaa)",
-            "summarizeBy": "none"
-          }
-        ],
-        "lineageTag": "96022380-124a-4b4f-a2a6-6e603845ca9f",
-        "partitions": [
-          {
-            "name": "fCallflex_pausas_detalhado",
-            "mode": "import",
-            "source": {
-              "expression": [
-                "let",
-                "    Fonte = Excel.Workbook(Web.Contents(\"https://solucaonet.sharepoint.com/sites/suportecs/Documentos%20Compartilhados/Gest%C3%A3o/Desempenho/Dados/fCallflex_pausas_detalhado.xlsx\"), null, true),",
-                "    Export_Sheet = Fonte{[Item=\"Relatorio_pausas_agentes\",Kind=\"Sheet\"]}[Data],",
-                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Export_Sheet, [PromoteAllScalars=true]),",
-                "",
-                "    #\"ARTUR DO NASCIMENTO ARBOLEIA\" = Table.ReplaceValue(#\"Cabeçalhos Promovidos\",\"Artur Do Nascimento Arboleia\",\"ARTUR DO NASCIMENTO ARBOLEIA\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
-                "    #\"MARIA LUIZA DE SOUZA PEREIRA\" = Table.ReplaceValue(#\"ARTUR DO NASCIMENTO ARBOLEIA\",\"Maria Luiza De Souza Pereira\",\"MARIA LUIZA DE SOUZA PEREIRA\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
-                "    #\"WELLINGTON DIONIZIO SANTOS\" = Table.ReplaceValue(#\"MARIA LUIZA DE SOUZA PEREIRA\",\"Wellington Dionizio Santos\",\"WELLINGTON DIONIZIO SANTOS\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
-                "    #\"GIOVANNI QUINTINO DA SILVA\" = Table.ReplaceValue(#\"WELLINGTON DIONIZIO SANTOS\",\"Giovanni Quintino Da Silva\",\"GIOVANNI QUINTINO DA SILVA\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
-                "    #\"FERNANDO ALVES BARBOSA\" = Table.ReplaceValue(#\"GIOVANNI QUINTINO DA SILVA\",\"Fernando Alves Barbosa\",\"FERNANDO ALVES BARBOSA\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
-                "    #\"CLEISON RODRIGUES DA SILVA\" = Table.ReplaceValue(#\"FERNANDO ALVES BARBOSA\",\"Cleison Rodrigues Da Silva\",\"CLEISON RODRIGUES DA SILVA\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
-                "    #\"HIGOR VINICIUS RODRIGUES BRITO\" = Table.ReplaceValue(#\"CLEISON RODRIGUES DA SILVA\",\"Higor Vinicius Rodrigues Brito\",\"HIGOR VINICIUS RODRIGUES BRITO\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
-                "    #\"JOAO VITOR DA SILVA PIMENTEL\" = Table.ReplaceValue(#\"HIGOR VINICIUS RODRIGUES BRITO\",\"Joao Vitor Da Silva Pimentel\",\"JOAO VITOR DA SILVA PIMENTEL\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
-                "    #\"RENAN LUIZ\" = Table.ReplaceValue(#\"JOAO VITOR DA SILVA PIMENTEL\",\"Renan Luiz\",\"RENAN LUIZ\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
-                "    #\"MATHEUS ANDRADE DE ARAUJO\" = Table.ReplaceValue(#\"RENAN LUIZ\",\"Matheus Andrade De Araujo\",\"MATHEUS ANDRADE DE ARAUJO\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
-                "    #\"MURILO CARLOS NEPONUCENA NOGUEIRA\" = Table.ReplaceValue(#\"MATHEUS ANDRADE DE ARAUJO\",\"Murilo Carlos Neponucena Nogueira\",\"MURILO CARLOS NEPONUCENA NOGUEIRA\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
-                "    #\"ADREAN FELIPPE MATTOS DE MOURA\" = Table.ReplaceValue(#\"MURILO CARLOS NEPONUCENA NOGUEIRA\",\"Adrean Felippe Mattos De Moura\",\"ADREAN FELIPPE MATTOS DE MOURA\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
-                "    #\"SABRINA PADIAL\" = Table.ReplaceValue(#\"ADREAN FELIPPE MATTOS DE MOURA\",\"Sabrina Padial\",\"SABRINA PADIAL\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
-                "    #\"VINICIUS NUNES RODRIGUES\" = Table.ReplaceValue(#\"SABRINA PADIAL\",\"Vinicius Nunes Rodrigues\",\"VINICIUS NUNES RODRIGUES\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
-                "    #\"ESTEBAN GABRIEL GARDIM DIAZ\" = Table.ReplaceValue(#\"VINICIUS NUNES RODRIGUES\",\"Esteban Gabriel Gardim Diaz\",\"ESTEBAN GABRIEL GARDIM DIAZ\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
-                "    #\"RIAN DOS SANTOS ESTEVO\" = Table.ReplaceValue(#\"ESTEBAN GABRIEL GARDIM DIAZ\",\"Rian Dos Santos Estevo\",\"RIAN DOS SANTOS ESTEVO\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
-                "    #\"RENAN DUARTE MARQUES DE LIMA\" = Table.ReplaceValue(#\"RIAN DOS SANTOS ESTEVO\",\"Renan Duarte Marques De Lima\",\"RENAN DUARTE MARQUES DE LIMA\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
-                "    #\"DOUGLAS LISBOA SILVANO\" = Table.ReplaceValue(#\"RENAN DUARTE MARQUES DE LIMA\",\"Douglas Lisboa Silvano\",\"DOUGLAS LISBOA SILVANO\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
-                "    #\"ANA LUIZA SBAIS COSTA\" = Table.ReplaceValue(#\"DOUGLAS LISBOA SILVANO\",\"Ana Luiza Sbais Costa\",\"ANA LUIZA SBAIS COSTA\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
-                "    #\"BIANCA NUNES COSTA\" = Table.ReplaceValue(#\"ANA LUIZA SBAIS COSTA\",\"Bianca Nunes Costa\",\"BIANCA NUNES COSTA\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
-                "    #\"DANIELLE DA SILVA FIALHO\" = Table.ReplaceValue(#\"BIANCA NUNES COSTA\",\"Danielle Da Silva Fialho\",\"DANIELLE DA SILVA FIALHO\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
-                "    #\"Valor Substituído\" = Table.ReplaceValue(#\"DANIELLE DA SILVA FIALHO\",\"---\",\"\",Replacer.ReplaceValue,{\"TEMPO_PAUSADO\"}),",
-                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Valor Substituído\",{{\"DATA_DE_LOGIN\", type datetime}}),",
-                "    #\"Data Inserida\" = Table.AddColumn(#\"Tipo Alterado\", \"Data (ddmmaaaa)\", each DateTime.Date([DATA_DE_LOGIN]), type date),",
-                "    #\"Colunas Renomeadas\" = Table.RenameColumns(#\"Data Inserida\",{{\"AGENTE_NOME\", \"COLABORADOR\"}})",
-                "in",
-                "    #\"Colunas Renomeadas\""
               ],
               "type": "m"
             }
@@ -27013,6 +24880,7 @@
           {
             "name": "dColaboradores",
             "mode": "import",
+            "queryGroup": "Data Dim",
             "source": {
               "expression": [
                 "let",
@@ -28274,6 +26142,7 @@
           {
             "name": "fAdapter_atendimentos",
             "mode": "import",
+            "queryGroup": "Data Fato 11/24",
             "source": {
               "expression": [
                 "let",
@@ -28953,6 +26822,7 @@
           {
             "name": "dHoras",
             "mode": "import",
+            "queryGroup": "Data Dim",
             "source": {
               "expression": [
                 "let",
@@ -29177,6 +27047,10 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
           }
         ],
         "lineageTag": "e003f24b-c8db-4023-84a9-00e05487d8fc",
@@ -29236,6 +27110,7 @@
           {
             "name": "Medidas Reincidencia",
             "mode": "import",
+            "queryGroup": "Medidas",
             "source": {
               "expression": [
                 "let",
@@ -29457,6 +27332,10 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
           }
         ],
         "lineageTag": "b43dcdbc-b90d-4e8a-ad67-d98ee81db5dd",
@@ -29657,6 +27536,7 @@
           {
             "name": "Medidas Médias",
             "mode": "import",
+            "queryGroup": "Medidas",
             "source": {
               "expression": [
                 "let",
@@ -29677,6 +27557,10 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
           }
         ],
         "lineageTag": "7fe03026-0c87-4766-bffa-2fbc18d7f960",
@@ -29735,6 +27619,7 @@
           {
             "name": "Medidas NPS",
             "mode": "import",
+            "queryGroup": "Medidas",
             "source": {
               "expression": [
                 "let",
@@ -29755,6 +27640,10 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
           }
         ],
         "lineageTag": "379136db-d253-4e76-84ed-a616c5348475",
@@ -29817,6 +27706,7 @@
           {
             "name": "Medidas Adapter",
             "mode": "import",
+            "queryGroup": "Medidas",
             "source": {
               "expression": [
                 "let",
@@ -29837,6 +27727,10 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
           }
         ],
         "lineageTag": "085f5e0c-128f-4182-b08f-f8fd6ad42853",
@@ -29885,6 +27779,7 @@
           {
             "name": "Medidas Pos Atendimentos",
             "mode": "import",
+            "queryGroup": "Medidas",
             "source": {
               "expression": [
                 "let",
@@ -29905,6 +27800,10 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
           }
         ],
         "lineageTag": "1b823311-376d-4e15-81f8-91f056c420f0",
@@ -30034,6 +27933,7 @@
           {
             "name": "Medidas Atendimentos",
             "mode": "import",
+            "queryGroup": "Medidas",
             "source": {
               "expression": [
                 "let",
@@ -30054,6 +27954,10 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
           }
         ],
         "lineageTag": "079851fc-6896-479b-9996-3efea225d72e",
@@ -30076,6 +27980,7 @@
           {
             "name": "Medidas Outros",
             "mode": "import",
+            "queryGroup": "Medidas",
             "source": {
               "expression": [
                 "let",
@@ -30096,6 +28001,10 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
           }
         ],
         "lineageTag": "57a127a0-2c77-499b-aafe-24141bfbeea9",
@@ -30615,6 +28524,7 @@
           {
             "name": "Medidas Pausas Chat",
             "mode": "import",
+            "queryGroup": "Medidas",
             "source": {
               "expression": [
                 "let",
@@ -30623,6 +28533,2176 @@
                 "    #\"Colunas Removidas\" = Table.RemoveColumns(#\"Tipo Alterado\",{\"Coluna 1\"})",
                 "in",
                 "    #\"Colunas Removidas\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "fChat_relatorio_atendimento",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2afde58d-d6df-4d8b-aba5-1cff8c7a2527",
+            "sourceColumn": "Id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Protocolo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6d110aa9-6436-4590-8db4-b180a3958c44",
+            "sourceColumn": "Protocolo",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ID do visitante",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a634b1cd-f3ca-4ee2-b05f-5191eed90de4",
+            "sourceColumn": "ID do visitante",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Data de entrada",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "0d00374c-c6e1-4952-bb96-c3ab6b8d7e2f",
+            "sourceColumn": "Data de entrada",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Hierarquia de datas",
+                  "table": "LocalDateTable_402833ec-6b08-4a3c-9ab5-3bee6ab4a591"
+                },
+                "isDefault": true,
+                "relationship": "f97139b0-e99a-4eb7-a9a5-c54ad5ee7bb6"
+              }
+            ]
+          },
+          {
+            "name": "Data de inicio atendimento robô",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "1ca2698b-dc63-4362-a896-1fe9535e3f8f",
+            "sourceColumn": "Data de inicio atendimento robô",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Data fim de atendimento robô",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "cd7cfb7f-171e-4fae-9ae9-11f72610e36a",
+            "sourceColumn": "Data fim de atendimento robô",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Data de início de atendimento humano",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "90bdc9a7-0d57-4350-becc-6457250664a2",
+            "sourceColumn": "Data de início de atendimento humano",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Data fim de atendimento humano - Data Final",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "dda2f02d-2ea8-4d17-8269-dd9d3f5261d0",
+            "sourceColumn": "Data fim de atendimento humano - Data Final",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "TTE (humano)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6648bbc3-e4ca-4ada-9f03-0bcf4112b7d3",
+            "sourceColumn": "TTE (humano)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "TTA (humano)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ca4c5845-9765-41d1-ad15-c2a5dce0e4f6",
+            "sourceColumn": "TTA (humano)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "TTA (robô)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "28852eff-31dc-4f46-958f-54bef4d1c11d",
+            "sourceColumn": "TTA (robô)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "TTA em agendamento",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "dafb2b43-c72a-431d-bbbd-2afa803bff2c",
+            "sourceColumn": "TTA em agendamento",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "TMR de entrada (robô)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9556c63a-8715-4fd0-b8fa-6f4e47736d3f",
+            "sourceColumn": "TMR de entrada (robô)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "TMR de saída (robô)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "da355812-edfb-457d-a76d-05351e510e49",
+            "sourceColumn": "TMR de saída (robô)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "TMR de entrada (humano)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c226d0fd-3194-4d12-b3fd-5bce1fa1c691",
+            "sourceColumn": "TMR de entrada (humano)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "TMR de saída (humano)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "bcf42cb3-288b-48ed-be61-165545e2b6cd",
+            "sourceColumn": "TMR de saída (humano)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Total de alertas de inatividade",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "faf5ab0b-eaec-4e74-a5ca-45b4c94106ea",
+            "sourceColumn": "Total de alertas de inatividade",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "O alerta teve resultado?",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0cfa81c6-ac64-493b-9a83-d10514cae0a0",
+            "sourceColumn": "O alerta teve resultado?",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Mensagens recebidas (Atendimento)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "66e21d30-4ee5-48e4-9fc0-8b4d018508ce",
+            "sourceColumn": "Mensagens recebidas (Atendimento)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Mensagens enviadas (Atendimento)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "16d08b99-4124-4171-87e2-32a28831028f",
+            "sourceColumn": "Mensagens enviadas (Atendimento)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Total de mensagens (Atendimento)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "68cf9036-6f18-4aa1-92a0-10b815b3bb78",
+            "sourceColumn": "Total de mensagens (Atendimento)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Status",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "57828659-5062-432f-9d01-1d236bfe47c6",
+            "sourceColumn": "Status",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Canal",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "1c3d191c-ae3b-4f67-a18c-a51848db7586",
+            "sourceColumn": "Canal",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Info",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "cb749030-aed0-4fed-b197-a91c640e1e61",
+            "sourceColumn": "Info",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "COLABORADOR",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "22a3534c-aef2-476a-b8bd-424623f9f567",
+            "sourceColumn": "COLABORADOR",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Usuário que encerrou",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "93b1479a-3d78-4339-a288-95c4c1ee679d",
+            "sourceColumn": "Usuário que encerrou",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Id do contato",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "24ad1ba4-85af-43d0-b59c-283ff91e987e",
+            "sourceColumn": "Id do contato",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Documento",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8ac88c7f-1122-4838-b391-26f9add5f6e9",
+            "sourceColumn": "Documento",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Nome",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0eba06e7-a1f4-4073-bf34-11692af9b0b0",
+            "sourceColumn": "Nome",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Contato",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c4123173-7ee4-480b-be02-1b7c1c106d85",
+            "sourceColumn": "Contato",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Informações adicionais",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "37755ac7-fded-47d5-aa2b-dcb5053d24eb",
+            "sourceColumn": "Informações adicionais",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Origem do atendimento",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d55fc77a-d563-4f7b-a506-55f66eda720b",
+            "sourceColumn": "Origem do atendimento",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Classificação",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7f01d41f-a8cf-494d-9a78-e43fcbfbfa2b",
+            "sourceColumn": "Classificação",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Data agendada",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "637b9d03-e838-40ae-a4d5-99c63121fdbe",
+            "sourceColumn": "Data agendada",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Grupo de Ocorrência",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "1ca6427a-65ea-419e-b16e-d330f8c8d0db",
+            "sourceColumn": "Grupo de Ocorrência",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Ocorrência",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "716235e1-8143-4ca3-be8d-a108351326c4",
+            "sourceColumn": "Ocorrência",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Manifestação",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "41a82cb3-c491-4a76-a6e8-e630a2518459",
+            "sourceColumn": "Manifestação",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Valor",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3156169b-29eb-4adb-a919-816bb5080127",
+            "sourceColumn": "Valor",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Robô",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "58f5a12c-071d-4d04-89ae-c15b75991d15",
+            "sourceColumn": "Robô",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Robô origem",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9b78cab8-126c-4650-b164-de6c2931ad2e",
+            "sourceColumn": "Robô origem",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Fase",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "94edd9d4-42d3-4435-99e3-4ac0fa5d3c5e",
+            "sourceColumn": "Fase",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CRM id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "bcdfb660-5e9a-4a47-b7dd-60fd5f7f93a0",
+            "sourceColumn": "CRM id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Adicional 1",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "fec80188-80be-4fe3-9b34-6297cd0814b6",
+            "sourceColumn": "Adicional 1",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Adicional 2",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3f3ea7a2-0e44-46db-a99e-da3b55b6215e",
+            "sourceColumn": "Adicional 2",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Adicional 3",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "30f47b3e-0fa1-4fee-869f-adf94c778008",
+            "sourceColumn": "Adicional 3",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Adicional 4",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d0989e44-4b22-4813-a504-19b1b0d9027a",
+            "sourceColumn": "Adicional 4",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Adicional 5",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "1ae2eaa6-9ff2-41e6-a5d8-168517e947e2",
+            "sourceColumn": "Adicional 5",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Quantidade de retornos ao robô",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "cde160f5-0305-4cbb-ab0b-df220b58ad26",
+            "sourceColumn": "Quantidade de retornos ao robô",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Tempo limite - SLA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "5b1e395e-5d7f-45c3-8bb0-fd84a9c0591f",
+            "sourceColumn": "Tempo limite - SLA",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Tempo executado - SLA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8304ac80-0ad6-4b74-bd99-608ebe02749b",
+            "sourceColumn": "Tempo executado - SLA",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SLA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7a5df60a-7870-4353-b7b7-a6ff06e213d0",
+            "sourceColumn": "SLA",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Fila de atendimento",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4476394c-934f-49b7-85d5-82e5696c33cd",
+            "sourceColumn": "Fila de atendimento",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Formulário",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e2fa6586-660a-483e-a829-48547f5873c8",
+            "sourceColumn": "Formulário",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Dialogo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "cc386f44-b680-49a9-96f4-488e91b03c21",
+            "sourceColumn": "Dialogo",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Mensagens recebidas (Robô)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7fd3403a-3b8e-4832-aa81-25b6ef7da506",
+            "sourceColumn": "Mensagens recebidas (Robô)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Mensagens enviadas (Robô)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c0cd653d-653d-424a-aede-5889198d84b7",
+            "sourceColumn": "Mensagens enviadas (Robô)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Mensagens recebidas (Humano)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ba82c1f1-804d-4bf5-ae88-6ad1054c404c",
+            "sourceColumn": "Mensagens recebidas (Humano)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Mensagens enviadas (Humano)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a4d74fcb-66a2-4b02-b981-5b8f63b59f8e",
+            "sourceColumn": "Mensagens enviadas (Humano)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Primeira mensagem (Humano)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "447b2c35-829d-461b-9f9b-dea9a97488dd",
+            "sourceColumn": "Primeira mensagem (Humano)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Última mensagem (Humano)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2c016b60-ac09-46dc-bfb8-402646f81359",
+            "sourceColumn": "Última mensagem (Humano)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Última mensagem (Cliente)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "74c5c941-297b-46f0-8be3-aede8bb96d20",
+            "sourceColumn": "Última mensagem (Cliente)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Último Usuário Humano",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "16b8284d-ea3d-49ba-a8c7-3e147a968c3b",
+            "sourceColumn": "Último Usuário Humano",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Data (ddmmaaaa)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "84cc60bd-994d-4708-9bad-77c7635a5805",
+            "sourceColumn": "Data (ddmmaaaa)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Hora",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Time"
+              },
+              {
+                "name": "__PBI_SemanticLinks",
+                "value": "[{\"LinkTarget\":{\"TableName\":\"fChat_relatorio_atendimento\",\"TableItemName\":\"Hora (compartimentos)\",\"ObjectType\":4},\"LinkType\":\"UsedInGroup\"}]"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Time",
+            "lineageTag": "945cb8c2-4bfe-49ac-8e52-fa29bae607fa",
+            "sourceColumn": "Hora",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Hora (compartimentos)",
+            "annotations": [
+              {
+                "name": "GroupingDesignState",
+                "value": "{\"Version\":0,\"Sources\":[{\"Name\":\"f\",\"Entity\":\"fChat_relatorio_atendimento\"}],\"GroupedColumns\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Hora\"}}],\"BinItem\":{\"Expression\":{\"Floor\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Hora\"}},\"Size\":1.0,\"TimeUnit\":7}}}}"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Time"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "DataType"
+              }
+            ],
+            "dataType": "dateTime",
+            "expression": [
+              "IF(",
+              "\tISBLANK('fChat_relatorio_atendimento'[Hora]),",
+              "\tBLANK(),",
+              "\tINT('fChat_relatorio_atendimento'[Hora] * 24) / 24",
+              ")"
+            ],
+            "extendedProperties": [
+              {
+                "name": "GroupingMetadata",
+                "type": "json",
+                "value": {
+                  "binningMetadata": {
+                    "binSize": {
+                      "unit": 9,
+                      "value": 1.0
+                    }
+                  },
+                  "groupedColumns": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "fChat_relatorio_atendimento"
+                          }
+                        },
+                        "Property": "Hora"
+                      }
+                    }
+                  ],
+                  "version": 0
+                }
+              }
+            ],
+            "formatString": "Long Time",
+            "lineageTag": "47a473cb-bd23-416b-89d8-12017f2a68c1",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "lineageTag": "fbaad861-a9f8-495d-a986-8aa804e1146c",
+        "partitions": [
+          {
+            "name": "fChat_relatorio_atendimento",
+            "mode": "import",
+            "queryGroup": "Data Fato 11/24",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Csv.Document(Web.Contents(\"https://solucaonet.sharepoint.com/sites/suportecs/Documentos%20Compartilhados/Gest%C3%A3o/Desempenho/Dados/fChat_relatorio_atendimento.csv\"),[Delimiter=\";\", Columns=62, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),",
+                "",
+                "    #\"ARTUR DO NASCIMENTO ARBOLEIA\" = Table.ReplaceValue(#\"Cabeçalhos Promovidos\",\"Artur Do nascimento Arboleia\",\"ARTUR DO NASCIMENTO ARBOLEIA\",Replacer.ReplaceValue,{\"Usuário\"}),",
+                "    #\"MARIA LUIZA DE SOUZA PEREIRA\" = Table.ReplaceValue(#\"ARTUR DO NASCIMENTO ARBOLEIA\",\"Maria Luiza de Souza Pereira\",\"MARIA LUIZA DE SOUZA PEREIRA\",Replacer.ReplaceValue,{\"Usuário\"}),",
+                "    #\"WELLINGTON DIONIZIO SANTOS\" = Table.ReplaceValue(#\"MARIA LUIZA DE SOUZA PEREIRA\",\"Wellington Dionizio Santos\",\"WELLINGTON DIONIZIO SANTOS\",Replacer.ReplaceValue,{\"Usuário\"}),",
+                "    #\"GIOVANNI QUINTINO DA SILVA\" = Table.ReplaceValue(#\"WELLINGTON DIONIZIO SANTOS\",\"Giovanni Quintino Da Silva\",\"GIOVANNI QUINTINO DA SILVA\",Replacer.ReplaceValue,{\"Usuário\"}),",
+                "    #\"FERNANDO ALVES BARBOSA\" = Table.ReplaceValue(#\"GIOVANNI QUINTINO DA SILVA\",\"Fernando Alves Barbosa\",\"FERNANDO ALVES BARBOSA\",Replacer.ReplaceValue,{\"Usuário\"}),",
+                "    #\"CLEISON RODRIGUES DA SILVA\" = Table.ReplaceValue(#\"FERNANDO ALVES BARBOSA\",\"Cleison Rodrigues da Silva\",\"CLEISON RODRIGUES DA SILVA\",Replacer.ReplaceValue,{\"Usuário\"}),",
+                "    #\"HIGOR VINICIUS RODRIGUES BRITO\" = Table.ReplaceValue(#\"CLEISON RODRIGUES DA SILVA\",\"Higor Vinicius Rodrigues Brito\",\"HIGOR VINICIUS RODRIGUES BRITO\",Replacer.ReplaceValue,{\"Usuário\"}),",
+                "    #\"JOAO VITOR DA SILVA PIMENTEL\" = Table.ReplaceValue(#\"HIGOR VINICIUS RODRIGUES BRITO\",\"João Vitor da Silva Pimentel\",\"JOAO VITOR DA SILVA PIMENTEL\",Replacer.ReplaceValue,{\"Usuário\"}),",
+                "    #\"RENAN LUIZ\" = Table.ReplaceValue(#\"JOAO VITOR DA SILVA PIMENTEL\",\"Renan  Luiz\",\"RENAN LUIZ\",Replacer.ReplaceValue,{\"Usuário\"}),",
+                "    #\"MATHEUS ANDRADE DE ARAUJO\" = Table.ReplaceValue(#\"RENAN LUIZ\",\"Matheus Andrade De Araujo\",\"MATHEUS ANDRADE DE ARAUJO\",Replacer.ReplaceValue,{\"Usuário\"}),",
+                "    #\"MURILO CARLOS NEPONUCENA NOGUEIRA\" = Table.ReplaceValue(#\"MATHEUS ANDRADE DE ARAUJO\",\"Murilo Carlos Neponucena Nogueira\",\"MURILO CARLOS NEPONUCENA NOGUEIRA\",Replacer.ReplaceValue,{\"Usuário\"}),",
+                "    #\"ADREAN FELIPPE MATTOS DE MOURA\" = Table.ReplaceValue(#\"MURILO CARLOS NEPONUCENA NOGUEIRA\",\"Adrean Felippe Mattos De Moura\",\"ADREAN FELIPPE MATTOS DE MOURA\",Replacer.ReplaceValue,{\"Usuário\"}),",
+                "    #\"SABRINA PADIAL\" = Table.ReplaceValue(#\"ADREAN FELIPPE MATTOS DE MOURA\",\"Sabrina Padial\",\"SABRINA PADIAL\",Replacer.ReplaceValue,{\"Usuário\"}),",
+                "    #\"VINICIUS NUNES RODRIGUES\" = Table.ReplaceValue(#\"SABRINA PADIAL\",\"Vinicius Nunes Rodrigues\",\"VINICIUS NUNES RODRIGUES\",Replacer.ReplaceValue,{\"Usuário\"}),",
+                "    #\"ESTEBAN GABRIEL GARDIM DIAZ\" = Table.ReplaceValue(#\"VINICIUS NUNES RODRIGUES\",\"Esteban Gabriel Gardim Diaz\",\"ESTEBAN GABRIEL GARDIM DIAZ\",Replacer.ReplaceValue,{\"Usuário\"}),",
+                "    #\"RIAN DOS SANTOS ESTEVO\" = Table.ReplaceValue(#\"ESTEBAN GABRIEL GARDIM DIAZ\",\"Rian\",\"RIAN DOS SANTOS ESTEVO\",Replacer.ReplaceValue,{\"Usuário\"}),",
+                "    #\"RENAN DUARTE MARQUES DE LIMA\" = Table.ReplaceValue(#\"RIAN DOS SANTOS ESTEVO\",\"Renan Duarte Marques de Lima\",\"RENAN DUARTE MARQUES DE LIMA\",Replacer.ReplaceValue,{\"Usuário\"}),",
+                "    #\"DOUGLAS LISBOA SILVANO\" = Table.ReplaceValue(#\"RENAN DUARTE MARQUES DE LIMA\",\"Douglas Lisboa Silvano\",\"DOUGLAS LISBOA SILVANO\",Replacer.ReplaceValue,{\"Usuário\"}),",
+                "    #\"ANA LUIZA SBAIS COSTA\" = Table.ReplaceValue(#\"DOUGLAS LISBOA SILVANO\",\"Ana Luiza Sbais Costa\",\"ANA LUIZA SBAIS COSTA\",Replacer.ReplaceValue,{\"Usuário\"}),",
+                "    #\"BIANCA NUNES COSTA\" = Table.ReplaceValue(#\"ANA LUIZA SBAIS COSTA\",\"Bianca Nunes Costa\",\"BIANCA NUNES COSTA\",Replacer.ReplaceValue,{\"Usuário\"}),",
+                "    #\"DANIELLE DA SILVA FIALHO\" = Table.ReplaceValue(#\"BIANCA NUNES COSTA\",\"Danielle da Silva Fialho\",\"DANIELLE DA SILVA FIALHO\",Replacer.ReplaceValue,{\"Usuário\"}),",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"DANIELLE DA SILVA FIALHO\",{{\"Data de entrada\", type datetime}}),",
+                "    #\"Data Inserida\" = Table.AddColumn(#\"Tipo Alterado\", \"Data (ddmmaaaa)\", each DateTime.Date([Data de entrada]), type date),",
+                "    #\"Colunas Renomeadas\" = Table.RenameColumns(#\"Data Inserida\",{{\"Usuário\", \"COLABORADOR\"}}),",
+                "    #\"Hora Inserida\" = Table.AddColumn(#\"Colunas Renomeadas\", \"Hora\", each DateTime.Time([Data de entrada]), type time)",
+                "in",
+                "    #\"Hora Inserida\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "fCallflex_chamadas",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "DATA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "876195ee-c708-4c18-a94b-ecd1130a8237",
+            "sourceColumn": "DATA",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Hierarquia de datas",
+                  "table": "LocalDateTable_9bb371a8-6fc6-44ab-8fe7-fa1d41f0136f"
+                },
+                "isDefault": true,
+                "relationship": "d9e3836d-934c-4052-a2a0-bd12855789b7"
+              }
+            ]
+          },
+          {
+            "name": "FILA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "046e35c7-d289-4d95-a462-7ccc568a692a",
+            "sourceColumn": "FILA",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "COLABORADOR",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b8685e03-5ffe-4351-9eee-8fa92daa206f",
+            "sourceColumn": "COLABORADOR",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ORIGEM",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3537d6bd-5e01-4639-88aa-8ce31b9a9298",
+            "sourceColumn": "ORIGEM",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DESTINO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "dfa1c876-43e2-4bd8-a1f4-708e84c74b60",
+            "sourceColumn": "DESTINO",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "TIPO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9f270090-a9fe-4263-856f-728bc7c90ffb",
+            "sourceColumn": "TIPO",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "STATUS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "162733be-daaf-4b24-baa3-5a1b4928be84",
+            "sourceColumn": "STATUS",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DESLIGADOPOR",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0771167d-0f10-4647-932f-18854ecdf276",
+            "sourceColumn": "DESLIGADOPOR",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "TEMPO_CONECTADO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2395e46b-907a-4751-bf10-ae8822a82549",
+            "sourceColumn": "TEMPO_CONECTADO",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "TEMPO_DE_CONVERSACAO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "232a5ec4-3b06-410a-8fa9-7adfb3ba77a1",
+            "sourceColumn": "TEMPO_DE_CONVERSACAO",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Column1",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b75e188e-1a2d-4d03-bc48-2280d9107b8c",
+            "sourceColumn": "Column1",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Data (ddmmaaaa)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "3896ce5c-c842-4694-9ab4-97e27b29f3b6",
+            "sourceColumn": "Data (ddmmaaaa)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Hora",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "__PBI_SemanticLinks",
+                "value": "[{\"LinkTarget\":{\"TableName\":\"fCallflex_chamadas\",\"TableItemName\":\"Hora (compartimentos)\",\"ObjectType\":4},\"LinkType\":\"UsedInGroup\"}]"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isDateTimeCustom\":true}"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "DataType"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "hh:nn:ss",
+            "lineageTag": "e0489543-b04d-43e7-8ba5-f2495646a155",
+            "sourceColumn": "Hora",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Hierarquia de datas",
+                  "table": "LocalDateTable_a384ac4e-028b-4e81-9215-5602139dc11c"
+                },
+                "isDefault": true,
+                "relationship": "4c0811fe-7e9e-4273-8c5b-6b73189ee35c"
+              }
+            ]
+          },
+          {
+            "name": "Hora (compartimentos)",
+            "annotations": [
+              {
+                "name": "GroupingDesignState",
+                "value": "{\"Version\":0,\"Sources\":[{\"Name\":\"f\",\"Entity\":\"fCallflex_chamadas\"}],\"GroupedColumns\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Hora\"}}],\"BinItem\":{\"Expression\":{\"Floor\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Hora\"}},\"Size\":1.0,\"TimeUnit\":7}}}}"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "expression": [
+              "IF(",
+              "\tISBLANK('fCallflex_chamadas'[Hora]),",
+              "\tBLANK(),",
+              "\tINT('fCallflex_chamadas'[Hora] * 24) / 24",
+              ")"
+            ],
+            "extendedProperties": [
+              {
+                "name": "GroupingMetadata",
+                "type": "json",
+                "value": {
+                  "binningMetadata": {
+                    "binSize": {
+                      "unit": 9,
+                      "value": 1.0
+                    }
+                  },
+                  "groupedColumns": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "fCallflex_chamadas"
+                          }
+                        },
+                        "Property": "Hora"
+                      }
+                    }
+                  ],
+                  "version": 0
+                }
+              }
+            ],
+            "formatString": "Short Time",
+            "lineageTag": "13a713b6-05c0-44b8-8160-8e29f7747a1a",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "lineageTag": "5e92d14a-281b-49fc-a36c-19a025d5af07",
+        "partitions": [
+          {
+            "name": "fCallflex_chamadas",
+            "mode": "import",
+            "queryGroup": "Data Fato 11/24",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Csv.Document(Web.Contents(\"https://solucaonet.sharepoint.com/sites/suportecs/Documentos%20Compartilhados/Gest%C3%A3o/Desempenho/Dados/fCallflex_chamadas.csv\"),[Delimiter=\";\", Columns=11, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),",
+                "   ",
+                "    #\"ARTUR DO NASCIMENTO ARBOLEIA\" = Table.ReplaceValue(#\"Cabeçalhos Promovidos\",\"6006-Artur Do Nascimento Arboleia\",\"ARTUR DO NASCIMENTO ARBOLEIA\",Replacer.ReplaceValue,{\"AGENTE\"}),",
+                "    #\"MARIA LUIZA DE SOUZA PEREIRA\" = Table.ReplaceValue(#\"ARTUR DO NASCIMENTO ARBOLEIA\",\"6007-Maria Luiza De Souza Pereira\",\"MARIA LUIZA DE SOUZA PEREIRA\",Replacer.ReplaceValue,{\"AGENTE\"}),",
+                "    #\"WELLINGTON DIONIZIO SANTOS\" = Table.ReplaceValue(#\"MARIA LUIZA DE SOUZA PEREIRA\",\"6008-Wellington Dionizio Santos\",\"WELLINGTON DIONIZIO SANTOS\",Replacer.ReplaceValue,{\"AGENTE\"}),",
+                "    #\"GIOVANNI QUINTINO DA SILVA\" = Table.ReplaceValue(#\"WELLINGTON DIONIZIO SANTOS\",\"6009-Giovanni Quintino Da Silva\",\"GIOVANNI QUINTINO DA SILVA\",Replacer.ReplaceValue,{\"AGENTE\"}),",
+                "    #\"FERNANDO ALVES BARBOSA\" = Table.ReplaceValue(#\"GIOVANNI QUINTINO DA SILVA\",\"6010-Fernando Alves Barbosa\",\"FERNANDO ALVES BARBOSA\",Replacer.ReplaceValue,{\"AGENTE\"}),",
+                "    #\"CLEISON RODRIGUES DA SILVA\" = Table.ReplaceValue(#\"FERNANDO ALVES BARBOSA\",\"6011-Cleison Rodrigues Da Silva\",\"CLEISON RODRIGUES DA SILVA\",Replacer.ReplaceValue,{\"AGENTE\"}),",
+                "    #\"HIGOR VINICIUS RODRIGUES BRITO\" = Table.ReplaceValue(#\"CLEISON RODRIGUES DA SILVA\",\"6012-Higor Vinicius Rodrigues Brito\",\"HIGOR VINICIUS RODRIGUES BRITO\",Replacer.ReplaceValue,{\"AGENTE\"}),",
+                "    #\"JOAO VITOR DA SILVA PIMENTEL\" = Table.ReplaceValue(#\"HIGOR VINICIUS RODRIGUES BRITO\",\"6013-Joao Vitor Da Silva Pimentel\",\"JOAO VITOR DA SILVA PIMENTEL\",Replacer.ReplaceValue,{\"AGENTE\"}),",
+                "    #\"RENAN LUIZ\" = Table.ReplaceValue(#\"JOAO VITOR DA SILVA PIMENTEL\",\"6014-Renan Luiz\",\"RENAN LUIZ\",Replacer.ReplaceValue,{\"AGENTE\"}),",
+                "    #\"MATHEUS ANDRADE DE ARAUJO\" = Table.ReplaceValue(#\"RENAN LUIZ\",\"6015-Matheus Andrade De Araujo\",\"MATHEUS ANDRADE DE ARAUJO\",Replacer.ReplaceValue,{\"AGENTE\"}),",
+                "    #\"MURILO CARLOS NEPONUCENA NOGUEIRA\" = Table.ReplaceValue(#\"MATHEUS ANDRADE DE ARAUJO\",\"6039-Murilo Carlos Neponucena Nogueira\",\"MURILO CARLOS NEPONUCENA NOGUEIRA\",Replacer.ReplaceValue,{\"AGENTE\"}),",
+                "    #\"ADREAN FELIPPE MATTOS DE MOURA\" = Table.ReplaceValue(#\"MURILO CARLOS NEPONUCENA NOGUEIRA\",\"6040-Adrean Felippe Mattos De Moura\",\"ADREAN FELIPPE MATTOS DE MOURA\",Replacer.ReplaceValue,{\"AGENTE\"}),",
+                "    #\"SABRINA PADIAL\" = Table.ReplaceValue(#\"ADREAN FELIPPE MATTOS DE MOURA\",\"6041-Sabrina Padial\",\"SABRINA PADIAL\",Replacer.ReplaceValue,{\"AGENTE\"}),",
+                "    #\"VINICIUS NUNES RODRIGUES\" = Table.ReplaceValue(#\"SABRINA PADIAL\",\"6042-Vinicius Nunes Rodrigues\",\"VINICIUS NUNES RODRIGUES\",Replacer.ReplaceValue,{\"AGENTE\"}),",
+                "    #\"ESTEBAN GABRIEL GARDIM DIAZ\" = Table.ReplaceValue(#\"VINICIUS NUNES RODRIGUES\",\"6043-Esteban Gabriel Gardim Diaz\",\"ESTEBAN GABRIEL GARDIM DIAZ\",Replacer.ReplaceValue,{\"AGENTE\"}),",
+                "    #\"RIAN DOS SANTOS ESTEVO\" = Table.ReplaceValue(#\"ESTEBAN GABRIEL GARDIM DIAZ\",\"6044-Rian Dos Santos Estevo\",\"RIAN DOS SANTOS ESTEVO\",Replacer.ReplaceValue,{\"AGENTE\"}),",
+                "    #\"RENAN DUARTE MARQUES DE LIMA\" = Table.ReplaceValue(#\"RIAN DOS SANTOS ESTEVO\",\"6045-Renan Duarte Marques De Lima\",\"RENAN DUARTE MARQUES DE LIMA\",Replacer.ReplaceValue,{\"AGENTE\"}),",
+                "    #\"DOUGLAS LISBOA SILVANO\" = Table.ReplaceValue(#\"RENAN DUARTE MARQUES DE LIMA\",\"6046-Douglas Lisboa Silvano\",\"DOUGLAS LISBOA SILVANO\",Replacer.ReplaceValue,{\"AGENTE\"}),",
+                "    #\"ANA LUIZA SBAIS COSTA\" = Table.ReplaceValue(#\"DOUGLAS LISBOA SILVANO\",\"\",\"ANA LUIZA SBAIS COSTA\",Replacer.ReplaceValue,{\"AGENTE\"}),",
+                "    #\"BIANCA NUNES COSTA\" = Table.ReplaceValue(#\"ANA LUIZA SBAIS COSTA\",\"6068-Bianca Nunes Costa\",\"BIANCA NUNES COSTA\",Replacer.ReplaceValue,{\"AGENTE\"}),",
+                "    #\"DANIELLE DA SILVA FIALHO\" = Table.ReplaceValue(#\"BIANCA NUNES COSTA\",\"6069-Danielle Da Silva Fialho\",\"DANIELLE DA SILVA FIALHO\",Replacer.ReplaceValue,{\"AGENTE\"}),",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"DANIELLE DA SILVA FIALHO\",{{\"DATA\", type datetime}}),",
+                "    #\"Data Inserida\" = Table.AddColumn(#\"Tipo Alterado\", \"Data (ddmmaaaa)\", each DateTime.Date([DATA]), type date),",
+                "    #\"Colunas Renomeadas\" = Table.RenameColumns(#\"Data Inserida\",{{\"AGENTE\", \"COLABORADOR\"}}),",
+                "    #\"Hora Inserida\" = Table.AddColumn(#\"Colunas Renomeadas\", \"Hora\", each DateTime.Time([DATA]), type time)",
+                "in",
+                "    #\"Hora Inserida\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "fCallflex_pausas_detalhado",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "AGENTE",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "71595cc0-0ac4-4509-84bb-4cc195f8e216",
+            "sourceColumn": "AGENTE",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "COLABORADOR",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f78e9513-df35-4760-b2a9-c445b0ed9576",
+            "sourceColumn": "COLABORADOR",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DATA_DE_LOGIN",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "64de2bc7-17d8-4cad-92bc-d2d5bc0cca13",
+            "sourceColumn": "DATA_DE_LOGIN",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Hierarquia de datas",
+                  "table": "LocalDateTable_d556f314-8bb0-42d9-9a44-f85e0726584a"
+                },
+                "isDefault": true,
+                "relationship": "d72e0bd4-4f32-41d1-b950-40a61ac3f156"
+              }
+            ]
+          },
+          {
+            "name": "LOGOFF",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b0f72407-d090-4ec3-84e6-471652351c60",
+            "sourceColumn": "LOGOFF",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "TEMPO_TOTAL_LOGADO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0c740007-1e1f-4d29-a15a-ff123968f3d9",
+            "sourceColumn": "TEMPO_TOTAL_LOGADO",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "TIPO_DE_PAUSA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "66bbcff0-13c7-4a0a-a07a-cc2c8445bf77",
+            "sourceColumn": "TIPO_DE_PAUSA",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "TEMPO_PAUSADO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b277bb58-0c31-4ba9-b4ee-90830ebfd325",
+            "sourceColumn": "TEMPO_PAUSADO",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "INICIO_DA_PAUSA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b0bb92fc-8f53-4570-a703-33a4c987b1a5",
+            "sourceColumn": "INICIO_DA_PAUSA",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "FIM_DA_PAUSA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "470566d3-5292-4cbf-b15d-fd8a98640027",
+            "sourceColumn": "FIM_DA_PAUSA",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Data (ddmmaaaa)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "059c9903-65d9-4b23-8d1c-12f259863fcb",
+            "sourceColumn": "Data (ddmmaaaa)",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "96022380-124a-4b4f-a2a6-6e603845ca9f",
+        "partitions": [
+          {
+            "name": "fCallflex_pausas_detalhado",
+            "mode": "import",
+            "queryGroup": "Data Fato 11/24",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Excel.Workbook(Web.Contents(\"https://solucaonet.sharepoint.com/sites/suportecs/Documentos%20Compartilhados/Gest%C3%A3o/Desempenho/Dados/fCallflex_pausas_detalhado.xlsx\"), null, true),",
+                "    Export_Sheet = Fonte{[Item=\"Relatorio_pausas_agentes\",Kind=\"Sheet\"]}[Data],",
+                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Export_Sheet, [PromoteAllScalars=true]),",
+                "",
+                "    #\"ARTUR DO NASCIMENTO ARBOLEIA\" = Table.ReplaceValue(#\"Cabeçalhos Promovidos\",\"Artur Do Nascimento Arboleia\",\"ARTUR DO NASCIMENTO ARBOLEIA\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
+                "    #\"MARIA LUIZA DE SOUZA PEREIRA\" = Table.ReplaceValue(#\"ARTUR DO NASCIMENTO ARBOLEIA\",\"Maria Luiza De Souza Pereira\",\"MARIA LUIZA DE SOUZA PEREIRA\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
+                "    #\"WELLINGTON DIONIZIO SANTOS\" = Table.ReplaceValue(#\"MARIA LUIZA DE SOUZA PEREIRA\",\"Wellington Dionizio Santos\",\"WELLINGTON DIONIZIO SANTOS\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
+                "    #\"GIOVANNI QUINTINO DA SILVA\" = Table.ReplaceValue(#\"WELLINGTON DIONIZIO SANTOS\",\"Giovanni Quintino Da Silva\",\"GIOVANNI QUINTINO DA SILVA\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
+                "    #\"FERNANDO ALVES BARBOSA\" = Table.ReplaceValue(#\"GIOVANNI QUINTINO DA SILVA\",\"Fernando Alves Barbosa\",\"FERNANDO ALVES BARBOSA\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
+                "    #\"CLEISON RODRIGUES DA SILVA\" = Table.ReplaceValue(#\"FERNANDO ALVES BARBOSA\",\"Cleison Rodrigues Da Silva\",\"CLEISON RODRIGUES DA SILVA\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
+                "    #\"HIGOR VINICIUS RODRIGUES BRITO\" = Table.ReplaceValue(#\"CLEISON RODRIGUES DA SILVA\",\"Higor Vinicius Rodrigues Brito\",\"HIGOR VINICIUS RODRIGUES BRITO\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
+                "    #\"JOAO VITOR DA SILVA PIMENTEL\" = Table.ReplaceValue(#\"HIGOR VINICIUS RODRIGUES BRITO\",\"Joao Vitor Da Silva Pimentel\",\"JOAO VITOR DA SILVA PIMENTEL\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
+                "    #\"RENAN LUIZ\" = Table.ReplaceValue(#\"JOAO VITOR DA SILVA PIMENTEL\",\"Renan Luiz\",\"RENAN LUIZ\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
+                "    #\"MATHEUS ANDRADE DE ARAUJO\" = Table.ReplaceValue(#\"RENAN LUIZ\",\"Matheus Andrade De Araujo\",\"MATHEUS ANDRADE DE ARAUJO\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
+                "    #\"MURILO CARLOS NEPONUCENA NOGUEIRA\" = Table.ReplaceValue(#\"MATHEUS ANDRADE DE ARAUJO\",\"Murilo Carlos Neponucena Nogueira\",\"MURILO CARLOS NEPONUCENA NOGUEIRA\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
+                "    #\"ADREAN FELIPPE MATTOS DE MOURA\" = Table.ReplaceValue(#\"MURILO CARLOS NEPONUCENA NOGUEIRA\",\"Adrean Felippe Mattos De Moura\",\"ADREAN FELIPPE MATTOS DE MOURA\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
+                "    #\"SABRINA PADIAL\" = Table.ReplaceValue(#\"ADREAN FELIPPE MATTOS DE MOURA\",\"Sabrina Padial\",\"SABRINA PADIAL\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
+                "    #\"VINICIUS NUNES RODRIGUES\" = Table.ReplaceValue(#\"SABRINA PADIAL\",\"Vinicius Nunes Rodrigues\",\"VINICIUS NUNES RODRIGUES\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
+                "    #\"ESTEBAN GABRIEL GARDIM DIAZ\" = Table.ReplaceValue(#\"VINICIUS NUNES RODRIGUES\",\"Esteban Gabriel Gardim Diaz\",\"ESTEBAN GABRIEL GARDIM DIAZ\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
+                "    #\"RIAN DOS SANTOS ESTEVO\" = Table.ReplaceValue(#\"ESTEBAN GABRIEL GARDIM DIAZ\",\"Rian Dos Santos Estevo\",\"RIAN DOS SANTOS ESTEVO\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
+                "    #\"RENAN DUARTE MARQUES DE LIMA\" = Table.ReplaceValue(#\"RIAN DOS SANTOS ESTEVO\",\"Renan Duarte Marques De Lima\",\"RENAN DUARTE MARQUES DE LIMA\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
+                "    #\"DOUGLAS LISBOA SILVANO\" = Table.ReplaceValue(#\"RENAN DUARTE MARQUES DE LIMA\",\"Douglas Lisboa Silvano\",\"DOUGLAS LISBOA SILVANO\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
+                "    #\"ANA LUIZA SBAIS COSTA\" = Table.ReplaceValue(#\"DOUGLAS LISBOA SILVANO\",\"Ana Luiza Sbais Costa\",\"ANA LUIZA SBAIS COSTA\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
+                "    #\"BIANCA NUNES COSTA\" = Table.ReplaceValue(#\"ANA LUIZA SBAIS COSTA\",\"Bianca Nunes Costa\",\"BIANCA NUNES COSTA\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
+                "    #\"DANIELLE DA SILVA FIALHO\" = Table.ReplaceValue(#\"BIANCA NUNES COSTA\",\"Danielle Da Silva Fialho\",\"DANIELLE DA SILVA FIALHO\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
+                "    #\"Valor Substituído\" = Table.ReplaceValue(#\"DANIELLE DA SILVA FIALHO\",\"---\",\"\",Replacer.ReplaceValue,{\"TEMPO_PAUSADO\"}),",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Valor Substituído\",{{\"DATA_DE_LOGIN\", type datetime}}),",
+                "    #\"Data Inserida\" = Table.AddColumn(#\"Tipo Alterado\", \"Data (ddmmaaaa)\", each DateTime.Date([DATA_DE_LOGIN]), type date),",
+                "    #\"Colunas Renomeadas\" = Table.RenameColumns(#\"Data Inserida\",{{\"AGENTE_NOME\", \"COLABORADOR\"}})",
+                "in",
+                "    #\"Colunas Renomeadas\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "fChat_relatorio_resumo_usuarios(pausas)",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "fc7e112c-4115-46c6-8b1c-51a6620e2dc6",
+            "sourceColumn": "ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "COLABORADOR",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4e551b0d-6cd1-464d-8bed-8696b3296429",
+            "sourceColumn": "COLABORADOR",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Usuário",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "bd704816-3ae0-4d6a-87e9-36742c8c00c5",
+            "sourceColumn": "Usuário",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Entrada",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "5068ce7a-6224-43a0-8ba7-226cb2854ef9",
+            "sourceColumn": "Entrada",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Hierarquia de datas",
+                  "table": "LocalDateTable_7ad32777-930b-4009-b99b-c303ee716e4f"
+                },
+                "isDefault": true,
+                "relationship": "f7a93b19-613a-4f24-bee8-ebaa12190b4f"
+              }
+            ]
+          },
+          {
+            "name": "Saída",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c5a10071-7d3c-4c55-a175-92ac4d19c6b8",
+            "sourceColumn": "Saída",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Perfil atual",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "663f34f3-18c6-4ae6-8f18-6581cf684d7b",
+            "sourceColumn": "Perfil atual",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Tempo Jornada",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "487fb561-f34c-43fe-8896-db1cbd944c31",
+            "sourceColumn": "Tempo Jornada",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Tempo Pausa",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "41850864-2d6d-4fd6-b894-5431271466c0",
+            "sourceColumn": "Tempo Pausa",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Tempo Disponível",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d2ab9db1-5c41-47fc-96cb-ea6394239a09",
+            "sourceColumn": "Tempo Disponível",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Tempo Indisponível",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "23e864ad-4913-44c1-a353-2f9991dcfd1e",
+            "sourceColumn": "Tempo Indisponível",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Tempo Deslogado",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6bab8e16-1901-45a4-b9a7-d34d6941c3c8",
+            "sourceColumn": "Tempo Deslogado",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Tempo em Pausa Outros",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "bd3ad76e-76c0-4ce9-ac61-a6fff1954093",
+            "sourceColumn": "Tempo em Pausa Outros",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Tempo em pausa - 2:Pausa cafe",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8606b8cf-156f-456c-a1c2-7489a8222d0c",
+            "sourceColumn": "Tempo em pausa - 2:Pausa cafe",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Tempo em pausa - 10:Pausa Bkoffice",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9284245d-bd9e-4ef6-b829-1e86d276ce58",
+            "sourceColumn": "Tempo em pausa - 10:Pausa Bkoffice",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Tempo em pausa - 3:Pausa pessoal",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "17ca40f7-c7b0-414c-9f22-adf89272299d",
+            "sourceColumn": "Tempo em pausa - 3:Pausa pessoal",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Tempo em pausa - 12:Pausa de 15 minutos",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "34e35cc0-5f28-46bc-9062-6186f52f89fe",
+            "sourceColumn": "Tempo em pausa - 12:Pausa de 15 minutos",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Tempo em pausa - 4:Pausa Feedback",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "5860b52b-0c81-4333-ae9d-ece563a45f32",
+            "sourceColumn": "Tempo em pausa - 4:Pausa Feedback",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Tempo em pausa - 13:Pausa atendimento tecnico",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "545760e8-9f7b-40c9-81c1-eda99124d0da",
+            "sourceColumn": "Tempo em pausa - 13:Pausa atendimento tecnico",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Tempo em pausa - 7:Pausa manutencao TI",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0d87a3c2-0f82-40d1-ab96-30ae1df50049",
+            "sourceColumn": "Tempo em pausa - 7:Pausa manutencao TI",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Tempo em Pausa 8",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4429096c-e26a-4b19-b637-396eec5d7a1c",
+            "sourceColumn": "Tempo em Pausa 8",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Tempo em pausa - 8:Pausa Atendimento presencial",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d3505ccf-ed7c-4979-b8e6-c266c435d9d8",
+            "sourceColumn": "Tempo em pausa - 8:Pausa Atendimento presencial",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Tempo em Pausa 10",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f27eda4d-4120-4fc1-a629-4b715f06ac6b",
+            "sourceColumn": "Tempo em Pausa 10",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Tag",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b1129d2a-e480-49fa-8aa6-5f5bc694702d",
+            "sourceColumn": "Tag",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Data (ddmmaaaa)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "41a7eb7d-d3e3-48a7-88ba-1f577f5ac349",
+            "sourceColumn": "Data (ddmmaaaa)",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "0e9f3d83-7c86-4a28-855b-ab6d692fcc3c",
+        "partitions": [
+          {
+            "name": "fChat_relatorio_resumo_usuarios(pausas)",
+            "mode": "import",
+            "queryGroup": "Data Fato 11/24",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Csv.Document(Web.Contents(\"https://solucaonet.sharepoint.com/sites/suportecs/Documentos%20Compartilhados/Gest%C3%A3o/Desempenho/Dados/fChat_relatorio_resumo_usuarios(pausas).csv\"),[Delimiter=\";\", Columns=23, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),",
+                "",
+                "    #\"ARTUR DO NASCIMENTO ARBOLEIA\" = Table.ReplaceValue(#\"Cabeçalhos Promovidos\",\"Artur Do nascimento Arboleia\",\"ARTUR DO NASCIMENTO ARBOLEIA\",Replacer.ReplaceValue,{\"Nome\"}),",
+                "    #\"MARIA LUIZA DE SOUZA PEREIRA\" = Table.ReplaceValue(#\"ARTUR DO NASCIMENTO ARBOLEIA\",\"Maria Luiza de Souza Pereira\",\"MARIA LUIZA DE SOUZA PEREIRA\",Replacer.ReplaceValue,{\"Nome\"}),",
+                "    #\"WELLINGTON DIONIZIO SANTOS\" = Table.ReplaceValue(#\"MARIA LUIZA DE SOUZA PEREIRA\",\"Wellington Dionizio Santos\",\"WELLINGTON DIONIZIO SANTOS\",Replacer.ReplaceValue,{\"Nome\"}),",
+                "    #\"GIOVANNI QUINTINO DA SILVA\" = Table.ReplaceValue(#\"WELLINGTON DIONIZIO SANTOS\",\"Giovanni Quintino Da Silva\",\"GIOVANNI QUINTINO DA SILVA\",Replacer.ReplaceValue,{\"Nome\"}),",
+                "    #\"FERNANDO ALVES BARBOSA\" = Table.ReplaceValue(#\"GIOVANNI QUINTINO DA SILVA\",\"Fernando Alves Barbosa\",\"FERNANDO ALVES BARBOSA\",Replacer.ReplaceValue,{\"Nome\"}),",
+                "    #\"CLEISON RODRIGUES DA SILVA\" = Table.ReplaceValue(#\"FERNANDO ALVES BARBOSA\",\"Cleison Rodrigues da Silva\",\"CLEISON RODRIGUES DA SILVA\",Replacer.ReplaceValue,{\"Nome\"}),",
+                "    #\"HIGOR VINICIUS RODRIGUES BRITO\" = Table.ReplaceValue(#\"CLEISON RODRIGUES DA SILVA\",\"Higor Vinicius Rodrigues Brito\",\"HIGOR VINICIUS RODRIGUES BRITO\",Replacer.ReplaceValue,{\"Nome\"}),",
+                "    #\"JOAO VITOR DA SILVA PIMENTEL\" = Table.ReplaceValue(#\"HIGOR VINICIUS RODRIGUES BRITO\",\"João Vitor da Silva Pimentel\",\"JOAO VITOR DA SILVA PIMENTEL\",Replacer.ReplaceValue,{\"Nome\"}),",
+                "    #\"RENAN LUIZ\" = Table.ReplaceValue(#\"JOAO VITOR DA SILVA PIMENTEL\",\"Renan  Luiz\",\"RENAN LUIZ\",Replacer.ReplaceValue,{\"Nome\"}),",
+                "    #\"MATHEUS ANDRADE DE ARAUJO\" = Table.ReplaceValue(#\"RENAN LUIZ\",\"Matheus Andrade De Araujo\",\"MATHEUS ANDRADE DE ARAUJO\",Replacer.ReplaceValue,{\"Nome\"}),",
+                "    #\"MURILO CARLOS NEPONUCENA NOGUEIRA\" = Table.ReplaceValue(#\"MATHEUS ANDRADE DE ARAUJO\",\"Murilo Carlos Neponucena Nogueira\",\"MURILO CARLOS NEPONUCENA NOGUEIRA\",Replacer.ReplaceValue,{\"Nome\"}),",
+                "    #\"ADREAN FELIPPE MATTOS DE MOURA\" = Table.ReplaceValue(#\"MURILO CARLOS NEPONUCENA NOGUEIRA\",\"Adrean Felippe Mattos De Moura\",\"ADREAN FELIPPE MATTOS DE MOURA\",Replacer.ReplaceValue,{\"Nome\"}),",
+                "    #\"SABRINA PADIAL\" = Table.ReplaceValue(#\"ADREAN FELIPPE MATTOS DE MOURA\",\"Sabrina Padial\",\"SABRINA PADIAL\",Replacer.ReplaceValue,{\"Nome\"}),",
+                "    #\"VINICIUS NUNES RODRIGUES\" = Table.ReplaceValue(#\"SABRINA PADIAL\",\"Vinicius Nunes Rodrigues\",\"VINICIUS NUNES RODRIGUES\",Replacer.ReplaceValue,{\"Nome\"}),",
+                "    #\"ESTEBAN GABRIEL GARDIM DIAZ\" = Table.ReplaceValue(#\"VINICIUS NUNES RODRIGUES\",\"Esteban Gabriel Gardim Diaz\",\"ESTEBAN GABRIEL GARDIM DIAZ\",Replacer.ReplaceValue,{\"Nome\"}),",
+                "    #\"RIAN DOS SANTOS ESTEVO\" = Table.ReplaceValue(#\"ESTEBAN GABRIEL GARDIM DIAZ\",\"Rian\",\"RIAN DOS SANTOS ESTEVO\",Replacer.ReplaceValue,{\"Nome\"}),",
+                "    #\"RENAN DUARTE MARQUES DE LIMA\" = Table.ReplaceValue(#\"RIAN DOS SANTOS ESTEVO\",\"Renan Duarte Marques de Lima\",\"RENAN DUARTE MARQUES DE LIMA\",Replacer.ReplaceValue,{\"Nome\"}),",
+                "    #\"DOUGLAS LISBOA SILVANO\" = Table.ReplaceValue(#\"RENAN DUARTE MARQUES DE LIMA\",\"Douglas Lisboa Silvano\",\"DOUGLAS LISBOA SILVANO\",Replacer.ReplaceValue,{\"Nome\"}),",
+                "    #\"ANA LUIZA SBAIS COSTA\" = Table.ReplaceValue(#\"DOUGLAS LISBOA SILVANO\",\"Ana Luiza Sbais Costa\",\"ANA LUIZA SBAIS COSTA\",Replacer.ReplaceValue,{\"Nome\"}),",
+                "    #\"BIANCA NUNES COSTA\" = Table.ReplaceValue(#\"ANA LUIZA SBAIS COSTA\",\"Bianca Nunes Costa\",\"BIANCA NUNES COSTA\",Replacer.ReplaceValue,{\"Nome\"}),",
+                "    #\"DANIELLE DA SILVA FIALHO\" = Table.ReplaceValue(#\"BIANCA NUNES COSTA\",\"Danielle da Silva Fialho\",\"DANIELLE DA SILVA FIALHO\",Replacer.ReplaceValue,{\"Nome\"}),",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"DANIELLE DA SILVA FIALHO\",{{\"Entrada\", type datetime}}),",
+                "    #\"Data Inserida\" = Table.AddColumn(#\"Tipo Alterado\", \"Data (ddmmaaaa)\", each DateTime.Date([Entrada]), type date),",
+                "    #\"Colunas Renomeadas\" = Table.RenameColumns(#\"Data Inserida\",{{\"Nome\", \"COLABORADOR\"}})",
+                "in",
+                "    #\"Colunas Renomeadas\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "fChat_relatorio_nps",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3fc1083b-fe4a-41c3-b4a8-73eb673f7a31",
+            "sourceColumn": "Id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Data",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "acc5f5a2-51f1-4442-b325-81e664824a7f",
+            "sourceColumn": "Data",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Hierarquia de datas",
+                  "table": "LocalDateTable_4968a8d5-4fba-4e64-8c8e-654f214cf655"
+                },
+                "isDefault": true,
+                "relationship": "9fd0c8a9-8edb-4122-80a6-5d99731166f6"
+              }
+            ]
+          },
+          {
+            "name": "Canal",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "cef19b77-ae1f-4a3e-a481-d00b515dde04",
+            "sourceColumn": "Canal",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Usuário",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "20431df2-3364-4070-973a-bbcc4267823b",
+            "sourceColumn": "Usuário",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "COLABORADOR",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c993041f-500f-4032-bf3c-6ef642775fd1",
+            "sourceColumn": "COLABORADOR",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Person ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b1069745-f4cc-452f-8ae2-f85b731d2f80",
+            "sourceColumn": "Person ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Documento",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "33394e5c-fb82-4fe3-811c-993938f03818",
+            "sourceColumn": "Documento",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Nome",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9a629351-cdaa-4438-853e-901afb8879d7",
+            "sourceColumn": "Nome",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Fase",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "cdb9dba9-b921-4ccc-afcc-2539476b0a9a",
+            "sourceColumn": "Fase",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Info",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2d7bf385-b3f6-4d54-bf58-6d481657cb71",
+            "sourceColumn": "Info",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "NPS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "57b017ca-9a6b-4504-b133-45dcca3e25c2",
+            "sourceColumn": "NPS",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "NPS Inteiro",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "3e42b329-853a-464d-90de-58f9071ddd6e",
+            "sourceColumn": "NPS Inteiro",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Descrição",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b9a05c01-d444-46cc-b206-a74411a54dd2",
+            "sourceColumn": "Descrição",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Robô",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9983d3fb-a5a6-407d-b777-bea7d4882099",
+            "sourceColumn": "Robô",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Data (ddmmaaaa)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "04e7c09d-213e-48c8-b478-8bc5752d142b",
+            "sourceColumn": "Data (ddmmaaaa)",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "af7617c8-eb0e-4ff1-9d4c-4aed55892c94",
+        "partitions": [
+          {
+            "name": "fChat_relatorio_nps",
+            "mode": "import",
+            "queryGroup": "Data Fato 11/24",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = Csv.Document(Web.Contents(\"https://solucaonet.sharepoint.com/sites/suportecs/Documentos%20Compartilhados/Gest%C3%A3o/Desempenho/Dados/fChat_relatorio_nps.csv\"),[Delimiter=\";\", Columns=13, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),",
+                "    #\"Coluna Duplicada\" = Table.DuplicateColumn(#\"Cabeçalhos Promovidos\", \"NPS\", \"NPS - Copiar\"),",
+                "    #\"Colunas Reordenadas\" = Table.ReorderColumns(#\"Coluna Duplicada\",{\"Id\", \"Data\", \"Canal\", \"Usuário\", \"Nome do Usuário\", \"Person ID\", \"Documento\", \"Nome\", \"Fase\", \"Info\", \"NPS\", \"NPS - Copiar\", \"Descrição\", \"Robô\"}),",
+                "    #\"Colunas Renomeadas\" = Table.RenameColumns(#\"Colunas Reordenadas\",{{\"NPS - Copiar\", \"NPS Inteiro\"}}),",
+                "    #\"Valor Substituído\" = Table.ReplaceValue(#\"Colunas Renomeadas\",\"-\",\"0\",Replacer.ReplaceText,{\"NPS Inteiro\"}),",
+                "    #\"Tipo Alterado1\" = Table.TransformColumnTypes(#\"Valor Substituído\",{{\"NPS Inteiro\", Int64.Type}}),",
+                "",
+                "    #\"ARTUR DO NASCIMENTO ARBOLEIA\" = Table.ReplaceValue(#\"Tipo Alterado1\",\"Artur Do nascimento Arboleia\",\"ARTUR DO NASCIMENTO ARBOLEIA\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
+                "    #\"MARIA LUIZA DE SOUZA PEREIRA\" = Table.ReplaceValue(#\"ARTUR DO NASCIMENTO ARBOLEIA\",\"Maria Luiza de Souza Pereira\",\"MARIA LUIZA DE SOUZA PEREIRA\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
+                "    #\"WELLINGTON DIONIZIO SANTOS\" = Table.ReplaceValue(#\"MARIA LUIZA DE SOUZA PEREIRA\",\"Wellington Dionizio Santos\",\"WELLINGTON DIONIZIO SANTOS\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
+                "    #\"GIOVANNI QUINTINO DA SILVA\" = Table.ReplaceValue(#\"WELLINGTON DIONIZIO SANTOS\",\"Giovanni Quintino Da Silva\",\"GIOVANNI QUINTINO DA SILVA\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
+                "    #\"FERNANDO ALVES BARBOSA\" = Table.ReplaceValue(#\"GIOVANNI QUINTINO DA SILVA\",\"Fernando Alves Barbosa\",\"FERNANDO ALVES BARBOSA\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
+                "    #\"CLEISON RODRIGUES DA SILVA\" = Table.ReplaceValue(#\"FERNANDO ALVES BARBOSA\",\"Cleison Rodrigues da Silva\",\"CLEISON RODRIGUES DA SILVA\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
+                "    #\"HIGOR VINICIUS RODRIGUES BRITO\" = Table.ReplaceValue(#\"CLEISON RODRIGUES DA SILVA\",\"Higor Vinicius Rodrigues Brito\",\"HIGOR VINICIUS RODRIGUES BRITO\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
+                "    #\"JOAO VITOR DA SILVA PIMENTEL\" = Table.ReplaceValue(#\"HIGOR VINICIUS RODRIGUES BRITO\",\"João Vitor da Silva Pimentel\",\"JOAO VITOR DA SILVA PIMENTEL\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
+                "    #\"RENAN LUIZ\" = Table.ReplaceValue(#\"JOAO VITOR DA SILVA PIMENTEL\",\"Renan  Luiz\",\"RENAN LUIZ\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
+                "    #\"MATHEUS ANDRADE DE ARAUJO\" = Table.ReplaceValue(#\"RENAN LUIZ\",\"Matheus Andrade De Araujo\",\"MATHEUS ANDRADE DE ARAUJO\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
+                "    #\"MURILO CARLOS NEPONUCENA NOGUEIRA\" = Table.ReplaceValue(#\"MATHEUS ANDRADE DE ARAUJO\",\"Murilo Carlos Neponucena Nogueira\",\"MURILO CARLOS NEPONUCENA NOGUEIRA\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
+                "    #\"ADREAN FELIPPE MATTOS DE MOURA\" = Table.ReplaceValue(#\"MURILO CARLOS NEPONUCENA NOGUEIRA\",\"Adrean Felippe Mattos De Moura\",\"ADREAN FELIPPE MATTOS DE MOURA\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
+                "    #\"SABRINA PADIAL\" = Table.ReplaceValue(#\"ADREAN FELIPPE MATTOS DE MOURA\",\"Sabrina Padial\",\"SABRINA PADIAL\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
+                "    #\"VINICIUS NUNES RODRIGUES\" = Table.ReplaceValue(#\"SABRINA PADIAL\",\"Vinicius Nunes Rodrigues\",\"VINICIUS NUNES RODRIGUES\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
+                "    #\"ESTEBAN GABRIEL GARDIM DIAZ\" = Table.ReplaceValue(#\"VINICIUS NUNES RODRIGUES\",\"Esteban Gabriel Gardim Diaz\",\"ESTEBAN GABRIEL GARDIM DIAZ\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
+                "    #\"RIAN DOS SANTOS ESTEVO\" = Table.ReplaceValue(#\"ESTEBAN GABRIEL GARDIM DIAZ\",\"Rian\",\"RIAN DOS SANTOS ESTEVO\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
+                "    #\"RENAN DUARTE MARQUES DE LIMA\" = Table.ReplaceValue(#\"RIAN DOS SANTOS ESTEVO\",\"Renan Duarte Marques de Lima\",\"RENAN DUARTE MARQUES DE LIMA\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
+                "    #\"DOUGLAS LISBOA SILVANO\" = Table.ReplaceValue(#\"RENAN DUARTE MARQUES DE LIMA\",\"Douglas Lisboa Silvano\",\"DOUGLAS LISBOA SILVANO\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
+                "    #\"ANA LUIZA SBAIS COSTA\" = Table.ReplaceValue(#\"DOUGLAS LISBOA SILVANO\",\"Ana Luiza Sbais Costa\",\"ANA LUIZA SBAIS COSTA\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
+                "    #\"BIANCA NUNES COSTA\" = Table.ReplaceValue(#\"ANA LUIZA SBAIS COSTA\",\"Bianca Nunes Costa\",\"BIANCA NUNES COSTA\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
+                "    #\"DANIELLE DA SILVA FIALHO\" = Table.ReplaceValue(#\"BIANCA NUNES COSTA\",\"Danielle da Silva Fialho\",\"DANIELLE DA SILVA FIALHO\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"DANIELLE DA SILVA FIALHO\",{{\"Data\", type datetime}}),",
+                "    #\"Data Inserida\" = Table.AddColumn(#\"Tipo Alterado\", \"Data (ddmmaaaa)\", each DateTime.Date([Data]), type date),",
+                "    #\"Colunas Renomeadas1\" = Table.RenameColumns(#\"Data Inserida\",{{\"Nome do Usuário\", \"COLABORADOR\"}})",
+                "in",
+                "    #\"Colunas Renomeadas1\""
               ],
               "type": "m"
             }
