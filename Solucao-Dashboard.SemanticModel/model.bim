@@ -23378,21 +23378,6 @@
         "toTable": "LocalDateTable_a384ac4e-028b-4e81-9215-5602139dc11c"
       },
       {
-        "name": "3fabf8dd-b414-4399-87ee-2e9a2b2f95f6",
-        "fromColumn": "Date",
-        "fromTable": "dCalendario",
-        "joinOnDateBehavior": "datePartOnly",
-        "toColumn": "Date",
-        "toTable": "LocalDateTable_e16dbdbd-ac5e-44a7-9335-501005149e3c"
-      },
-      {
-        "name": "d3a97895-c9ee-947e-f38b-9daccc72c55f",
-        "fromColumn": "Data Abertura (ddmmaaaa)",
-        "fromTable": "fAdapter_atendimentos",
-        "toColumn": "Date",
-        "toTable": "dCalendario"
-      },
-      {
         "name": "5307732d-8821-4d32-80e8-7e4dd2fdbff7",
         "fromColumn": "Data Abertura",
         "fromTable": "fAdapter_atendimentos",
@@ -23436,6 +23421,35 @@
         "toTable": "dColaboradores"
       },
       {
+        "name": "a15ba565-b803-ea96-af37-c9a518f70d38",
+        "fromColumn": "Hora (compartimentos)",
+        "fromTable": "fChat_relatorio_atendimento",
+        "toColumn": "Horas",
+        "toTable": "dHoras"
+      },
+      {
+        "name": "d9976c78-1d47-956f-40df-25481ba034a9",
+        "fromColumn": "Hora (compartimentos)",
+        "fromTable": "fCallflex_chamadas",
+        "toColumn": "Horas",
+        "toTable": "dHoras"
+      },
+      {
+        "name": "c3218416-50b4-4335-af34-b47d293b7c6c",
+        "fromColumn": "Date",
+        "fromTable": "dCalendario",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_e16dbdbd-ac5e-44a7-9335-501005149e3c"
+      },
+      {
+        "name": "d3a97895-c9ee-947e-f38b-9daccc72c55f",
+        "fromColumn": "Data Abertura (ddmmaaaa)",
+        "fromTable": "fAdapter_atendimentos",
+        "toColumn": "Date",
+        "toTable": "dCalendario"
+      },
+      {
         "name": "fabbdef7-d2a4-89b2-62a8-3d94ee35d9d1",
         "fromColumn": "Data (ddmmaaaa)",
         "fromTable": "fChat_relatorio_resumo_usuarios(pausas)",
@@ -23469,20 +23483,6 @@
         "fromTable": "fChat_relatorio_atendimento",
         "toColumn": "Date",
         "toTable": "dCalendario"
-      },
-      {
-        "name": "a15ba565-b803-ea96-af37-c9a518f70d38",
-        "fromColumn": "Hora (compartimentos)",
-        "fromTable": "fChat_relatorio_atendimento",
-        "toColumn": "Horas",
-        "toTable": "dHoras"
-      },
-      {
-        "name": "d9976c78-1d47-956f-40df-25481ba034a9",
-        "fromColumn": "Hora (compartimentos)",
-        "fromTable": "fCallflex_chamadas",
-        "toColumn": "Horas",
-        "toTable": "dHoras"
       }
     ],
     "sourceQueryCulture": "pt-BR",
@@ -24685,7 +24685,7 @@
                   "table": "LocalDateTable_e16dbdbd-ac5e-44a7-9335-501005149e3c"
                 },
                 "isDefault": true,
-                "relationship": "3fabf8dd-b414-4399-87ee-2e9a2b2f95f6"
+                "relationship": "c3218416-50b4-4335-af34-b47d293b7c6c"
               }
             ]
           },
@@ -24829,7 +24829,7 @@
             "name": "dCalendario",
             "mode": "import",
             "source": {
-              "expression": "CALENDAR(DATE(2024, 1, 1), DATE(2024, 12, 31))",
+              "expression": "CALENDAR(DATE(2024, 1, 1), DATE(2025, 12, 31))",
               "type": "calculated"
             }
           }
@@ -26839,207 +26839,6 @@
             }
           }
         ]
-      },
-      {
-        "name": "LocalDateTable_e16dbdbd-ac5e-44a7-9335-501005149e3c",
-        "annotations": [
-          {
-            "name": "__PBI_LocalDateTable",
-            "value": "true"
-          }
-        ],
-        "columns": [
-          {
-            "name": "Date",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              }
-            ],
-            "dataCategory": "PaddedDateTableDates",
-            "dataType": "dateTime",
-            "isHidden": true,
-            "isNameInferred": true,
-            "lineageTag": "ed6ce68d-33fa-4cd7-b23a-840fa25c4b10",
-            "sourceColumn": "[Date]",
-            "summarizeBy": "none",
-            "type": "calculatedTableColumn"
-          },
-          {
-            "name": "Ano",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Year"
-              }
-            ],
-            "dataCategory": "Years",
-            "dataType": "int64",
-            "expression": "YEAR([Date])",
-            "isHidden": true,
-            "lineageTag": "47550db6-5484-40c2-a674-743b9713b963",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "MonthNo",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "MonthNumber"
-              }
-            ],
-            "dataCategory": "MonthOfYear",
-            "dataType": "int64",
-            "expression": "MONTH([Date])",
-            "isHidden": true,
-            "lineageTag": "b2732826-9265-4a14-8503-35fc1885e427",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Mês",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Month"
-              }
-            ],
-            "dataCategory": "Months",
-            "dataType": "string",
-            "expression": "FORMAT([Date], \"MMMM\")",
-            "isHidden": true,
-            "lineageTag": "a2302a38-61b7-4a91-b087-1d49ed779fe3",
-            "sortByColumn": "MonthNo",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "QuarterNo",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "QuarterNumber"
-              }
-            ],
-            "dataCategory": "QuarterOfYear",
-            "dataType": "int64",
-            "expression": "INT(([MonthNo] + 2) / 3)",
-            "isHidden": true,
-            "lineageTag": "f092d3b2-c419-4042-a991-3f25cba80dc5",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Trimestre",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Quarter"
-              }
-            ],
-            "dataCategory": "Quarters",
-            "dataType": "string",
-            "expression": "\"Qtr \" & [QuarterNo]",
-            "isHidden": true,
-            "lineageTag": "2e04ed07-4faa-4946-ba9f-00e1ca269c4f",
-            "sortByColumn": "QuarterNo",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Dia",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Day"
-              }
-            ],
-            "dataCategory": "DayOfMonth",
-            "dataType": "int64",
-            "expression": "DAY([Date])",
-            "isHidden": true,
-            "lineageTag": "b1afbc10-9833-4d82-960c-cbef96f200f7",
-            "summarizeBy": "none",
-            "type": "calculated"
-          }
-        ],
-        "hierarchies": [
-          {
-            "name": "Hierarquia de datas",
-            "annotations": [
-              {
-                "name": "TemplateId",
-                "value": "DateHierarchy"
-              }
-            ],
-            "levels": [
-              {
-                "name": "Ano",
-                "column": "Ano",
-                "lineageTag": "34ba3814-e429-4f5d-88e1-7b4f46a40623",
-                "ordinal": 0
-              },
-              {
-                "name": "Trimestre",
-                "column": "Trimestre",
-                "lineageTag": "a1596279-5d99-41e0-948f-dcfa579d64f9",
-                "ordinal": 1
-              },
-              {
-                "name": "Mês",
-                "column": "Mês",
-                "lineageTag": "b45489eb-5644-447a-9bbb-214b822009de",
-                "ordinal": 2
-              },
-              {
-                "name": "Dia",
-                "column": "Dia",
-                "lineageTag": "04711cb2-4d63-4ac8-9f45-85336cf9f486",
-                "ordinal": 3
-              }
-            ],
-            "lineageTag": "0743d62e-1434-4feb-864b-492629b9c935"
-          }
-        ],
-        "isHidden": true,
-        "lineageTag": "7696e009-f23c-4016-882e-d78b454e7d80",
-        "partitions": [
-          {
-            "name": "LocalDateTable_e16dbdbd-ac5e-44a7-9335-501005149e3c",
-            "mode": "import",
-            "source": {
-              "expression": "Calendar(Date(Year(MIN('dCalendario'[Date])), 1, 1), Date(Year(MAX('dCalendario'[Date])), 12, 31))",
-              "type": "calculated"
-            }
-          }
-        ],
-        "showAsVariationsOnly": true
       },
       {
         "name": "Medidas Reincidencia",
@@ -29481,7 +29280,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Fonte = Csv.Document(Web.Contents(\"https://solucaonet.sharepoint.com/sites/suportecs/Documentos%20Compartilhados/Gest%C3%A3o/Desempenho/Dados/fChat_relatorio_atendimento.csv\"),[Delimiter=\";\", Columns=62, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    Fonte = Csv.Document(Web.Contents(\"https://solucaonet.sharepoint.com/sites/suportecs/Documentos%20Compartilhados/Gest%C3%A3o/Desempenho/Dados/fChat_relatorio_atendimento/fChat_relatorio_atendimento.csv\"),[Delimiter=\";\", Columns=62, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
                 "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),",
                 "",
                 "    #\"ARTUR DO NASCIMENTO ARBOLEIA\" = Table.ReplaceValue(#\"Cabeçalhos Promovidos\",\"Artur Do nascimento Arboleia\",\"ARTUR DO NASCIMENTO ARBOLEIA\",Replacer.ReplaceValue,{\"Usuário\"}),",
@@ -29803,7 +29602,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Fonte = Csv.Document(Web.Contents(\"https://solucaonet.sharepoint.com/sites/suportecs/Documentos%20Compartilhados/Gest%C3%A3o/Desempenho/Dados/fCallflex_chamadas.csv\"),[Delimiter=\";\", Columns=11, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    Fonte = Csv.Document(Web.Contents(\"https://solucaonet.sharepoint.com/sites/suportecs/Documentos%20Compartilhados/Gest%C3%A3o/Desempenho/Dados/fCallflex_chamadas/fCallflex_chamadas.csv\"),[Delimiter=\";\", Columns=11, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
                 "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),",
                 "   ",
                 "    #\"ARTUR DO NASCIMENTO ARBOLEIA\" = Table.ReplaceValue(#\"Cabeçalhos Promovidos\",\"6006-Artur Do Nascimento Arboleia\",\"ARTUR DO NASCIMENTO ARBOLEIA\",Replacer.ReplaceValue,{\"AGENTE\"}),",
@@ -30009,8 +29808,8 @@
             "source": {
               "expression": [
                 "let",
-                "    Fonte = Excel.Workbook(Web.Contents(\"https://solucaonet.sharepoint.com/sites/suportecs/Documentos%20Compartilhados/Gest%C3%A3o/Desempenho/Dados/fCallflex_pausas_detalhado.xlsx\"), null, true),",
-                "    Export_Sheet = Fonte{[Item=\"Relatorio_pausas_agentes\",Kind=\"Sheet\"]}[Data],",
+                "    Fonte = Excel.Workbook(Web.Contents(\"https://solucaonet.sharepoint.com/sites/suportecs/Documentos%20Compartilhados/Gest%C3%A3o/Desempenho/Dados/fCallflex_pausas_detalhado/fCallflex_pausas_detalhado.xlsx\"), null, true),",
+                "    Export_Sheet = Fonte{[Item=\"Sheet1\",Kind=\"Sheet\"]}[Data],",
                 "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Export_Sheet, [PromoteAllScalars=true]),",
                 "",
                 "    #\"ARTUR DO NASCIMENTO ARBOLEIA\" = Table.ReplaceValue(#\"Cabeçalhos Promovidos\",\"Artur Do Nascimento Arboleia\",\"ARTUR DO NASCIMENTO ARBOLEIA\",Replacer.ReplaceValue,{\"AGENTE_NOME\"}),",
@@ -30398,7 +30197,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Fonte = Csv.Document(Web.Contents(\"https://solucaonet.sharepoint.com/sites/suportecs/Documentos%20Compartilhados/Gest%C3%A3o/Desempenho/Dados/fChat_relatorio_resumo_usuarios(pausas).csv\"),[Delimiter=\";\", Columns=23, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    Fonte = Csv.Document(Web.Contents(\"https://solucaonet.sharepoint.com/sites/suportecs/Documentos%20Compartilhados/Gest%C3%A3o/Desempenho/Dados/fChat_relatorio_resumo_usuarios(pausas)/fChat_relatorio_resumo_usuarios(pausas).csv\"),[Delimiter=\";\", Columns=23, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
                 "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),",
                 "",
                 "    #\"ARTUR DO NASCIMENTO ARBOLEIA\" = Table.ReplaceValue(#\"Cabeçalhos Promovidos\",\"Artur Do nascimento Arboleia\",\"ARTUR DO NASCIMENTO ARBOLEIA\",Replacer.ReplaceValue,{\"Nome\"}),",
@@ -30669,7 +30468,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Fonte = Csv.Document(Web.Contents(\"https://solucaonet.sharepoint.com/sites/suportecs/Documentos%20Compartilhados/Gest%C3%A3o/Desempenho/Dados/fChat_relatorio_nps.csv\"),[Delimiter=\";\", Columns=13, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    Fonte = Csv.Document(Web.Contents(\"https://solucaonet.sharepoint.com/sites/suportecs/Documentos%20Compartilhados/Gest%C3%A3o/Desempenho/Dados/fChat_relatorio_nps/fChat_relatorio_nps.csv\"),[Delimiter=\";\", Columns=13, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
                 "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),",
                 "    #\"Coluna Duplicada\" = Table.DuplicateColumn(#\"Cabeçalhos Promovidos\", \"NPS\", \"NPS - Copiar\"),",
                 "    #\"Colunas Reordenadas\" = Table.ReorderColumns(#\"Coluna Duplicada\",{\"Id\", \"Data\", \"Canal\", \"Usuário\", \"Nome do Usuário\", \"Person ID\", \"Documento\", \"Nome\", \"Fase\", \"Info\", \"NPS\", \"NPS - Copiar\", \"Descrição\", \"Robô\"}),",
@@ -30708,6 +30507,207 @@
             }
           }
         ]
+      },
+      {
+        "name": "LocalDateTable_e16dbdbd-ac5e-44a7-9335-501005149e3c",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "1b2cf580-79ec-46f9-ab52-a8380141ca76",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Ano",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "ba5dc7a4-72bd-427e-9a68-343eeaaee62a",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "66be5584-dd58-4bcf-8834-bab40acf6241",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Mês",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "e3665828-0aa7-45bd-945f-722367b4efbf",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "90cbd687-1ae8-45cf-8e20-90531a801d6d",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Trimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "ddb8abfb-9060-47c3-9a08-1d390403c187",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Dia",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "ae34bf7d-19fd-4757-a6b4-b7d350c67f08",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Hierarquia de datas",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Ano",
+                "column": "Ano",
+                "lineageTag": "d55c0438-ba9b-4169-b994-a07f842c78b6",
+                "ordinal": 0
+              },
+              {
+                "name": "Trimestre",
+                "column": "Trimestre",
+                "lineageTag": "64bf071c-b23d-4241-aae2-41da79f9cb2e",
+                "ordinal": 1
+              },
+              {
+                "name": "Mês",
+                "column": "Mês",
+                "lineageTag": "81c10a66-8c81-4110-aedb-0f2ca05f8216",
+                "ordinal": 2
+              },
+              {
+                "name": "Dia",
+                "column": "Dia",
+                "lineageTag": "0e8e2d0d-ecc6-4434-ad41-1fe2a9c43ca7",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "78991131-f35f-44c2-ac57-a7dae5c82e78"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "7696e009-f23c-4016-882e-d78b454e7d80",
+        "partitions": [
+          {
+            "name": "LocalDateTable_e16dbdbd-ac5e-44a7-9335-501005149e3c",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('dCalendario'[Date])), 1, 1), Date(Year(MAX('dCalendario'[Date])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
       }
     ]
   }
