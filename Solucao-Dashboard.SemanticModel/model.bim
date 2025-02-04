@@ -1213,6 +1213,108 @@
                   }
                 ]
               },
+              "d_calendario.ano": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dCalendario",
+                    "ConceptualProperty": "Ano"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "ano": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "d_calendario.data_completa": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dCalendario",
+                    "ConceptualProperty": "Data Completa"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "data completa": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "information completa": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "fact completa": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "info completa": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "statistic completa": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "document completa": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  },
+                  {
+                    "figure completa": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  },
+                  {
+                    "record completa": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  }
+                ]
+              },
               "d_calendario.date": {
                 "Definition": {
                   "Binding": {
@@ -1510,6 +1612,102 @@
                       "State": "Suggested",
                       "Type": "Noun",
                       "Weight": 0.582
+                    }
+                  }
+                ]
+              },
+              "d_calendario.dia": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dCalendario",
+                    "ConceptualProperty": "Dia"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "dia": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "d_calendario.mê": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dCalendario",
+                    "ConceptualProperty": "Mês"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "mê": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "d_calendario.nome_do_dia": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dCalendario",
+                    "ConceptualProperty": "Nome do Dia"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "nome do dia": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "d_calendario.semana_do_mê": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dCalendario",
+                    "ConceptualProperty": "Semana do Mês"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "semana do mê": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "d_calendario.tipo_de_dia": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dCalendario",
+                    "ConceptualProperty": "Tipo de Dia"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "tipo de dia": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "d_calendario.trimestre": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "dCalendario",
+                    "ConceptualProperty": "Trimestre"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "trimestre": {
+                      "State": "Generated"
                     }
                   }
                 ]
@@ -5941,6 +6139,64 @@
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.78
+                    }
+                  }
+                ]
+              },
+              "medidas_atendimento.média_atendimentos_por_hora_DiaSSS": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas Atendimentos",
+                    "ConceptualProperty": "Média Atendimentos por Hora DiaSSS"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "média atendimentos por hora DiaSSS": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "medidas_atendimento.média_atendimentos_por_hora_colaborador": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas Atendimentos",
+                    "ConceptualProperty": "Média Atendimentos por Hora Colaborador"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "média atendimentos por hora colaborador": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "medidas_atendimento.média_atendimentos_por_hora_dia": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas Atendimentos",
+                    "ConceptualProperty": "Média de Novos Atendimentos"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "média atendimentos por hora dia": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "Média Atendimentos por Hora": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
                     }
                   }
                 ]
@@ -11625,16 +11881,42 @@
                 },
                 "State": "Generated"
               },
-              "callflex_chamada_data_variation_hierarquia_de_data_dia_in_callflex_chamada_data_variation_hierarquia_de_data_mê": {
+              "callflex_chamada_data_variation_hierarquia_de_data_ano_has_callflex_chamada_data_variation_hierarquia_de_data_trimestre": {
                 "Binding": {
                   "ConceptualEntity": "fCallflex_chamadas"
                 },
                 "Phrasings": [
                   {
-                    "ID": "dias_are_in_mê4",
+                    "Attribute": {
+                      "Object": {
+                        "Role": "callflex_chamada.data.variation.hierarquia_de_data.trimestre"
+                      },
+                      "Subject": {
+                        "Role": "callflex_chamada.data.variation.hierarquia_de_data.ano"
+                      }
+                    },
+                    "ID": "anos_have_trimestres6",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "callflex_chamada.data.variation.hierarquia_de_data.ano"
+                      },
+                      "Subject": {
+                        "Role": "callflex_chamada.data.variation.hierarquia_de_data.trimestre"
+                      }
+                    },
+                    "ID": "trimestres_have_anos6",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "trimestres_are_in_anos",
                     "Preposition": {
                       "Object": {
-                        "Role": "callflex_chamada.data.variation.hierarquia_de_data.mê"
+                        "Role": "callflex_chamada.data.variation.hierarquia_de_data.ano"
                       },
                       "Prepositions": [
                         {
@@ -11644,48 +11926,22 @@
                         }
                       ],
                       "Subject": {
-                        "Role": "callflex_chamada.data.variation.hierarquia_de_data.dia"
+                        "Role": "callflex_chamada.data.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "callflex_chamada.data.variation.hierarquia_de_data.dia"
-                      },
-                      "Subject": {
-                        "Role": "callflex_chamada.data.variation.hierarquia_de_data.mê"
-                      }
-                    },
-                    "ID": "mê_have_dias7",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "callflex_chamada.data.variation.hierarquia_de_data.mê"
-                      },
-                      "Subject": {
-                        "Role": "callflex_chamada.data.variation.hierarquia_de_data.dia"
-                      }
-                    },
-                    "ID": "dias_have_mê7",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "callflex_chamada.data.variation.hierarquia_de_data.dia": {
+                  "callflex_chamada.data.variation.hierarquia_de_data.ano": {
                     "Target": {
-                      "Entity": "callflex_chamada.data.variation.hierarquia_de_data.dia"
+                      "Entity": "callflex_chamada.data.variation.hierarquia_de_data.ano"
                     }
                   },
-                  "callflex_chamada.data.variation.hierarquia_de_data.mê": {
+                  "callflex_chamada.data.variation.hierarquia_de_data.trimestre": {
                     "Target": {
-                      "Entity": "callflex_chamada.data.variation.hierarquia_de_data.mê"
+                      "Entity": "callflex_chamada.data.variation.hierarquia_de_data.trimestre"
                     }
                   }
                 },
@@ -11705,7 +11961,7 @@
                         "Role": "callflex_chamada.data.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_anos7",
+                    "ID": "hierarquia_de_data_have_anos6",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -11738,7 +11994,7 @@
                         "Role": "callflex_chamada.data.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_dias7",
+                    "ID": "hierarquia_de_data_have_dias6",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -11771,7 +12027,7 @@
                         "Role": "callflex_chamada.data.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_mê7",
+                    "ID": "hierarquia_de_data_have_mê6",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -11804,7 +12060,7 @@
                         "Role": "callflex_chamada.data.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_trimestres7",
+                    "ID": "hierarquia_de_data_have_trimestres6",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -11823,13 +12079,105 @@
                 },
                 "State": "Generated"
               },
-              "callflex_chamada_data_variation_hierarquia_de_data_mê_in_callflex_chamada_data_variation_hierarquia_de_data_trimestre": {
+              "callflex_chamada_data_variation_hierarquia_de_data_mê_has_callflex_chamada_data_variation_hierarquia_de_data_dia": {
                 "Binding": {
                   "ConceptualEntity": "fCallflex_chamadas"
                 },
                 "Phrasings": [
                   {
-                    "ID": "mê_are_in_trimestres4",
+                    "Attribute": {
+                      "Object": {
+                        "Role": "callflex_chamada.data.variation.hierarquia_de_data.dia"
+                      },
+                      "Subject": {
+                        "Role": "callflex_chamada.data.variation.hierarquia_de_data.mê"
+                      }
+                    },
+                    "ID": "mê_have_dias6",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "callflex_chamada.data.variation.hierarquia_de_data.mê"
+                      },
+                      "Subject": {
+                        "Role": "callflex_chamada.data.variation.hierarquia_de_data.dia"
+                      }
+                    },
+                    "ID": "dias_have_mê6",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "dias_are_in_mê",
+                    "Preposition": {
+                      "Object": {
+                        "Role": "callflex_chamada.data.variation.hierarquia_de_data.mê"
+                      },
+                      "Prepositions": [
+                        {
+                          "in": {
+                            "State": "Generated"
+                          }
+                        }
+                      ],
+                      "Subject": {
+                        "Role": "callflex_chamada.data.variation.hierarquia_de_data.dia"
+                      }
+                    },
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "callflex_chamada.data.variation.hierarquia_de_data.dia": {
+                    "Target": {
+                      "Entity": "callflex_chamada.data.variation.hierarquia_de_data.dia"
+                    }
+                  },
+                  "callflex_chamada.data.variation.hierarquia_de_data.mê": {
+                    "Target": {
+                      "Entity": "callflex_chamada.data.variation.hierarquia_de_data.mê"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "callflex_chamada_data_variation_hierarquia_de_data_trimestre_has_callflex_chamada_data_variation_hierarquia_de_data_mê": {
+                "Binding": {
+                  "ConceptualEntity": "fCallflex_chamadas"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "callflex_chamada.data.variation.hierarquia_de_data.mê"
+                      },
+                      "Subject": {
+                        "Role": "callflex_chamada.data.variation.hierarquia_de_data.trimestre"
+                      }
+                    },
+                    "ID": "trimestres_have_mê6",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "callflex_chamada.data.variation.hierarquia_de_data.trimestre"
+                      },
+                      "Subject": {
+                        "Role": "callflex_chamada.data.variation.hierarquia_de_data.mê"
+                      }
+                    },
+                    "ID": "mê_have_trimestres6",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "mê_are_in_trimestres",
                     "Preposition": {
                       "Object": {
                         "Role": "callflex_chamada.data.variation.hierarquia_de_data.trimestre"
@@ -11845,32 +12193,6 @@
                         "Role": "callflex_chamada.data.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "callflex_chamada.data.variation.hierarquia_de_data.mê"
-                      },
-                      "Subject": {
-                        "Role": "callflex_chamada.data.variation.hierarquia_de_data.trimestre"
-                      }
-                    },
-                    "ID": "trimestres_have_mê7",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "callflex_chamada.data.variation.hierarquia_de_data.trimestre"
-                      },
-                      "Subject": {
-                        "Role": "callflex_chamada.data.variation.hierarquia_de_data.mê"
-                      }
-                    },
-                    "ID": "mê_have_trimestres7",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -11879,72 +12201,6 @@
                   "callflex_chamada.data.variation.hierarquia_de_data.mê": {
                     "Target": {
                       "Entity": "callflex_chamada.data.variation.hierarquia_de_data.mê"
-                    }
-                  },
-                  "callflex_chamada.data.variation.hierarquia_de_data.trimestre": {
-                    "Target": {
-                      "Entity": "callflex_chamada.data.variation.hierarquia_de_data.trimestre"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "callflex_chamada_data_variation_hierarquia_de_data_trimestre_in_callflex_chamada_data_variation_hierarquia_de_data_ano": {
-                "Binding": {
-                  "ConceptualEntity": "fCallflex_chamadas"
-                },
-                "Phrasings": [
-                  {
-                    "ID": "trimestres_are_in_anos4",
-                    "Preposition": {
-                      "Object": {
-                        "Role": "callflex_chamada.data.variation.hierarquia_de_data.ano"
-                      },
-                      "Prepositions": [
-                        {
-                          "in": {
-                            "State": "Generated"
-                          }
-                        }
-                      ],
-                      "Subject": {
-                        "Role": "callflex_chamada.data.variation.hierarquia_de_data.trimestre"
-                      }
-                    },
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "callflex_chamada.data.variation.hierarquia_de_data.trimestre"
-                      },
-                      "Subject": {
-                        "Role": "callflex_chamada.data.variation.hierarquia_de_data.ano"
-                      }
-                    },
-                    "ID": "anos_have_trimestres7",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "callflex_chamada.data.variation.hierarquia_de_data.ano"
-                      },
-                      "Subject": {
-                        "Role": "callflex_chamada.data.variation.hierarquia_de_data.trimestre"
-                      }
-                    },
-                    "ID": "trimestres_have_anos7",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "callflex_chamada.data.variation.hierarquia_de_data.ano": {
-                    "Target": {
-                      "Entity": "callflex_chamada.data.variation.hierarquia_de_data.ano"
                     }
                   },
                   "callflex_chamada.data.variation.hierarquia_de_data.trimestre": {
@@ -12588,6 +12844,105 @@
                 },
                 "State": "Generated"
               },
+              "callflex_chamada_has_medidas_atendimento_média_atendimentos_por_hora_DiaSSS": {
+                "Binding": {
+                  "ConceptualEntity": "fCallflex_chamadas"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medidas_atendimento.média_atendimentos_por_hora_DiaSSS"
+                      },
+                      "Subject": {
+                        "Role": "callflex_chamada"
+                      }
+                    },
+                    "ID": "f_callflex_chamadas_have_média_atendimentos_por_hora_DiaSSS",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "callflex_chamada": {
+                    "Target": {
+                      "Entity": "callflex_chamada"
+                    }
+                  },
+                  "medidas_atendimento.média_atendimentos_por_hora_DiaSSS": {
+                    "Target": {
+                      "Entity": "medidas_atendimento.média_atendimentos_por_hora_DiaSSS"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "callflex_chamada_has_medidas_atendimento_média_atendimentos_por_hora_colaborador": {
+                "Binding": {
+                  "ConceptualEntity": "fCallflex_chamadas"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medidas_atendimento.média_atendimentos_por_hora_colaborador"
+                      },
+                      "Subject": {
+                        "Role": "callflex_chamada"
+                      }
+                    },
+                    "ID": "f_callflex_chamadas_have_média_atendimentos_por_hora_colaborador",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "callflex_chamada": {
+                    "Target": {
+                      "Entity": "callflex_chamada"
+                    }
+                  },
+                  "medidas_atendimento.média_atendimentos_por_hora_colaborador": {
+                    "Target": {
+                      "Entity": "medidas_atendimento.média_atendimentos_por_hora_colaborador"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "callflex_chamada_has_medidas_atendimento_média_atendimentos_por_hora_dia": {
+                "Binding": {
+                  "ConceptualEntity": "fCallflex_chamadas"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medidas_atendimento.média_atendimentos_por_hora_dia"
+                      },
+                      "Subject": {
+                        "Role": "callflex_chamada"
+                      }
+                    },
+                    "ID": "f_callflex_chamadas_have_média_atendimentos_por_hora_dia",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "callflex_chamada": {
+                    "Target": {
+                      "Entity": "callflex_chamada"
+                    }
+                  },
+                  "medidas_atendimento.média_atendimentos_por_hora_dia": {
+                    "Target": {
+                      "Entity": "medidas_atendimento.média_atendimentos_por_hora_dia"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "callflex_chamada_has_origem": {
                 "Binding": {
                   "ConceptualEntity": "fCallflex_chamadas"
@@ -12786,16 +13141,42 @@
                 },
                 "State": "Generated"
               },
-              "callflex_chamada_hora_variation_hierarquia_de_data_dia_in_callflex_chamada_hora_variation_hierarquia_de_data_mê": {
+              "callflex_chamada_hora_variation_hierarquia_de_data_ano_has_callflex_chamada_hora_variation_hierarquia_de_data_trimestre": {
                 "Binding": {
                   "ConceptualEntity": "fCallflex_chamadas"
                 },
                 "Phrasings": [
                   {
-                    "ID": "dias_are_in_mê3",
+                    "Attribute": {
+                      "Object": {
+                        "Role": "callflex_chamada.hora.variation.hierarquia_de_data.trimestre"
+                      },
+                      "Subject": {
+                        "Role": "callflex_chamada.hora.variation.hierarquia_de_data.ano"
+                      }
+                    },
+                    "ID": "anos_have_trimestres5",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "callflex_chamada.hora.variation.hierarquia_de_data.ano"
+                      },
+                      "Subject": {
+                        "Role": "callflex_chamada.hora.variation.hierarquia_de_data.trimestre"
+                      }
+                    },
+                    "ID": "trimestres_have_anos5",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "trimestres_are_in_anos1",
                     "Preposition": {
                       "Object": {
-                        "Role": "callflex_chamada.hora.variation.hierarquia_de_data.mê"
+                        "Role": "callflex_chamada.hora.variation.hierarquia_de_data.ano"
                       },
                       "Prepositions": [
                         {
@@ -12805,48 +13186,22 @@
                         }
                       ],
                       "Subject": {
-                        "Role": "callflex_chamada.hora.variation.hierarquia_de_data.dia"
+                        "Role": "callflex_chamada.hora.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "callflex_chamada.hora.variation.hierarquia_de_data.dia"
-                      },
-                      "Subject": {
-                        "Role": "callflex_chamada.hora.variation.hierarquia_de_data.mê"
-                      }
-                    },
-                    "ID": "mê_have_dias6",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "callflex_chamada.hora.variation.hierarquia_de_data.mê"
-                      },
-                      "Subject": {
-                        "Role": "callflex_chamada.hora.variation.hierarquia_de_data.dia"
-                      }
-                    },
-                    "ID": "dias_have_mê6",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "callflex_chamada.hora.variation.hierarquia_de_data.dia": {
+                  "callflex_chamada.hora.variation.hierarquia_de_data.ano": {
                     "Target": {
-                      "Entity": "callflex_chamada.hora.variation.hierarquia_de_data.dia"
+                      "Entity": "callflex_chamada.hora.variation.hierarquia_de_data.ano"
                     }
                   },
-                  "callflex_chamada.hora.variation.hierarquia_de_data.mê": {
+                  "callflex_chamada.hora.variation.hierarquia_de_data.trimestre": {
                     "Target": {
-                      "Entity": "callflex_chamada.hora.variation.hierarquia_de_data.mê"
+                      "Entity": "callflex_chamada.hora.variation.hierarquia_de_data.trimestre"
                     }
                   }
                 },
@@ -12866,7 +13221,7 @@
                         "Role": "callflex_chamada.hora.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_anos6",
+                    "ID": "hierarquia_de_data_have_anos5",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -12899,7 +13254,7 @@
                         "Role": "callflex_chamada.hora.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_dias6",
+                    "ID": "hierarquia_de_data_have_dias5",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -12932,7 +13287,7 @@
                         "Role": "callflex_chamada.hora.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_mê6",
+                    "ID": "hierarquia_de_data_have_mê5",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -12965,7 +13320,7 @@
                         "Role": "callflex_chamada.hora.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_trimestres6",
+                    "ID": "hierarquia_de_data_have_trimestres5",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -12984,13 +13339,105 @@
                 },
                 "State": "Generated"
               },
-              "callflex_chamada_hora_variation_hierarquia_de_data_mê_in_callflex_chamada_hora_variation_hierarquia_de_data_trimestre": {
+              "callflex_chamada_hora_variation_hierarquia_de_data_mê_has_callflex_chamada_hora_variation_hierarquia_de_data_dia": {
                 "Binding": {
                   "ConceptualEntity": "fCallflex_chamadas"
                 },
                 "Phrasings": [
                   {
-                    "ID": "mê_are_in_trimestres3",
+                    "Attribute": {
+                      "Object": {
+                        "Role": "callflex_chamada.hora.variation.hierarquia_de_data.dia"
+                      },
+                      "Subject": {
+                        "Role": "callflex_chamada.hora.variation.hierarquia_de_data.mê"
+                      }
+                    },
+                    "ID": "mê_have_dias5",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "callflex_chamada.hora.variation.hierarquia_de_data.mê"
+                      },
+                      "Subject": {
+                        "Role": "callflex_chamada.hora.variation.hierarquia_de_data.dia"
+                      }
+                    },
+                    "ID": "dias_have_mê5",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "dias_are_in_mê1",
+                    "Preposition": {
+                      "Object": {
+                        "Role": "callflex_chamada.hora.variation.hierarquia_de_data.mê"
+                      },
+                      "Prepositions": [
+                        {
+                          "in": {
+                            "State": "Generated"
+                          }
+                        }
+                      ],
+                      "Subject": {
+                        "Role": "callflex_chamada.hora.variation.hierarquia_de_data.dia"
+                      }
+                    },
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "callflex_chamada.hora.variation.hierarquia_de_data.dia": {
+                    "Target": {
+                      "Entity": "callflex_chamada.hora.variation.hierarquia_de_data.dia"
+                    }
+                  },
+                  "callflex_chamada.hora.variation.hierarquia_de_data.mê": {
+                    "Target": {
+                      "Entity": "callflex_chamada.hora.variation.hierarquia_de_data.mê"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "callflex_chamada_hora_variation_hierarquia_de_data_trimestre_has_callflex_chamada_hora_variation_hierarquia_de_data_mê": {
+                "Binding": {
+                  "ConceptualEntity": "fCallflex_chamadas"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "callflex_chamada.hora.variation.hierarquia_de_data.mê"
+                      },
+                      "Subject": {
+                        "Role": "callflex_chamada.hora.variation.hierarquia_de_data.trimestre"
+                      }
+                    },
+                    "ID": "trimestres_have_mê5",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "callflex_chamada.hora.variation.hierarquia_de_data.trimestre"
+                      },
+                      "Subject": {
+                        "Role": "callflex_chamada.hora.variation.hierarquia_de_data.mê"
+                      }
+                    },
+                    "ID": "mê_have_trimestres5",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "mê_are_in_trimestres1",
                     "Preposition": {
                       "Object": {
                         "Role": "callflex_chamada.hora.variation.hierarquia_de_data.trimestre"
@@ -13006,32 +13453,6 @@
                         "Role": "callflex_chamada.hora.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "callflex_chamada.hora.variation.hierarquia_de_data.mê"
-                      },
-                      "Subject": {
-                        "Role": "callflex_chamada.hora.variation.hierarquia_de_data.trimestre"
-                      }
-                    },
-                    "ID": "trimestres_have_mê6",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "callflex_chamada.hora.variation.hierarquia_de_data.trimestre"
-                      },
-                      "Subject": {
-                        "Role": "callflex_chamada.hora.variation.hierarquia_de_data.mê"
-                      }
-                    },
-                    "ID": "mê_have_trimestres6",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -13040,72 +13461,6 @@
                   "callflex_chamada.hora.variation.hierarquia_de_data.mê": {
                     "Target": {
                       "Entity": "callflex_chamada.hora.variation.hierarquia_de_data.mê"
-                    }
-                  },
-                  "callflex_chamada.hora.variation.hierarquia_de_data.trimestre": {
-                    "Target": {
-                      "Entity": "callflex_chamada.hora.variation.hierarquia_de_data.trimestre"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "callflex_chamada_hora_variation_hierarquia_de_data_trimestre_in_callflex_chamada_hora_variation_hierarquia_de_data_ano": {
-                "Binding": {
-                  "ConceptualEntity": "fCallflex_chamadas"
-                },
-                "Phrasings": [
-                  {
-                    "ID": "trimestres_are_in_anos3",
-                    "Preposition": {
-                      "Object": {
-                        "Role": "callflex_chamada.hora.variation.hierarquia_de_data.ano"
-                      },
-                      "Prepositions": [
-                        {
-                          "in": {
-                            "State": "Generated"
-                          }
-                        }
-                      ],
-                      "Subject": {
-                        "Role": "callflex_chamada.hora.variation.hierarquia_de_data.trimestre"
-                      }
-                    },
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "callflex_chamada.hora.variation.hierarquia_de_data.trimestre"
-                      },
-                      "Subject": {
-                        "Role": "callflex_chamada.hora.variation.hierarquia_de_data.ano"
-                      }
-                    },
-                    "ID": "anos_have_trimestres6",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "callflex_chamada.hora.variation.hierarquia_de_data.ano"
-                      },
-                      "Subject": {
-                        "Role": "callflex_chamada.hora.variation.hierarquia_de_data.trimestre"
-                      }
-                    },
-                    "ID": "trimestres_have_anos6",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "callflex_chamada.hora.variation.hierarquia_de_data.ano": {
-                    "Target": {
-                      "Entity": "callflex_chamada.hora.variation.hierarquia_de_data.ano"
                     }
                   },
                   "callflex_chamada.hora.variation.hierarquia_de_data.trimestre": {
@@ -13149,16 +13504,42 @@
                 },
                 "State": "Generated"
               },
-              "d_calendario_date_variation_hierarquia_de_data_dia_in_d_calendario_date_variation_hierarquia_de_data_mê": {
+              "d_calendario_date_variation_hierarquia_de_data_ano_has_d_calendario_date_variation_hierarquia_de_data_trimestre": {
                 "Binding": {
                   "ConceptualEntity": "dCalendario"
                 },
                 "Phrasings": [
                   {
-                    "ID": "dias_are_in_mê2",
+                    "Attribute": {
+                      "Object": {
+                        "Role": "d_calendario.date.variation.hierarquia_de_data.trimestre"
+                      },
+                      "Subject": {
+                        "Role": "d_calendario.date.variation.hierarquia_de_data.ano"
+                      }
+                    },
+                    "ID": "anos_have_trimestres4",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "d_calendario.date.variation.hierarquia_de_data.ano"
+                      },
+                      "Subject": {
+                        "Role": "d_calendario.date.variation.hierarquia_de_data.trimestre"
+                      }
+                    },
+                    "ID": "trimestres_have_anos4",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "trimestres_are_in_anos2",
                     "Preposition": {
                       "Object": {
-                        "Role": "d_calendario.date.variation.hierarquia_de_data.mê"
+                        "Role": "d_calendario.date.variation.hierarquia_de_data.ano"
                       },
                       "Prepositions": [
                         {
@@ -13168,48 +13549,22 @@
                         }
                       ],
                       "Subject": {
-                        "Role": "d_calendario.date.variation.hierarquia_de_data.dia"
+                        "Role": "d_calendario.date.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "d_calendario.date.variation.hierarquia_de_data.dia"
-                      },
-                      "Subject": {
-                        "Role": "d_calendario.date.variation.hierarquia_de_data.mê"
-                      }
-                    },
-                    "ID": "mê_have_dias5",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "d_calendario.date.variation.hierarquia_de_data.mê"
-                      },
-                      "Subject": {
-                        "Role": "d_calendario.date.variation.hierarquia_de_data.dia"
-                      }
-                    },
-                    "ID": "dias_have_mê5",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "d_calendario.date.variation.hierarquia_de_data.dia": {
+                  "d_calendario.date.variation.hierarquia_de_data.ano": {
                     "Target": {
-                      "Entity": "d_calendario.date.variation.hierarquia_de_data.dia"
+                      "Entity": "d_calendario.date.variation.hierarquia_de_data.ano"
                     }
                   },
-                  "d_calendario.date.variation.hierarquia_de_data.mê": {
+                  "d_calendario.date.variation.hierarquia_de_data.trimestre": {
                     "Target": {
-                      "Entity": "d_calendario.date.variation.hierarquia_de_data.mê"
+                      "Entity": "d_calendario.date.variation.hierarquia_de_data.trimestre"
                     }
                   }
                 },
@@ -13229,7 +13584,7 @@
                         "Role": "d_calendario.date.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_anos5",
+                    "ID": "hierarquia_de_data_have_anos4",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -13262,7 +13617,7 @@
                         "Role": "d_calendario.date.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_dias5",
+                    "ID": "hierarquia_de_data_have_dias4",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -13295,7 +13650,7 @@
                         "Role": "d_calendario.date.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_mê5",
+                    "ID": "hierarquia_de_data_have_mê4",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -13328,7 +13683,7 @@
                         "Role": "d_calendario.date.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_trimestres5",
+                    "ID": "hierarquia_de_data_have_trimestres4",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -13347,11 +13702,103 @@
                 },
                 "State": "Generated"
               },
-              "d_calendario_date_variation_hierarquia_de_data_mê_in_d_calendario_date_variation_hierarquia_de_data_trimestre": {
+              "d_calendario_date_variation_hierarquia_de_data_mê_has_d_calendario_date_variation_hierarquia_de_data_dia": {
                 "Binding": {
                   "ConceptualEntity": "dCalendario"
                 },
                 "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "d_calendario.date.variation.hierarquia_de_data.dia"
+                      },
+                      "Subject": {
+                        "Role": "d_calendario.date.variation.hierarquia_de_data.mê"
+                      }
+                    },
+                    "ID": "mê_have_dias4",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "d_calendario.date.variation.hierarquia_de_data.mê"
+                      },
+                      "Subject": {
+                        "Role": "d_calendario.date.variation.hierarquia_de_data.dia"
+                      }
+                    },
+                    "ID": "dias_have_mê4",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "dias_are_in_mê2",
+                    "Preposition": {
+                      "Object": {
+                        "Role": "d_calendario.date.variation.hierarquia_de_data.mê"
+                      },
+                      "Prepositions": [
+                        {
+                          "in": {
+                            "State": "Generated"
+                          }
+                        }
+                      ],
+                      "Subject": {
+                        "Role": "d_calendario.date.variation.hierarquia_de_data.dia"
+                      }
+                    },
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "d_calendario.date.variation.hierarquia_de_data.dia": {
+                    "Target": {
+                      "Entity": "d_calendario.date.variation.hierarquia_de_data.dia"
+                    }
+                  },
+                  "d_calendario.date.variation.hierarquia_de_data.mê": {
+                    "Target": {
+                      "Entity": "d_calendario.date.variation.hierarquia_de_data.mê"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "d_calendario_date_variation_hierarquia_de_data_trimestre_has_d_calendario_date_variation_hierarquia_de_data_mê": {
+                "Binding": {
+                  "ConceptualEntity": "dCalendario"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "d_calendario.date.variation.hierarquia_de_data.mê"
+                      },
+                      "Subject": {
+                        "Role": "d_calendario.date.variation.hierarquia_de_data.trimestre"
+                      }
+                    },
+                    "ID": "trimestres_have_mê4",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "d_calendario.date.variation.hierarquia_de_data.trimestre"
+                      },
+                      "Subject": {
+                        "Role": "d_calendario.date.variation.hierarquia_de_data.mê"
+                      }
+                    },
+                    "ID": "mê_have_trimestres4",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
                   {
                     "ID": "mê_are_in_trimestres2",
                     "Preposition": {
@@ -13371,104 +13818,12 @@
                     },
                     "State": "Generated",
                     "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "d_calendario.date.variation.hierarquia_de_data.mê"
-                      },
-                      "Subject": {
-                        "Role": "d_calendario.date.variation.hierarquia_de_data.trimestre"
-                      }
-                    },
-                    "ID": "trimestres_have_mê5",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "d_calendario.date.variation.hierarquia_de_data.trimestre"
-                      },
-                      "Subject": {
-                        "Role": "d_calendario.date.variation.hierarquia_de_data.mê"
-                      }
-                    },
-                    "ID": "mê_have_trimestres5",
-                    "State": "Generated",
-                    "Weight": 0.99
                   }
                 ],
                 "Roles": {
                   "d_calendario.date.variation.hierarquia_de_data.mê": {
                     "Target": {
                       "Entity": "d_calendario.date.variation.hierarquia_de_data.mê"
-                    }
-                  },
-                  "d_calendario.date.variation.hierarquia_de_data.trimestre": {
-                    "Target": {
-                      "Entity": "d_calendario.date.variation.hierarquia_de_data.trimestre"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "d_calendario_date_variation_hierarquia_de_data_trimestre_in_d_calendario_date_variation_hierarquia_de_data_ano": {
-                "Binding": {
-                  "ConceptualEntity": "dCalendario"
-                },
-                "Phrasings": [
-                  {
-                    "ID": "trimestres_are_in_anos2",
-                    "Preposition": {
-                      "Object": {
-                        "Role": "d_calendario.date.variation.hierarquia_de_data.ano"
-                      },
-                      "Prepositions": [
-                        {
-                          "in": {
-                            "State": "Generated"
-                          }
-                        }
-                      ],
-                      "Subject": {
-                        "Role": "d_calendario.date.variation.hierarquia_de_data.trimestre"
-                      }
-                    },
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "d_calendario.date.variation.hierarquia_de_data.trimestre"
-                      },
-                      "Subject": {
-                        "Role": "d_calendario.date.variation.hierarquia_de_data.ano"
-                      }
-                    },
-                    "ID": "anos_have_trimestres5",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "d_calendario.date.variation.hierarquia_de_data.ano"
-                      },
-                      "Subject": {
-                        "Role": "d_calendario.date.variation.hierarquia_de_data.trimestre"
-                      }
-                    },
-                    "ID": "trimestres_have_anos5",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "d_calendario.date.variation.hierarquia_de_data.ano": {
-                    "Target": {
-                      "Entity": "d_calendario.date.variation.hierarquia_de_data.ano"
                     }
                   },
                   "d_calendario.date.variation.hierarquia_de_data.trimestre": {
@@ -13507,6 +13862,39 @@
                   "d_calendario.ano": {
                     "Target": {
                       "Entity": "d_calendario.ano"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "d_calendario_has_data_completa": {
+                "Binding": {
+                  "ConceptualEntity": "dCalendario"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "d_calendario.data_completa"
+                      },
+                      "Subject": {
+                        "Role": "d_calendario"
+                      }
+                    },
+                    "ID": "d_calendarios_have_data_completas",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "d_calendario": {
+                    "Target": {
+                      "Entity": "d_calendario"
+                    }
+                  },
+                  "d_calendario.data_completa": {
+                    "Target": {
+                      "Entity": "d_calendario.data_completa"
                     }
                   }
                 },
@@ -13578,39 +13966,6 @@
                 },
                 "State": "Generated"
               },
-              "d_calendario_has_dia_da_semana": {
-                "Binding": {
-                  "ConceptualEntity": "dCalendario"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "d_calendario.dia_da_semana"
-                      },
-                      "Subject": {
-                        "Role": "d_calendario"
-                      }
-                    },
-                    "ID": "d_calendarios_have_dia_da_semanas",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "d_calendario": {
-                    "Target": {
-                      "Entity": "d_calendario"
-                    }
-                  },
-                  "d_calendario.dia_da_semana": {
-                    "Target": {
-                      "Entity": "d_calendario.dia_da_semana"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
               "d_calendario_has_mê": {
                 "Binding": {
                   "ConceptualEntity": "dCalendario"
@@ -13677,7 +14032,7 @@
                 },
                 "State": "Generated"
               },
-              "d_calendario_has_nome_do_mê": {
+              "d_calendario_has_semana_do_mê": {
                 "Binding": {
                   "ConceptualEntity": "dCalendario"
                 },
@@ -13685,13 +14040,13 @@
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "d_calendario.nome_do_mê"
+                        "Role": "d_calendario.semana_do_mê"
                       },
                       "Subject": {
                         "Role": "d_calendario"
                       }
                     },
-                    "ID": "d_calendarios_have_nome_do_mê",
+                    "ID": "d_calendarios_have_semana_do_mê",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -13702,9 +14057,9 @@
                       "Entity": "d_calendario"
                     }
                   },
-                  "d_calendario.nome_do_mê": {
+                  "d_calendario.semana_do_mê": {
                     "Target": {
-                      "Entity": "d_calendario.nome_do_mê"
+                      "Entity": "d_calendario.semana_do_mê"
                     }
                   }
                 },
@@ -13941,16 +14296,42 @@
                 },
                 "State": "Generated"
               },
-              "f_adapter_atendimento_data_abertura_variation_hierarquia_de_data_dia_in_f_adapter_atendimento_data_abertura_variation_hierarquia_de_data_mê": {
+              "f_adapter_atendimento_data_abertura_variation_hierarquia_de_data_ano_has_f_adapter_atendimento_data_abertura_variation_hierarquia_de_data_trimestre": {
                 "Binding": {
                   "ConceptualEntity": "fAdapter_atendimentos"
                 },
                 "Phrasings": [
                   {
-                    "ID": "dias_are_in_mê1",
+                    "Attribute": {
+                      "Object": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.trimestre"
+                      },
+                      "Subject": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.ano"
+                      }
+                    },
+                    "ID": "anos_have_trimestres3",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.ano"
+                      },
+                      "Subject": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.trimestre"
+                      }
+                    },
+                    "ID": "trimestres_have_anos3",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "trimestres_are_in_anos3",
                     "Preposition": {
                       "Object": {
-                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.mê"
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.ano"
                       },
                       "Prepositions": [
                         {
@@ -13960,48 +14341,22 @@
                         }
                       ],
                       "Subject": {
-                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.dia"
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.dia"
-                      },
-                      "Subject": {
-                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.mê"
-                      }
-                    },
-                    "ID": "mê_have_dias4",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.mê"
-                      },
-                      "Subject": {
-                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.dia"
-                      }
-                    },
-                    "ID": "dias_have_mê4",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.dia": {
+                  "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.ano": {
                     "Target": {
-                      "Entity": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.dia"
+                      "Entity": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.ano"
                     }
                   },
-                  "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.mê": {
+                  "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.trimestre": {
                     "Target": {
-                      "Entity": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.mê"
+                      "Entity": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.trimestre"
                     }
                   }
                 },
@@ -14021,7 +14376,7 @@
                         "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_anos4",
+                    "ID": "hierarquia_de_data_have_anos3",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -14054,7 +14409,7 @@
                         "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_dias4",
+                    "ID": "hierarquia_de_data_have_dias3",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -14087,7 +14442,7 @@
                         "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_mê4",
+                    "ID": "hierarquia_de_data_have_mê3",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -14120,7 +14475,7 @@
                         "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_trimestres4",
+                    "ID": "hierarquia_de_data_have_trimestres3",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -14139,13 +14494,105 @@
                 },
                 "State": "Generated"
               },
-              "f_adapter_atendimento_data_abertura_variation_hierarquia_de_data_mê_in_f_adapter_atendimento_data_abertura_variation_hierarquia_de_data_trimestre": {
+              "f_adapter_atendimento_data_abertura_variation_hierarquia_de_data_mê_has_f_adapter_atendimento_data_abertura_variation_hierarquia_de_data_dia": {
                 "Binding": {
                   "ConceptualEntity": "fAdapter_atendimentos"
                 },
                 "Phrasings": [
                   {
-                    "ID": "mê_are_in_trimestres1",
+                    "Attribute": {
+                      "Object": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.dia"
+                      },
+                      "Subject": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.mê"
+                      }
+                    },
+                    "ID": "mê_have_dias3",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.mê"
+                      },
+                      "Subject": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.dia"
+                      }
+                    },
+                    "ID": "dias_have_mê3",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "dias_are_in_mê3",
+                    "Preposition": {
+                      "Object": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.mê"
+                      },
+                      "Prepositions": [
+                        {
+                          "in": {
+                            "State": "Generated"
+                          }
+                        }
+                      ],
+                      "Subject": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.dia"
+                      }
+                    },
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.dia": {
+                    "Target": {
+                      "Entity": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.dia"
+                    }
+                  },
+                  "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.mê": {
+                    "Target": {
+                      "Entity": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.mê"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "f_adapter_atendimento_data_abertura_variation_hierarquia_de_data_trimestre_has_f_adapter_atendimento_data_abertura_variation_hierarquia_de_data_mê": {
+                "Binding": {
+                  "ConceptualEntity": "fAdapter_atendimentos"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.mê"
+                      },
+                      "Subject": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.trimestre"
+                      }
+                    },
+                    "ID": "trimestres_have_mê3",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.trimestre"
+                      },
+                      "Subject": {
+                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.mê"
+                      }
+                    },
+                    "ID": "mê_have_trimestres3",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "mê_are_in_trimestres3",
                     "Preposition": {
                       "Object": {
                         "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.trimestre"
@@ -14161,32 +14608,6 @@
                         "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.mê"
-                      },
-                      "Subject": {
-                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.trimestre"
-                      }
-                    },
-                    "ID": "trimestres_have_mê4",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.trimestre"
-                      },
-                      "Subject": {
-                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.mê"
-                      }
-                    },
-                    "ID": "mê_have_trimestres4",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -14195,72 +14616,6 @@
                   "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.mê": {
                     "Target": {
                       "Entity": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.mê"
-                    }
-                  },
-                  "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.trimestre": {
-                    "Target": {
-                      "Entity": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.trimestre"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "f_adapter_atendimento_data_abertura_variation_hierarquia_de_data_trimestre_in_f_adapter_atendimento_data_abertura_variation_hierarquia_de_data_ano": {
-                "Binding": {
-                  "ConceptualEntity": "fAdapter_atendimentos"
-                },
-                "Phrasings": [
-                  {
-                    "ID": "trimestres_are_in_anos1",
-                    "Preposition": {
-                      "Object": {
-                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.ano"
-                      },
-                      "Prepositions": [
-                        {
-                          "in": {
-                            "State": "Generated"
-                          }
-                        }
-                      ],
-                      "Subject": {
-                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.trimestre"
-                      }
-                    },
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.trimestre"
-                      },
-                      "Subject": {
-                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.ano"
-                      }
-                    },
-                    "ID": "anos_have_trimestres4",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.ano"
-                      },
-                      "Subject": {
-                        "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.trimestre"
-                      }
-                    },
-                    "ID": "trimestres_have_anos4",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.ano": {
-                    "Target": {
-                      "Entity": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.ano"
                     }
                   },
                   "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.trimestre": {
@@ -16178,16 +16533,42 @@
                 },
                 "State": "Generated"
               },
-              "f_callflex_pausas_detalhado_data_de_login_variation_hierarquia_de_data_dia_in_f_callflex_pausas_detalhado_data_de_login_variation_hierarquia_de_data_mê": {
+              "f_callflex_pausas_detalhado_data_de_login_variation_hierarquia_de_data_ano_has_f_callflex_pausas_detalhado_data_de_login_variation_hierarquia_de_data_trimestre": {
                 "Binding": {
                   "ConceptualEntity": "fCallflex_pausas_detalhado"
                 },
                 "Phrasings": [
                   {
-                    "ID": "dias_are_in_mê",
+                    "Attribute": {
+                      "Object": {
+                        "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.trimestre"
+                      },
+                      "Subject": {
+                        "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.ano"
+                      }
+                    },
+                    "ID": "anos_have_trimestres2",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.ano"
+                      },
+                      "Subject": {
+                        "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.trimestre"
+                      }
+                    },
+                    "ID": "trimestres_have_anos2",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "trimestres_are_in_anos4",
                     "Preposition": {
                       "Object": {
-                        "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.mê"
+                        "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.ano"
                       },
                       "Prepositions": [
                         {
@@ -16197,48 +16578,22 @@
                         }
                       ],
                       "Subject": {
-                        "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.dia"
+                        "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.dia"
-                      },
-                      "Subject": {
-                        "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.mê"
-                      }
-                    },
-                    "ID": "mê_have_dias3",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.mê"
-                      },
-                      "Subject": {
-                        "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.dia"
-                      }
-                    },
-                    "ID": "dias_have_mê3",
                     "State": "Generated",
                     "Weight": 0.99
                   }
                 ],
                 "Roles": {
-                  "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.dia": {
+                  "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.ano": {
                     "Target": {
-                      "Entity": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.dia"
+                      "Entity": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.ano"
                     }
                   },
-                  "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.mê": {
+                  "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.trimestre": {
                     "Target": {
-                      "Entity": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.mê"
+                      "Entity": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.trimestre"
                     }
                   }
                 },
@@ -16258,7 +16613,7 @@
                         "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_anos3",
+                    "ID": "hierarquia_de_data_have_anos2",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -16291,7 +16646,7 @@
                         "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_dias3",
+                    "ID": "hierarquia_de_data_have_dias2",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -16324,7 +16679,7 @@
                         "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_mê3",
+                    "ID": "hierarquia_de_data_have_mê2",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -16357,7 +16712,7 @@
                         "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_trimestres3",
+                    "ID": "hierarquia_de_data_have_trimestres2",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -16376,13 +16731,105 @@
                 },
                 "State": "Generated"
               },
-              "f_callflex_pausas_detalhado_data_de_login_variation_hierarquia_de_data_mê_in_f_callflex_pausas_detalhado_data_de_login_variation_hierarquia_de_data_trimestre": {
+              "f_callflex_pausas_detalhado_data_de_login_variation_hierarquia_de_data_mê_has_f_callflex_pausas_detalhado_data_de_login_variation_hierarquia_de_data_dia": {
                 "Binding": {
                   "ConceptualEntity": "fCallflex_pausas_detalhado"
                 },
                 "Phrasings": [
                   {
-                    "ID": "mê_are_in_trimestres",
+                    "Attribute": {
+                      "Object": {
+                        "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.dia"
+                      },
+                      "Subject": {
+                        "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.mê"
+                      }
+                    },
+                    "ID": "mê_have_dias2",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.mê"
+                      },
+                      "Subject": {
+                        "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.dia"
+                      }
+                    },
+                    "ID": "dias_have_mê2",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "dias_are_in_mê4",
+                    "Preposition": {
+                      "Object": {
+                        "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.mê"
+                      },
+                      "Prepositions": [
+                        {
+                          "in": {
+                            "State": "Generated"
+                          }
+                        }
+                      ],
+                      "Subject": {
+                        "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.dia"
+                      }
+                    },
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.dia": {
+                    "Target": {
+                      "Entity": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.dia"
+                    }
+                  },
+                  "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.mê": {
+                    "Target": {
+                      "Entity": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.mê"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "f_callflex_pausas_detalhado_data_de_login_variation_hierarquia_de_data_trimestre_has_f_callflex_pausas_detalhado_data_de_login_variation_hierarquia_de_data_mê": {
+                "Binding": {
+                  "ConceptualEntity": "fCallflex_pausas_detalhado"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.mê"
+                      },
+                      "Subject": {
+                        "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.trimestre"
+                      }
+                    },
+                    "ID": "trimestres_have_mê2",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.trimestre"
+                      },
+                      "Subject": {
+                        "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.mê"
+                      }
+                    },
+                    "ID": "mê_have_trimestres2",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "mê_are_in_trimestres4",
                     "Preposition": {
                       "Object": {
                         "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.trimestre"
@@ -16398,32 +16845,6 @@
                         "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.mê"
-                      },
-                      "Subject": {
-                        "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.trimestre"
-                      }
-                    },
-                    "ID": "trimestres_have_mê3",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.trimestre"
-                      },
-                      "Subject": {
-                        "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.mê"
-                      }
-                    },
-                    "ID": "mê_have_trimestres3",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -16432,72 +16853,6 @@
                   "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.mê": {
                     "Target": {
                       "Entity": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.mê"
-                    }
-                  },
-                  "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.trimestre": {
-                    "Target": {
-                      "Entity": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.trimestre"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "f_callflex_pausas_detalhado_data_de_login_variation_hierarquia_de_data_trimestre_in_f_callflex_pausas_detalhado_data_de_login_variation_hierarquia_de_data_ano": {
-                "Binding": {
-                  "ConceptualEntity": "fCallflex_pausas_detalhado"
-                },
-                "Phrasings": [
-                  {
-                    "ID": "trimestres_are_in_anos",
-                    "Preposition": {
-                      "Object": {
-                        "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.ano"
-                      },
-                      "Prepositions": [
-                        {
-                          "in": {
-                            "State": "Generated"
-                          }
-                        }
-                      ],
-                      "Subject": {
-                        "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.trimestre"
-                      }
-                    },
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.trimestre"
-                      },
-                      "Subject": {
-                        "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.ano"
-                      }
-                    },
-                    "ID": "anos_have_trimestres3",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  },
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.ano"
-                      },
-                      "Subject": {
-                        "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.trimestre"
-                      }
-                    },
-                    "ID": "trimestres_have_anos3",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.ano": {
-                    "Target": {
-                      "Entity": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.ano"
                     }
                   },
                   "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.trimestre": {
@@ -18165,7 +18520,7 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data.ano"
                       }
                     },
-                    "ID": "anos_have_trimestres2",
+                    "ID": "anos_have_trimestres1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -18178,7 +18533,7 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_anos2",
+                    "ID": "trimestres_have_anos1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -18231,7 +18586,7 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_anos2",
+                    "ID": "hierarquia_de_data_have_anos1",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -18264,7 +18619,7 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_dias2",
+                    "ID": "hierarquia_de_data_have_dias1",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -18297,7 +18652,7 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_mê2",
+                    "ID": "hierarquia_de_data_have_mê1",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -18330,7 +18685,7 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_trimestres2",
+                    "ID": "hierarquia_de_data_have_trimestres1",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -18363,7 +18718,7 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_dias2",
+                    "ID": "mê_have_dias1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -18376,7 +18731,7 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data.dia"
                       }
                     },
-                    "ID": "dias_have_mê2",
+                    "ID": "dias_have_mê1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -18429,7 +18784,7 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_mê2",
+                    "ID": "trimestres_have_mê1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -18442,7 +18797,7 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_trimestres2",
+                    "ID": "mê_have_trimestres1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -20117,6 +20472,105 @@
                 },
                 "State": "Generated"
               },
+              "relatorio_atendimento_has_medidas_atendimento_média_atendimentos_por_hora_DiaSSS": {
+                "Binding": {
+                  "ConceptualEntity": "fChat_relatorio_atendimento"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medidas_atendimento.média_atendimentos_por_hora_DiaSSS"
+                      },
+                      "Subject": {
+                        "Role": "relatorio_atendimento"
+                      }
+                    },
+                    "ID": "f_chat_relatorio_atendimentos_have_média_atendimentos_por_hora_DiaSSS",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "medidas_atendimento.média_atendimentos_por_hora_DiaSSS": {
+                    "Target": {
+                      "Entity": "medidas_atendimento.média_atendimentos_por_hora_DiaSSS"
+                    }
+                  },
+                  "relatorio_atendimento": {
+                    "Target": {
+                      "Entity": "relatorio_atendimento"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "relatorio_atendimento_has_medidas_atendimento_média_atendimentos_por_hora_colaborador": {
+                "Binding": {
+                  "ConceptualEntity": "fChat_relatorio_atendimento"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medidas_atendimento.média_atendimentos_por_hora_colaborador"
+                      },
+                      "Subject": {
+                        "Role": "relatorio_atendimento"
+                      }
+                    },
+                    "ID": "f_chat_relatorio_atendimentos_have_média_atendimentos_por_hora_colaborador",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "medidas_atendimento.média_atendimentos_por_hora_colaborador": {
+                    "Target": {
+                      "Entity": "medidas_atendimento.média_atendimentos_por_hora_colaborador"
+                    }
+                  },
+                  "relatorio_atendimento": {
+                    "Target": {
+                      "Entity": "relatorio_atendimento"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "relatorio_atendimento_has_medidas_atendimento_média_atendimentos_por_hora_dia": {
+                "Binding": {
+                  "ConceptualEntity": "fChat_relatorio_atendimento"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medidas_atendimento.média_atendimentos_por_hora_dia"
+                      },
+                      "Subject": {
+                        "Role": "relatorio_atendimento"
+                      }
+                    },
+                    "ID": "f_chat_relatorio_atendimentos_have_média_atendimentos_por_hora_dia",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "medidas_atendimento.média_atendimentos_por_hora_dia": {
+                    "Target": {
+                      "Entity": "medidas_atendimento.média_atendimentos_por_hora_dia"
+                    }
+                  },
+                  "relatorio_atendimento": {
+                    "Target": {
+                      "Entity": "relatorio_atendimento"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "relatorio_atendimento_has_mensagens_enviadas_atendimento": {
                 "Binding": {
                   "ConceptualEntity": "fChat_relatorio_atendimento"
@@ -21022,7 +21476,7 @@
                         "Role": "relatorio_np.data.variation.hierarquia_de_data.ano"
                       }
                     },
-                    "ID": "anos_have_trimestres1",
+                    "ID": "anos_have_trimestres",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -21035,7 +21489,7 @@
                         "Role": "relatorio_np.data.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_anos1",
+                    "ID": "trimestres_have_anos",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -21088,7 +21542,7 @@
                         "Role": "relatorio_np.data.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_anos1",
+                    "ID": "hierarquia_de_data_have_anos",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -21121,7 +21575,7 @@
                         "Role": "relatorio_np.data.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_dias1",
+                    "ID": "hierarquia_de_data_have_dias",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -21154,7 +21608,7 @@
                         "Role": "relatorio_np.data.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_mê1",
+                    "ID": "hierarquia_de_data_have_mê",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -21187,7 +21641,7 @@
                         "Role": "relatorio_np.data.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_trimestres1",
+                    "ID": "hierarquia_de_data_have_trimestres",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -21220,7 +21674,7 @@
                         "Role": "relatorio_np.data.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_dias1",
+                    "ID": "mê_have_dias",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -21233,7 +21687,7 @@
                         "Role": "relatorio_np.data.variation.hierarquia_de_data.dia"
                       }
                     },
-                    "ID": "dias_have_mê1",
+                    "ID": "dias_have_mê",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -21286,7 +21740,7 @@
                         "Role": "relatorio_np.data.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_mê1",
+                    "ID": "trimestres_have_mê",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -21299,7 +21753,7 @@
                         "Role": "relatorio_np.data.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_trimestres1",
+                    "ID": "mê_have_trimestres",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -21985,7 +22439,7 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data.ano"
                       }
                     },
-                    "ID": "anos_have_trimestres",
+                    "ID": "anos_have_trimestres7",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -21998,7 +22452,7 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_anos",
+                    "ID": "trimestres_have_anos7",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -22051,7 +22505,7 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_anos",
+                    "ID": "hierarquia_de_data_have_anos7",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -22084,7 +22538,7 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_dias",
+                    "ID": "hierarquia_de_data_have_dias7",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -22117,7 +22571,7 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_mê",
+                    "ID": "hierarquia_de_data_have_mê7",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -22150,7 +22604,7 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_trimestres",
+                    "ID": "hierarquia_de_data_have_trimestres7",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -22183,7 +22637,7 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_dias",
+                    "ID": "mê_have_dias7",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -22196,7 +22650,7 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data.dia"
                       }
                     },
-                    "ID": "dias_have_mê",
+                    "ID": "dias_have_mê7",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -22249,7 +22703,7 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_mê",
+                    "ID": "trimestres_have_mê7",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -22262,7 +22716,7 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_trimestres",
+                    "ID": "mê_have_trimestres7",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -23293,20 +23747,6 @@
         "toTable": "dColaboradores"
       },
       {
-        "name": "a15ba565-b803-ea96-af37-c9a518f70d38",
-        "fromColumn": "Hora (compartimentos)",
-        "fromTable": "fChat_relatorio_atendimento",
-        "toColumn": "Horas",
-        "toTable": "dHoras"
-      },
-      {
-        "name": "d9976c78-1d47-956f-40df-25481ba034a9",
-        "fromColumn": "Hora (compartimentos)",
-        "fromTable": "fCallflex_chamadas",
-        "toColumn": "Horas",
-        "toTable": "dHoras"
-      },
-      {
         "name": "2c86ac60-2aca-438f-aaaf-21f3b4e870cb",
         "fromColumn": "Date",
         "fromTable": "dCalendario",
@@ -23355,6 +23795,20 @@
         "fromTable": "fChat_relatorio_atendimento",
         "toColumn": "Date",
         "toTable": "dCalendario"
+      },
+      {
+        "name": "16a29416-9b47-88c2-e1b8-e44acd08cc45",
+        "fromColumn": "Hora (compartimentos)",
+        "fromTable": "fChat_relatorio_atendimento",
+        "toColumn": "Horas",
+        "toTable": "dHoras"
+      },
+      {
+        "name": "b2febc2c-1576-f351-f6fb-77257587f8b6",
+        "fromColumn": "Hora (compartimentos)",
+        "fromTable": "fCallflex_chamadas",
+        "toColumn": "Horas",
+        "toTable": "dHoras"
       }
     ],
     "sourceQueryCulture": "pt-BR",
@@ -27580,21 +28034,16 @@
             "lineageTag": "d1bf6c3e-1a45-48c9-bf4b-f4a2498fcbb5"
           },
           {
-            "name": "Média Atendimentos por Hora Dia",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
+            "name": "Média de Novos Atendimentos",
             "expression": [
               "",
               "DIVIDE(",
-              "    [Total_Atendimentos], 24,",
+              "    [Total_Atendimentos], COUNT(dCalendario[Date].[Dia]),",
               "    0",
               ")",
               ""
             ],
+            "formatString": "0",
             "lineageTag": "9ad3f134-4dce-4be2-be09-68a5f9821cf3"
           },
           {
@@ -27614,6 +28063,24 @@
               ""
             ],
             "lineageTag": "a7a16da4-b097-462b-8147-53d08ea9eead"
+          },
+          {
+            "name": "Média Atendimentos por Hora DiaSSS",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": [
+              "",
+              "DIVIDE(",
+              "    [Total_Atendimentos], COUNT(dCalendario[Date].[Dia]),",
+              "    0",
+              ")",
+              ""
+            ],
+            "lineageTag": "58793c6e-2e5d-41ba-9ec0-96d33ff7ee39"
           }
         ],
         "partitions": [
@@ -29102,7 +29569,7 @@
             "annotations": [
               {
                 "name": "GroupingDesignState",
-                "value": "{\"Version\":0,\"Sources\":[{\"Name\":\"f\",\"Entity\":\"fChat_relatorio_atendimento\"}],\"GroupedColumns\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Hora\"}}],\"BinItem\":{\"Expression\":{\"Floor\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Hora\"}},\"Size\":1.0,\"TimeUnit\":7}}}}"
+                "value": "{\"Version\":0,\"Sources\":[{\"Name\":\"f\",\"Entity\":\"fChat_relatorio_atendimento\"}],\"GroupedColumns\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Hora\"}}],\"BinItem\":{\"Expression\":{\"Floor\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Hora\"}},\"Size\":30.0,\"TimeUnit\":6}}}}"
               },
               {
                 "name": "SummarizationSetBy",
@@ -29111,6 +29578,10 @@
               {
                 "name": "UnderlyingDateTimeDataType",
                 "value": "Time"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isDateTimeCustom\":true}"
               }
             ],
             "changedProperties": [
@@ -29123,7 +29594,7 @@
               "IF(",
               "\tISBLANK('fChat_relatorio_atendimento'[Hora]),",
               "\tBLANK(),",
-              "\tINT('fChat_relatorio_atendimento'[Hora] * 24) / 24",
+              "\t(INT(('fChat_relatorio_atendimento'[Hora] * 1440) / 30) * 30) / 1440",
               ")"
             ],
             "extendedProperties": [
@@ -29133,8 +29604,8 @@
                 "value": {
                   "binningMetadata": {
                     "binSize": {
-                      "unit": 9,
-                      "value": 1.0
+                      "unit": 10,
+                      "value": 30.0
                     }
                   },
                   "groupedColumns": [
@@ -29153,8 +29624,8 @@
                 }
               }
             ],
-            "formatString": "Long Time",
-            "lineageTag": "47a473cb-bd23-416b-89d8-12017f2a68c1",
+            "formatString": "h:nn:ss",
+            "lineageTag": "6b77f099-d6ac-414c-a162-249212e0d90b",
             "summarizeBy": "none",
             "type": "calculated"
           }
@@ -29360,19 +29831,6 @@
             "summarizeBy": "none"
           },
           {
-            "name": "Column1",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "b75e188e-1a2d-4d03-bc48-2280d9107b8c",
-            "sourceColumn": "Column1",
-            "summarizeBy": "none"
-          },
-          {
             "name": "Data (ddmmaaaa)",
             "annotations": [
               {
@@ -29398,12 +29856,12 @@
                 "value": "Automatic"
               },
               {
-                "name": "__PBI_SemanticLinks",
-                "value": "[{\"LinkTarget\":{\"TableName\":\"fCallflex_chamadas\",\"TableItemName\":\"Hora (compartimentos)\",\"ObjectType\":4},\"LinkType\":\"UsedInGroup\"}]"
-              },
-              {
                 "name": "PBI_FormatHint",
                 "value": "{\"isDateTimeCustom\":true}"
+              },
+              {
+                "name": "__PBI_SemanticLinks",
+                "value": "[{\"LinkTarget\":{\"TableName\":\"fCallflex_chamadas\",\"TableItemName\":\"Hora (compartimentos)\",\"ObjectType\":4},\"LinkType\":\"UsedInGroup\"}]"
               }
             ],
             "changedProperties": [
@@ -29433,11 +29891,24 @@
             "annotations": [
               {
                 "name": "GroupingDesignState",
-                "value": "{\"Version\":0,\"Sources\":[{\"Name\":\"f\",\"Entity\":\"fCallflex_chamadas\"}],\"GroupedColumns\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Hora\"}}],\"BinItem\":{\"Expression\":{\"Floor\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Hora\"}},\"Size\":1.0,\"TimeUnit\":7}}}}"
+                "value": "{\"Version\":0,\"Sources\":[{\"Name\":\"f\",\"Entity\":\"fCallflex_chamadas\"}],\"GroupedColumns\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Hora\"}}],\"BinItem\":{\"Expression\":{\"Floor\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Hora\"}},\"Size\":30.0,\"TimeUnit\":6}}}}"
               },
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Time"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isDateTimeCustom\":true}"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "DataType"
               }
             ],
             "dataType": "dateTime",
@@ -29445,7 +29916,7 @@
               "IF(",
               "\tISBLANK('fCallflex_chamadas'[Hora]),",
               "\tBLANK(),",
-              "\tINT('fCallflex_chamadas'[Hora] * 24) / 24",
+              "\t(INT(('fCallflex_chamadas'[Hora] * 1440) / 30) * 30) / 1440",
               ")"
             ],
             "extendedProperties": [
@@ -29455,8 +29926,8 @@
                 "value": {
                   "binningMetadata": {
                     "binSize": {
-                      "unit": 9,
-                      "value": 1.0
+                      "unit": 10,
+                      "value": 30.0
                     }
                   },
                   "groupedColumns": [
@@ -29475,10 +29946,23 @@
                 }
               }
             ],
-            "formatString": "Short Time",
-            "lineageTag": "13a713b6-05c0-44b8-8160-8e29f7747a1a",
+            "formatString": "hh:nn:ss",
+            "lineageTag": "b44ff153-7c45-435c-a738-0e1f5f06419b",
             "summarizeBy": "none",
             "type": "calculated"
+          },
+          {
+            "name": "Column1",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "81e9a4d4-0e20-457d-9d99-b152ca2dcd03",
+            "sourceColumn": "Column1",
+            "summarizeBy": "none"
           }
         ],
         "lineageTag": "5e92d14a-281b-49fc-a36c-19a025d5af07",
