@@ -2993,6 +2993,65 @@
                   }
                 ]
               },
+              "f_adapter_atendimento.hora": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fAdapter_atendimentos",
+                    "ConceptualProperty": "Hora"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "hora": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "time": {
+                      "State": "Generated",
+                      "Weight": 0.7
+                    }
+                  }
+                ]
+              },
+              "f_adapter_atendimento.hora_compartimentos": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fAdapter_atendimentos",
+                    "ConceptualProperty": "Hora (compartimentos)"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "hora (compartimentos)": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "hora (compartimento)": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.78
+                    }
+                  },
+                  {
+                    "time": {
+                      "State": "Generated",
+                      "Weight": 0.7
+                    }
+                  },
+                  {
+                    "hora": {
+                      "State": "Generated",
+                      "Weight": 0.75
+                    }
+                  }
+                ]
+              },
               "f_adapter_atendimento.justificativa_reagendamento": {
                 "Definition": {
                   "Binding": {
@@ -4507,7 +4566,7 @@
                 "State": "Generated",
                 "Terms": [
                   {
-                    "TMA média poderada tooltip": {
+                    "TMA média poderada": {
                       "State": "Generated"
                     }
                   },
@@ -4671,6 +4730,16 @@
                     }
                   },
                   {
+                    "Qtd. Atendimentos Ativos": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
                     "Ativos": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
@@ -4701,6 +4770,16 @@
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.99
+                    }
+                  },
+                  {
+                    "Qtd. Atendimentos Receptivos": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
                     }
                   },
                   {
@@ -5181,6 +5260,16 @@
                     }
                   },
                   {
+                    "Qtd. Documentado Adapter": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
                     "Quantidade": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
@@ -5264,7 +5353,7 @@
                     }
                   },
                   {
-                    "Quantidade": {
+                    "Visitas Técnicas": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -5274,7 +5363,17 @@
                     }
                   },
                   {
-                    "Visitas Técnicas": {
+                    "Qtd. Visitas Abertas": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Quantidade": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -5651,8 +5750,15 @@
                 "State": "Generated",
                 "Terms": [
                   {
-                    "nome do agente": {
+                    "observacao adapter atendimentos": {
                       "State": "Generated"
+                    }
+                  },
+                  {
+                    "Observacao_Adapter_Atendimentos": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
                     }
                   }
                 ]
@@ -5893,7 +5999,7 @@
                     }
                   },
                   {
-                    "Total": {
+                    "Qtd. Total de Atendimentos": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -5914,6 +6020,16 @@
                   },
                   {
                     "Total Novos Atendimentos": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Total": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -5966,7 +6082,7 @@
                     }
                   },
                   {
-                    "Callflex": {
+                    "Qtd. Callflex": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -5977,6 +6093,16 @@
                   },
                   {
                     "Total Novos Atendimentos Callflex": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Callflex": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -6109,7 +6235,7 @@
                     }
                   },
                   {
-                    "Chat": {
+                    "Qtd. Chat": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -6120,6 +6246,16 @@
                   },
                   {
                     "Total Novos Atendimentos Chat": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Chat": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -11035,6 +11171,65 @@
                   }
                 ]
               },
+              "relatorio_np.hora": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fChat_relatorio_nps",
+                    "ConceptualProperty": "Hora"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "hora": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "time": {
+                      "State": "Generated",
+                      "Weight": 0.7
+                    }
+                  }
+                ]
+              },
+              "relatorio_np.hora_compartimentos": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fChat_relatorio_nps",
+                    "ConceptualProperty": "Hora (compartimentos)"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "hora (compartimentos)": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "hora (compartimento)": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.78
+                    }
+                  },
+                  {
+                    "time": {
+                      "State": "Generated",
+                      "Weight": 0.7
+                    }
+                  },
+                  {
+                    "hora": {
+                      "State": "Generated",
+                      "Weight": 0.75
+                    }
+                  }
+                ]
+              },
               "relatorio_np.id": {
                 "Definition": {
                   "Binding": {
@@ -12264,7 +12459,7 @@
                         "Role": "callflex_chamada.data.variation.hierarquia_de_data.ano"
                       }
                     },
-                    "ID": "anos_have_trimestres7",
+                    "ID": "anos_have_trimestres8",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -12277,7 +12472,7 @@
                         "Role": "callflex_chamada.data.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_anos7",
+                    "ID": "trimestres_have_anos8",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -12363,7 +12558,7 @@
                         "Role": "callflex_chamada.data.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_dias7",
+                    "ID": "hierarquia_de_data_have_dias8",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -12396,7 +12591,7 @@
                         "Role": "callflex_chamada.data.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_mê7",
+                    "ID": "hierarquia_de_data_have_mê8",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -12429,7 +12624,7 @@
                         "Role": "callflex_chamada.data.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_trimestres7",
+                    "ID": "hierarquia_de_data_have_trimestres8",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -13491,7 +13686,7 @@
                         "Role": "callflex_chamada.hora.variation.hierarquia_de_data.ano"
                       }
                     },
-                    "ID": "anos_have_trimestres6",
+                    "ID": "anos_have_trimestres7",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -13504,7 +13699,7 @@
                         "Role": "callflex_chamada.hora.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_anos6",
+                    "ID": "trimestres_have_anos7",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -13590,7 +13785,7 @@
                         "Role": "callflex_chamada.hora.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_dias6",
+                    "ID": "hierarquia_de_data_have_dias7",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -13623,7 +13818,7 @@
                         "Role": "callflex_chamada.hora.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_mê6",
+                    "ID": "hierarquia_de_data_have_mê7",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -13656,7 +13851,7 @@
                         "Role": "callflex_chamada.hora.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_trimestres6",
+                    "ID": "hierarquia_de_data_have_trimestres7",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -13854,7 +14049,7 @@
                         "Role": "d_calendario.date.variation.hierarquia_de_data.ano"
                       }
                     },
-                    "ID": "anos_have_trimestres5",
+                    "ID": "anos_have_trimestres6",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -13867,7 +14062,7 @@
                         "Role": "d_calendario.date.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_anos5",
+                    "ID": "trimestres_have_anos6",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -13953,7 +14148,7 @@
                         "Role": "d_calendario.date.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_dias5",
+                    "ID": "hierarquia_de_data_have_dias6",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -13986,7 +14181,7 @@
                         "Role": "d_calendario.date.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_mê5",
+                    "ID": "hierarquia_de_data_have_mê6",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -14019,7 +14214,7 @@
                         "Role": "d_calendario.date.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_trimestres5",
+                    "ID": "hierarquia_de_data_have_trimestres6",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -14646,7 +14841,7 @@
                         "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.ano"
                       }
                     },
-                    "ID": "anos_have_trimestres4",
+                    "ID": "anos_have_trimestres5",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -14659,7 +14854,7 @@
                         "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_anos4",
+                    "ID": "trimestres_have_anos5",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -14745,7 +14940,7 @@
                         "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_dias4",
+                    "ID": "hierarquia_de_data_have_dias5",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -14778,7 +14973,7 @@
                         "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_mê4",
+                    "ID": "hierarquia_de_data_have_mê5",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -14811,7 +15006,7 @@
                         "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_trimestres4",
+                    "ID": "hierarquia_de_data_have_trimestres5",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -15252,6 +15447,52 @@
                 },
                 "State": "Generated"
               },
+              "f_adapter_atendimento_has_d_hora": {
+                "Binding": {
+                  "ConceptualEntity": "fAdapter_atendimentos"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "d_hora"
+                      },
+                      "Subject": {
+                        "Role": "f_adapter_atendimento"
+                      }
+                    },
+                    "ID": "f_adapter_atendimentos_have_d_horas",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "f_adapter_atendimento"
+                      },
+                      "Subject": {
+                        "Role": "d_hora"
+                      }
+                    },
+                    "ID": "d_horas_have_f_adapter_atendimentos",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "d_hora": {
+                    "Target": {
+                      "Entity": "d_hora"
+                    }
+                  },
+                  "f_adapter_atendimento": {
+                    "Target": {
+                      "Entity": "f_adapter_atendimento"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "f_adapter_atendimento_has_data_abertura": {
                 "Binding": {
                   "ConceptualEntity": "fAdapter_atendimentos"
@@ -15544,6 +15785,72 @@
                   "f_adapter_atendimento.gerou_visita": {
                     "Target": {
                       "Entity": "f_adapter_atendimento.gerou_visita"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "f_adapter_atendimento_has_hora": {
+                "Binding": {
+                  "ConceptualEntity": "fAdapter_atendimentos"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "f_adapter_atendimento.hora"
+                      },
+                      "Subject": {
+                        "Role": "f_adapter_atendimento"
+                      }
+                    },
+                    "ID": "f_adapter_atendimentos_have_horas",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "f_adapter_atendimento": {
+                    "Target": {
+                      "Entity": "f_adapter_atendimento"
+                    }
+                  },
+                  "f_adapter_atendimento.hora": {
+                    "Target": {
+                      "Entity": "f_adapter_atendimento.hora"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "f_adapter_atendimento_has_hora_compartimentos": {
+                "Binding": {
+                  "ConceptualEntity": "fAdapter_atendimentos"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "f_adapter_atendimento.hora_compartimentos"
+                      },
+                      "Subject": {
+                        "Role": "f_adapter_atendimento"
+                      }
+                    },
+                    "ID": "f_adapter_atendimentos_have_hora_compartimentos",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "f_adapter_atendimento": {
+                    "Target": {
+                      "Entity": "f_adapter_atendimento"
+                    }
+                  },
+                  "f_adapter_atendimento.hora_compartimentos": {
+                    "Target": {
+                      "Entity": "f_adapter_atendimento.hora_compartimentos"
                     }
                   }
                 },
@@ -16883,7 +17190,7 @@
                         "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.ano"
                       }
                     },
-                    "ID": "anos_have_trimestres3",
+                    "ID": "anos_have_trimestres4",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -16896,7 +17203,7 @@
                         "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_anos3",
+                    "ID": "trimestres_have_anos4",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -16982,7 +17289,7 @@
                         "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_dias3",
+                    "ID": "hierarquia_de_data_have_dias4",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -17015,7 +17322,7 @@
                         "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_mê3",
+                    "ID": "hierarquia_de_data_have_mê4",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -17048,7 +17355,7 @@
                         "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_trimestres3",
+                    "ID": "hierarquia_de_data_have_trimestres4",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -18229,7 +18536,7 @@
                         "Role": "medidas_média"
                       }
                     },
-                    "ID": "medidas_médias_have_TMA_média_poderada_tooltip",
+                    "ID": "medidas_médias_have_TMA_média_poderada",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -18361,7 +18668,7 @@
                         "Role": "medidas_outro"
                       }
                     },
-                    "ID": "medidas_outros_have_nome_do_agente",
+                    "ID": "medidas_outros_have_observacao_adapter_atendimentos",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -18955,7 +19262,7 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data.ano"
                       }
                     },
-                    "ID": "anos_have_trimestres1",
+                    "ID": "anos_have_trimestres3",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -18968,12 +19275,12 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_anos1",
+                    "ID": "trimestres_have_anos3",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "trimestres_are_in_anos6",
+                    "ID": "trimestres_are_in_anos5",
                     "Preposition": {
                       "Object": {
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data.ano"
@@ -19021,7 +19328,7 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_anos2",
+                    "ID": "hierarquia_de_data_have_anos3",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -19054,7 +19361,7 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_dias1",
+                    "ID": "hierarquia_de_data_have_dias3",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -19087,7 +19394,7 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_mê1",
+                    "ID": "hierarquia_de_data_have_mê3",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -19120,7 +19427,7 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_trimestres1",
+                    "ID": "hierarquia_de_data_have_trimestres3",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -19153,7 +19460,7 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_dias1",
+                    "ID": "mê_have_dias2",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -19166,12 +19473,12 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data.dia"
                       }
                     },
-                    "ID": "dias_have_mê1",
+                    "ID": "dias_have_mê2",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "dias_are_in_mê6",
+                    "ID": "dias_are_in_mê5",
                     "Preposition": {
                       "Object": {
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data.mê"
@@ -19219,7 +19526,7 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_mê1",
+                    "ID": "trimestres_have_mê2",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -19232,12 +19539,12 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_trimestres1",
+                    "ID": "mê_have_trimestres2",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "mê_are_in_trimestres6",
+                    "ID": "mê_are_in_trimestres5",
                     "Preposition": {
                       "Object": {
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data.trimestre"
@@ -19336,7 +19643,7 @@
                     "Weight": 0.99
                   },
                   {
-                    "ID": "trimestres_are_in_anos5",
+                    "ID": "trimestres_are_in_anos6",
                     "Preposition": {
                       "Object": {
                         "Role": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.ano"
@@ -19384,7 +19691,7 @@
                         "Role": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_anos3",
+                    "ID": "hierarquia_de_data_have_anos2",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -19516,7 +19823,7 @@
                         "Role": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_dias2",
+                    "ID": "mê_have_dias1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -19529,12 +19836,12 @@
                         "Role": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.dia"
                       }
                     },
-                    "ID": "dias_have_mê2",
+                    "ID": "dias_have_mê1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "dias_are_in_mê5",
+                    "ID": "dias_are_in_mê6",
                     "Preposition": {
                       "Object": {
                         "Role": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.mê"
@@ -19582,7 +19889,7 @@
                         "Role": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_mê2",
+                    "ID": "trimestres_have_mê1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -19595,12 +19902,12 @@
                         "Role": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_trimestres2",
+                    "ID": "mê_have_trimestres1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "mê_are_in_trimestres5",
+                    "ID": "mê_are_in_trimestres6",
                     "Preposition": {
                       "Object": {
                         "Role": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.trimestre"
@@ -22241,7 +22548,7 @@
                         "Role": "relatorio_np.data.variation.hierarquia_de_data.ano"
                       }
                     },
-                    "ID": "anos_have_trimestres",
+                    "ID": "anos_have_trimestres1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -22254,7 +22561,7 @@
                         "Role": "relatorio_np.data.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_anos",
+                    "ID": "trimestres_have_anos1",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -22340,7 +22647,7 @@
                         "Role": "relatorio_np.data.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_dias",
+                    "ID": "hierarquia_de_data_have_dias1",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -22373,7 +22680,7 @@
                         "Role": "relatorio_np.data.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_mê",
+                    "ID": "hierarquia_de_data_have_mê1",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -22406,7 +22713,7 @@
                         "Role": "relatorio_np.data.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_trimestres",
+                    "ID": "hierarquia_de_data_have_trimestres1",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -22715,6 +23022,52 @@
                 },
                 "State": "Generated"
               },
+              "relatorio_np_has_d_hora": {
+                "Binding": {
+                  "ConceptualEntity": "fChat_relatorio_nps"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "d_hora"
+                      },
+                      "Subject": {
+                        "Role": "relatorio_np"
+                      }
+                    },
+                    "ID": "f_chat_relatorio_np_have_d_horas",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "relatorio_np"
+                      },
+                      "Subject": {
+                        "Role": "d_hora"
+                      }
+                    },
+                    "ID": "d_horas_have_f_chat_relatorio_np",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "d_hora": {
+                    "Target": {
+                      "Entity": "d_hora"
+                    }
+                  },
+                  "relatorio_np": {
+                    "Target": {
+                      "Entity": "relatorio_np"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "relatorio_np_has_data": {
                 "Binding": {
                   "ConceptualEntity": "fChat_relatorio_nps"
@@ -22875,6 +23228,72 @@
                   "relatorio_np.fase": {
                     "Target": {
                       "Entity": "relatorio_np.fase"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "relatorio_np_has_hora": {
+                "Binding": {
+                  "ConceptualEntity": "fChat_relatorio_nps"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "relatorio_np.hora"
+                      },
+                      "Subject": {
+                        "Role": "relatorio_np"
+                      }
+                    },
+                    "ID": "f_chat_relatorio_np_have_horas",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "relatorio_np": {
+                    "Target": {
+                      "Entity": "relatorio_np"
+                    }
+                  },
+                  "relatorio_np.hora": {
+                    "Target": {
+                      "Entity": "relatorio_np.hora"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "relatorio_np_has_hora_compartimentos": {
+                "Binding": {
+                  "ConceptualEntity": "fChat_relatorio_nps"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "relatorio_np.hora_compartimentos"
+                      },
+                      "Subject": {
+                        "Role": "relatorio_np"
+                      }
+                    },
+                    "ID": "f_chat_relatorio_np_have_hora_compartimentos",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "relatorio_np": {
+                    "Target": {
+                      "Entity": "relatorio_np"
+                    }
+                  },
+                  "relatorio_np.hora_compartimentos": {
+                    "Target": {
+                      "Entity": "relatorio_np.hora_compartimentos"
                     }
                   }
                 },
@@ -23204,7 +23623,7 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data.ano"
                       }
                     },
-                    "ID": "anos_have_trimestres8",
+                    "ID": "anos_have_trimestres",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -23217,7 +23636,7 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_anos8",
+                    "ID": "trimestres_have_anos",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -23303,7 +23722,7 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_dias8",
+                    "ID": "hierarquia_de_data_have_dias",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -23336,7 +23755,7 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_mê8",
+                    "ID": "hierarquia_de_data_have_mê",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -23369,7 +23788,7 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_trimestres8",
+                    "ID": "hierarquia_de_data_have_trimestres",
                     "State": "Generated",
                     "Weight": 0.99
                   }
