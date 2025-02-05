@@ -4507,8 +4507,18 @@
                 "State": "Generated",
                 "Terms": [
                   {
-                    "TMA média poderada": {
+                    "TMA média poderada tooltip": {
                       "State": "Generated"
+                    }
+                  },
+                  {
+                    "TMA Média Ponderada": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
                     }
                   },
                   {
@@ -5519,21 +5529,114 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Medidas Atendimentos",
-                    "ConceptualProperty": "Média_Atendimentos"
+                    "ConceptualProperty": "Média de Novos Atendimentos Chat"
                   }
                 },
                 "State": "Generated",
                 "Terms": [
                   {
-                    "média atendimentos": {
+                    "média de novos atendimentos chat": {
                       "State": "Generated"
                     }
                   },
                   {
-                    "Média_Atendimentos": {
-                      "State": "Generated",
+                    "média de novo atendimento conversation": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
                       "Type": "Noun",
-                      "Weight": 0.99
+                      "Weight": 0.52
+                    }
+                  },
+                  {
+                    "média de novo atendimento discussion": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.52
+                    }
+                  },
+                  {
+                    "média de novo atendimento one-to-one": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.504
+                    }
+                  },
+                  {
+                    "média de novo atendimento heart-to-heart": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.504
+                    }
+                  },
+                  {
+                    "média de novo atendimento talk": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.504
+                    }
+                  },
+                  {
+                    "média de novo atendimento dialog": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.504
+                    }
+                  },
+                  {
+                    "média de novo atendimento dialogue": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.504
+                    }
+                  },
+                  {
+                    "média de novo atendimento chinwag": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.504
+                    }
+                  },
+                  {
+                    "média de novo atendimento natter": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.504
+                    }
+                  },
+                  {
+                    "média de novo atendimento exchange": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.504
                     }
                   }
                 ]
@@ -5542,7 +5645,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Medidas Outros",
-                    "ConceptualProperty": "Nome do Agente"
+                    "ConceptualProperty": "Observacao_Adapter_Atendimentos"
                   }
                 },
                 "State": "Generated",
@@ -5810,7 +5913,7 @@
                     }
                   },
                   {
-                    "Total de atendimentos": {
+                    "Total Novos Atendimentos": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -5873,7 +5976,7 @@
                     }
                   },
                   {
-                    "Atendimentos Callflex": {
+                    "Total Novos Atendimentos Callflex": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -6016,7 +6119,7 @@
                     }
                   },
                   {
-                    "Atendimentos Chat": {
+                    "Total Novos Atendimentos Chat": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -6147,13 +6250,13 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Medidas Atendimentos",
-                    "ConceptualProperty": "Média Atendimentos por Hora DiaSSS"
+                    "ConceptualProperty": "Média de Novos Atendimentos Callflex"
                   }
                 },
                 "State": "Generated",
                 "Terms": [
                   {
-                    "média atendimentos por hora DiaSSS": {
+                    "média de novos atendimentos callflex": {
                       "State": "Generated"
                     }
                   }
@@ -6163,13 +6266,13 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Medidas Atendimentos",
-                    "ConceptualProperty": "Média Atendimentos por Hora Colaborador"
+                    "ConceptualProperty": "Média Ranking Atendimentos"
                   }
                 },
                 "State": "Generated",
                 "Terms": [
                   {
-                    "média atendimentos por hora colaborador": {
+                    "média ranking atendimentos": {
                       "State": "Generated"
                     }
                   }
@@ -6185,18 +6288,8 @@
                 "State": "Generated",
                 "Terms": [
                   {
-                    "média atendimentos por hora dia": {
+                    "média de novos atendimentos": {
                       "State": "Generated"
-                    }
-                  },
-                  {
-                    "Média Atendimentos por Hora": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
                     }
                   }
                 ]
@@ -6445,6 +6538,72 @@
                       "State": "Generated",
                       "Type": "Noun",
                       "Weight": 0.78
+                    }
+                  }
+                ]
+              },
+              "medidas_média.TMA_callflex_inteiro": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas Médias",
+                    "ConceptualProperty": "TMA Callflex (Inteiro)"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "TMA callflex (inteiro)": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "TMA callflex": {
+                      "State": "Generated",
+                      "Weight": 0.75
+                    }
+                  }
+                ]
+              },
+              "medidas_média.TMA_chat_inteiro": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas Médias",
+                    "ConceptualProperty": "TMA Chat (Inteiro)"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "TMA chat (inteiro)": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "TMA chat": {
+                      "State": "Generated",
+                      "Weight": 0.75
+                    }
+                  }
+                ]
+              },
+              "medidas_média.TMA_média_poderada_inteiro": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas Médias",
+                    "ConceptualProperty": "TMA Média Poderada (Inteiro)"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "TMA média poderada (inteiro)": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "TMA média poderada": {
+                      "State": "Generated",
+                      "Weight": 0.75
                     }
                   }
                 ]
@@ -7802,6 +7961,105 @@
                   }
                 ]
               },
+              "relatorio_atendimento.data_ddmmaaaa": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fChat_relatorio_atendimento",
+                    "ConceptualProperty": "Data (ddmmaaaa)"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "data (ddmmaaaa)": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "date": {
+                      "State": "Generated",
+                      "Weight": 0.7
+                    }
+                  },
+                  {
+                    "data": {
+                      "State": "Generated",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "information (ddmmaaaa)": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "fact (ddmmaaaa)": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "info (ddmmaaaa)": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "statistic (ddmmaaaa)": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.617
+                    }
+                  },
+                  {
+                    "document (ddmmaaaa)": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.599
+                    }
+                  },
+                  {
+                    "figure (ddmmaaaa)": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.599
+                    }
+                  },
+                  {
+                    "record (ddmmaaaa)": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.599
+                    }
+                  }
+                ]
+              },
               "relatorio_atendimento.data_de_entrada": {
                 "Definition": {
                   "Binding": {
@@ -8452,11 +8710,280 @@
                     "ConceptualProperty": "Data de início de atendimento humano"
                   }
                 },
+                "SemanticType": "Time",
                 "State": "Generated",
                 "Terms": [
                   {
                     "data de início de atendimento humano": {
                       "State": "Generated"
+                    }
+                  },
+                  {
+                    "date": {
+                      "State": "Generated",
+                      "Weight": 0.7
+                    }
+                  }
+                ]
+              },
+              "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fChat_relatorio_atendimento",
+                    "Hierarchy": "Hierarquia de datas",
+                    "VariationSet": "Variation",
+                    "VariationSource": "Data de início de atendimento humano"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "hierarquia de data": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "hierarquia de information": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  },
+                  {
+                    "hierarquia de fact": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  },
+                  {
+                    "hierarquia de info": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  },
+                  {
+                    "hierarquia de statistic": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.762
+                    }
+                  },
+                  {
+                    "hierarquia de document": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.739
+                    }
+                  },
+                  {
+                    "hierarquia de figure": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.739
+                    }
+                  },
+                  {
+                    "hierarquia de record": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.739
+                    }
+                  }
+                ]
+              },
+              "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.ano": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fChat_relatorio_atendimento",
+                    "Hierarchy": "Hierarquia de datas",
+                    "HierarchyLevel": "Ano",
+                    "VariationSet": "Variation",
+                    "VariationSource": "Data de início de atendimento humano"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "ano": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "data de início de atendimento humano ano": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.dia": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fChat_relatorio_atendimento",
+                    "Hierarchy": "Hierarquia de datas",
+                    "HierarchyLevel": "Dia",
+                    "VariationSet": "Variation",
+                    "VariationSource": "Data de início de atendimento humano"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "dia": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "data de início de atendimento humano dia": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.mê": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fChat_relatorio_atendimento",
+                    "Hierarchy": "Hierarquia de datas",
+                    "HierarchyLevel": "Mês",
+                    "VariationSet": "Variation",
+                    "VariationSource": "Data de início de atendimento humano"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "mê": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "data de início de atendimento humano mê": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.trimestre": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fChat_relatorio_atendimento",
+                    "Hierarchy": "Hierarquia de datas",
+                    "HierarchyLevel": "Trimestre",
+                    "VariationSet": "Variation",
+                    "VariationSource": "Data de início de atendimento humano"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "trimestre": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "data de início de atendimento humano trimestre": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "relatorio_atendimento.data_de_início_de_atendimento_humano__hora": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fChat_relatorio_atendimento",
+                    "ConceptualProperty": "Data de início de atendimento humano - Hora"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "data de início de atendimento humano - hora": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "time": {
+                      "State": "Generated",
+                      "Weight": 0.7
+                    }
+                  },
+                  {
+                    "data de início de atendimento humano hora": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  }
+                ]
+              },
+              "relatorio_atendimento.data_de_início_de_atendimento_humano__hora_compartimentos": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "fChat_relatorio_atendimento",
+                    "ConceptualProperty": "Data de início de atendimento humano - Hora (compartimentos)"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "data de início de atendimento humano - hora (compartimentos)": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "data de início de atendimento humano - hora (compartimento)": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.78
+                    }
+                  },
+                  {
+                    "time": {
+                      "State": "Generated",
+                      "Weight": 0.7
+                    }
+                  },
+                  {
+                    "data de início de atendimento humano - hora": {
+                      "State": "Generated",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "data de início de atendimento humano hora (compartimentos)": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "data de início de atendimento humano hora (compartimento)": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.7566
                     }
                   }
                 ]
@@ -11737,7 +12264,7 @@
                         "Role": "callflex_chamada.data.variation.hierarquia_de_data.ano"
                       }
                     },
-                    "ID": "anos_have_trimestres6",
+                    "ID": "anos_have_trimestres7",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -11750,7 +12277,7 @@
                         "Role": "callflex_chamada.data.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_anos6",
+                    "ID": "trimestres_have_anos7",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -11803,7 +12330,7 @@
                         "Role": "callflex_chamada.data.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_anos6",
+                    "ID": "hierarquia_de_data_have_anos8",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -11836,7 +12363,7 @@
                         "Role": "callflex_chamada.data.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_dias6",
+                    "ID": "hierarquia_de_data_have_dias7",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -11869,7 +12396,7 @@
                         "Role": "callflex_chamada.data.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_mê6",
+                    "ID": "hierarquia_de_data_have_mê7",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -11902,7 +12429,7 @@
                         "Role": "callflex_chamada.data.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_trimestres6",
+                    "ID": "hierarquia_de_data_have_trimestres7",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -11935,7 +12462,7 @@
                         "Role": "callflex_chamada.data.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_dias6",
+                    "ID": "mê_have_dias7",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -11948,7 +12475,7 @@
                         "Role": "callflex_chamada.data.variation.hierarquia_de_data.dia"
                       }
                     },
-                    "ID": "dias_have_mê6",
+                    "ID": "dias_have_mê7",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -12001,7 +12528,7 @@
                         "Role": "callflex_chamada.data.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_mê6",
+                    "ID": "trimestres_have_mê7",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -12014,7 +12541,7 @@
                         "Role": "callflex_chamada.data.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_trimestres6",
+                    "ID": "mê_have_trimestres7",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -12587,39 +13114,6 @@
                 },
                 "State": "Generated"
               },
-              "callflex_chamada_has_medida_média_atendimentos": {
-                "Binding": {
-                  "ConceptualEntity": "fCallflex_chamadas"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "medida.média_atendimentos"
-                      },
-                      "Subject": {
-                        "Role": "callflex_chamada"
-                      }
-                    },
-                    "ID": "f_callflex_chamadas_have_média_atendimentos",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "callflex_chamada": {
-                    "Target": {
-                      "Entity": "callflex_chamada"
-                    }
-                  },
-                  "medida.média_atendimentos": {
-                    "Target": {
-                      "Entity": "medida.média_atendimentos"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
               "callflex_chamada_has_medida_total_atendimentos": {
                 "Binding": {
                   "ConceptualEntity": "fCallflex_chamadas"
@@ -12700,7 +13194,7 @@
                         "Role": "callflex_chamada"
                       }
                     },
-                    "ID": "f_callflex_chamadas_have_média_atendimentos_por_hora_DiaSSS",
+                    "ID": "f_callflex_chamadas_have_média_de_novos_atendimentos_callflex",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -12733,7 +13227,7 @@
                         "Role": "callflex_chamada"
                       }
                     },
-                    "ID": "f_callflex_chamadas_have_média_atendimentos_por_hora_colaborador",
+                    "ID": "f_callflex_chamadas_have_média_ranking_atendimentos",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -12766,7 +13260,7 @@
                         "Role": "callflex_chamada"
                       }
                     },
-                    "ID": "f_callflex_chamadas_have_média_atendimentos_por_hora_dia",
+                    "ID": "f_callflex_chamadas_have_média_de_novos_atendimentos",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -12997,7 +13491,7 @@
                         "Role": "callflex_chamada.hora.variation.hierarquia_de_data.ano"
                       }
                     },
-                    "ID": "anos_have_trimestres5",
+                    "ID": "anos_have_trimestres6",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -13010,7 +13504,7 @@
                         "Role": "callflex_chamada.hora.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_anos5",
+                    "ID": "trimestres_have_anos6",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -13063,7 +13557,7 @@
                         "Role": "callflex_chamada.hora.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_anos5",
+                    "ID": "hierarquia_de_data_have_anos7",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -13096,7 +13590,7 @@
                         "Role": "callflex_chamada.hora.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_dias5",
+                    "ID": "hierarquia_de_data_have_dias6",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -13129,7 +13623,7 @@
                         "Role": "callflex_chamada.hora.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_mê5",
+                    "ID": "hierarquia_de_data_have_mê6",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -13162,7 +13656,7 @@
                         "Role": "callflex_chamada.hora.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_trimestres5",
+                    "ID": "hierarquia_de_data_have_trimestres6",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -13195,7 +13689,7 @@
                         "Role": "callflex_chamada.hora.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_dias5",
+                    "ID": "mê_have_dias6",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -13208,7 +13702,7 @@
                         "Role": "callflex_chamada.hora.variation.hierarquia_de_data.dia"
                       }
                     },
-                    "ID": "dias_have_mê5",
+                    "ID": "dias_have_mê6",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -13261,7 +13755,7 @@
                         "Role": "callflex_chamada.hora.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_mê5",
+                    "ID": "trimestres_have_mê6",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -13274,7 +13768,7 @@
                         "Role": "callflex_chamada.hora.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_trimestres5",
+                    "ID": "mê_have_trimestres6",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -13360,7 +13854,7 @@
                         "Role": "d_calendario.date.variation.hierarquia_de_data.ano"
                       }
                     },
-                    "ID": "anos_have_trimestres4",
+                    "ID": "anos_have_trimestres5",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -13373,7 +13867,7 @@
                         "Role": "d_calendario.date.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_anos4",
+                    "ID": "trimestres_have_anos5",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -13426,7 +13920,7 @@
                         "Role": "d_calendario.date.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_anos4",
+                    "ID": "hierarquia_de_data_have_anos6",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -13459,7 +13953,7 @@
                         "Role": "d_calendario.date.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_dias4",
+                    "ID": "hierarquia_de_data_have_dias5",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -13492,7 +13986,7 @@
                         "Role": "d_calendario.date.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_mê4",
+                    "ID": "hierarquia_de_data_have_mê5",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -13525,7 +14019,7 @@
                         "Role": "d_calendario.date.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_trimestres4",
+                    "ID": "hierarquia_de_data_have_trimestres5",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -13558,7 +14052,7 @@
                         "Role": "d_calendario.date.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_dias4",
+                    "ID": "mê_have_dias5",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -13571,7 +14065,7 @@
                         "Role": "d_calendario.date.variation.hierarquia_de_data.dia"
                       }
                     },
-                    "ID": "dias_have_mê4",
+                    "ID": "dias_have_mê5",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -13624,7 +14118,7 @@
                         "Role": "d_calendario.date.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_mê4",
+                    "ID": "trimestres_have_mê5",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -13637,7 +14131,7 @@
                         "Role": "d_calendario.date.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_trimestres4",
+                    "ID": "mê_have_trimestres5",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -14039,7 +14533,7 @@
                 },
                 "State": "Generated"
               },
-              "d_colaboradore_has_medida_média_atendimentos": {
+              "d_colaboradore_has_medidas_atendimento_média_atendimentos_por_hora_colaborador": {
                 "Binding": {
                   "ConceptualEntity": "dColaboradores"
                 },
@@ -14047,13 +14541,13 @@
                   {
                     "Attribute": {
                       "Object": {
-                        "Role": "medida.média_atendimentos"
+                        "Role": "medidas_atendimento.média_atendimentos_por_hora_colaborador"
                       },
                       "Subject": {
                         "Role": "d_colaboradore"
                       }
                     },
-                    "ID": "d_colaboradores_have_média_atendimentos",
+                    "ID": "d_colaboradores_have_média_ranking_atendimentos",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -14064,9 +14558,9 @@
                       "Entity": "d_colaboradore"
                     }
                   },
-                  "medida.média_atendimentos": {
+                  "medidas_atendimento.média_atendimentos_por_hora_colaborador": {
                     "Target": {
-                      "Entity": "medida.média_atendimentos"
+                      "Entity": "medidas_atendimento.média_atendimentos_por_hora_colaborador"
                     }
                   }
                 },
@@ -14152,7 +14646,7 @@
                         "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.ano"
                       }
                     },
-                    "ID": "anos_have_trimestres3",
+                    "ID": "anos_have_trimestres4",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -14165,7 +14659,7 @@
                         "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_anos3",
+                    "ID": "trimestres_have_anos4",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -14218,7 +14712,7 @@
                         "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_anos3",
+                    "ID": "hierarquia_de_data_have_anos5",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -14251,7 +14745,7 @@
                         "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_dias3",
+                    "ID": "hierarquia_de_data_have_dias4",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -14284,7 +14778,7 @@
                         "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_mê3",
+                    "ID": "hierarquia_de_data_have_mê4",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -14317,7 +14811,7 @@
                         "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_trimestres3",
+                    "ID": "hierarquia_de_data_have_trimestres4",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -14350,7 +14844,7 @@
                         "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_dias3",
+                    "ID": "mê_have_dias4",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -14363,7 +14857,7 @@
                         "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.dia"
                       }
                     },
-                    "ID": "dias_have_mê3",
+                    "ID": "dias_have_mê4",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -14416,7 +14910,7 @@
                         "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_mê3",
+                    "ID": "trimestres_have_mê4",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -14429,7 +14923,7 @@
                         "Role": "f_adapter_atendimento.data_abertura.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_trimestres3",
+                    "ID": "mê_have_trimestres4",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -16389,7 +16883,7 @@
                         "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.ano"
                       }
                     },
-                    "ID": "anos_have_trimestres2",
+                    "ID": "anos_have_trimestres3",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -16402,7 +16896,7 @@
                         "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_anos2",
+                    "ID": "trimestres_have_anos3",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -16455,7 +16949,7 @@
                         "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_anos2",
+                    "ID": "hierarquia_de_data_have_anos4",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -16488,7 +16982,7 @@
                         "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_dias2",
+                    "ID": "hierarquia_de_data_have_dias3",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -16521,7 +17015,7 @@
                         "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_mê2",
+                    "ID": "hierarquia_de_data_have_mê3",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -16554,7 +17048,7 @@
                         "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_trimestres2",
+                    "ID": "hierarquia_de_data_have_trimestres3",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -16587,7 +17081,7 @@
                         "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_dias2",
+                    "ID": "mê_have_dias3",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -16600,7 +17094,7 @@
                         "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.dia"
                       }
                     },
-                    "ID": "dias_have_mê2",
+                    "ID": "dias_have_mê3",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -16653,7 +17147,7 @@
                         "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_mê2",
+                    "ID": "trimestres_have_mê3",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -16666,7 +17160,7 @@
                         "Role": "f_callflex_pausas_detalhado.data_de_login.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_trimestres2",
+                    "ID": "mê_have_trimestres3",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -17556,6 +18050,105 @@
                 },
                 "State": "Generated"
               },
+              "medidas_média_has_TMA_callflex_inteiro": {
+                "Binding": {
+                  "ConceptualEntity": "Medidas Médias"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medidas_média.TMA_callflex_inteiro"
+                      },
+                      "Subject": {
+                        "Role": "medidas_média"
+                      }
+                    },
+                    "ID": "medidas_médias_have_TMA_callflex_inteiro",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "medidas_média": {
+                    "Target": {
+                      "Entity": "medidas_média"
+                    }
+                  },
+                  "medidas_média.TMA_callflex_inteiro": {
+                    "Target": {
+                      "Entity": "medidas_média.TMA_callflex_inteiro"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "medidas_média_has_TMA_chat_inteiro": {
+                "Binding": {
+                  "ConceptualEntity": "Medidas Médias"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medidas_média.TMA_chat_inteiro"
+                      },
+                      "Subject": {
+                        "Role": "medidas_média"
+                      }
+                    },
+                    "ID": "medidas_médias_have_TMA_chat_inteiro",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "medidas_média": {
+                    "Target": {
+                      "Entity": "medidas_média"
+                    }
+                  },
+                  "medidas_média.TMA_chat_inteiro": {
+                    "Target": {
+                      "Entity": "medidas_média.TMA_chat_inteiro"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "medidas_média_has_TMA_média_poderada_inteiro": {
+                "Binding": {
+                  "ConceptualEntity": "Medidas Médias"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "medidas_média.TMA_média_poderada_inteiro"
+                      },
+                      "Subject": {
+                        "Role": "medidas_média"
+                      }
+                    },
+                    "ID": "medidas_médias_have_TMA_média_poderada_inteiro",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "medidas_média": {
+                    "Target": {
+                      "Entity": "medidas_média"
+                    }
+                  },
+                  "medidas_média.TMA_média_poderada_inteiro": {
+                    "Target": {
+                      "Entity": "medidas_média.TMA_média_poderada_inteiro"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "medidas_média_has_medida_TMA_callflex": {
                 "Binding": {
                   "ConceptualEntity": "Medidas Médias"
@@ -17636,7 +18229,7 @@
                         "Role": "medidas_média"
                       }
                     },
-                    "ID": "medidas_médias_have_TMA_média_poderada",
+                    "ID": "medidas_médias_have_TMA_média_poderada_tooltip",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -18380,7 +18973,7 @@
                     "Weight": 0.99
                   },
                   {
-                    "ID": "trimestres_are_in_anos5",
+                    "ID": "trimestres_are_in_anos6",
                     "Preposition": {
                       "Object": {
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data.ano"
@@ -18428,7 +19021,7 @@
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_anos1",
+                    "ID": "hierarquia_de_data_have_anos2",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -18578,7 +19171,7 @@
                     "Weight": 0.99
                   },
                   {
-                    "ID": "dias_are_in_mê5",
+                    "ID": "dias_are_in_mê6",
                     "Preposition": {
                       "Object": {
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data.mê"
@@ -18644,7 +19237,7 @@
                     "Weight": 0.99
                   },
                   {
-                    "ID": "mê_are_in_trimestres5",
+                    "ID": "mê_are_in_trimestres6",
                     "Preposition": {
                       "Object": {
                         "Role": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data.trimestre"
@@ -18673,6 +19266,369 @@
                   "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data.trimestre": {
                     "Target": {
                       "Entity": "relatorio_atendimento.data_de_entrada.variation.hierarquia_de_data.trimestre"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "relatorio_atendimento_data_de_início_de_atendimento_humano_has_variation_hierarquia_de_data": {
+                "Binding": {
+                  "ConceptualEntity": "fChat_relatorio_atendimento"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data"
+                      },
+                      "Subject": {
+                        "Role": "relatorio_atendimento.data_de_início_de_atendimento_humano"
+                      }
+                    },
+                    "ID": "data_de_início_de_atendimento_humanos_have_hierarquia_de_data",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "relatorio_atendimento.data_de_início_de_atendimento_humano": {
+                    "Target": {
+                      "Entity": "relatorio_atendimento.data_de_início_de_atendimento_humano"
+                    }
+                  },
+                  "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data": {
+                    "Target": {
+                      "Entity": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "relatorio_atendimento_data_de_início_de_atendimento_humano_variation_hierarquia_de_data_ano_has_relatorio_atendimento_data_de_início_de_atendimento_humano_variation_hierarquia_de_data_trimestre": {
+                "Binding": {
+                  "ConceptualEntity": "fChat_relatorio_atendimento"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.trimestre"
+                      },
+                      "Subject": {
+                        "Role": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.ano"
+                      }
+                    },
+                    "ID": "anos_have_trimestres2",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.ano"
+                      },
+                      "Subject": {
+                        "Role": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.trimestre"
+                      }
+                    },
+                    "ID": "trimestres_have_anos2",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "trimestres_are_in_anos5",
+                    "Preposition": {
+                      "Object": {
+                        "Role": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.ano"
+                      },
+                      "Prepositions": [
+                        {
+                          "in": {
+                            "State": "Generated"
+                          }
+                        }
+                      ],
+                      "Subject": {
+                        "Role": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.trimestre"
+                      }
+                    },
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.ano": {
+                    "Target": {
+                      "Entity": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.ano"
+                    }
+                  },
+                  "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.trimestre": {
+                    "Target": {
+                      "Entity": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.trimestre"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "relatorio_atendimento_data_de_início_de_atendimento_humano_variation_hierarquia_de_data_has_ano": {
+                "Binding": {
+                  "ConceptualEntity": "fChat_relatorio_atendimento"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.ano"
+                      },
+                      "Subject": {
+                        "Role": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data"
+                      }
+                    },
+                    "ID": "hierarquia_de_data_have_anos3",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data": {
+                    "Target": {
+                      "Entity": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data"
+                    }
+                  },
+                  "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.ano": {
+                    "Target": {
+                      "Entity": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.ano"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "relatorio_atendimento_data_de_início_de_atendimento_humano_variation_hierarquia_de_data_has_dia": {
+                "Binding": {
+                  "ConceptualEntity": "fChat_relatorio_atendimento"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.dia"
+                      },
+                      "Subject": {
+                        "Role": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data"
+                      }
+                    },
+                    "ID": "hierarquia_de_data_have_dias2",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data": {
+                    "Target": {
+                      "Entity": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data"
+                    }
+                  },
+                  "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.dia": {
+                    "Target": {
+                      "Entity": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.dia"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "relatorio_atendimento_data_de_início_de_atendimento_humano_variation_hierarquia_de_data_has_mê": {
+                "Binding": {
+                  "ConceptualEntity": "fChat_relatorio_atendimento"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.mê"
+                      },
+                      "Subject": {
+                        "Role": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data"
+                      }
+                    },
+                    "ID": "hierarquia_de_data_have_mê2",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data": {
+                    "Target": {
+                      "Entity": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data"
+                    }
+                  },
+                  "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.mê": {
+                    "Target": {
+                      "Entity": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.mê"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "relatorio_atendimento_data_de_início_de_atendimento_humano_variation_hierarquia_de_data_has_trimestre": {
+                "Binding": {
+                  "ConceptualEntity": "fChat_relatorio_atendimento"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.trimestre"
+                      },
+                      "Subject": {
+                        "Role": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data"
+                      }
+                    },
+                    "ID": "hierarquia_de_data_have_trimestres2",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data": {
+                    "Target": {
+                      "Entity": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data"
+                    }
+                  },
+                  "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.trimestre": {
+                    "Target": {
+                      "Entity": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.trimestre"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "relatorio_atendimento_data_de_início_de_atendimento_humano_variation_hierarquia_de_data_mê_has_relatorio_atendimento_data_de_início_de_atendimento_humano_variation_hierarquia_de_data_dia": {
+                "Binding": {
+                  "ConceptualEntity": "fChat_relatorio_atendimento"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.dia"
+                      },
+                      "Subject": {
+                        "Role": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.mê"
+                      }
+                    },
+                    "ID": "mê_have_dias2",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.mê"
+                      },
+                      "Subject": {
+                        "Role": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.dia"
+                      }
+                    },
+                    "ID": "dias_have_mê2",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "dias_are_in_mê5",
+                    "Preposition": {
+                      "Object": {
+                        "Role": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.mê"
+                      },
+                      "Prepositions": [
+                        {
+                          "in": {
+                            "State": "Generated"
+                          }
+                        }
+                      ],
+                      "Subject": {
+                        "Role": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.dia"
+                      }
+                    },
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.dia": {
+                    "Target": {
+                      "Entity": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.dia"
+                    }
+                  },
+                  "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.mê": {
+                    "Target": {
+                      "Entity": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.mê"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "relatorio_atendimento_data_de_início_de_atendimento_humano_variation_hierarquia_de_data_trimestre_has_relatorio_atendimento_data_de_início_de_atendimento_humano_variation_hierarquia_de_data_mê": {
+                "Binding": {
+                  "ConceptualEntity": "fChat_relatorio_atendimento"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.mê"
+                      },
+                      "Subject": {
+                        "Role": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.trimestre"
+                      }
+                    },
+                    "ID": "trimestres_have_mê2",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.trimestre"
+                      },
+                      "Subject": {
+                        "Role": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.mê"
+                      }
+                    },
+                    "ID": "mê_have_trimestres2",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "ID": "mê_are_in_trimestres5",
+                    "Preposition": {
+                      "Object": {
+                        "Role": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.trimestre"
+                      },
+                      "Prepositions": [
+                        {
+                          "in": {
+                            "State": "Generated"
+                          }
+                        }
+                      ],
+                      "Subject": {
+                        "Role": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.mê"
+                      }
+                    },
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.mê": {
+                    "Target": {
+                      "Entity": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.mê"
+                    }
+                  },
+                  "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.trimestre": {
+                    "Target": {
+                      "Entity": "relatorio_atendimento.data_de_início_de_atendimento_humano.variation.hierarquia_de_data.trimestre"
                     }
                   }
                 },
@@ -19575,6 +20531,72 @@
                 },
                 "State": "Generated"
               },
+              "relatorio_atendimento_has_data_de_início_de_atendimento_humano__hora": {
+                "Binding": {
+                  "ConceptualEntity": "fChat_relatorio_atendimento"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "relatorio_atendimento.data_de_início_de_atendimento_humano__hora"
+                      },
+                      "Subject": {
+                        "Role": "relatorio_atendimento"
+                      }
+                    },
+                    "ID": "f_chat_relatorio_atendimentos_have_data_de_início_de_atendimento_humano__horas",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "relatorio_atendimento": {
+                    "Target": {
+                      "Entity": "relatorio_atendimento"
+                    }
+                  },
+                  "relatorio_atendimento.data_de_início_de_atendimento_humano__hora": {
+                    "Target": {
+                      "Entity": "relatorio_atendimento.data_de_início_de_atendimento_humano__hora"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "relatorio_atendimento_has_data_de_início_de_atendimento_humano__hora_compartimentos": {
+                "Binding": {
+                  "ConceptualEntity": "fChat_relatorio_atendimento"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "relatorio_atendimento.data_de_início_de_atendimento_humano__hora_compartimentos"
+                      },
+                      "Subject": {
+                        "Role": "relatorio_atendimento"
+                      }
+                    },
+                    "ID": "f_chat_relatorio_atendimentos_have_data_de_início_de_atendimento_humano__hora_compartimentos",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "relatorio_atendimento": {
+                    "Target": {
+                      "Entity": "relatorio_atendimento"
+                    }
+                  },
+                  "relatorio_atendimento.data_de_início_de_atendimento_humano__hora_compartimentos": {
+                    "Target": {
+                      "Entity": "relatorio_atendimento.data_de_início_de_atendimento_humano__hora_compartimentos"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
               "relatorio_atendimento_has_data_fim_de_atendimento_humano__data_final": {
                 "Binding": {
                   "ConceptualEntity": "fChat_relatorio_atendimento"
@@ -19834,72 +20856,6 @@
                   "relatorio_atendimento.grupo_de_ocorrência": {
                     "Target": {
                       "Entity": "relatorio_atendimento.grupo_de_ocorrência"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "relatorio_atendimento_has_hora": {
-                "Binding": {
-                  "ConceptualEntity": "fChat_relatorio_atendimento"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "relatorio_atendimento.hora"
-                      },
-                      "Subject": {
-                        "Role": "relatorio_atendimento"
-                      }
-                    },
-                    "ID": "f_chat_relatorio_atendimentos_have_horas",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "relatorio_atendimento": {
-                    "Target": {
-                      "Entity": "relatorio_atendimento"
-                    }
-                  },
-                  "relatorio_atendimento.hora": {
-                    "Target": {
-                      "Entity": "relatorio_atendimento.hora"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
-              "relatorio_atendimento_has_hora_compartimentos": {
-                "Binding": {
-                  "ConceptualEntity": "fChat_relatorio_atendimento"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "relatorio_atendimento.hora_compartimentos"
-                      },
-                      "Subject": {
-                        "Role": "relatorio_atendimento"
-                      }
-                    },
-                    "ID": "f_chat_relatorio_atendimentos_have_hora_compartimentos",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "relatorio_atendimento": {
-                    "Target": {
-                      "Entity": "relatorio_atendimento"
-                    }
-                  },
-                  "relatorio_atendimento.hora_compartimentos": {
-                    "Target": {
-                      "Entity": "relatorio_atendimento.hora_compartimentos"
                     }
                   }
                 },
@@ -20229,7 +21185,7 @@
                         "Role": "relatorio_atendimento"
                       }
                     },
-                    "ID": "f_chat_relatorio_atendimentos_have_média_atendimentos",
+                    "ID": "f_chat_relatorio_atendimentos_have_média_de_novos_atendimentos_chat",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -20314,39 +21270,6 @@
                 },
                 "State": "Generated"
               },
-              "relatorio_atendimento_has_medidas_atendimento_média_atendimentos_por_hora_DiaSSS": {
-                "Binding": {
-                  "ConceptualEntity": "fChat_relatorio_atendimento"
-                },
-                "Phrasings": [
-                  {
-                    "Attribute": {
-                      "Object": {
-                        "Role": "medidas_atendimento.média_atendimentos_por_hora_DiaSSS"
-                      },
-                      "Subject": {
-                        "Role": "relatorio_atendimento"
-                      }
-                    },
-                    "ID": "f_chat_relatorio_atendimentos_have_média_atendimentos_por_hora_DiaSSS",
-                    "State": "Generated",
-                    "Weight": 0.99
-                  }
-                ],
-                "Roles": {
-                  "medidas_atendimento.média_atendimentos_por_hora_DiaSSS": {
-                    "Target": {
-                      "Entity": "medidas_atendimento.média_atendimentos_por_hora_DiaSSS"
-                    }
-                  },
-                  "relatorio_atendimento": {
-                    "Target": {
-                      "Entity": "relatorio_atendimento"
-                    }
-                  }
-                },
-                "State": "Generated"
-              },
               "relatorio_atendimento_has_medidas_atendimento_média_atendimentos_por_hora_colaborador": {
                 "Binding": {
                   "ConceptualEntity": "fChat_relatorio_atendimento"
@@ -20361,7 +21284,7 @@
                         "Role": "relatorio_atendimento"
                       }
                     },
-                    "ID": "f_chat_relatorio_atendimentos_have_média_atendimentos_por_hora_colaborador",
+                    "ID": "f_chat_relatorio_atendimentos_have_média_ranking_atendimentos",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -20394,7 +21317,7 @@
                         "Role": "relatorio_atendimento"
                       }
                     },
-                    "ID": "f_chat_relatorio_atendimentos_have_média_atendimentos_por_hora_dia",
+                    "ID": "f_chat_relatorio_atendimentos_have_média_de_novos_atendimentos",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -21336,7 +22259,7 @@
                     "Weight": 0.99
                   },
                   {
-                    "ID": "trimestres_are_in_anos6",
+                    "ID": "trimestres_are_in_anos7",
                     "Preposition": {
                       "Object": {
                         "Role": "relatorio_np.data.variation.hierarquia_de_data.ano"
@@ -21384,7 +22307,7 @@
                         "Role": "relatorio_np.data.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_anos",
+                    "ID": "hierarquia_de_data_have_anos1",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -21534,7 +22457,7 @@
                     "Weight": 0.99
                   },
                   {
-                    "ID": "dias_are_in_mê6",
+                    "ID": "dias_are_in_mê7",
                     "Preposition": {
                       "Object": {
                         "Role": "relatorio_np.data.variation.hierarquia_de_data.mê"
@@ -21600,7 +22523,7 @@
                     "Weight": 0.99
                   },
                   {
-                    "ID": "mê_are_in_trimestres6",
+                    "ID": "mê_are_in_trimestres7",
                     "Preposition": {
                       "Object": {
                         "Role": "relatorio_np.data.variation.hierarquia_de_data.trimestre"
@@ -22281,7 +23204,7 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data.ano"
                       }
                     },
-                    "ID": "anos_have_trimestres7",
+                    "ID": "anos_have_trimestres8",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -22294,12 +23217,12 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_anos7",
+                    "ID": "trimestres_have_anos8",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "trimestres_are_in_anos7",
+                    "ID": "trimestres_are_in_anos8",
                     "Preposition": {
                       "Object": {
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data.ano"
@@ -22347,7 +23270,7 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_anos7",
+                    "ID": "hierarquia_de_data_have_anos",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -22380,7 +23303,7 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_dias7",
+                    "ID": "hierarquia_de_data_have_dias8",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -22413,7 +23336,7 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_mê7",
+                    "ID": "hierarquia_de_data_have_mê8",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -22446,7 +23369,7 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data"
                       }
                     },
-                    "ID": "hierarquia_de_data_have_trimestres7",
+                    "ID": "hierarquia_de_data_have_trimestres8",
                     "State": "Generated",
                     "Weight": 0.99
                   }
@@ -22479,7 +23402,7 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_dias7",
+                    "ID": "mê_have_dias8",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -22492,12 +23415,12 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data.dia"
                       }
                     },
-                    "ID": "dias_have_mê7",
+                    "ID": "dias_have_mê8",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "dias_are_in_mê7",
+                    "ID": "dias_are_in_mê8",
                     "Preposition": {
                       "Object": {
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data.mê"
@@ -22545,7 +23468,7 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data.trimestre"
                       }
                     },
-                    "ID": "trimestres_have_mê7",
+                    "ID": "trimestres_have_mê8",
                     "State": "Generated",
                     "Weight": 0.99
                   },
@@ -22558,12 +23481,12 @@
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data.mê"
                       }
                     },
-                    "ID": "mê_have_trimestres7",
+                    "ID": "mê_have_trimestres8",
                     "State": "Generated",
                     "Weight": 0.99
                   },
                   {
-                    "ID": "mê_are_in_trimestres7",
+                    "ID": "mê_are_in_trimestres8",
                     "Preposition": {
                       "Object": {
                         "Role": "relatorio_resumo_usuario.entrada.variation.hierarquia_de_data.trimestre"
@@ -23491,54 +24414,12 @@
     ],
     "relationships": [
       {
-        "name": "c6b90986-4b82-d3c4-bb74-2b6f6ce30c14",
-        "fromColumn": "COLABORADOR",
-        "fromTable": "fAdapter_atendimentos",
-        "toColumn": "Colaborador",
-        "toTable": "dColaboradores"
-      },
-      {
         "name": "d72e0bd4-4f32-41d1-b950-40a61ac3f156",
         "fromColumn": "DATA_DE_LOGIN",
         "fromTable": "fCallflex_pausas_detalhado",
         "joinOnDateBehavior": "datePartOnly",
         "toColumn": "Date",
         "toTable": "LocalDateTable_d556f314-8bb0-42d9-9a44-f85e0726584a"
-      },
-      {
-        "name": "812b6e11-74cd-ae9a-6594-81e29db56e4b",
-        "fromColumn": "COLABORADOR",
-        "fromTable": "fChat_relatorio_resumo_usuarios(pausas)",
-        "toColumn": "Colaborador",
-        "toTable": "dColaboradores"
-      },
-      {
-        "name": "35a4ce39-b29f-0f1d-bb14-6f5f29d2ac09",
-        "fromColumn": "COLABORADOR",
-        "fromTable": "fChat_relatorio_nps",
-        "toColumn": "Colaborador",
-        "toTable": "dColaboradores"
-      },
-      {
-        "name": "0be34280-2a2b-1993-d3a5-d0dbfb828d7b",
-        "fromColumn": "COLABORADOR",
-        "fromTable": "fCallflex_chamadas",
-        "toColumn": "Colaborador",
-        "toTable": "dColaboradores"
-      },
-      {
-        "name": "133675e9-1516-0daa-a0cb-33abc18471db",
-        "fromColumn": "COLABORADOR",
-        "fromTable": "fCallflex_pausas_detalhado",
-        "toColumn": "Colaborador",
-        "toTable": "dColaboradores"
-      },
-      {
-        "name": "7131ec17-f383-6c26-c7b8-3b43644ccd81",
-        "fromColumn": "COLABORADOR",
-        "fromTable": "fChat_relatorio_atendimento",
-        "toColumn": "Colaborador",
-        "toTable": "dColaboradores"
       },
       {
         "name": "2c86ac60-2aca-438f-aaaf-21f3b4e870cb",
@@ -23597,62 +24478,124 @@
         "toTable": "LocalDateTable_6bc8eb7d-071b-4eec-8af6-bdc7027e4e08"
       },
       {
-        "name": "d3a97895-c9ee-947e-f38b-9daccc72c55f",
-        "fromColumn": "Data Abertura (ddmmaaaa)",
-        "fromTable": "fAdapter_atendimentos",
+        "name": "0aa48c92-b7e7-4eee-b6f3-bc96dc355c11",
+        "fromColumn": "Data de início de atendimento humano",
+        "fromTable": "fChat_relatorio_atendimento",
+        "joinOnDateBehavior": "datePartOnly",
         "toColumn": "Date",
-        "toTable": "dCalendario"
+        "toTable": "LocalDateTable_a8017163-9f10-4bd2-88c7-f44614f0c236"
       },
       {
-        "name": "fabbdef7-d2a4-89b2-62a8-3d94ee35d9d1",
-        "fromColumn": "Data (ddmmaaaa)",
-        "fromTable": "fChat_relatorio_resumo_usuarios(pausas)",
-        "toColumn": "Date",
-        "toTable": "dCalendario"
+        "name": "f5c72c41-47ec-7f6c-3914-325a818f89c0",
+        "fromColumn": "Data de início de atendimento humano - Hora (compartimentos)",
+        "fromTable": "fChat_relatorio_atendimento",
+        "toColumn": "Horas",
+        "toTable": "dHoras"
       },
       {
-        "name": "2ef566ad-7fa2-38bc-8fd2-fdf7fd315c3f",
-        "fromColumn": "Data (ddmmaaaa)",
-        "fromTable": "fChat_relatorio_nps",
-        "toColumn": "Date",
-        "toTable": "dCalendario"
-      },
-      {
-        "name": "ad9ef431-2063-31b7-bf28-05c78ad34311",
-        "fromColumn": "Data (ddmmaaaa)",
-        "fromTable": "fCallflex_chamadas",
-        "toColumn": "Date",
-        "toTable": "dCalendario"
-      },
-      {
-        "name": "e419a1cb-263a-4de7-22b3-ae8c3a3f15f1",
-        "fromColumn": "Data (ddmmaaaa)",
-        "fromTable": "fCallflex_pausas_detalhado",
-        "toColumn": "Date",
-        "toTable": "dCalendario"
-      },
-      {
-        "name": "b2febc2c-1576-f351-f6fb-77257587f8b6",
+        "name": "81ebf090-074a-e736-2d8a-bf729391cb3a",
         "fromColumn": "Hora (compartimentos)",
         "fromTable": "fCallflex_chamadas",
         "toColumn": "Horas",
         "toTable": "dHoras"
       },
       {
-        "name": "5c7fb1e0-c420-4682-a6e5-e3b71cb5bd08",
-        "fromColumn": "Data (ddmmaaaa)",
-        "fromTable": "fChat_relatorio_atendimento",
-        "joinOnDateBehavior": "datePartOnly",
-        "toColumn": "Date",
-        "toTable": "LocalDateTable_4a17d876-2a7c-44d1-9c68-6e121fae56bf"
+        "name": "d193b847-dac1-8694-d425-ab1cd27a0646",
+        "fromColumn": "COLABORADOR",
+        "fromTable": "fAdapter_atendimentos",
+        "toColumn": "Colaborador",
+        "toTable": "dColaboradores"
       },
       {
-        "name": "158b5289-f0e3-4f79-adf2-582cd5c76ab9",
-        "fromColumn": "Data de início de atendimento humano",
+        "name": "68d4bfb0-8366-7aee-81e1-776092c66935",
+        "fromColumn": "COLABORADOR",
+        "fromTable": "fChat_relatorio_resumo_usuarios(pausas)",
+        "toColumn": "Colaborador",
+        "toTable": "dColaboradores"
+      },
+      {
+        "name": "b49a378f-eb7b-20c8-a89d-ac9d8e41bba3",
+        "fromColumn": "COLABORADOR",
+        "fromTable": "fChat_relatorio_nps",
+        "toColumn": "Colaborador",
+        "toTable": "dColaboradores"
+      },
+      {
+        "name": "dca20090-5ca9-0f44-19cf-08bcc370b724",
+        "fromColumn": "COLABORADOR",
+        "fromTable": "fCallflex_pausas_detalhado",
+        "toColumn": "Colaborador",
+        "toTable": "dColaboradores"
+      },
+      {
+        "name": "b7835389-5ea9-3769-aef0-f0a8019206dd",
+        "fromColumn": "COLABORADOR",
+        "fromTable": "fCallflex_chamadas",
+        "toColumn": "Colaborador",
+        "toTable": "dColaboradores"
+      },
+      {
+        "name": "2505758c-18e2-999e-8afa-5b3559e77d93",
+        "fromColumn": "COLABORADOR",
         "fromTable": "fChat_relatorio_atendimento",
-        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Colaborador",
+        "toTable": "dColaboradores"
+      },
+      {
+        "name": "462f3d2c-b722-2b82-67a9-295c81d0722e",
+        "fromColumn": "Data Abertura (ddmmaaaa)",
+        "fromTable": "fAdapter_atendimentos",
         "toColumn": "Date",
-        "toTable": "LocalDateTable_2d444940-47e4-44d4-8849-8e347deac4c4"
+        "toTable": "dCalendario"
+      },
+      {
+        "name": "e156e09e-5af8-55a8-05e3-7b839773775c",
+        "fromColumn": "Data (ddmmaaaa)",
+        "fromTable": "fChat_relatorio_resumo_usuarios(pausas)",
+        "toColumn": "Date",
+        "toTable": "dCalendario"
+      },
+      {
+        "name": "0b50fccb-4d2d-7c75-ead0-8eacfd0bc28a",
+        "fromColumn": "Data (ddmmaaaa)",
+        "fromTable": "fChat_relatorio_nps",
+        "toColumn": "Date",
+        "toTable": "dCalendario"
+      },
+      {
+        "name": "218bcf85-88a2-da3a-ed1d-bc52db751377",
+        "fromColumn": "Data (ddmmaaaa)",
+        "fromTable": "fCallflex_pausas_detalhado",
+        "toColumn": "Date",
+        "toTable": "dCalendario"
+      },
+      {
+        "name": "a2a532ea-b96d-9cbd-09fe-b257f0192360",
+        "fromColumn": "Data (ddmmaaaa)",
+        "fromTable": "fCallflex_chamadas",
+        "toColumn": "Date",
+        "toTable": "dCalendario"
+      },
+      {
+        "name": "d038c217-bd1b-d135-7cf2-4e47d5e2e8cb",
+        "fromColumn": "Data (ddmmaaaa)",
+        "fromTable": "fChat_relatorio_atendimento",
+        "toColumn": "Date",
+        "toTable": "dCalendario"
+      },
+      {
+        "name": "e5bf025e-bdb6-3df4-5494-d6298c6b6f98",
+        "fromColumn": "Hora (compartimentos)",
+        "fromTable": "fAdapter_atendimentos",
+        "toColumn": "Horas",
+        "toTable": "dHoras"
+      },
+      {
+        "name": "966e5ed8-1105-1b18-0393-1b68baeb5215",
+        "fromColumn": "Hora (compartimentos)",
+        "fromTable": "fChat_relatorio_nps",
+        "toColumn": "Horas",
+        "toTable": "dHoras"
       }
     ],
     "sourceQueryCulture": "pt-BR",
@@ -25718,6 +26661,89 @@
             "lineageTag": "dd5b1951-8bc1-42de-85b4-e7c414b3f0c3",
             "sourceColumn": "Data Abertura (ddmmaaaa)",
             "summarizeBy": "none"
+          },
+          {
+            "name": "Hora",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Time"
+              },
+              {
+                "name": "__PBI_SemanticLinks",
+                "value": "[{\"LinkTarget\":{\"TableName\":\"fAdapter_atendimentos\",\"TableItemName\":\"Hora (compartimentos)\",\"ObjectType\":4},\"LinkType\":\"UsedInGroup\"}]"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Time",
+            "lineageTag": "049274dc-3804-4907-a863-35e394a4f13b",
+            "sourceColumn": "Hora",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Hora (compartimentos)",
+            "annotations": [
+              {
+                "name": "GroupingDesignState",
+                "value": "{\"Version\":0,\"Sources\":[{\"Name\":\"f\",\"Entity\":\"fAdapter_atendimentos\"}],\"GroupedColumns\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Hora\"}}],\"BinItem\":{\"Expression\":{\"Floor\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Hora\"}},\"Size\":30.0,\"TimeUnit\":6}}}}"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Time"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "DataType"
+              }
+            ],
+            "dataType": "dateTime",
+            "expression": [
+              "IF(",
+              "\tISBLANK('fAdapter_atendimentos'[Hora]),",
+              "\tBLANK(),",
+              "\t(INT(('fAdapter_atendimentos'[Hora] * 1440) / 30) * 30) / 1440",
+              ")"
+            ],
+            "extendedProperties": [
+              {
+                "name": "GroupingMetadata",
+                "type": "json",
+                "value": {
+                  "binningMetadata": {
+                    "binSize": {
+                      "unit": 10,
+                      "value": 30.0
+                    }
+                  },
+                  "groupedColumns": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "fAdapter_atendimentos"
+                          }
+                        },
+                        "Property": "Hora"
+                      }
+                    }
+                  ],
+                  "version": 0
+                }
+              }
+            ],
+            "formatString": "Long Time",
+            "lineageTag": "c2bf5726-b9fb-4b10-a918-6e1b5881fb90",
+            "summarizeBy": "none",
+            "type": "calculated"
           }
         ],
         "lineageTag": "cd6ab9fa-02a6-4eab-8f95-01e26a318d6f",
@@ -25756,9 +26782,10 @@
                 "    #\"DANIELLE DA SILVA FIALHO\" = Table.ReplaceValue(#\"BIANCA NUNES COSTA\",\"DANIELLE DA SILVA FIALHO\",\"DANIELLE DA SILVA FIALHO\",Replacer.ReplaceValue,{\"Usuário Abertura\"}),",
                 "    #\"Colunas Renomeadas\" = Table.RenameColumns(#\"DANIELLE DA SILVA FIALHO\",{{\"Usuário Abertura\", \"COLABORADOR\"}}),",
                 "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Colunas Renomeadas\",{{\"Data Abertura\", type datetime}}),",
-                "    #\"Linhas Filtradas\" = Table.SelectRows(#\"Tipo Alterado\", each ([QTD] = 1))",
+                "    #\"Linhas Filtradas\" = Table.SelectRows(#\"Tipo Alterado\", each ([QTD] = 1)),",
+                "    #\"Hora Inserida\" = Table.AddColumn(#\"Linhas Filtradas\", \"Hora\", each DateTime.Time([Data Abertura]), type time)",
                 "in",
-                "    #\"Linhas Filtradas\""
+                "    #\"Hora Inserida\""
               ],
               "type": "m"
             }
@@ -26222,7 +27249,7 @@
               "    IF(Count_Protocolo_Relatorio > 0, Total_TMA_Relatorio_Seconds / Count_Protocolo_Relatorio, 0)",
               "",
               "-- Cálculo do TMA médio em segundos e peso para a tabela CallFlex",
-              "VAR Total_TMA_CallFlex_Seconds = [TMA Callflex]",
+              "VAR Total_TMA_CallFlex_Seconds = [TMA Callflex (Inteiro)]",
               "",
               "VAR Total_Peso_CallFlex = [Total_Atendimentos_Callflex]",
               "",
@@ -26237,12 +27264,12 @@
               "        0",
               "    )",
               "",
-              "-- Conversão do TMA ponderado para o formato hh:mm:ss",
+              "-- Conversão para hh:mm:ss como texto",
               "VAR Hours = INT(TMA_Ponderado_Seconds / 3600)",
               "VAR Minutes = INT(MOD(TMA_Ponderado_Seconds, 3600) / 60)",
-              "VAR Seconds = INT(MOD(TMA_Ponderado_Seconds, 60))",
+              "VAR Seconds = MOD(TMA_Ponderado_Seconds, 60)",
               "",
-              "-- Retorno no formato de tempo hh:mm:ss",
+              "-- Retorno no formato hh:mm:ss",
               "RETURN ",
               "    FORMAT(Hours, \"00\") & \":\" & FORMAT(Minutes, \"00\") & \":\" & FORMAT(Seconds, \"00\")",
               ""
@@ -26309,6 +27336,127 @@
               ""
             ],
             "lineageTag": "b387a99d-a5a0-42df-938c-3c54192bb0df"
+          },
+          {
+            "name": "TMA Média Poderada (Inteiro)",
+            "expression": [
+              "",
+              "VAR Total_TMA_Relatorio_Seconds =",
+              "    SUMX(",
+              "        fChat_relatorio_atendimento,",
+              "        VAR TTA_Humano = fChat_relatorio_atendimento[TTA (humano)]",
+              "        -- Verifica se o valor TTA_Humano está no formato de tempo 'hh:mm:ss' ou não, e converte para segundos",
+              "        VAR TTA_Valid = ",
+              "            IF(",
+              "                NOT(ISBLANK(TTA_Humano)) && LEN(TTA_Humano) = 8, ",
+              "                VALUE(LEFT(TTA_Humano, 2)) * 3600 + VALUE(MID(TTA_Humano, 4, 2)) * 60 + VALUE(RIGHT(TTA_Humano, 2)),",
+              "                0",
+              "            )",
+              "        RETURN TTA_Valid",
+              "    )",
+              "",
+              "VAR Count_Protocolo_Relatorio = COUNT(fChat_relatorio_atendimento[Protocolo])",
+              "",
+              "VAR Media_TMA_Seconds_Relatorio = ",
+              "    IF(Count_Protocolo_Relatorio > 0, Total_TMA_Relatorio_Seconds / Count_Protocolo_Relatorio, 0)",
+              "",
+              "-- Cálculo do TMA médio em segundos e peso para a tabela CallFlex",
+              "VAR Total_TMA_CallFlex_Seconds = [TMA Callflex (Inteiro)]",
+              "",
+              "VAR Total_Peso_CallFlex = [Total_Atendimentos_Callflex]",
+              "",
+              "-- Peso total combinado dos dois conjuntos de dados",
+              "VAR Peso_Total = Count_Protocolo_Relatorio + Total_Peso_CallFlex",
+              "",
+              "-- Cálculo da média ponderada em segundos",
+              "VAR TMA_Ponderado_Seconds = ",
+              "    IF(Peso_Total > 0,",
+              "        ((Media_TMA_Seconds_Relatorio * Count_Protocolo_Relatorio) + ",
+              "        (Total_TMA_CallFlex_Seconds * Total_Peso_CallFlex)) / Peso_Total,",
+              "        0",
+              "    )",
+              "",
+              "-- Conversão para hhmmss como número inteiro",
+              "VAR Hours = INT(TMA_Ponderado_Seconds / 3600)",
+              "VAR Minutes = INT(MOD(TMA_Ponderado_Seconds, 3600) / 60)",
+              "VAR Seconds = MOD(TMA_Ponderado_Seconds, 60)",
+              "",
+              "-- Retorno no formato hhmmss como número inteiro",
+              "RETURN ",
+              "    Hours * 10000 + Minutes * 100 + Seconds",
+              ""
+            ],
+            "formatString": "0",
+            "lineageTag": "c3fe04ea-236c-4404-8226-d70d6ac1e277"
+          },
+          {
+            "name": "TMA Chat (Inteiro)",
+            "expression": [
+              "",
+              "VAR Total_TMA_Relatorio_Seconds =",
+              "    SUMX(",
+              "        fChat_relatorio_atendimento,",
+              "        VAR TTA_Humano = fChat_relatorio_atendimento[TTA (humano)]",
+              "        VAR TTA_Valid = ",
+              "            IF(",
+              "                NOT(ISBLANK(TTA_Humano)) && LEN(TTA_Humano) = 8, ",
+              "                VALUE(LEFT(TTA_Humano, 2)) * 3600 + VALUE(MID(TTA_Humano, 4, 2)) * 60 + VALUE(RIGHT(TTA_Humano, 2)),",
+              "                0",
+              "            )",
+              "        RETURN TTA_Valid",
+              "    )",
+              "",
+              "VAR Count_Protocolo_Relatorio = COUNT(fChat_relatorio_atendimento[Protocolo])",
+              "",
+              "VAR Media_TMA_Seconds_Relatorio = ",
+              "    IF(Count_Protocolo_Relatorio > 0, Total_TMA_Relatorio_Seconds / Count_Protocolo_Relatorio, 0)",
+              "",
+              "-- Conversão para hhmmss como número inteiro",
+              "VAR Hours = INT(Media_TMA_Seconds_Relatorio / 3600)",
+              "VAR Minutes = INT(MOD(Media_TMA_Seconds_Relatorio, 3600) / 60)",
+              "VAR Seconds = MOD(Media_TMA_Seconds_Relatorio, 60)",
+              "",
+              "-- Retorno no formato hhmmss como número inteiro",
+              "RETURN ",
+              "    Hours * 10000 + Minutes * 100 + Seconds"
+            ],
+            "formatString": "0",
+            "lineageTag": "758f0aa9-1dfe-414a-88fc-be61d1c63d96"
+          },
+          {
+            "name": "TMA Callflex (Inteiro)",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": [
+              "",
+              "VAR Total_TMA_Seconds =",
+              "    AVERAGEX(",
+              "        fCallflex_chamadas,",
+              "        VAR TMA_CallFlex = fCallflex_chamadas[TEMPO_DE_CONVERSACAO]",
+              "        VAR TMA_Seconds = ",
+              "            IF(",
+              "                NOT(ISBLANK(TMA_CallFlex)) && LEN(TMA_CallFlex) = 8,",
+              "                VALUE(LEFT(TMA_CallFlex, 2)) * 3600 + VALUE(MID(TMA_CallFlex, 4, 2)) * 60 + VALUE(RIGHT(TMA_CallFlex, 2)),",
+              "                0",
+              "            )",
+              "        RETURN TMA_Seconds",
+              "    )",
+              "",
+              "-- Conversão para hhmmss como número inteiro",
+              "VAR Hours = INT(Total_TMA_Seconds / 3600)",
+              "VAR Minutes = INT(MOD(Total_TMA_Seconds, 3600) / 60)",
+              "VAR Seconds = MOD(Total_TMA_Seconds, 60)",
+              "",
+              "-- Retorno no formato hhmmss como número inteiro",
+              "RETURN ",
+              "    Hours * 10000 + Minutes * 100 + Seconds",
+              ""
+            ],
+            "lineageTag": "79f160ad-adab-457a-9d79-60f6616670d1"
           }
         ],
         "partitions": [
@@ -26624,14 +27772,16 @@
             "lineageTag": "5dcce8e3-679d-4adb-901a-5023bc1c59f5"
           },
           {
-            "name": "Média_Atendimentos",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
+            "name": "Média de Novos Atendimentos Chat",
+            "expression": [
+              "",
+              "DIVIDE(",
+              "    [Total_Atendimentos_Chat], COUNT(dCalendario[Date].[Dia]),",
+              "    0",
+              ")",
+              ""
             ],
-            "expression": "DIVIDE([Total_Atendimentos], COUNT(dColaboradores[Colaborador]))",
+            "formatString": "0",
             "lineageTag": "8312ee34-34f4-4e30-871e-830e749ac12d"
           },
           {
@@ -26685,39 +27835,27 @@
             "lineageTag": "9ad3f134-4dce-4be2-be09-68a5f9821cf3"
           },
           {
-            "name": "Média Atendimentos por Hora Colaborador",
+            "name": "Média Ranking Atendimentos",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
                 "value": "{\"isGeneralNumber\":true}"
               }
             ],
-            "expression": [
-              "",
-              "DIVIDE(",
-              "    [Total_Atendimentos], 6,",
-              "    0",
-              ")",
-              ""
-            ],
+            "expression": "DIVIDE([Total_Atendimentos], COUNT(dColaboradores[Colaborador]),0)",
             "lineageTag": "a7a16da4-b097-462b-8147-53d08ea9eead"
           },
           {
-            "name": "Média Atendimentos por Hora DiaSSS",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
+            "name": "Média de Novos Atendimentos Callflex",
             "expression": [
               "",
               "DIVIDE(",
-              "    [Total_Atendimentos], COUNT(dCalendario[Date].[Dia]),",
+              "    [Total_Atendimentos_Callflex], COUNT(dCalendario[Date].[Dia]),",
               "    0",
               ")",
               ""
             ],
+            "formatString": "0",
             "lineageTag": "58793c6e-2e5d-41ba-9ec0-96d33ff7ee39"
           }
         ],
@@ -26755,16 +27893,8 @@
         "lineageTag": "079851fc-6896-479b-9996-3efea225d72e",
         "measures": [
           {
-            "name": "Nome do Agente",
-            "expression": [
-              "",
-              "IF(",
-              "    HASONEVALUE('fAdapter_atendimentos'[COLABORADOR]), ",
-              "    VALUES('fAdapter_atendimentos'[COLABORADOR]), ",
-              "    \"Todos\"",
-              ")",
-              ""
-            ],
+            "name": "Observacao_Adapter_Atendimentos",
+            "expression": "\"Apenas visão DIA/MÊS/ANO, sem hor\"",
             "lineageTag": "1bf2ff8b-f444-45b9-a192-6baf960d1052"
           }
         ],
@@ -27452,10 +28582,10 @@
                 "name": "Variation",
                 "defaultHierarchy": {
                   "hierarchy": "Hierarquia de datas",
-                  "table": "LocalDateTable_2d444940-47e4-44d4-8849-8e347deac4c4"
+                  "table": "LocalDateTable_a8017163-9f10-4bd2-88c7-f44614f0c236"
                 },
                 "isDefault": true,
-                "relationship": "158b5289-f0e3-4f79-adf2-582cd5c76ab9"
+                "relationship": "0aa48c92-b7e7-4eee-b6f3-bc96dc355c11"
               }
             ]
           },
@@ -28175,6 +29305,91 @@
             "summarizeBy": "none"
           },
           {
+            "name": "Data de início de atendimento humano - Hora",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Time"
+              },
+              {
+                "name": "__PBI_SemanticLinks",
+                "value": "[{\"LinkTarget\":{\"TableName\":\"fChat_relatorio_atendimento\",\"TableItemName\":\"Data de início de atendimento humano - Hora (compartimentos)\",\"ObjectType\":4},\"LinkType\":\"UsedInGroup\"}]"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Time",
+            "lineageTag": "8bc9485b-e5b0-4a29-a8ea-6caa3025d12d",
+            "sourceColumn": "Data de início de atendimento humano - Hora",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Data de início de atendimento humano - Hora (compartimentos)",
+            "annotations": [
+              {
+                "name": "GroupingDesignState",
+                "value": "{\"Version\":0,\"Sources\":[{\"Name\":\"f\",\"Entity\":\"fChat_relatorio_atendimento\"}],\"GroupedColumns\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Data de início de atendimento humano - Hora\"}}],\"BinItem\":{\"Expression\":{\"Floor\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Data de início de atendimento humano - Hora\"}},\"Size\":30.0,\"TimeUnit\":6}}}}"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Time"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "DataType"
+              }
+            ],
+            "dataType": "dateTime",
+            "expression": [
+              "IF(",
+              "\tISBLANK('fChat_relatorio_atendimento'[Data de início de atendimento humano - Hora]),",
+              "\tBLANK(),",
+              "\t(INT(",
+              "\t\t('fChat_relatorio_atendimento'[Data de início de atendimento humano - Hora] * 1440) / 30",
+              "\t) * 30) / 1440",
+              ")"
+            ],
+            "extendedProperties": [
+              {
+                "name": "GroupingMetadata",
+                "type": "json",
+                "value": {
+                  "binningMetadata": {
+                    "binSize": {
+                      "unit": 10,
+                      "value": 30.0
+                    }
+                  },
+                  "groupedColumns": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "fChat_relatorio_atendimento"
+                          }
+                        },
+                        "Property": "Data de início de atendimento humano - Hora"
+                      }
+                    }
+                  ],
+                  "version": 0
+                }
+              }
+            ],
+            "formatString": "Long Time",
+            "lineageTag": "936e9ed3-50f1-4cd6-a68f-e32ea7837732",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
             "name": "Data (ddmmaaaa)",
             "annotations": [
               {
@@ -28188,20 +29403,9 @@
             ],
             "dataType": "dateTime",
             "formatString": "Long Date",
-            "lineageTag": "aedc2182-234a-4748-8e16-8eb37aa4e15d",
+            "lineageTag": "e7df1e8a-9a0e-4131-b325-b62c63b30cbe",
             "sourceColumn": "Data (ddmmaaaa)",
-            "summarizeBy": "none",
-            "variations": [
-              {
-                "name": "Variation",
-                "defaultHierarchy": {
-                  "hierarchy": "Hierarquia de datas",
-                  "table": "LocalDateTable_4a17d876-2a7c-44d1-9c68-6e121fae56bf"
-                },
-                "isDefault": true,
-                "relationship": "5c7fb1e0-c420-4682-a6e5-e3b71cb5bd08"
-              }
-            ]
+            "summarizeBy": "none"
           }
         ],
         "lineageTag": "fbaad861-a9f8-495d-a986-8aa804e1146c",
@@ -28247,9 +29451,15 @@
                 "    #\"Data Inserida1\" = Table.AddColumn(#\"Tipo Alterado1\", \"Data\", each DateTime.Date([Data de início de atendimento humano]), type date),",
                 "    #\"Colunas Renomeadas1\" = Table.RenameColumns(#\"Data Inserida1\",{{\"Data\", \"Data (ddmmaaaa)\"}}),",
                 "    #\"Hora Inserida1\" = Table.AddColumn(#\"Colunas Renomeadas1\", \"Hora\", each Time.Hour([Data de início de atendimento humano]), Int64.Type),",
-                "    #\"Colunas Removidas1\" = Table.RemoveColumns(#\"Hora Inserida1\",{\"Hora\"})",
+                "    #\"Colunas Removidas1\" = Table.RemoveColumns(#\"Hora Inserida1\",{\"Hora\"}),",
+                "    #\"Coluna Duplicada\" = Table.DuplicateColumn(#\"Colunas Removidas1\", \"Data de início de atendimento humano\", \"Data de início de atendimento humano - Copiar\"),",
+                "    #\"Tipo Alterado2\" = Table.TransformColumnTypes(#\"Coluna Duplicada\",{{\"Data de início de atendimento humano - Copiar\", type time}}),",
+                "    #\"Colunas Renomeadas2\" = Table.RenameColumns(#\"Tipo Alterado2\",{{\"Data de início de atendimento humano - Copiar\", \"Data de início de atendimento humano - Hora\"}}),",
+                "    #\"Colunas Removidas2\" = Table.RemoveColumns(#\"Colunas Renomeadas2\",{\"Data (ddmmaaaa)\"}),",
+                "    #\"Data Inserida2\" = Table.AddColumn(#\"Colunas Removidas2\", \"Data\", each DateTime.Date([Data de início de atendimento humano]), type date),",
+                "    #\"Colunas Renomeadas3\" = Table.RenameColumns(#\"Data Inserida2\",{{\"Data\", \"Data (ddmmaaaa)\"}})",
                 "in",
-                "    #\"Colunas Removidas1\""
+                "    #\"Colunas Renomeadas3\""
               ],
               "type": "m"
             }
@@ -29410,6 +30620,89 @@
             "lineageTag": "04e7c09d-213e-48c8-b478-8bc5752d142b",
             "sourceColumn": "Data (ddmmaaaa)",
             "summarizeBy": "none"
+          },
+          {
+            "name": "Hora",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Time"
+              },
+              {
+                "name": "__PBI_SemanticLinks",
+                "value": "[{\"LinkTarget\":{\"TableName\":\"fChat_relatorio_nps\",\"TableItemName\":\"Hora (compartimentos)\",\"ObjectType\":4},\"LinkType\":\"UsedInGroup\"}]"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Time",
+            "lineageTag": "a5885117-72de-43a4-a7fb-5f5ab9e8d08b",
+            "sourceColumn": "Hora",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Hora (compartimentos)",
+            "annotations": [
+              {
+                "name": "GroupingDesignState",
+                "value": "{\"Version\":0,\"Sources\":[{\"Name\":\"f\",\"Entity\":\"fChat_relatorio_nps\"}],\"GroupedColumns\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Hora\"}}],\"BinItem\":{\"Expression\":{\"Floor\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Hora\"}},\"Size\":30.0,\"TimeUnit\":6}}}}"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Time"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "DataType"
+              }
+            ],
+            "dataType": "dateTime",
+            "expression": [
+              "IF(",
+              "\tISBLANK('fChat_relatorio_nps'[Hora]),",
+              "\tBLANK(),",
+              "\t(INT(('fChat_relatorio_nps'[Hora] * 1440) / 30) * 30) / 1440",
+              ")"
+            ],
+            "extendedProperties": [
+              {
+                "name": "GroupingMetadata",
+                "type": "json",
+                "value": {
+                  "binningMetadata": {
+                    "binSize": {
+                      "unit": 10,
+                      "value": 30.0
+                    }
+                  },
+                  "groupedColumns": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "fChat_relatorio_nps"
+                          }
+                        },
+                        "Property": "Hora"
+                      }
+                    }
+                  ],
+                  "version": 0
+                }
+              }
+            ],
+            "formatString": "Long Time",
+            "lineageTag": "bf06d7d9-99ff-402b-be4e-3dfc93e917c2",
+            "summarizeBy": "none",
+            "type": "calculated"
           }
         ],
         "lineageTag": "af7617c8-eb0e-4ff1-9d4c-4aed55892c94",
@@ -29452,9 +30745,10 @@
                 "    #\"DANIELLE DA SILVA FIALHO\" = Table.ReplaceValue(#\"BIANCA NUNES COSTA\",\"Danielle da Silva Fialho\",\"DANIELLE DA SILVA FIALHO\",Replacer.ReplaceValue,{\"Nome do Usuário\"}),",
                 "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"DANIELLE DA SILVA FIALHO\",{{\"Data\", type datetime}}),",
                 "    #\"Data Inserida\" = Table.AddColumn(#\"Tipo Alterado\", \"Data (ddmmaaaa)\", each DateTime.Date([Data]), type date),",
-                "    #\"Colunas Renomeadas1\" = Table.RenameColumns(#\"Data Inserida\",{{\"Nome do Usuário\", \"COLABORADOR\"}})",
+                "    #\"Colunas Renomeadas1\" = Table.RenameColumns(#\"Data Inserida\",{{\"Nome do Usuário\", \"COLABORADOR\"}}),",
+                "    #\"Hora Inserida\" = Table.AddColumn(#\"Colunas Renomeadas1\", \"Hora\", each DateTime.Time([Data]), type time)",
                 "in",
-                "    #\"Colunas Renomeadas1\""
+                "    #\"Hora Inserida\""
               ],
               "type": "m"
             }
@@ -30869,7 +32163,7 @@
         "showAsVariationsOnly": true
       },
       {
-        "name": "LocalDateTable_4a17d876-2a7c-44d1-9c68-6e121fae56bf",
+        "name": "LocalDateTable_a8017163-9f10-4bd2-88c7-f44614f0c236",
         "annotations": [
           {
             "name": "__PBI_LocalDateTable",
@@ -30889,7 +32183,7 @@
             "dataType": "dateTime",
             "isHidden": true,
             "isNameInferred": true,
-            "lineageTag": "6315861b-70e5-46c7-92f5-c34f1f73a962",
+            "lineageTag": "bc592360-894d-4d8c-943b-6bca073dbad1",
             "sourceColumn": "[Date]",
             "summarizeBy": "none",
             "type": "calculatedTableColumn"
@@ -30910,7 +32204,7 @@
             "dataType": "int64",
             "expression": "YEAR([Date])",
             "isHidden": true,
-            "lineageTag": "1760c335-e3c9-4ec2-be4a-4575b69b8951",
+            "lineageTag": "38da7790-e1ab-4de9-94e0-293615d784fa",
             "summarizeBy": "none",
             "type": "calculated"
           },
@@ -30930,7 +32224,7 @@
             "dataType": "int64",
             "expression": "MONTH([Date])",
             "isHidden": true,
-            "lineageTag": "d923caa4-7e0c-4b2f-8774-9e2ad46528f9",
+            "lineageTag": "111fb5cf-c52f-410a-85a9-aa427ad8b907",
             "summarizeBy": "none",
             "type": "calculated"
           },
@@ -30950,7 +32244,7 @@
             "dataType": "string",
             "expression": "FORMAT([Date], \"MMMM\")",
             "isHidden": true,
-            "lineageTag": "d51ae741-aa29-4e8d-8788-6eae1181214d",
+            "lineageTag": "88e60fe5-8aef-4f59-aaa4-3d37390ee227",
             "sortByColumn": "MonthNo",
             "summarizeBy": "none",
             "type": "calculated"
@@ -30971,7 +32265,7 @@
             "dataType": "int64",
             "expression": "INT(([MonthNo] + 2) / 3)",
             "isHidden": true,
-            "lineageTag": "0f137a18-3a2d-4b6d-a775-5e5256b50ba8",
+            "lineageTag": "8a92b8f4-f279-4e11-bbc8-d2063a6ae63c",
             "summarizeBy": "none",
             "type": "calculated"
           },
@@ -30991,7 +32285,7 @@
             "dataType": "string",
             "expression": "\"Qtr \" & [QuarterNo]",
             "isHidden": true,
-            "lineageTag": "17f27979-f2e4-467d-8522-fed75db35353",
+            "lineageTag": "26e8c562-c2a5-4c5a-89a5-52b7c5df0cf4",
             "sortByColumn": "QuarterNo",
             "summarizeBy": "none",
             "type": "calculated"
@@ -31012,7 +32306,7 @@
             "dataType": "int64",
             "expression": "DAY([Date])",
             "isHidden": true,
-            "lineageTag": "d084e1b7-203e-4ada-8580-e5be1c1df061",
+            "lineageTag": "91d71494-5ce5-4aaf-857a-b86be589db89",
             "summarizeBy": "none",
             "type": "calculated"
           }
@@ -31030,237 +32324,36 @@
               {
                 "name": "Ano",
                 "column": "Ano",
-                "lineageTag": "c43b70df-19e1-4dea-bb9e-99f2ea78c30f",
+                "lineageTag": "48a2d4d4-11c9-4254-a20b-77e6ca60b8d4",
                 "ordinal": 0
               },
               {
                 "name": "Trimestre",
                 "column": "Trimestre",
-                "lineageTag": "cbb23982-4199-4419-b357-27f7997baa7f",
+                "lineageTag": "1a829de2-20c6-467c-ad9c-60fa85ca1767",
                 "ordinal": 1
               },
               {
                 "name": "Mês",
                 "column": "Mês",
-                "lineageTag": "7a90b687-0bfb-4f8d-a321-4f44a738f1b0",
+                "lineageTag": "d769bd91-7049-4a0c-bd54-6c8bdde7f1d6",
                 "ordinal": 2
               },
               {
                 "name": "Dia",
                 "column": "Dia",
-                "lineageTag": "b8585453-db32-4547-a3ea-c017755e4caa",
+                "lineageTag": "32451178-2d24-4d73-bf7b-35c069bd1b2d",
                 "ordinal": 3
               }
             ],
-            "lineageTag": "4b83cd8f-a09d-4ec9-a77b-31807a4f2439"
+            "lineageTag": "960b39c3-ff79-41a1-8439-f5c90283f9b2"
           }
         ],
         "isHidden": true,
-        "lineageTag": "3c458107-ab2a-4e2b-9138-e6377e4e9f58",
+        "lineageTag": "5e24876e-dbce-4ab0-bc8d-4ed6fced9352",
         "partitions": [
           {
-            "name": "LocalDateTable_4a17d876-2a7c-44d1-9c68-6e121fae56bf",
-            "mode": "import",
-            "source": {
-              "expression": "Calendar(Date(Year(MIN('fChat_relatorio_atendimento'[Data (ddmmaaaa)])), 1, 1), Date(Year(MAX('fChat_relatorio_atendimento'[Data (ddmmaaaa)])), 12, 31))",
-              "type": "calculated"
-            }
-          }
-        ],
-        "showAsVariationsOnly": true
-      },
-      {
-        "name": "LocalDateTable_2d444940-47e4-44d4-8849-8e347deac4c4",
-        "annotations": [
-          {
-            "name": "__PBI_LocalDateTable",
-            "value": "true"
-          }
-        ],
-        "columns": [
-          {
-            "name": "Date",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              }
-            ],
-            "dataCategory": "PaddedDateTableDates",
-            "dataType": "dateTime",
-            "isHidden": true,
-            "isNameInferred": true,
-            "lineageTag": "d4ac5e0e-f8d8-4a56-8fbb-acd30d490b0c",
-            "sourceColumn": "[Date]",
-            "summarizeBy": "none",
-            "type": "calculatedTableColumn"
-          },
-          {
-            "name": "Ano",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Year"
-              }
-            ],
-            "dataCategory": "Years",
-            "dataType": "int64",
-            "expression": "YEAR([Date])",
-            "isHidden": true,
-            "lineageTag": "2e634344-8218-4c43-ac96-b5a2868905b2",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "MonthNo",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "MonthNumber"
-              }
-            ],
-            "dataCategory": "MonthOfYear",
-            "dataType": "int64",
-            "expression": "MONTH([Date])",
-            "isHidden": true,
-            "lineageTag": "fc35db7b-73e1-4d35-ba67-1e323f17e016",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Mês",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Month"
-              }
-            ],
-            "dataCategory": "Months",
-            "dataType": "string",
-            "expression": "FORMAT([Date], \"MMMM\")",
-            "isHidden": true,
-            "lineageTag": "58fe2185-2747-4539-add5-8b3900d38f3b",
-            "sortByColumn": "MonthNo",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "QuarterNo",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "QuarterNumber"
-              }
-            ],
-            "dataCategory": "QuarterOfYear",
-            "dataType": "int64",
-            "expression": "INT(([MonthNo] + 2) / 3)",
-            "isHidden": true,
-            "lineageTag": "19ef8c71-4023-40d8-8d8b-93aed4587575",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Trimestre",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Quarter"
-              }
-            ],
-            "dataCategory": "Quarters",
-            "dataType": "string",
-            "expression": "\"Qtr \" & [QuarterNo]",
-            "isHidden": true,
-            "lineageTag": "bc7779d0-44f8-46c4-a61c-c1be0d681ad7",
-            "sortByColumn": "QuarterNo",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Dia",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Day"
-              }
-            ],
-            "dataCategory": "DayOfMonth",
-            "dataType": "int64",
-            "expression": "DAY([Date])",
-            "isHidden": true,
-            "lineageTag": "5beda469-6b4e-4185-bf1d-d7ef6944dbdc",
-            "summarizeBy": "none",
-            "type": "calculated"
-          }
-        ],
-        "hierarchies": [
-          {
-            "name": "Hierarquia de datas",
-            "annotations": [
-              {
-                "name": "TemplateId",
-                "value": "DateHierarchy"
-              }
-            ],
-            "levels": [
-              {
-                "name": "Ano",
-                "column": "Ano",
-                "lineageTag": "783dc5a7-5c1a-435e-8fe6-b1c52ab090af",
-                "ordinal": 0
-              },
-              {
-                "name": "Trimestre",
-                "column": "Trimestre",
-                "lineageTag": "7f21b8c4-b31d-4c11-be1d-26a6bf9b2c3a",
-                "ordinal": 1
-              },
-              {
-                "name": "Mês",
-                "column": "Mês",
-                "lineageTag": "aa79c507-8875-4c0c-89f3-621ff21309f0",
-                "ordinal": 2
-              },
-              {
-                "name": "Dia",
-                "column": "Dia",
-                "lineageTag": "c45b9db9-79c8-4a29-8d88-f15e165ee9e9",
-                "ordinal": 3
-              }
-            ],
-            "lineageTag": "14bac9a4-16e5-41d0-8096-b25a15016247"
-          }
-        ],
-        "isHidden": true,
-        "lineageTag": "04cb4ae9-8831-435d-9277-88299c381d0d",
-        "partitions": [
-          {
-            "name": "LocalDateTable_2d444940-47e4-44d4-8849-8e347deac4c4",
+            "name": "LocalDateTable_a8017163-9f10-4bd2-88c7-f44614f0c236",
             "mode": "import",
             "source": {
               "expression": "Calendar(Date(Year(MIN('fChat_relatorio_atendimento'[Data de início de atendimento humano])), 1, 1), Date(Year(MAX('fChat_relatorio_atendimento'[Data de início de atendimento humano])), 12, 31))",
