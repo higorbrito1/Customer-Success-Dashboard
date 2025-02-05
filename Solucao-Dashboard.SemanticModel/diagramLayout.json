@@ -4,14 +4,14 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 234.49110267988021,
-        "y": 920.84827159948259
+        "x": 1085.3970261113125,
+        "y": 1123.2425430773544
       },
       "nodes": [
         {
           "location": {
-            "x": 835.22479157234466,
-            "y": 2185.9344050003674
+            "x": 3142.9386327343786,
+            "y": 1456.762215511071
           },
           "nodeIndex": "Medidas Instalação",
           "nodeLineageTag": "99c44bba-eb6b-4669-ae90-ef3cdfd66ade",
@@ -23,8 +23,8 @@
         },
         {
           "location": {
-            "x": 525.27351540132531,
-            "y": 2184.1368254917893
+            "x": 2849.74792916535,
+            "y": 1455.9648259416633
           },
           "nodeIndex": "Medidas Onboarding",
           "nodeLineageTag": "ac9a1bf6-eea9-433d-86d6-5a1ea701f7c0",
@@ -50,12 +50,12 @@
         {
           "location": {
             "x": 1666.3728332359076,
-            "y": 1352.1662695872183
+            "y": 1279.5519906225456
           },
           "nodeIndex": "fCallflex_chamadas",
           "nodeLineageTag": "5e92d14a-281b-49fc-a36c-19a025d5af07",
           "size": {
-            "height": 465.71972505888232,
+            "height": 651.28954907971263,
             "width": 234
           },
           "zIndex": 19
@@ -75,13 +75,13 @@
         },
         {
           "location": {
-            "x": 1940.3486712834488,
-            "y": 1353.9250752603241
+            "x": 1953.7957599806102,
+            "y": 1273.2425430773544
           },
           "nodeIndex": "fChat_relatorio_atendimento",
           "nodeLineageTag": "fbaad861-a9f8-495d-a986-8aa804e1146c",
           "size": {
-            "height": 461.28813561115953,
+            "height": 652.23679511085425,
             "width": 234
           },
           "zIndex": 20
@@ -127,8 +127,8 @@
         },
         {
           "location": {
-            "x": 841.87373202865342,
-            "y": 2326.7759938911531
+            "x": 3157.3330243222404,
+            "y": 1609.6110932321396
           },
           "nodeIndex": "Medidas Reincidencia",
           "nodeLineageTag": "e003f24b-c8db-4023-84a9-00e05487d8fc",
@@ -152,8 +152,8 @@
         },
         {
           "location": {
-            "x": 2576.307354481226,
-            "y": 1319.8162693679978
+            "x": 2847.3673872255213,
+            "y": 1605.26887022261
           },
           "nodeIndex": "Medidas Médias",
           "nodeLineageTag": "b43dcdbc-b90d-4e8a-ad67-d98ee81db5dd",
@@ -230,10 +230,11 @@
         },
         {
           "location": {
-            "x": 1118.5385940774086,
-            "y": 2177.7294934037491
+            "x": 3446.8410744608891,
+            "y": 1448.7125371852453
           },
           "nodeIndex": "Medidas Pausas Callflex",
+          "nodeLineageTag": "faf08992-edef-487f-aee6-c4cb96b248be",
           "size": {
             "height": 145,
             "width": 234
@@ -267,7 +268,7 @@
         }
       ],
       "name": "Todas as tabelas",
-      "zoomValue": 46.73951259623847,
+      "zoomValue": 71.300643835584751,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,
