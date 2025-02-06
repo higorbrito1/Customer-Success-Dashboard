@@ -4560,7 +4560,7 @@
                 "Definition": {
                   "Binding": {
                     "ConceptualEntity": "Medidas Médias",
-                    "ConceptualProperty": "TMA Média Poderada"
+                    "ConceptualProperty": "TMA Média Ponderada"
                   }
                 },
                 "State": "Generated",
@@ -27645,7 +27645,7 @@
             "lineageTag": "c2593382-f343-4eb3-9f9d-27cccd9e3af4"
           },
           {
-            "name": "TMA Média Poderada",
+            "name": "TMA Média Ponderada",
             "expression": [
               "",
               "VAR Total_TMA_Relatorio_Seconds =",
@@ -27937,19 +27937,13 @@
           },
           {
             "name": "Média NPS Não Zero",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
             "expression": [
               "",
               "VAR MediaCalculada = ",
               "    CALCULATE(",
               "        AVERAGE(fChat_relatorio_nps[NPS Inteiro]),",
               "        fChat_relatorio_nps[NPS Inteiro] <> 0",
-              "    )",
+              "    ) / 100",
               "RETURN",
               "    IF(",
               "        ISBLANK(MediaCalculada),",
@@ -27958,6 +27952,7 @@
               "    )",
               ""
             ],
+            "formatString": "0.00%;-0.00%;0.00%",
             "lineageTag": "682dad44-f250-4943-9cc3-2300aebd5b8b"
           }
         ],
