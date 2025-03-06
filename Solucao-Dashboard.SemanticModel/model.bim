@@ -67,29 +67,6 @@
                   "Value": "Hidden"
                 }
               },
-              "callflex_chamada.column_1": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "fCallflex_chamadas",
-                    "ConceptualProperty": "Column1"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "column 1": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "Column1": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  }
-                ]
-              },
               "callflex_chamada.data": {
                 "Definition": {
                   "Binding": {
@@ -736,22 +713,6 @@
                   }
                 ]
               },
-              "callflex_chamada.desligadopor": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "fCallflex_chamadas",
-                    "ConceptualProperty": "DESLIGADOPOR"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "desligadopor": {
-                      "State": "Generated"
-                    }
-                  }
-                ]
-              },
               "callflex_chamada.destino": {
                 "Definition": {
                   "Binding": {
@@ -1018,174 +979,6 @@
                 "Terms": [
                   {
                     "origem": {
-                      "State": "Generated"
-                    }
-                  }
-                ]
-              },
-              "callflex_chamada.status": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "fCallflex_chamadas",
-                    "ConceptualProperty": "STATUS"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "status": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "category": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.736
-                    }
-                  },
-                  {
-                    "importance": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.736
-                    }
-                  },
-                  {
-                    "prestige": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.736
-                    }
-                  },
-                  {
-                    "prominence": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.736
-                    }
-                  },
-                  {
-                    "condition": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.714
-                    }
-                  },
-                  {
-                    "class": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.714
-                    }
-                  },
-                  {
-                    "grade": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.714
-                    }
-                  },
-                  {
-                    "level": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.714
-                    }
-                  },
-                  {
-                    "position": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.714
-                    }
-                  }
-                ]
-              },
-              "callflex_chamada.tempo_conectado": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "fCallflex_chamadas",
-                    "ConceptualProperty": "TEMPO_CONECTADO"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "tempo conectado": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "TEMPO_CONECTADO": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  }
-                ]
-              },
-              "callflex_chamada.tempo_de_conversacao": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "fCallflex_chamadas",
-                    "ConceptualProperty": "TEMPO_DE_CONVERSACAO"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "tempo de conversacao": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "TEMPO_DE_CONVERSACAO": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  }
-                ]
-              },
-              "callflex_chamada.tipo": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "fCallflex_chamadas",
-                    "ConceptualProperty": "TIPO"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "tipo": {
                       "State": "Generated"
                     }
                   }
@@ -12132,22 +11925,6 @@
                 "Terms": [
                   {
                     "tempo em pausa 10": {
-                      "State": "Generated"
-                    }
-                  }
-                ]
-              },
-              "relatorio_resumo_usuario.tempo_em_pausa_8": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "fChat_relatorio_resumo_usuarios(pausas)",
-                    "ConceptualProperty": "Tempo em Pausa 8"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "tempo em pausa 8": {
                       "State": "Generated"
                     }
                   }
@@ -29971,71 +29748,6 @@
             "summarizeBy": "none"
           },
           {
-            "name": "TIPO",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "9f270090-a9fe-4263-856f-728bc7c90ffb",
-            "sourceColumn": "TIPO",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "STATUS",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "162733be-daaf-4b24-baa3-5a1b4928be84",
-            "sourceColumn": "STATUS",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "DESLIGADOPOR",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "0771167d-0f10-4647-932f-18854ecdf276",
-            "sourceColumn": "DESLIGADOPOR",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "TEMPO_CONECTADO",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "2395e46b-907a-4751-bf10-ae8822a82549",
-            "sourceColumn": "TEMPO_CONECTADO",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "TEMPO_DE_CONVERSACAO",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "232a5ec4-3b06-410a-8fa9-7adfb3ba77a1",
-            "sourceColumn": "TEMPO_DE_CONVERSACAO",
-            "summarizeBy": "none"
-          },
-          {
             "name": "Data (ddmmaaaa)",
             "annotations": [
               {
@@ -30157,6 +29869,71 @@
             "type": "calculated"
           },
           {
+            "name": "TIPO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d2eaed35-2211-416a-aa81-462d142d60eb",
+            "sourceColumn": "TIPO",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "STATUS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a3931da7-c11d-4ca9-83e7-dec11fe8a67f",
+            "sourceColumn": "STATUS",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DESLIGADOPOR",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "054adced-9e86-41af-be28-9b3b7a8da209",
+            "sourceColumn": "DESLIGADOPOR",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "TEMPO_CONECTADO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2ec2efec-c39f-4aac-9522-e9a0b6842e31",
+            "sourceColumn": "TEMPO_CONECTADO",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "TEMPO_DE_CONVERSACAO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "14e60ad5-418c-4507-8911-e65f2f57d46d",
+            "sourceColumn": "TEMPO_DE_CONVERSACAO",
+            "summarizeBy": "none"
+          },
+          {
             "name": "Column1",
             "annotations": [
               {
@@ -30165,7 +29942,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "81e9a4d4-0e20-457d-9d99-b152ca2dcd03",
+            "lineageTag": "7b1ce385-fca2-4a63-ac94-b7ec1917dff5",
             "sourceColumn": "Column1",
             "summarizeBy": "none"
           }
@@ -30695,19 +30472,6 @@
             "summarizeBy": "none"
           },
           {
-            "name": "Tempo em Pausa 8",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "4429096c-e26a-4b19-b637-396eec5d7a1c",
-            "sourceColumn": "Tempo em Pausa 8",
-            "summarizeBy": "none"
-          },
-          {
             "name": "Tempo em pausa - 8:Pausa Atendimento presencial",
             "annotations": [
               {
@@ -30762,6 +30526,19 @@
             "formatString": "Long Date",
             "lineageTag": "41a7eb7d-d3e3-48a7-88ba-1f577f5ac349",
             "sourceColumn": "Data (ddmmaaaa)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Tempo em pausa - 14:Pausa treinamento",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d2a7253e-d2e9-4282-9560-5d56df59583d",
+            "sourceColumn": "Tempo em pausa - 14:Pausa treinamento",
             "summarizeBy": "none"
           }
         ],
