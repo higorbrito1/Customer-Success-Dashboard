@@ -18,9 +18,7 @@ Painel desenvolvido em Power BI para monitorar indicadores do Suporte Técnico, 
 **Tecnologias**
 - Microsoft Power BI, Dax
 
-**Projeto privado, não disponível para clonagem.**
-
-
+Projeto privado, não disponível para clonagem.
 
 English Version:
 
@@ -43,6 +41,5 @@ Dashboard developed in Power BI to monitor key Technical Support indicators, suc
 **Technologies**
 - Microsoft Power BI, Dax
 
-**Usage**
 Private project, not available for cloning.
 
