@@ -1,6 +1,7 @@
 # Painel de Suporte Técnico
 
 **Visão Geral**
+
 Painel desenvolvido em Power BI para monitorar indicadores do Suporte Técnico, como eficiência, tempo de resposta e satisfação do cliente.
 
 **Funcionalidades**
