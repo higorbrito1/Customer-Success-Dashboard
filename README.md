@@ -20,6 +20,8 @@ Painel desenvolvido em Power BI para monitorar indicadores do Suporte Técnico, 
 
 **Projeto privado, não disponível para clonagem.**
 
+
+
 English Version:
 
 # Technical Support Dashboard
