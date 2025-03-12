@@ -1,9 +1,9 @@
 # Painel de Suporte Técnico
 
-# Visão Geral
+**Visão Geral**
 Painel desenvolvido em Power BI para monitorar indicadores do Suporte Técnico, como eficiência, tempo de resposta e satisfação do cliente.
 
-# Funcionalidades
+**Funcionalidades**
 - **KPIs Essenciais**: Atendimentos, TMA, TME, TMR (minutos e horas).
 - **Satisfação do Cliente**: NPS e qualidade do atendimento.
 - **Tendências**: Atendimentos por hora, % de conversão para ordens de serviço.
@@ -14,19 +14,19 @@ Painel desenvolvido em Power BI para monitorar indicadores do Suporte Técnico, 
 - **Filtros Interativos**: Personalização das análises.
 - **Exportação**: Geração de relatórios detalhados.
 
-# Tecnologias
+**Tecnologias**
 - Microsoft Power BI, Dax
 
-# Projeto privado, não disponível para clonagem.
+**Projeto privado, não disponível para clonagem.**
 
 ## English Version:
 
 # Technical Support Dashboard
 
-# Overview
+**Overview**
 Dashboard developed in Power BI to monitor key Technical Support indicators, such as efficiency, response time, and customer satisfaction.
 
-# Features
+**Features**
 - **Key KPIs**: Total tickets, AHT, AWT, ART (minutes and hours).
 - **Customer Satisfaction**: NPS and service quality.
 - **Trends**: Tickets per hour, % conversion to service orders.
@@ -37,9 +37,9 @@ Dashboard developed in Power BI to monitor key Technical Support indicators, suc
 - **Interactive Filters**: Customizable analysis.
 - **Exporting**: Detailed report generation.
 
-# Technologies
+**Technologies**
 - Microsoft Power BI, Dax
 
-# Usage
+**Usage**
 Private project, not available for cloning.
 
